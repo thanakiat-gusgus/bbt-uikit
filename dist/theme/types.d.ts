@@ -30,6 +30,7 @@ export declare type Gradients = {
     violet: string;
     violetAlt: string;
     gold: string;
+    bitkubGradient: string;
 };
 export declare type Colors = {
     primary: string;
@@ -44,6 +45,7 @@ export declare type Colors = {
     contrast: string;
     dropdown: string;
     dropdownDeep: string;
+    bbtColor: string;
     invertedContrast: string;
     input: string;
     inputSecondary: string;
@@ -57,6 +59,7 @@ export declare type Colors = {
     gradients: Gradients;
     binance: string;
     overlay: string;
+    bitkub: string;
 };
 export declare type ZIndices = {
     dropdown: number;

@@ -35,6 +35,7 @@ export type Gradients = {
   violet: string;
   violetAlt: string;
   gold: string;
+  bitkubGradient: string;
 };
 
 export type Colors = {
@@ -50,6 +51,7 @@ export type Colors = {
   contrast: string;
   dropdown: string;
   dropdownDeep: string;
+  bbtColor: string,//PRIMARY COLORS/Bitkub Green
   invertedContrast: string;
   input: string;
   inputSecondary: string;
@@ -67,6 +69,7 @@ export type Colors = {
   // Additional colors
   binance: string;
   overlay: string;
+  bitkub : string;//add additionalColors bitkub color
 };
 
 export type ZIndices = {
