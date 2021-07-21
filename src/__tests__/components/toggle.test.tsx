@@ -36,11 +36,11 @@ it("renders correctly", () => {
     }
 
     .c1:focus + .c2 {
-      box-shadow: 0px 0px 0px 1px #7645D9,0px 0px 0px 4px rgba(118,69,217,0.6);
+      border: 3px solid #02D767;//toggle hover
     }
 
     .c1:hover + .c2:not(:disabled):not(:checked) {
-      box-shadow: 0px 0px 0px 1px #7645D9,0px 0px 0px 4px rgba(118,69,217,0.6);
+      border: 3px solid #02D767;//toggle hover
     }
 
     .c0 {
@@ -48,7 +48,7 @@ it("renders correctly", () => {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
-      background-color: #31D0AA;
+      background-color: #02D767;
       border-radius: 24px;
       box-shadow: inset 0px 2px 2px -1px rgba(74,74,104,0.1);
       cursor: pointer;
@@ -114,11 +114,11 @@ it("renders correctly scale sm", () => {
     }
 
     .c1:focus + .c2 {
-      box-shadow: 0px 0px 0px 1px #7645D9,0px 0px 0px 4px rgba(118,69,217,0.6);
+      border: 3px solid #02D767;//toggle hover
     }
 
     .c1:hover + .c2:not(:disabled):not(:checked) {
-      box-shadow: 0px 0px 0px 1px #7645D9,0px 0px 0px 4px rgba(118,69,217,0.6);
+      border: 3px solid #02D767;//toggle hover
     }
 
     .c0 {
@@ -126,7 +126,7 @@ it("renders correctly scale sm", () => {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
-      background-color: #31D0AA;
+      background-color: #02D767;
       border-radius: 24px;
       box-shadow: inset 0px 2px 2px -1px rgba(74,74,104,0.1);
       cursor: pointer;

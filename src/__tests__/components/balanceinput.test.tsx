@@ -56,7 +56,7 @@ it("renders correctly", () => {
     }
 
     .c1:focus:not(:disabled) {
-      box-shadow: 0px 0px 0px 1px #7645D9,0px 0px 0px 4px rgba(118,69,217,0.6);
+      border: 1px solid #02D767;
     }
 
     .c0 {
