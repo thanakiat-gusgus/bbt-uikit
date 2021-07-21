@@ -2,17 +2,19 @@ import { Colors } from "./types";
 
 export const baseColors = {
   failure: "#ED4B9E",
-  primary: "#02D767",
+  primary: "#1FC7D4",
   primaryBright: "#53DEE9",
   primaryDark: "#0098A1",
   secondary: "#7645D9",
   success: "#31D0AA",
   warning: "#FFB237",
+  bbtColor: "#02D767",//PRIMARY COLORS/Bitkub Green
 };
 
 export const additionalColors = {
   binance: "#F0B90B",
   overlay: "#452a7a",
+  bitkub : "#02D767",//PRIMARY COLORS/Bitkub Green
 };
 
 export const lightColors: Colors = {
@@ -26,12 +28,12 @@ export const lightColors: Colors = {
   dropdown: "#F6F6F6",
   dropdownDeep: "#EEEEEE",
   invertedContrast: "#FFFFFF",
-  input: "#eeeaf4",
+  input: "#FFFFFF",
   inputSecondary: "#d7caec",
   tertiary: "#EFF4F5",
-  text: "#280D5F",
-  textDisabled: "#BDC2C4",
-  textSubtle: "#7A6EAA",
+  text: "#141414",//text grey bitkub
+  textDisabled: "#BDC2C4",//
+  textSubtle: "#000000",//text black bitkub
   disabled: "#E9EAEB",
   gradients: {
     bubblegum: "linear-gradient(139.73deg, #E5FDFF 0%, #F3EFFF 100%)",
@@ -60,9 +62,9 @@ export const darkColors: Colors = {
   inputSecondary: "#262130",
   primaryDark: "#0098A1",
   tertiary: "#353547",
-  text: "#F4EEFF",
-  textDisabled: "#666171",
-  textSubtle: "#B8ADD2",
+  text: "#FFFFF", //text white
+  textDisabled: "#666171",//
+  textSubtle: "#FFFFF", //text white
   disabled: "#524B63",
   gradients: {
     bubblegum: "linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)",

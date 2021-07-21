@@ -7,10 +7,12 @@ export declare const baseColors: {
     secondary: string;
     success: string;
     warning: string;
+    bbtColor: string;
 };
 export declare const additionalColors: {
     binance: string;
     overlay: string;
+    bitkub: string;
 };
 export declare const lightColors: Colors;
 export declare const darkColors: Colors;
