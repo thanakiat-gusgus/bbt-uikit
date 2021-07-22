@@ -5,7 +5,7 @@ declare const Button: {
     defaultProps: {
         isLoading: boolean;
         external: boolean;
-        variant: "primary";
+        variant: "bbtColor";
         scale: "md";
         disabled: boolean;
     };

@@ -169,6 +169,7 @@ var variants$5 = {
     DANGER: "danger",
     SUBTLE: "subtle",
     SUCCESS: "success",
+    BBTCOLOR: "bbtColor",
 };
 
 var _a$5, _b$3;
@@ -224,6 +225,10 @@ var styleVariants$2 = (_b$3 = {},
         color: "primary",
         boxShadow: "none",
     },
+    _b$3[variants$5.BBTCOLOR] = {
+        backgroundColor: "bbtColor",
+        color: "white",
+    },
     _b$3);
 
 var getDisabledStyles = function (_a) {
@@ -278,7 +283,7 @@ var Button = function (props) {
 Button.defaultProps = {
     isLoading: false,
     external: false,
-    variant: variants$5.PRIMARY,
+    variant: variants$5.BBTCOLOR,
     scale: scales$8.MD,
     disabled: false,
 };

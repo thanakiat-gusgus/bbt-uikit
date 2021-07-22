@@ -53,4 +53,8 @@ export const styleVariants = {
     color: "primary",
     boxShadow: "none",
   },
+  [variants.BBTCOLOR]: {
+    backgroundColor: "bbtColor",
+    color: "white",
+  },
 };
