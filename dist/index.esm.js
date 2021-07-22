@@ -3519,7 +3519,7 @@ var Icon$j = function (props) {
 
 var Logo$2 = function (_a) {
     _a.isDark; var props = __rest(_a, ["isDark"]);
-    return (React.createElement(Svg, __assign({ viewBox: "0 0 160 26" }, props),
+    return (React.createElement(Svg, __assign({ viewBox: "0 0 300 1000" }, props),
         React.createElement("g", { fill: "#4cba64" },
             React.createElement("path", { d: "m167.87 0a23.32 23.32 0 0 0 0 33l44.89 44.9-45 45-22.89-22.9a23.34 23.34 0 0 0 -33 0l55.86 55.87 78-78z" }),
             React.createElement("circle", { cx: "167.87", cy: "78", r: "16" }),
