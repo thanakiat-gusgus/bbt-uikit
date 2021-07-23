@@ -1212,7 +1212,7 @@ var getBoxShadow$1 = function (_a) {
     if (isSuccess) {
         return theme.shadows.success;
     }
-    return theme.shadows.inset;
+    return theme.shadows;
 };
 var getHeight = function (_a) {
     var _b = _a.scale, scale = _b === void 0 ? scales$7.MD : _b;

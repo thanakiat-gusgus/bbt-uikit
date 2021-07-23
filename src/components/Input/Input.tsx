@@ -17,7 +17,7 @@ const getBoxShadow = ({ isSuccess = false, isWarning = false, theme }: StyledInp
     return theme.shadows.success;
   }
 
-  return theme.shadows.inset;
+  return theme.shadows;
 };
 
 const getHeight = ({ scale = scales.MD }: StyledInputProps) => {
