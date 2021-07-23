@@ -9,7 +9,7 @@ interface StyledButtonMenuProps extends ButtonMenuProps {
 }
 
 const getBackgroundColor = ({ theme, variant }: StyledButtonMenuProps) => {
-  return theme.colors[variant === variants.BBTCOLOR ? "bitkub" : "disabled"];
+  return theme.colors[variant === variants.BBTCOLOR ? "input" : "disabled"];
 };
 
 const getBorderColor = ({ theme, variant }: StyledButtonMenuProps) => {
@@ -38,7 +38,7 @@ const StyledButtonMenu = styled.div<StyledButtonMenuProps>`
         opacity: 0.5;
         & > button:disabled {
           background-color: transparent;
-          color: ${variant === variants.PRIMARY ? theme.colors.bbtColor : theme.colors.input};
+          color: ${variant === variants.BBTCOLOR ? theme.colors.text : theme.colors.text};
         }
     `;
     }
