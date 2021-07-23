@@ -14,7 +14,7 @@ export const baseColors = {
 export const additionalColors = {
   binance: "#F0B90B",
   overlay: "#452a7a",
-  bitkub : "#02D767",//PRIMARY COLORS/Bitkub Green
+  bitkub: "#02D767",//PRIMARY COLORS/Bitkub Green
 };
 
 export const lightColors: Colors = {
@@ -33,7 +33,7 @@ export const lightColors: Colors = {
   tertiary: "#EFF4F5",
   text: "#141414",//text grey bitkub
   textDisabled: "#BDC2C4",//
-  textSubtle: "#000000",//text black bitkub
+  textSubtle: "#02D767",//text black bitkub
   disabled: "#E9EAEB",
   gradients: {
     bubblegum: "linear-gradient(139.73deg, #E5FDFF 0%, #F3EFFF 100%)",
