@@ -1791,7 +1791,7 @@ var templateObject_1$z;
 
 var StyledLink$1 = styled(Text)(templateObject_1$y || (templateObject_1$y = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  width: fit-content;\n  &:hover {\n    text-decoration: none;\n    color: ", ";\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  width: fit-content;\n  &:hover {\n    text-decoration: none;\n    color: ", ";\n  }\n"])), function (_a) {
     var theme = _a.theme;
-    return theme.colors.background;
+    return theme.colors.bbtColor;
 });
 var Link = function (_a) {
     var external = _a.external, props = __rest(_a, ["external"]);
