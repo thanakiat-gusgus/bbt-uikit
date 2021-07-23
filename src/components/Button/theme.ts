@@ -57,4 +57,14 @@ export const styleVariants = {
     backgroundColor: "bbtColor",
     color: "white",
   },
+  [variants.BBTCOLORSECOND]: {
+    backgroundColor: "transparent",
+    border: "2px solid",
+    borderColor: "bbtColor",
+    boxShadow: "none",
+    color: "bbtColor",
+    ":disabled": {
+      backgroundColor: "transparent",
+    },
+  },
 };
