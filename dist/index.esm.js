@@ -1319,7 +1319,7 @@ var templateObject_1$R, templateObject_2$m;
 
 var getBackgroundColor = function (_a) {
     var theme = _a.theme, variant = _a.variant;
-    return theme.colors[variant === variants$5.BBTCOLOR ? "disabled" : "disabled"];
+    return theme.colors[variant === variants$5.BBTCOLOR ? "input" : "disabled"];
 };
 var getBorderColor = function (_a) {
     var theme = _a.theme, variant = _a.variant;
