@@ -31,7 +31,7 @@ const getScale =
 
 export const Handle = styled.div<HandleProps>`
   background-color: ${({ theme }) => theme.toggle.handleBackground};
-  border-radius: 90%;
+  border-radius: 50%;
   cursor: pointer;
   height: ${getScale("handleHeight")};
   left: ${getScale("handleLeft")};
@@ -55,11 +55,11 @@ export const Input = styled.input<InputProps>`
   }
 
   &:focus + ${Handle} {
-    box-shadow: ${({ theme }) => theme.shadows.focus};
+    box-shadow: ${({ theme }) => theme.shadows.bbtColor};
   }
 
   &:hover + ${Handle}:not(:disabled):not(:checked) {
-    box-shadow: ${({ theme }) => theme.shadows.focus};
+    box-shadow: ${({ theme }) => theme.shadows.bbtColor};
   }
 `;
 
