@@ -170,6 +170,7 @@ var variants$5 = {
     SUBTLE: "subtle",
     SUCCESS: "success",
     BBTCOLOR: "bbtColor",
+    BBTCOLORSECOND: "bbtColorSecond",
 };
 
 var _a$5, _b$3;
@@ -228,6 +229,16 @@ var styleVariants$2 = (_b$3 = {},
     _b$3[variants$5.BBTCOLOR] = {
         backgroundColor: "bbtColor",
         color: "white",
+    },
+    _b$3[variants$5.BBTCOLORSECOND] = {
+        backgroundColor: "transparent",
+        border: "2px solid",
+        borderColor: "bbtColor",
+        boxShadow: "none",
+        color: "bbtColor",
+        ":disabled": {
+            backgroundColor: "transparent",
+        },
     },
     _b$3);
 

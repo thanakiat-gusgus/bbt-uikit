@@ -15,6 +15,7 @@ export declare const variants: {
     readonly SUBTLE: "subtle";
     readonly SUCCESS: "success";
     readonly BBTCOLOR: "bbtColor";
+    readonly BBTCOLORSECOND: "bbtColorSecond";
 };
 export declare type Scale = typeof scales[keyof typeof scales];
 export declare type Variant = typeof variants[keyof typeof variants];
