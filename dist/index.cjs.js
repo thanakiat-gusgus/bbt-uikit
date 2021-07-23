@@ -170,7 +170,7 @@ var variants$5 = {
     SUBTLE: "subtle",
     SUCCESS: "success",
     BBTCOLOR: "bbtColor",
-    BBTCOLORSECOND: "bbtColorSecond",
+    BBTSECOND: "bbtSecond",
 };
 
 var _a$5, _b$3;
@@ -230,7 +230,7 @@ var styleVariants$2 = (_b$3 = {},
         backgroundColor: "bbtColor",
         color: "white",
     },
-    _b$3[variants$5.BBTCOLORSECOND] = {
+    _b$3[variants$5.BBTSECOND] = {
         backgroundColor: "transparent",
         border: "2px solid",
         borderColor: "bbtColor",

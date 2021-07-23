@@ -57,7 +57,7 @@ export const styleVariants = {
     backgroundColor: "bbtColor",
     color: "white",
   },
-  [variants.BBTCOLORSECOND]: {
+  [variants.BBTSECOND]: {
     backgroundColor: "transparent",
     border: "2px solid",
     borderColor: "bbtColor",

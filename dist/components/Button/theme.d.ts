@@ -54,7 +54,7 @@ export declare const styleVariants: {
         backgroundColor: string;
         color: string;
     };
-    bbtColorSecond: {
+    bbtSecond: {
         backgroundColor: string;
         border: string;
         borderColor: string;
