@@ -1212,7 +1212,7 @@ var getBoxShadow$1 = function (_a) {
     if (isSuccess) {
         return theme.shadows.success;
     }
-    return theme.shadows;
+    return theme.shadows.bitkub;
 };
 var getHeight = function (_a) {
     var _b = _a.scale, scale = _b === void 0 ? scales$7.MD : _b;
@@ -1246,7 +1246,7 @@ var Input$1 = styled.input(templateObject_1$U || (templateObject_1$U = __makeTem
     return theme.colors.textDisabled;
 }, function (_a) {
     var theme = _a.theme;
-    return theme.shadows.focus;
+    return theme.shadows.bitkub;
 });
 Input$1.defaultProps = {
     scale: scales$7.MD,
@@ -2831,6 +2831,7 @@ var shadows = {
     warning: "0px 0px 0px 1px #ED4B9E, 0px 0px 0px 4px rgba(237, 75, 158, 0.2)",
     focus: "0px 0px 0px 1px #7645D9, 0px 0px 0px 4px rgba(118, 69, 217, 0.6)",
     inset: "inset 0px 2px 2px -1px rgba(74, 74, 104, 0.1)",
+    bitkub: "0px 0px 0px 1px #02D767, 0px 0px 0px 4px rgba(118, 69, 217, 0.6)",
 };
 var spacing = [0, 4, 8, 16, 24, 32, 48, 64];
 var radii = {

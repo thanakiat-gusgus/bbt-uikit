@@ -21,6 +21,7 @@ export declare type Shadows = {
     warning: string;
     focus: string;
     inset: string;
+    bitkub: string;
 };
 export declare type Gradients = {
     bubblegum: string;

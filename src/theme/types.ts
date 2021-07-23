@@ -25,6 +25,7 @@ export type Shadows = {
   warning: string;
   focus: string;
   inset: string;
+  bitkub: string;
 };
 
 export type Gradients = {
@@ -69,7 +70,7 @@ export type Colors = {
   // Additional colors
   binance: string;
   overlay: string;
-  bitkub : string;//add additionalColors bitkub color
+  bitkub: string;//add additionalColors bitkub color
 };
 
 export type ZIndices = {

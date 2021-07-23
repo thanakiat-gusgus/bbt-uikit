@@ -17,7 +17,7 @@ const getBoxShadow = ({ isSuccess = false, isWarning = false, theme }: StyledInp
     return theme.shadows.success;
   }
 
-  return theme.shadows;
+  return theme.shadows.bitkub;
 };
 
 const getHeight = ({ scale = scales.MD }: StyledInputProps) => {
@@ -58,7 +58,7 @@ const Input = styled.input<InputProps>`
   }
 
   &:focus:not(:disabled) {
-    box-shadow: ${({ theme }) => theme.shadows.focus};
+    box-shadow: ${({ theme }) => theme.shadows.bitkub};
   }
 `;
 
