@@ -2781,14 +2781,14 @@ var Input = styled.input(templateObject_2$9 || (templateObject_2$9 = __makeTempl
     return theme.shadows.focus;
 }, Handle, function (_a) {
     var theme = _a.theme;
-    return theme.shadows.focus;
+    return theme.shadows.bbtColor;
 });
 var StyledToggle = styled.div(templateObject_3$4 || (templateObject_3$4 = __makeTemplateObject(["\n  align-items: center;\n  background-color: ", ";\n  border-radius: 24px;\n  box-shadow: ", ";\n  cursor: pointer;\n  display: inline-flex;\n  height: ", ";\n  position: relative;\n  transition: background-color 200ms;\n  width: ", ";\n"], ["\n  align-items: center;\n  background-color: ", ";\n  border-radius: 24px;\n  box-shadow: ", ";\n  cursor: pointer;\n  display: inline-flex;\n  height: ", ";\n  position: relative;\n  transition: background-color 200ms;\n  width: ", ";\n"])), function (_a) {
     var theme = _a.theme, checked = _a.checked;
     return theme.colors[checked ? "bbtColor" : "input"];
 }, function (_a) {
     var theme = _a.theme;
-    return theme.shadows.bbtColor;
+    return theme.shadows.inset;
 }, getScale("toggleHeight"), getScale("toggleWidth"));
 var templateObject_1$i, templateObject_2$9, templateObject_3$4;
 
