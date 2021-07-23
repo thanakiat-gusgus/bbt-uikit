@@ -1349,7 +1349,7 @@ var templateObject_1$Q;
 
 var InactiveButton = styled(Button)(templateObject_1$P || (templateObject_1$P = __makeTemplateObject(["\n  background-color: transparent;\n  color: ", ";\n  &:hover:not(:disabled):not(:active) {\n    background-color: transparent;\n  }\n"], ["\n  background-color: transparent;\n  color: ", ";\n  &:hover:not(:disabled):not(:active) {\n    background-color: transparent;\n  }\n"])), function (_a) {
     var theme = _a.theme, variant = _a.variant;
-    return (variant === variants$5.BBTCOLOR ? theme.colors.text : theme.colors.text);
+    return (variant === variants$5.BBTCOLOR ? theme.colors.bbtColor : theme.colors.text);
 });
 var ButtonMenuItem = function (_a) {
     var _b = _a.isActive, isActive = _b === void 0 ? false : _b, _c = _a.variant, variant = _c === void 0 ? variants$5.BBTCOLOR : _c, as = _a.as, props = __rest(_a, ["isActive", "variant", "as"]);
