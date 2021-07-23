@@ -10,7 +10,7 @@ const StyledLink = styled(Text)<LinkProps>`
   width: fit-content;
   &:hover {
     text-decoration: none;
-    color: "bbtColor";
+    color: ${({ theme }) => theme.colors.background};
   }
 `;
 
