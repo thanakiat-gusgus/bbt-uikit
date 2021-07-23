@@ -1329,7 +1329,7 @@ var StyledButtonMenu = styled.div(templateObject_1$Q || (templateObject_1$Q = __
     "\n  ", "\n"])), getBackgroundColor, getBorderColor, function (_a) {
     var disabled = _a.disabled, theme = _a.theme, variant = _a.variant;
     if (disabled) {
-        return "\n        opacity: 0.5;\n        & > button:disabled {\n          background-color: transparent;\n          color: " + (variant === variants$5.BBTCOLOR ? theme.colors.text : theme.colors.text) + ";\n        }\n    ";
+        return "\n        opacity: 0.5;\n        & > button:disabled {\n          background-color: transparent;\n          color: " + (variant === variants$5.PRIMARY ? theme.colors.bbtColor : theme.colors.input) + ";\n        }\n    ";
     }
     return "";
 }, space);
