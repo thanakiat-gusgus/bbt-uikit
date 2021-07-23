@@ -1246,7 +1246,7 @@ var Input$1 = styled.input(templateObject_1$U || (templateObject_1$U = __makeTem
     return theme.colors.textDisabled;
 }, function (_a) {
     var theme = _a.theme;
-    return theme.shadows.bitkub;
+    return theme.shadows.inset;
 });
 Input$1.defaultProps = {
     scale: scales$7.MD,
