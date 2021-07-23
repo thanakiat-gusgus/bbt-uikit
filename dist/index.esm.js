@@ -1323,13 +1323,13 @@ var getBackgroundColor = function (_a) {
 };
 var getBorderColor = function (_a) {
     var theme = _a.theme, variant = _a.variant;
-    return theme.colors[variant === variants$5.SUBTLE ? "bitkub" : "disabled"];
+    return theme.colors[variant === variants$5.BBTCOLOR ? "bitkub" : "disabled"];
 };
 var StyledButtonMenu = styled.div(templateObject_1$Q || (templateObject_1$Q = __makeTemplateObject(["\n  background-color: ", ";\n  border-radius: 16px;\n  display: inline-flex;\n  border: 1px solid ", ";\n\n  & > button + button,\n  & > a + a {\n    margin-left: 2px; // To avoid focus shadow overlap\n  }\n\n  & > button,\n  & a {\n    box-shadow: none;\n  }\n\n  ", "\n  ", "\n"], ["\n  background-color: ", ";\n  border-radius: 16px;\n  display: inline-flex;\n  border: 1px solid ", ";\n\n  & > button + button,\n  & > a + a {\n    margin-left: 2px; // To avoid focus shadow overlap\n  }\n\n  & > button,\n  & a {\n    box-shadow: none;\n  }\n\n  ",
     "\n  ", "\n"])), getBackgroundColor, getBorderColor, function (_a) {
     var disabled = _a.disabled, theme = _a.theme, variant = _a.variant;
     if (disabled) {
-        return "\n        opacity: 0.5;\n\n        & > button:disabled {\n          background-color: transparent;\n          color: " + (variant === variants$5.BBTCOLOR ? theme.colors.text : theme.colors.text) + ";\n        }\n    ";
+        return "\n        opacity: 0.5;\n        & > button:disabled {\n          background-color: transparent;\n          color: " + (variant === variants$5.BBTCOLOR ? theme.colors.text : theme.colors.text) + ";\n        }\n    ";
     }
     return "";
 }, space);
@@ -1349,7 +1349,7 @@ var templateObject_1$Q;
 
 var InactiveButton = styled(Button)(templateObject_1$P || (templateObject_1$P = __makeTemplateObject(["\n  background-color: transparent;\n  color: ", ";\n  &:hover:not(:disabled):not(:active) {\n    background-color: transparent;\n  }\n"], ["\n  background-color: transparent;\n  color: ", ";\n  &:hover:not(:disabled):not(:active) {\n    background-color: transparent;\n  }\n"])), function (_a) {
     var theme = _a.theme, variant = _a.variant;
-    return (variant === variants$5.BBTCOLOR ? theme.colors.bitkub : theme.colors.textSubtle);
+    return (variant === variants$5.BBTCOLOR ? theme.colors.text : theme.colors.text);
 });
 var ButtonMenuItem = function (_a) {
     var _b = _a.isActive, isActive = _b === void 0 ? false : _b, _c = _a.variant, variant = _c === void 0 ? variants$5.BBTCOLOR : _c, as = _a.as, props = __rest(_a, ["isActive", "variant", "as"]);

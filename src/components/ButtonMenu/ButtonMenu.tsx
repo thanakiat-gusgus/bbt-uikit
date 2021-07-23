@@ -13,7 +13,7 @@ const getBackgroundColor = ({ theme, variant }: StyledButtonMenuProps) => {
 };
 
 const getBorderColor = ({ theme, variant }: StyledButtonMenuProps) => {
-  return theme.colors[variant === variants.SUBTLE ? "bitkub" : "disabled"];
+  return theme.colors[variant === variants.BBTCOLOR ? "bitkub" : "disabled"];
 };
 
 const StyledButtonMenu = styled.div<StyledButtonMenuProps>`
@@ -36,7 +36,6 @@ const StyledButtonMenu = styled.div<StyledButtonMenuProps>`
     if (disabled) {
       return `
         opacity: 0.5;
-
         & > button:disabled {
           background-color: transparent;
           color: ${variant === variants.BBTCOLOR ? theme.colors.text : theme.colors.text};
