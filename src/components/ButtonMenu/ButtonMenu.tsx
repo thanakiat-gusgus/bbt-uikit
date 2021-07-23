@@ -9,11 +9,11 @@ interface StyledButtonMenuProps extends ButtonMenuProps {
 }
 
 const getBackgroundColor = ({ theme, variant }: StyledButtonMenuProps) => {
-  return theme.colors[variant === variants.SUBTLE ? "input" : "tertiary"];
+  return theme.colors[variant === variants.BBTCOLOR ? "bitkub" : "disabled"];
 };
 
 const getBorderColor = ({ theme, variant }: StyledButtonMenuProps) => {
-  return theme.colors[variant === variants.SUBTLE ? "inputSecondary" : "disabled"];
+  return theme.colors[variant === variants.SUBTLE ? "bitkub" : "disabled"];
 };
 
 const StyledButtonMenu = styled.div<StyledButtonMenuProps>`
@@ -39,7 +39,7 @@ const StyledButtonMenu = styled.div<StyledButtonMenuProps>`
 
         & > button:disabled {
           background-color: transparent;
-          color: ${variant === variants.PRIMARY ? theme.colors.primary : theme.colors.textSubtle};
+          color: ${variant === variants.BBTCOLOR ? theme.colors.text : theme.colors.text};
         }
     `;
     }
@@ -51,7 +51,7 @@ const StyledButtonMenu = styled.div<StyledButtonMenuProps>`
 const ButtonMenu: React.FC<ButtonMenuProps> = ({
   activeIndex = 0,
   scale = scales.MD,
-  variant = variants.PRIMARY,
+  variant = variants.BBTCOLOR,
   onItemClick,
   disabled,
   children,

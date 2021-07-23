@@ -1333,22 +1333,22 @@ var templateObject_1$R, templateObject_2$m;
 
 var getBackgroundColor = function (_a) {
     var theme = _a.theme, variant = _a.variant;
-    return theme.colors[variant === variants$5.SUBTLE ? "input" : "tertiary"];
+    return theme.colors[variant === variants$5.BBTCOLOR ? "bitkub" : "disabled"];
 };
 var getBorderColor = function (_a) {
     var theme = _a.theme, variant = _a.variant;
-    return theme.colors[variant === variants$5.SUBTLE ? "inputSecondary" : "disabled"];
+    return theme.colors[variant === variants$5.SUBTLE ? "bitkub" : "disabled"];
 };
 var StyledButtonMenu = styled__default['default'].div(templateObject_1$Q || (templateObject_1$Q = __makeTemplateObject(["\n  background-color: ", ";\n  border-radius: 16px;\n  display: inline-flex;\n  border: 1px solid ", ";\n\n  & > button + button,\n  & > a + a {\n    margin-left: 2px; // To avoid focus shadow overlap\n  }\n\n  & > button,\n  & a {\n    box-shadow: none;\n  }\n\n  ", "\n  ", "\n"], ["\n  background-color: ", ";\n  border-radius: 16px;\n  display: inline-flex;\n  border: 1px solid ", ";\n\n  & > button + button,\n  & > a + a {\n    margin-left: 2px; // To avoid focus shadow overlap\n  }\n\n  & > button,\n  & a {\n    box-shadow: none;\n  }\n\n  ",
     "\n  ", "\n"])), getBackgroundColor, getBorderColor, function (_a) {
     var disabled = _a.disabled, theme = _a.theme, variant = _a.variant;
     if (disabled) {
-        return "\n        opacity: 0.5;\n\n        & > button:disabled {\n          background-color: transparent;\n          color: " + (variant === variants$5.PRIMARY ? theme.colors.primary : theme.colors.textSubtle) + ";\n        }\n    ";
+        return "\n        opacity: 0.5;\n\n        & > button:disabled {\n          background-color: transparent;\n          color: " + (variant === variants$5.BBTCOLOR ? theme.colors.text : theme.colors.text) + ";\n        }\n    ";
     }
     return "";
 }, styledSystem.space);
 var ButtonMenu$1 = function (_a) {
-    var _b = _a.activeIndex, activeIndex = _b === void 0 ? 0 : _b, _c = _a.scale, scale = _c === void 0 ? scales$8.MD : _c, _d = _a.variant, variant = _d === void 0 ? variants$5.PRIMARY : _d, onItemClick = _a.onItemClick, disabled = _a.disabled, children = _a.children, props = __rest(_a, ["activeIndex", "scale", "variant", "onItemClick", "disabled", "children"]);
+    var _b = _a.activeIndex, activeIndex = _b === void 0 ? 0 : _b, _c = _a.scale, scale = _c === void 0 ? scales$8.MD : _c, _d = _a.variant, variant = _d === void 0 ? variants$5.BBTCOLOR : _d, onItemClick = _a.onItemClick, disabled = _a.disabled, children = _a.children, props = __rest(_a, ["activeIndex", "scale", "variant", "onItemClick", "disabled", "children"]);
     return (React__default['default'].createElement(StyledButtonMenu, __assign({ disabled: disabled, variant: variant }, props), React.Children.map(children, function (child, index) {
         return React.cloneElement(child, {
             isActive: activeIndex === index,
@@ -1363,10 +1363,10 @@ var templateObject_1$Q;
 
 var InactiveButton = styled__default['default'](Button)(templateObject_1$P || (templateObject_1$P = __makeTemplateObject(["\n  background-color: transparent;\n  color: ", ";\n  &:hover:not(:disabled):not(:active) {\n    background-color: transparent;\n  }\n"], ["\n  background-color: transparent;\n  color: ", ";\n  &:hover:not(:disabled):not(:active) {\n    background-color: transparent;\n  }\n"])), function (_a) {
     var theme = _a.theme, variant = _a.variant;
-    return (variant === variants$5.PRIMARY ? theme.colors.primary : theme.colors.textSubtle);
+    return (variant === variants$5.BBTCOLOR ? theme.colors.bitkub : theme.colors.textSubtle);
 });
 var ButtonMenuItem = function (_a) {
-    var _b = _a.isActive, isActive = _b === void 0 ? false : _b, _c = _a.variant, variant = _c === void 0 ? variants$5.PRIMARY : _c, as = _a.as, props = __rest(_a, ["isActive", "variant", "as"]);
+    var _b = _a.isActive, isActive = _b === void 0 ? false : _b, _c = _a.variant, variant = _c === void 0 ? variants$5.BBTCOLOR : _c, as = _a.as, props = __rest(_a, ["isActive", "variant", "as"]);
     if (!isActive) {
         return React__default['default'].createElement(InactiveButton, __assign({ forwardedAs: as, variant: variant }, props));
     }
