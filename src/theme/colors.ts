@@ -33,7 +33,8 @@ export const lightColors: Colors = {
   tertiary: "#EFF4F5",
   text: "#141414",//text grey bitkub
   textDisabled: "#BDC2C4",//
-  textSubtle: "#02D767",//text black bitkub
+  textSubtle: "#000000",//text black bitkub
+  textBitkub: "#02D767",
   disabled: "#E9EAEB",
   gradients: {
     bubblegum: "linear-gradient(139.73deg, #E5FDFF 0%, #F3EFFF 100%)",
@@ -66,6 +67,7 @@ export const darkColors: Colors = {
   text: "#FFFFFF", //text white
   textDisabled: "#666171",//
   textSubtle: "#FFFFFF", //text white
+  textBitkub: "#FFFFFF",
   disabled: "#524B63",
   gradients: {
     bubblegum: "linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)",
