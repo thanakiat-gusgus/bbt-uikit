@@ -3883,7 +3883,7 @@ var MenuEntry = styled.div(templateObject_3$2 || (templateObject_3$2 = __makeTem
     return (secondary ? theme.colors.background : "transparent");
 }, function (_a) {
     var theme = _a.theme;
-    return theme.colors.textSubtle;
+    return theme.colors.textBitkub;
 }, function (_a) {
     var isActive = _a.isActive, theme = _a.theme;
     return (isActive ? "inset 4px 0px 0px " + theme.colors.primary : "none");

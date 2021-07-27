@@ -34,7 +34,7 @@ const MenuEntry = styled.div<Props>`
   padding: ${({ secondary }) => (secondary ? "0 32px" : "0 16px")};
   font-size: ${({ secondary }) => (secondary ? "14px" : "16px")};
   background-color: ${({ secondary, theme }) => (secondary ? theme.colors.background : "transparent")};
-  color: ${({ theme }) => theme.colors.textSubtle};
+  color: ${({ theme }) => theme.colors.textBitkub};
   box-shadow: ${({ isActive, theme }) => (isActive ? `inset 4px 0px 0px ${theme.colors.primary}` : "none")};
 
   a {
@@ -67,7 +67,7 @@ MenuEntry.defaultProps = {
   isActive: false,
 };
 
-const LinkStatus = styled(Text)<{ color: keyof Colors }>`
+const LinkStatus = styled(Text) <{ color: keyof Colors }>`
   border-radius: ${({ theme }) => theme.radii.default};
   padding: 0 8px;
   border: 2px solid;
