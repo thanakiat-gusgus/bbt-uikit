@@ -155,7 +155,10 @@ var variants$5 = {
     DANGER: "danger",
     SUBTLE: "subtle",
     SUCCESS: "success",
+    BBTTEXT: "bbtText",
     BBTCOLOR: "bbtColor",
+    BBTSECOND: "bbtSecond",
+    BBTTERTIARY: "bbtTertiary"
 };
 
 var _a$5, _b$3;
@@ -211,9 +214,29 @@ var styleVariants$2 = (_b$3 = {},
         color: "primary",
         boxShadow: "none",
     },
+    _b$3[variants$5.BBTTEXT] = {
+        backgroundColor: "transparent",
+        color: "bbtColor",
+        boxShadow: "none",
+    },
     _b$3[variants$5.BBTCOLOR] = {
         backgroundColor: "bbtColor",
         color: "white",
+    },
+    _b$3[variants$5.BBTSECOND] = {
+        backgroundColor: "transparent",
+        border: "2px solid",
+        borderColor: "bbtColor",
+        boxShadow: "none",
+        color: "bbtColor",
+        ":disabled": {
+            backgroundColor: "transparent",
+        },
+    },
+    _b$3[variants$5.BBTTERTIARY] = {
+        backgroundColor: "tertiary",
+        boxShadow: "none",
+        color: "bbtColor",
     },
     _b$3);
 
@@ -1319,22 +1342,22 @@ var templateObject_1$R, templateObject_2$m;
 
 var getBackgroundColor = function (_a) {
     var theme = _a.theme, variant = _a.variant;
-    return theme.colors[variant === variants$5.SUBTLE ? "input" : "tertiary"];
+    return theme.colors[variant === variants$5.BBTCOLOR ? "input" : "disabled"];
 };
 var getBorderColor = function (_a) {
     var theme = _a.theme, variant = _a.variant;
-    return theme.colors[variant === variants$5.SUBTLE ? "inputSecondary" : "disabled"];
+    return theme.colors[variant === variants$5.BBTCOLOR ? "bitkub" : "disabled"];
 };
 var StyledButtonMenu = styled.div(templateObject_1$Q || (templateObject_1$Q = __makeTemplateObject(["\n  background-color: ", ";\n  border-radius: 16px;\n  display: inline-flex;\n  border: 1px solid ", ";\n\n  & > button + button,\n  & > a + a {\n    margin-left: 2px; // To avoid focus shadow overlap\n  }\n\n  & > button,\n  & a {\n    box-shadow: none;\n  }\n\n  ", "\n  ", "\n"], ["\n  background-color: ", ";\n  border-radius: 16px;\n  display: inline-flex;\n  border: 1px solid ", ";\n\n  & > button + button,\n  & > a + a {\n    margin-left: 2px; // To avoid focus shadow overlap\n  }\n\n  & > button,\n  & a {\n    box-shadow: none;\n  }\n\n  ",
     "\n  ", "\n"])), getBackgroundColor, getBorderColor, function (_a) {
     var disabled = _a.disabled, theme = _a.theme, variant = _a.variant;
     if (disabled) {
-        return "\n        opacity: 0.5;\n\n        & > button:disabled {\n          background-color: transparent;\n          color: " + (variant === variants$5.PRIMARY ? theme.colors.primary : theme.colors.textSubtle) + ";\n        }\n    ";
+        return "\n        opacity: 0.5;\n        & > button:disabled {\n          background-color: transparent;\n          color: " + (variant === variants$5.BBTCOLOR ? theme.colors.text : theme.colors.text) + ";\n        }\n    ";
     }
     return "";
 }, space);
 var ButtonMenu$1 = function (_a) {
-    var _b = _a.activeIndex, activeIndex = _b === void 0 ? 0 : _b, _c = _a.scale, scale = _c === void 0 ? scales$8.MD : _c, _d = _a.variant, variant = _d === void 0 ? variants$5.PRIMARY : _d, onItemClick = _a.onItemClick, disabled = _a.disabled, children = _a.children, props = __rest(_a, ["activeIndex", "scale", "variant", "onItemClick", "disabled", "children"]);
+    var _b = _a.activeIndex, activeIndex = _b === void 0 ? 0 : _b, _c = _a.scale, scale = _c === void 0 ? scales$8.MD : _c, _d = _a.variant, variant = _d === void 0 ? variants$5.BBTCOLOR : _d, onItemClick = _a.onItemClick, disabled = _a.disabled, children = _a.children, props = __rest(_a, ["activeIndex", "scale", "variant", "onItemClick", "disabled", "children"]);
     return (React.createElement(StyledButtonMenu, __assign({ disabled: disabled, variant: variant }, props), Children.map(children, function (child, index) {
         return cloneElement(child, {
             isActive: activeIndex === index,
@@ -1349,10 +1372,10 @@ var templateObject_1$Q;
 
 var InactiveButton = styled(Button)(templateObject_1$P || (templateObject_1$P = __makeTemplateObject(["\n  background-color: transparent;\n  color: ", ";\n  &:hover:not(:disabled):not(:active) {\n    background-color: transparent;\n  }\n"], ["\n  background-color: transparent;\n  color: ", ";\n  &:hover:not(:disabled):not(:active) {\n    background-color: transparent;\n  }\n"])), function (_a) {
     var theme = _a.theme, variant = _a.variant;
-    return (variant === variants$5.PRIMARY ? theme.colors.primary : theme.colors.textSubtle);
+    return (variant === variants$5.BBTCOLOR ? theme.colors.bbtColor : theme.colors.text);
 });
 var ButtonMenuItem = function (_a) {
-    var _b = _a.isActive, isActive = _b === void 0 ? false : _b, _c = _a.variant, variant = _c === void 0 ? variants$5.PRIMARY : _c, as = _a.as, props = __rest(_a, ["isActive", "variant", "as"]);
+    var _b = _a.isActive, isActive = _b === void 0 ? false : _b, _c = _a.variant, variant = _c === void 0 ? variants$5.BBTCOLOR : _c, as = _a.as, props = __rest(_a, ["isActive", "variant", "as"]);
     if (!isActive) {
         return React.createElement(InactiveButton, __assign({ forwardedAs: as, variant: variant }, props));
     }
@@ -1778,14 +1801,17 @@ var GridLayout = styled(GridLayout$1)(templateObject_1$z || (templateObject_1$z 
 });
 var templateObject_1$z;
 
-var StyledLink$1 = styled(Text)(templateObject_1$y || (templateObject_1$y = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  width: fit-content;\n  &:hover {\n    text-decoration: underline;\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  width: fit-content;\n  &:hover {\n    text-decoration: underline;\n  }\n"])));
+var StyledLink$1 = styled(Text)(templateObject_1$y || (templateObject_1$y = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  width: fit-content;\n  &:hover {\n    text-decoration: none;\n    color: ", ";\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  width: fit-content;\n  &:hover {\n    text-decoration: none;\n    color: ", ";\n  }\n"])), function (_a) {
+    var theme = _a.theme;
+    return theme.colors.bbtColor;
+});
 var Link = function (_a) {
     var external = _a.external, props = __rest(_a, ["external"]);
     var internalProps = external ? getExternalLinkProps() : {};
     return React.createElement(StyledLink$1, __assign({ as: "a", bold: true }, internalProps, props));
 };
 Link.defaultProps = {
-    color: "primary",
+    color: "text",
 };
 var templateObject_1$y;
 
@@ -1793,7 +1819,7 @@ var LinkExternal = function (_a) {
     var children = _a.children, props = __rest(_a, ["children"]);
     return (React.createElement(Link, __assign({ external: true }, props),
         children,
-        React.createElement(Icon$10, { color: "primary", ml: "4px" })));
+        React.createElement(Icon$10, { color: "bbtColor", ml: "4px" })));
 };
 
 var variants$2 = {
@@ -2778,14 +2804,14 @@ var Handle = styled.div(templateObject_1$i || (templateObject_1$i = __makeTempla
 }, getScale("handleHeight"), getScale("handleLeft"), getScale("handleTop"), getScale("handleWidth"));
 var Input = styled.input(templateObject_2$9 || (templateObject_2$9 = __makeTemplateObject(["\n  cursor: pointer;\n  opacity: 0;\n  height: 100%;\n  position: absolute;\n  width: 100%;\n  z-index: 3;\n\n  &:checked + ", " {\n    left: ", ";\n  }\n\n  &:focus + ", " {\n    box-shadow: ", ";\n  }\n\n  &:hover + ", ":not(:disabled):not(:checked) {\n    box-shadow: ", ";\n  }\n"], ["\n  cursor: pointer;\n  opacity: 0;\n  height: 100%;\n  position: absolute;\n  width: 100%;\n  z-index: 3;\n\n  &:checked + ", " {\n    left: ", ";\n  }\n\n  &:focus + ", " {\n    box-shadow: ", ";\n  }\n\n  &:hover + ", ":not(:disabled):not(:checked) {\n    box-shadow: ", ";\n  }\n"])), Handle, getScale("checkedLeft"), Handle, function (_a) {
     var theme = _a.theme;
-    return theme.shadows.focus;
+    return theme.shadows.bbtColor;
 }, Handle, function (_a) {
     var theme = _a.theme;
-    return theme.shadows.focus;
+    return theme.shadows.bbtColor;
 });
 var StyledToggle = styled.div(templateObject_3$4 || (templateObject_3$4 = __makeTemplateObject(["\n  align-items: center;\n  background-color: ", ";\n  border-radius: 24px;\n  box-shadow: ", ";\n  cursor: pointer;\n  display: inline-flex;\n  height: ", ";\n  position: relative;\n  transition: background-color 200ms;\n  width: ", ";\n"], ["\n  align-items: center;\n  background-color: ", ";\n  border-radius: 24px;\n  box-shadow: ", ";\n  cursor: pointer;\n  display: inline-flex;\n  height: ", ";\n  position: relative;\n  transition: background-color 200ms;\n  width: ", ";\n"])), function (_a) {
     var theme = _a.theme, checked = _a.checked;
-    return theme.colors[checked ? "success" : "input"];
+    return theme.colors[checked ? "bbtColor" : "tertiary"];
 }, function (_a) {
     var theme = _a.theme;
     return theme.shadows.inset;
@@ -2832,6 +2858,7 @@ var shadows = {
     focus: "0px 0px 0px 1px #7645D9, 0px 0px 0px 4px rgba(118, 69, 217, 0.6)",
     inset: "inset 0px 2px 2px -1px rgba(74, 74, 104, 0.1)",
     bitkub: "0px 0px 0px 1px #02D767, 0px 0px 0px 4px rgba(49, 208, 170, 0.2)",
+    bbtColor: "0px 0px 0px 1px #02D767, 0px 0px 0px 4px rgba(2, 215, 103, 0.6)",
 };
 var spacing = [0, 4, 8, 16, 24, 32, 48, 64];
 var radii = {
@@ -3870,7 +3897,7 @@ var SIDEBAR_WIDTH_REDUCED = 56;
 var rainbowAnimation = keyframes(templateObject_1$c || (templateObject_1$c = __makeTemplateObject(["\n  0%,\n  100% {\n    background-position: 0 0;\n  }\n  50% {\n    background-position: 100% 0;\n  }\n"], ["\n  0%,\n  100% {\n    background-position: 0 0;\n  }\n  50% {\n    background-position: 100% 0;\n  }\n"])));
 var LinkLabel = styled.div(templateObject_2$5 || (templateObject_2$5 = __makeTemplateObject(["\n  color: ", ";\n  transition: color 0.4s;\n  flex-grow: 1;\n"], ["\n  color: ", ";\n  transition: color 0.4s;\n  flex-grow: 1;\n"])), function (_a) {
     var isPushed = _a.isPushed, theme = _a.theme;
-    return (isPushed ? theme.colors.textSubtle : "transparent");
+    return (isPushed ? theme.colors.textBitkub : "transparent");
 });
 var MenuEntry = styled.div(templateObject_3$2 || (templateObject_3$2 = __makeTemplateObject(["\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  height: ", "px;\n  padding: ", ";\n  font-size: ", ";\n  background-color: ", ";\n  color: ", ";\n  box-shadow: ", ";\n\n  a {\n    display: flex;\n    align-items: center;\n    width: 100%;\n    height: 100%;\n  }\n\n  svg {\n    fill: ", ";\n  }\n\n  &:hover {\n    background-color: ", ";\n  }\n\n  // Safari fix\n  flex-shrink: 0;\n\n  &.rainbow {\n    background-clip: text;\n    animation: ", " 3s ease-in-out infinite;\n    background: ", ";\n    background-size: 400% 100%;\n  }\n"], ["\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  height: ", "px;\n  padding: ", ";\n  font-size: ", ";\n  background-color: ", ";\n  color: ", ";\n  box-shadow: ", ";\n\n  a {\n    display: flex;\n    align-items: center;\n    width: 100%;\n    height: 100%;\n  }\n\n  svg {\n    fill: ", ";\n  }\n\n  &:hover {\n    background-color: ", ";\n  }\n\n  // Safari fix\n  flex-shrink: 0;\n\n  &.rainbow {\n    background-clip: text;\n    animation: ", " 3s ease-in-out infinite;\n    background: ", ";\n    background-size: 400% 100%;\n  }\n"])), MENU_ENTRY_HEIGHT, function (_a) {
     var secondary = _a.secondary;
@@ -4308,7 +4335,7 @@ var AccountModal = function (_a) {
     return (React.createElement(Modal, { title: "Your wallet", onDismiss: onDismiss },
         React.createElement(Text, { fontSize: "20px", bold: true, style: { whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis", marginBottom: "8px" } }, account),
         React.createElement(Flex, { mb: "32px" },
-            React.createElement(LinkExternal, { small: true, href: "https://bscscan.com/address/" + account, mr: "16px" }, "View on BscScan"),
+            React.createElement(LinkExternal, { small: true, href: "https://testnet.bkcscan.com/address/" + account, mr: "16px" }, "View on BKCScan"),
             React.createElement(CopyToClipboard, { toCopy: account }, "Copy Address")),
         React.createElement(Flex, { justifyContent: "center" },
             React.createElement(Button, { scale: "sm", variant: "secondary", onClick: function () {

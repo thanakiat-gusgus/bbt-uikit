@@ -10,6 +10,7 @@ export declare const shadows: {
     focus: string;
     inset: string;
     bitkub: string;
+    bbtColor: string;
 };
 declare const _default: {
     siteWidth: number;
@@ -24,6 +25,7 @@ declare const _default: {
         focus: string;
         inset: string;
         bitkub: string;
+        bbtColor: string;
     };
     radii: {
         small: string;

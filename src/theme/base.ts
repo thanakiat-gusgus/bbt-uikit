@@ -27,6 +27,7 @@ export const shadows = {
   focus: "0px 0px 0px 1px #7645D9, 0px 0px 0px 4px rgba(118, 69, 217, 0.6)",
   inset: "inset 0px 2px 2px -1px rgba(74, 74, 104, 0.1)",
   bitkub: "0px 0px 0px 1px #02D767, 0px 0px 0px 4px rgba(49, 208, 170, 0.2)",
+  bbtColor: "0px 0px 0px 1px #02D767, 0px 0px 0px 4px rgba(2, 215, 103, 0.6)",
 };
 
 const spacing: Spacing = [0, 4, 8, 16, 24, 32, 48, 64];

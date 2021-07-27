@@ -16,7 +16,10 @@ export const variants = {
   DANGER: "danger",
   SUBTLE: "subtle",
   SUCCESS: "success",
+  BBTTEXT: "bbtText",
   BBTCOLOR: "bbtColor",
+  BBTSECOND: "bbtSecond",
+  BBTTERTIARY: "bbtTertiary"
 } as const;
 
 export type Scale = typeof scales[keyof typeof scales];
