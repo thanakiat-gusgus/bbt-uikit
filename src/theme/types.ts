@@ -25,6 +25,7 @@ export type Shadows = {
   warning: string;
   focus: string;
   inset: string;
+  bbtColor: string;
 };
 
 export type Gradients = {
