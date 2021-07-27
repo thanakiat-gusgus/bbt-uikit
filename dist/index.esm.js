@@ -1235,7 +1235,7 @@ var getBoxShadow$1 = function (_a) {
     if (isSuccess) {
         return theme.shadows.success;
     }
-    return theme.shadows.bbtColor;
+    return theme.shadows.inset;
 };
 var getHeight = function (_a) {
     var _b = _a.scale, scale = _b === void 0 ? scales$7.MD : _b;
@@ -1269,7 +1269,7 @@ var Input$1 = styled.input(templateObject_1$U || (templateObject_1$U = __makeTem
     return theme.colors.textDisabled;
 }, function (_a) {
     var theme = _a.theme;
-    return theme.shadows.inset;
+    return theme.shadows.bbtColor;
 });
 Input$1.defaultProps = {
     scale: scales$7.MD,
