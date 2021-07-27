@@ -16,7 +16,7 @@ const WalletCard: React.FC<Props> = ({ login, walletConfig, onDismiss, mb }) => 
   return (
     <Button
       width="100%"
-      variant="tertiary"
+      variant="bbtTertiary"
       onClick={() => {
         login(walletConfig.connectorId);
         window.localStorage.setItem(connectorLocalStorageKey, walletConfig.connectorId);
@@ -26,7 +26,7 @@ const WalletCard: React.FC<Props> = ({ login, walletConfig, onDismiss, mb }) => 
       mb={mb}
       id={`wallet-connect-${title.toLocaleLowerCase()}`}
     >
-      <Text bold color="primary" mr="16px">
+      <Text bold color="bbtColor" mr="16px">
         {title}
       </Text>
       <Icon width="32px" />
