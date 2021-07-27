@@ -22,9 +22,6 @@ const Svg = styled.svg<SvgProps>`
   flex-shrink: 0;
   ${({ spin }) => spin && spinStyle}
   ${space}
-  &:hover {
-    color: ${({ theme }) => theme.colors.bbtColor};
-  }
 `;
 
 Svg.defaultProps = {
