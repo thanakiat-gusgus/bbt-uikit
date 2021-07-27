@@ -169,8 +169,10 @@ var variants$5 = {
     DANGER: "danger",
     SUBTLE: "subtle",
     SUCCESS: "success",
+    BBTTEXT: "bbtText",
     BBTCOLOR: "bbtColor",
     BBTSECOND: "bbtSecond",
+    BBTTERTIARY: "bbtTertiary"
 };
 
 var _a$5, _b$3;
@@ -226,6 +228,11 @@ var styleVariants$2 = (_b$3 = {},
         color: "primary",
         boxShadow: "none",
     },
+    _b$3[variants$5.BBTTEXT] = {
+        backgroundColor: "transparent",
+        color: "bbtColor",
+        boxShadow: "none",
+    },
     _b$3[variants$5.BBTCOLOR] = {
         backgroundColor: "bbtColor",
         color: "white",
@@ -239,6 +246,11 @@ var styleVariants$2 = (_b$3 = {},
         ":disabled": {
             backgroundColor: "transparent",
         },
+    },
+    _b$3[variants$5.BBTTERTIARY] = {
+        backgroundColor: "tertiary",
+        boxShadow: "none",
+        color: "bbtColor",
     },
     _b$3);
 
@@ -1805,7 +1817,7 @@ var templateObject_1$z;
 
 var StyledLink$1 = styled__default['default'](Text)(templateObject_1$y || (templateObject_1$y = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  width: fit-content;\n  &:hover {\n    text-decoration: none;\n    color: ", ";\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  width: fit-content;\n  &:hover {\n    text-decoration: none;\n    color: ", ";\n  }\n"])), function (_a) {
     var theme = _a.theme;
-    return theme.colors.background;
+    return theme.colors.bbtColor;
 });
 var Link = function (_a) {
     var external = _a.external, props = __rest(_a, ["external"]);
@@ -2806,14 +2818,14 @@ var Handle = styled__default['default'].div(templateObject_1$i || (templateObjec
 }, getScale("handleHeight"), getScale("handleLeft"), getScale("handleTop"), getScale("handleWidth"));
 var Input = styled__default['default'].input(templateObject_2$9 || (templateObject_2$9 = __makeTemplateObject(["\n  cursor: pointer;\n  opacity: 0;\n  height: 100%;\n  position: absolute;\n  width: 100%;\n  z-index: 3;\n\n  &:checked + ", " {\n    left: ", ";\n  }\n\n  &:focus + ", " {\n    box-shadow: ", ";\n  }\n\n  &:hover + ", ":not(:disabled):not(:checked) {\n    box-shadow: ", ";\n  }\n"], ["\n  cursor: pointer;\n  opacity: 0;\n  height: 100%;\n  position: absolute;\n  width: 100%;\n  z-index: 3;\n\n  &:checked + ", " {\n    left: ", ";\n  }\n\n  &:focus + ", " {\n    box-shadow: ", ";\n  }\n\n  &:hover + ", ":not(:disabled):not(:checked) {\n    box-shadow: ", ";\n  }\n"])), Handle, getScale("checkedLeft"), Handle, function (_a) {
     var theme = _a.theme;
-    return theme.shadows.focus;
+    return theme.shadows.bbtColor;
 }, Handle, function (_a) {
     var theme = _a.theme;
-    return theme.shadows.focus;
+    return theme.shadows.bbtColor;
 });
 var StyledToggle = styled__default['default'].div(templateObject_3$4 || (templateObject_3$4 = __makeTemplateObject(["\n  align-items: center;\n  background-color: ", ";\n  border-radius: 24px;\n  box-shadow: ", ";\n  cursor: pointer;\n  display: inline-flex;\n  height: ", ";\n  position: relative;\n  transition: background-color 200ms;\n  width: ", ";\n"], ["\n  align-items: center;\n  background-color: ", ";\n  border-radius: 24px;\n  box-shadow: ", ";\n  cursor: pointer;\n  display: inline-flex;\n  height: ", ";\n  position: relative;\n  transition: background-color 200ms;\n  width: ", ";\n"])), function (_a) {
     var theme = _a.theme, checked = _a.checked;
-    return theme.colors[checked ? "success" : "input"];
+    return theme.colors[checked ? "bbtColor" : "input"];
 }, function (_a) {
     var theme = _a.theme;
     return theme.shadows.inset;
@@ -2859,6 +2871,7 @@ var shadows = {
     warning: "0px 0px 0px 1px #ED4B9E, 0px 0px 0px 4px rgba(237, 75, 158, 0.2)",
     focus: "0px 0px 0px 1px #7645D9, 0px 0px 0px 4px rgba(118, 69, 217, 0.6)",
     inset: "inset 0px 2px 2px -1px rgba(74, 74, 104, 0.1)",
+    bbtColor: "0px 0px 0px 1px #02D767, 0px 0px 0px 4px rgba(2, 215, 103, 0.6)",
 };
 var spacing = [0, 4, 8, 16, 24, 32, 48, 64];
 var radii = {
