@@ -12,6 +12,11 @@ const StyledLink = styled(Text)<LinkProps>`
     text-decoration: none;
     color: ${({ theme }) => theme.colors.bbtColor};
   }
+  .OpenNewIcon {
+    &:hover {
+      color: ${({ theme }) => theme.colors.text};
+    }
+  }
 `;
 
 const Link: React.FC<LinkProps> = ({ external, ...props }) => {
