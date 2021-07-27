@@ -3921,7 +3921,7 @@ var MenuEntry = styled__default['default'].div(templateObject_3$2 || (templateOb
     return (secondary ? "14px" : "16px");
 }, function (_a) {
     var secondary = _a.secondary, theme = _a.theme;
-    return (secondary ? theme.colors.background : "transparent");
+    return (secondary ? theme.colors.bitkub : "transparent");
 }, function (_a) {
     var theme = _a.theme;
     return theme.colors.textSubtle;
