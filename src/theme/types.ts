@@ -25,7 +25,11 @@ export type Shadows = {
   warning: string;
   focus: string;
   inset: string;
+<<<<<<< HEAD
   bitkub: string;
+=======
+  bbtColor: string;
+>>>>>>> fe76dd804e217e8585d4be19578ac55d31734b72
 };
 
 export type Gradients = {
