@@ -68,5 +68,10 @@ export declare const styleVariants: {
         ":disabled": {
             backgroundColor: string;
         };
+        bbtTertiary: {
+            backgroundColor: string;
+            boxShadow: string;
+            color: string;
+        };
     };
 };

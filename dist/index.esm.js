@@ -158,9 +158,10 @@ var variants$5 = {
     BBTTEXT: "bbtText",
     BBTCOLOR: "bbtColor",
     BBTSECOND: "bbtSecond",
+    BBTTERTIARY: "bbtTertiary"
 };
 
-var _a$5, _b$3;
+var _a$5, _b$3, _c;
 var scaleVariants$1 = (_a$5 = {},
     _a$5[scales$8.MD] = {
         height: "48px",
@@ -222,16 +223,22 @@ var styleVariants$2 = (_b$3 = {},
         backgroundColor: "bbtColor",
         color: "white",
     },
-    _b$3[variants$5.BBTSECOND] = {
-        backgroundColor: "transparent",
-        border: "2px solid",
-        borderColor: "bbtColor",
-        boxShadow: "none",
-        color: "bbtColor",
-        ":disabled": {
+    _b$3[variants$5.BBTSECOND] = (_c = {
             backgroundColor: "transparent",
+            border: "2px solid",
+            borderColor: "bbtColor",
+            boxShadow: "none",
+            color: "bbtColor",
+            ":disabled": {
+                backgroundColor: "transparent",
+            }
         },
-    },
+        _c[variants$5.BBTTERTIARY] = {
+            backgroundColor: "tertiary",
+            boxShadow: "none",
+            color: "bbtColor",
+        },
+        _c),
     _b$3);
 
 var getDisabledStyles = function (_a) {

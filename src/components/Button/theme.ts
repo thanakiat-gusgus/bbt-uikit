@@ -71,5 +71,10 @@ export const styleVariants = {
     ":disabled": {
       backgroundColor: "transparent",
     },
+    [variants.BBTTERTIARY]: {
+      backgroundColor: "tertiary",
+      boxShadow: "none",
+      color: "bbtColor",
+    },
   },
 };
