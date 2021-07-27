@@ -49,7 +49,7 @@ const MenuEntry = styled.div<Props>`
   }
 
   &:hover {
-    background-color: ${({ theme }) => theme.colors.bitkub};
+    background-color: ${({ theme }) => theme.colors.tertiary};
   }
 
   // Safari fix

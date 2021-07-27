@@ -3919,7 +3919,7 @@ var MenuEntry = styled.div(templateObject_3$2 || (templateObject_3$2 = __makeTem
     return theme.colors.textSubtle;
 }, function (_a) {
     var theme = _a.theme;
-    return theme.colors.bitkub;
+    return theme.colors.tertiary;
 }, rainbowAnimation, function (_a) {
     var theme = _a.theme;
     return theme.colors.gradients.bubblegum;

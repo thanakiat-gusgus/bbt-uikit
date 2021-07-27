@@ -3933,7 +3933,7 @@ var MenuEntry = styled__default['default'].div(templateObject_3$2 || (templateOb
     return theme.colors.textSubtle;
 }, function (_a) {
     var theme = _a.theme;
-    return theme.colors.bitkub;
+    return theme.colors.tertiary;
 }, rainbowAnimation, function (_a) {
     var theme = _a.theme;
     return theme.colors.gradients.bubblegum;
