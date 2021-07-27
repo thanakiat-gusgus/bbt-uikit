@@ -3913,10 +3913,10 @@ var MenuEntry = styled.div(templateObject_3$2 || (templateObject_3$2 = __makeTem
     return theme.colors.textSubtle;
 }, function (_a) {
     var isActive = _a.isActive, theme = _a.theme;
-    return (isActive ? "inset 4px 0px 0px " + theme.colors.primary : "none");
+    return (isActive ? "inset 4px 0px 0px " + theme.colors.bitkub : "none");
 }, function (_a) {
     var theme = _a.theme;
-    return theme.colors.bitkub;
+    return theme.colors.textSubtle;
 }, function (_a) {
     var theme = _a.theme;
     return theme.colors.bitkub;
