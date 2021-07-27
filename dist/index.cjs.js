@@ -3230,203 +3230,6 @@ var StyledTooltip = styled__default['default'].div(templateObject_2$8 || (templa
 }, Arrow, Arrow, Arrow, Arrow);
 var templateObject_1$h, templateObject_2$8;
 
-<<<<<<< HEAD
-function isTouchDevice() {
-    return "ontouchstart" in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
-}
-var invertTheme = function (currentTheme) {
-    if (currentTheme.isDark) {
-        return lightTheme;
-    }
-    return darkTheme;
-};
-var portalRoot = document.getElementById("portal-root");
-var useTooltip = function (content, options) {
-    var _a = options.placement, placement = _a === void 0 ? "auto" : _a, _b = options.trigger, trigger = _b === void 0 ? "hover" : _b, _c = options.arrowPadding, arrowPadding = _c === void 0 ? 16 : _c, _d = options.tooltipPadding, tooltipPadding = _d === void 0 ? { left: 16, right: 16 } : _d, _e = options.tooltipOffset, tooltipOffset = _e === void 0 ? [0, 10] : _e;
-    var _f = React.useState(null), targetElement = _f[0], setTargetElement = _f[1];
-    var _g = React.useState(null), tooltipElement = _g[0], setTooltipElement = _g[1];
-    var _h = React.useState(null), arrowElement = _h[0], setArrowElement = _h[1];
-    var _j = React.useState(false), visible = _j[0], setVisible = _j[1];
-    var isHoveringOverTooltip = React.useRef(false);
-    var hideTimeout = React.useRef();
-    var hideTooltip = React.useCallback(function (e) {
-        var hide = function () {
-            e.stopPropagation();
-            e.preventDefault();
-            setVisible(false);
-        };
-        if (trigger === "hover") {
-            if (hideTimeout.current) {
-                window.clearTimeout(hideTimeout.current);
-            }
-            if (e.target === tooltipElement) {
-                isHoveringOverTooltip.current = false;
-            }
-            if (!isHoveringOverTooltip.current) {
-                hideTimeout.current = window.setTimeout(function () {
-                    if (!isHoveringOverTooltip.current) {
-                        hide();
-                    }
-                }, 100);
-            }
-        }
-        else {
-            hide();
-        }
-    }, [tooltipElement, trigger]);
-    var showTooltip = React.useCallback(function (e) {
-        e.stopPropagation();
-        e.preventDefault();
-        setVisible(true);
-        if (trigger === "hover") {
-            if (e.target === targetElement) {
-                // If we were about to close the tooltip and got back to it
-                // then prevent closing it.
-                clearTimeout(hideTimeout.current);
-            }
-            if (e.target === tooltipElement) {
-                isHoveringOverTooltip.current = true;
-            }
-        }
-    }, [tooltipElement, targetElement, trigger]);
-    var toggleTooltip = React.useCallback(function (e) {
-        e.stopPropagation();
-        setVisible(!visible);
-    }, [visible]);
-    // Trigger = hover
-    React.useEffect(function () {
-        if (targetElement === null || trigger !== "hover")
-            return undefined;
-        if (isTouchDevice()) {
-            targetElement.addEventListener("touchstart", showTooltip);
-            targetElement.addEventListener("touchend", hideTooltip);
-        }
-        else {
-            targetElement.addEventListener("mouseenter", showTooltip);
-            targetElement.addEventListener("mouseleave", hideTooltip);
-        }
-        return function () {
-            targetElement.removeEventListener("touchstart", showTooltip);
-            targetElement.removeEventListener("touchend", hideTooltip);
-            targetElement.removeEventListener("mouseenter", showTooltip);
-            targetElement.removeEventListener("mouseleave", showTooltip);
-        };
-    }, [trigger, targetElement, hideTooltip, showTooltip]);
-    // Keep tooltip open when cursor moves from the targetElement to the tooltip
-    React.useEffect(function () {
-        if (tooltipElement === null || trigger !== "hover")
-            return undefined;
-        tooltipElement.addEventListener("mouseenter", showTooltip);
-        tooltipElement.addEventListener("mouseleave", hideTooltip);
-        return function () {
-            tooltipElement.removeEventListener("mouseenter", showTooltip);
-            tooltipElement.removeEventListener("mouseleave", hideTooltip);
-        };
-    }, [trigger, tooltipElement, hideTooltip, showTooltip]);
-    // Trigger = click
-    React.useEffect(function () {
-        if (targetElement === null || trigger !== "click")
-            return undefined;
-        targetElement.addEventListener("click", toggleTooltip);
-        return function () { return targetElement.removeEventListener("click", toggleTooltip); };
-    }, [trigger, targetElement, visible, toggleTooltip]);
-    // Handle click outside
-    React.useEffect(function () {
-        if (trigger !== "click")
-            return undefined;
-        var handleClickOutside = function (_a) {
-            var target = _a.target;
-            if (target instanceof Node) {
-                if (tooltipElement != null &&
-                    targetElement != null &&
-                    !tooltipElement.contains(target) &&
-                    !targetElement.contains(target)) {
-                    setVisible(false);
-                }
-            }
-        };
-        document.addEventListener("mousedown", handleClickOutside);
-        return function () { return document.removeEventListener("mousedown", handleClickOutside); };
-    }, [trigger, targetElement, tooltipElement]);
-    // Trigger = focus
-    React.useEffect(function () {
-        if (targetElement === null || trigger !== "focus")
-            return undefined;
-        targetElement.addEventListener("focus", showTooltip);
-        targetElement.addEventListener("blur", hideTooltip);
-        return function () {
-            targetElement.removeEventListener("focus", showTooltip);
-            targetElement.removeEventListener("blur", hideTooltip);
-        };
-    }, [trigger, targetElement, showTooltip, hideTooltip]);
-    // On small screens Popper.js tries to squeeze the tooltip to available space without overflowing beyound the edge
-    // of the screen. While it works fine when the element is in the middle of the screen it does not handle well the
-    // cases when the target element is very close to the edge of the screen - no margin is applied between the tooltip
-    // and the screen edge.
-    // preventOverflow mitigates this behaviour, default 16px paddings on left and right solve the problem for all screen sizes
-    // that we support.
-    // Note that in the farm page where there are tooltips very close to the edge of the screen this padding works perfectly
-    // even on the iPhone 5 screen (320px wide), BUT in the storybook with the contrived example ScreenEdges example
-    // iPhone 5 behaves differently overflowing beyound the edge. All paddings are identical so I have no idea why it is,
-    // and fixing that seems like a very bad use of time.
-    var _k = reactPopper.usePopper(targetElement, tooltipElement, {
-        placement: placement,
-        modifiers: [
-            {
-                name: "arrow",
-                options: { element: arrowElement, padding: arrowPadding },
-            },
-            { name: "offset", options: { offset: tooltipOffset } },
-            { name: "preventOverflow", options: { padding: tooltipPadding } },
-        ],
-    }), styles = _k.styles, attributes = _k.attributes;
-    var tooltip = (React__default['default'].createElement(StyledTooltip, __assign({ ref: setTooltipElement, style: styles.popper }, attributes.popper),
-        React__default['default'].createElement(styled.ThemeProvider, { theme: invertTheme }, content),
-        React__default['default'].createElement(Arrow, { ref: setArrowElement, style: styles.arrow })));
-    var tooltipInPortal = portalRoot ? reactDom.createPortal(tooltip, portalRoot) : null;
-    return {
-        targetRef: setTargetElement,
-        tooltip: tooltipInPortal !== null && tooltipInPortal !== void 0 ? tooltipInPortal : tooltip,
-        tooltipVisible: visible,
-    };
-};
-
-var ModalHeader = styled__default['default'].div(templateObject_1$g || (templateObject_1$g = __makeTemplateObject(["\n  align-items: center;\n  background: ", ";\n  border-bottom: 1px solid ", ";\n  display: flex;\n  padding: 12px 24px;\n"], ["\n  align-items: center;\n  background: ", ";\n  border-bottom: 1px solid ", ";\n  display: flex;\n  padding: 12px 24px;\n"])), function (_a) {
-    var background = _a.background;
-    return background || "transparent";
-}, function (_a) {
-    var theme = _a.theme;
-    return theme.colors.cardBorder;
-});
-var ModalTitle = styled__default['default'](Flex)(templateObject_2$7 || (templateObject_2$7 = __makeTemplateObject(["\n  align-items: center;\n  flex: 1;\n"], ["\n  align-items: center;\n  flex: 1;\n"])));
-var ModalBody = styled__default['default'](Flex)(templateObject_3$3 || (templateObject_3$3 = __makeTemplateObject(["\n  flex-direction: column;\n  max-height: 90vh;\n  overflow-y: auto;\n"], ["\n  flex-direction: column;\n  max-height: 90vh;\n  overflow-y: auto;\n"])));
-var ModalCloseButton = function (_a) {
-    var onDismiss = _a.onDismiss;
-    return (React__default['default'].createElement(IconButton, { variant: "text", onClick: onDismiss, "aria-label": "Close the dialog" },
-        React__default['default'].createElement(Icon$1l, { color: "primary" })));
-};
-var ModalBackButton = function (_a) {
-    var onBack = _a.onBack;
-    return (React__default['default'].createElement(IconButton, { variant: "text", onClick: onBack, "area-label": "go back", mr: "8px" },
-        React__default['default'].createElement(Icon$1J, { color: "primary" })));
-};
-var ModalContainer = styled__default['default'](Box)(templateObject_4$2 || (templateObject_4$2 = __makeTemplateObject(["\n  overflow: hidden;\n  background: ", ";\n  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);\n  border: 1px solid ", ";\n  border-radius: 32px;\n  width: 100%;\n  max-height: 100vh;\n  z-index: ", ";\n\n  ", " {\n    width: auto;\n    min-width: ", ";\n    max-width: 100%;\n  }\n"], ["\n  overflow: hidden;\n  background: ", ";\n  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);\n  border: 1px solid ", ";\n  border-radius: 32px;\n  width: 100%;\n  max-height: 100vh;\n  z-index: ", ";\n\n  ", " {\n    width: auto;\n    min-width: ", ";\n    max-width: 100%;\n  }\n"])), function (_a) {
-    var theme = _a.theme;
-    return theme.modal.background;
-}, function (_a) {
-    var theme = _a.theme;
-    return theme.colors.cardBorder;
-}, function (_a) {
-    var theme = _a.theme;
-    return theme.zIndices.modal;
-}, function (_a) {
-    var theme = _a.theme;
-    return theme.mediaQueries.xs;
-}, function (_a) {
-    var minWidth = _a.minWidth;
-    return minWidth;
-});
-=======
 function isTouchDevice() {
     return "ontouchstart" in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
 }
@@ -3622,7 +3425,6 @@ var ModalContainer = styled__default['default'](Box)(templateObject_4$2 || (temp
     var minWidth = _a.minWidth;
     return minWidth;
 });
->>>>>>> 79766c8a990a4990535862473fd1ec2d4ddcd551
 var templateObject_1$g, templateObject_2$7, templateObject_3$3, templateObject_4$2;
 
 var Modal = function (_a) {
@@ -4122,7 +3924,7 @@ var MenuEntry = styled__default['default'].div(templateObject_3$2 || (templateOb
     return (secondary ? theme.colors.background : "transparent");
 }, function (_a) {
     var theme = _a.theme;
-    return theme.colors.textBitkub;
+    return theme.colors.textSubtle;
 }, function (_a) {
     var isActive = _a.isActive, theme = _a.theme;
     return (isActive ? "inset 4px 0px 0px " + theme.colors.primary : "none");
@@ -4496,89 +4298,6 @@ var ConnectModal = function (_a) {
 };
 var templateObject_1$6;
 
-<<<<<<< HEAD
-var StyleButton = styled__default['default'](Text).attrs({ role: "button" })(templateObject_1$5 || (templateObject_1$5 = __makeTemplateObject(["\n  position: relative;\n  display: flex;\n  align-items: center;\n  color: ", ";\n"], ["\n  position: relative;\n  display: flex;\n  align-items: center;\n  color: ", ";\n"])), function (_a) {
-    var theme = _a.theme;
-    return theme.colors.primary;
-});
-var Tooltip = styled__default['default'].div(templateObject_2$2 || (templateObject_2$2 = __makeTemplateObject(["\n  display: ", ";\n  position: absolute;\n  bottom: -22px;\n  right: 0;\n  left: 0;\n  text-align: center;\n  background-color: ", ";\n  color: ", ";\n  border-radius: 16px;\n  opacity: 0.7;\n"], ["\n  display: ", ";\n  position: absolute;\n  bottom: -22px;\n  right: 0;\n  left: 0;\n  text-align: center;\n  background-color: ", ";\n  color: ", ";\n  border-radius: 16px;\n  opacity: 0.7;\n"])), function (_a) {
-    var isTooltipDisplayed = _a.isTooltipDisplayed;
-    return (isTooltipDisplayed ? "block" : "none");
-}, function (_a) {
-    var theme = _a.theme;
-    return theme.colors.contrast;
-}, function (_a) {
-    var theme = _a.theme;
-    return theme.colors.invertedContrast;
-});
-var CopyToClipboard = function (_a) {
-    var toCopy = _a.toCopy, children = _a.children, props = __rest(_a, ["toCopy", "children"]);
-    var _b = React.useState(false), isTooltipDisplayed = _b[0], setIsTooltipDisplayed = _b[1];
-    var copyToClipboardWithCommand = function (content) {
-        var el = document.createElement("textarea");
-        el.value = content;
-        document.body.appendChild(el);
-        el.select();
-        document.execCommand("copy");
-        document.body.removeChild(el);
-    };
-    function displayTooltip() {
-        setIsTooltipDisplayed(true);
-        setTimeout(function () {
-            setIsTooltipDisplayed(false);
-        }, 1000);
-    }
-    return (React__default['default'].createElement(StyleButton, __assign({ small: true, bold: true, onClick: function () {
-            if (navigator.clipboard && navigator.permissions) {
-                navigator.clipboard.writeText(toCopy).then(function () { return displayTooltip(); });
-            }
-            else if (document.queryCommandSupported("copy")) {
-                copyToClipboardWithCommand(toCopy);
-                displayTooltip();
-            }
-        } }, props),
-        children,
-        React__default['default'].createElement(Icon$1i, { width: "20px", color: "primary", ml: "4px" }),
-        React__default['default'].createElement(Tooltip, { isTooltipDisplayed: isTooltipDisplayed }, "Copied")));
-};
-var templateObject_1$5, templateObject_2$2;
-
-var AccountModal = function (_a) {
-    var account = _a.account, logout = _a.logout, _b = _a.onDismiss, onDismiss = _b === void 0 ? function () { return null; } : _b;
-    return (React__default['default'].createElement(Modal, { title: "Your wallet", onDismiss: onDismiss },
-        React__default['default'].createElement(Text, { fontSize: "20px", bold: true, style: { whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis", marginBottom: "8px" } }, account),
-        React__default['default'].createElement(Flex, { mb: "32px" },
-            React__default['default'].createElement(LinkExternal, { small: true, href: "https://testnet.bkcscan.com/address/" + account, mr: "16px" }, "View on BKCScan"),
-            React__default['default'].createElement(CopyToClipboard, { toCopy: account }, "Copy Address")),
-        React__default['default'].createElement(Flex, { justifyContent: "center" },
-            React__default['default'].createElement(Button, { scale: "sm", variant: "secondary", onClick: function () {
-                    logout();
-                    window.localStorage.removeItem(connectorLocalStorageKey);
-                    onDismiss();
-                } }, "Logout"))));
-};
-
-var useWalletModal = function (login, logout, account) {
-    var onPresentConnectModal = useModal(React__default['default'].createElement(ConnectModal, { login: login }))[0];
-    var onPresentAccountModal = useModal(React__default['default'].createElement(AccountModal, { account: account || "", logout: logout }))[0];
-    return { onPresentConnectModal: onPresentConnectModal, onPresentAccountModal: onPresentAccountModal };
-};
-
-var UserBlock = function (_a) {
-    var account = _a.account, login = _a.login, logout = _a.logout;
-    var _b = useWalletModal(login, logout, account), onPresentConnectModal = _b.onPresentConnectModal, onPresentAccountModal = _b.onPresentAccountModal;
-    var accountEllipsis = account ? account.substring(0, 4) + "..." + account.substring(account.length - 4) : null;
-    return (React__default['default'].createElement("div", null, account ? (React__default['default'].createElement(Button, { scale: "sm", variant: "tertiary", onClick: function () {
-            onPresentAccountModal();
-        } }, accountEllipsis)) : (React__default['default'].createElement(Button, { scale: "sm", onClick: function () {
-            onPresentConnectModal();
-        } }, "Connect"))));
-};
-var UserBlock$1 = React__default['default'].memo(UserBlock, function (prevProps, nextProps) {
-    return prevProps.account === nextProps.account &&
-        prevProps.login === nextProps.login &&
-        prevProps.logout === nextProps.logout;
-=======
 var StyleButton = styled__default['default'](Text).attrs({ role: "button" })(templateObject_1$5 || (templateObject_1$5 = __makeTemplateObject(["\n  position: relative;\n  display: flex;\n  align-items: center;\n  color: ", ";\n"], ["\n  position: relative;\n  display: flex;\n  align-items: center;\n  color: ", ";\n"])), function (_a) {
     var theme = _a.theme;
     return theme.colors.bbtColor;
@@ -4660,7 +4379,6 @@ var UserBlock$1 = React__default['default'].memo(UserBlock, function (prevProps,
     return prevProps.account === nextProps.account &&
         prevProps.login === nextProps.login &&
         prevProps.logout === nextProps.logout;
->>>>>>> 79766c8a990a4990535862473fd1ec2d4ddcd551
 });
 
 var StyledAvatar = styled__default['default'].div(templateObject_1$4 || (templateObject_1$4 = __makeTemplateObject(["\n  margin-left: 8px;\n  position: relative;\n\n  img {\n    border-radius: 50%;\n  }\n"], ["\n  margin-left: 8px;\n  position: relative;\n\n  img {\n    border-radius: 50%;\n  }\n"])));
