@@ -4339,7 +4339,7 @@ var CopyToClipboard = function (_a) {
             }
         } }, props),
         children,
-        React__default['default'].createElement(Icon$1i, { width: "20px", color: "primary", ml: "4px" }),
+        React__default['default'].createElement(Icon$1i, { width: "20px", color: "bbtColor", ml: "4px" }),
         React__default['default'].createElement(Tooltip, { isTooltipDisplayed: isTooltipDisplayed }, "Copied")));
 };
 var templateObject_1$5, templateObject_2$2;
