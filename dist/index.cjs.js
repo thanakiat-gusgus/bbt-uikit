@@ -1283,7 +1283,7 @@ var Input$1 = styled__default['default'].input(templateObject_1$U || (templateOb
     return theme.colors.textDisabled;
 }, function (_a) {
     var theme = _a.theme;
-    return theme.shadows.inset;
+    return theme.shadows.bitkub;
 });
 Input$1.defaultProps = {
     scale: scales$7.MD,
