@@ -14,6 +14,7 @@ export declare const variants: {
     readonly DANGER: "danger";
     readonly SUBTLE: "subtle";
     readonly SUCCESS: "success";
+    readonly BBTTEXT: "bbtText";
     readonly BBTCOLOR: "bbtColor";
     readonly BBTSECOND: "bbtSecond";
 };

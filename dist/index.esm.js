@@ -155,6 +155,7 @@ var variants$5 = {
     DANGER: "danger",
     SUBTLE: "subtle",
     SUCCESS: "success",
+    BBTTEXT: "bbtText",
     BBTCOLOR: "bbtColor",
     BBTSECOND: "bbtSecond",
 };
@@ -210,6 +211,11 @@ var styleVariants$2 = (_b$3 = {},
     _b$3[variants$5.TEXT] = {
         backgroundColor: "transparent",
         color: "primary",
+        boxShadow: "none",
+    },
+    _b$3[variants$5.BBTTEXT] = {
+        backgroundColor: "transparent",
+        color: "bbtColor",
         boxShadow: "none",
     },
     _b$3[variants$5.BBTCOLOR] = {

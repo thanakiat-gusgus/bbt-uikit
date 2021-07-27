@@ -16,6 +16,7 @@ export const variants = {
   DANGER: "danger",
   SUBTLE: "subtle",
   SUCCESS: "success",
+  BBTTEXT: "bbtText",
   BBTCOLOR: "bbtColor",
   BBTSECOND: "bbtSecond",
 } as const;
