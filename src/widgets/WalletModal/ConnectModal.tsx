@@ -31,7 +31,7 @@ const ConnectModal: React.FC<Props> = ({ login, onDismiss = () => null }) => (
       />
     ))}
     <HelpLink href="https://docs.pancakeswap.finance/get-started/connection-guide" external>
-      <HelpIcon color="primary" mr="6px" />
+      <HelpIcon color="bbtColor" mr="6px" />
       Learn how to connect
     </HelpLink>
   </Modal>

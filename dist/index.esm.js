@@ -4264,12 +4264,12 @@ var connectorLocalStorageKey = "connectorId";
 var WalletCard = function (_a) {
     var login = _a.login, walletConfig = _a.walletConfig, onDismiss = _a.onDismiss, mb = _a.mb;
     var title = walletConfig.title, Icon = walletConfig.icon;
-    return (React.createElement(Button, { width: "100%", variant: "tertiary", onClick: function () {
+    return (React.createElement(Button, { width: "100%", variant: "bbtTertiary", onClick: function () {
             login(walletConfig.connectorId);
             window.localStorage.setItem(connectorLocalStorageKey, walletConfig.connectorId);
             onDismiss();
         }, style: { justifyContent: "space-between" }, mb: mb, id: "wallet-connect-" + title.toLocaleLowerCase() },
-        React.createElement(Text, { bold: true, color: "primary", mr: "16px" }, title),
+        React.createElement(Text, { bold: true, color: "bbtColor", mr: "16px" }, title),
         React.createElement(Icon, { width: "32px" })));
 };
 
@@ -4279,7 +4279,7 @@ var ConnectModal = function (_a) {
     return (React.createElement(Modal, { title: "Connect to a wallet", onDismiss: onDismiss },
         connectors.map(function (entry, index) { return (React.createElement(WalletCard, { key: entry.title, login: login, walletConfig: entry, onDismiss: onDismiss, mb: index < connectors.length - 1 ? "8px" : "0" })); }),
         React.createElement(HelpLink, { href: "https://docs.pancakeswap.finance/get-started/connection-guide", external: true },
-            React.createElement(Icon$1g, { color: "primary", mr: "6px" }),
+            React.createElement(Icon$1g, { color: "bbtColor", mr: "6px" }),
             "Learn how to connect")));
 };
 var templateObject_1$6;
