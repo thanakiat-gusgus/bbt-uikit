@@ -17,6 +17,7 @@ export const variants = {
   SUBTLE: "subtle",
   SUCCESS: "success",
   BBTCOLOR: "bbtColor",
+  BBTSECOND: "bbtSecond",
 } as const;
 
 export type Scale = typeof scales[keyof typeof scales];

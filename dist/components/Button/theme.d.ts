@@ -54,4 +54,14 @@ export declare const styleVariants: {
         backgroundColor: string;
         color: string;
     };
+    bbtSecond: {
+        backgroundColor: string;
+        border: string;
+        borderColor: string;
+        boxShadow: string;
+        color: string;
+        ":disabled": {
+            backgroundColor: string;
+        };
+    };
 };

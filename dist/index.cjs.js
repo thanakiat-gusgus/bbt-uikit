@@ -170,6 +170,7 @@ var variants$5 = {
     SUBTLE: "subtle",
     SUCCESS: "success",
     BBTCOLOR: "bbtColor",
+    BBTSECOND: "bbtSecond",
 };
 
 var _a$5, _b$3;
@@ -228,6 +229,16 @@ var styleVariants$2 = (_b$3 = {},
     _b$3[variants$5.BBTCOLOR] = {
         backgroundColor: "bbtColor",
         color: "white",
+    },
+    _b$3[variants$5.BBTSECOND] = {
+        backgroundColor: "transparent",
+        border: "2px solid",
+        borderColor: "bbtColor",
+        boxShadow: "none",
+        color: "bbtColor",
+        ":disabled": {
+            backgroundColor: "transparent",
+        },
     },
     _b$3);
 
@@ -1209,6 +1220,7 @@ var Alert = function (_a) {
 };
 var templateObject_1$V, templateObject_2$o, templateObject_3$a, templateObject_4$7;
 
+<<<<<<< HEAD
 var scales$7 = {
     SM: "sm",
     MD: "md",
@@ -1267,6 +1279,66 @@ Input$1.defaultProps = {
     isSuccess: false,
     isWarning: false,
 };
+=======
+var scales$7 = {
+    SM: "sm",
+    MD: "md",
+    LG: "lg",
+};
+
+/**
+ * Priority: Warning --> Success
+ */
+var getBoxShadow$1 = function (_a) {
+    var _b = _a.isSuccess, isSuccess = _b === void 0 ? false : _b, _c = _a.isWarning, isWarning = _c === void 0 ? false : _c, theme = _a.theme;
+    if (isWarning) {
+        return theme.shadows.warning;
+    }
+    if (isSuccess) {
+        return theme.shadows.success;
+    }
+    return theme.shadows.inset;
+};
+var getHeight = function (_a) {
+    var _b = _a.scale, scale = _b === void 0 ? scales$7.MD : _b;
+    switch (scale) {
+        case scales$7.SM:
+            return "32px";
+        case scales$7.LG:
+            return "48px";
+        case scales$7.MD:
+        default:
+            return "40px";
+    }
+};
+var Input$1 = styled__default['default'].input(templateObject_1$U || (templateObject_1$U = __makeTemplateObject(["\n  background-color: ", ";\n  border: 0;\n  border-radius: 16px;\n  box-shadow: ", ";\n  color: ", ";\n  display: block;\n  font-size: 16px;\n  height: ", ";\n  outline: 0;\n  padding: 0 16px;\n  width: 100%;\n  border: 1px solid ", ";\n\n  &::placeholder {\n    color: ", ";\n  }\n\n  &:disabled {\n    background-color: ", ";\n    box-shadow: none;\n    color: ", ";\n    cursor: not-allowed;\n  }\n\n  &:focus:not(:disabled) {\n    box-shadow: ", ";\n  }\n"], ["\n  background-color: ", ";\n  border: 0;\n  border-radius: 16px;\n  box-shadow: ", ";\n  color: ", ";\n  display: block;\n  font-size: 16px;\n  height: ", ";\n  outline: 0;\n  padding: 0 16px;\n  width: 100%;\n  border: 1px solid ", ";\n\n  &::placeholder {\n    color: ", ";\n  }\n\n  &:disabled {\n    background-color: ", ";\n    box-shadow: none;\n    color: ", ";\n    cursor: not-allowed;\n  }\n\n  &:focus:not(:disabled) {\n    box-shadow: ", ";\n  }\n"])), function (_a) {
+    var theme = _a.theme;
+    return theme.colors.input;
+}, getBoxShadow$1, function (_a) {
+    var theme = _a.theme;
+    return theme.colors.text;
+}, getHeight, function (_a) {
+    var theme = _a.theme;
+    return theme.colors.inputSecondary;
+}, function (_a) {
+    var theme = _a.theme;
+    return theme.colors.textSubtle;
+}, function (_a) {
+    var theme = _a.theme;
+    return theme.colors.backgroundDisabled;
+}, function (_a) {
+    var theme = _a.theme;
+    return theme.colors.textDisabled;
+}, function (_a) {
+    var theme = _a.theme;
+    return theme.shadows.focus;
+});
+Input$1.defaultProps = {
+    scale: scales$7.MD,
+    isSuccess: false,
+    isWarning: false,
+};
+>>>>>>> 2b5698b074b5cd4e466c7f1a34c688d33bed073f
 var templateObject_1$U;
 
 var StyledBalanceInput = styled__default['default'](Box)(templateObject_1$T || (templateObject_1$T = __makeTemplateObject(["\n  background-color: ", ";\n  border: 1px solid ", ";\n  border-radius: 16px;\n  box-shadow: ", ";\n  padding: 8px 16px;\n"], ["\n  background-color: ", ";\n  border: 1px solid ", ";\n  border-radius: 16px;\n  box-shadow: ", ";\n  padding: 8px 16px;\n"])), function (_a) {
@@ -1333,22 +1405,22 @@ var templateObject_1$R, templateObject_2$m;
 
 var getBackgroundColor = function (_a) {
     var theme = _a.theme, variant = _a.variant;
-    return theme.colors[variant === variants$5.SUBTLE ? "input" : "tertiary"];
+    return theme.colors[variant === variants$5.BBTCOLOR ? "input" : "disabled"];
 };
 var getBorderColor = function (_a) {
     var theme = _a.theme, variant = _a.variant;
-    return theme.colors[variant === variants$5.SUBTLE ? "inputSecondary" : "disabled"];
+    return theme.colors[variant === variants$5.BBTCOLOR ? "bitkub" : "disabled"];
 };
 var StyledButtonMenu = styled__default['default'].div(templateObject_1$Q || (templateObject_1$Q = __makeTemplateObject(["\n  background-color: ", ";\n  border-radius: 16px;\n  display: inline-flex;\n  border: 1px solid ", ";\n\n  & > button + button,\n  & > a + a {\n    margin-left: 2px; // To avoid focus shadow overlap\n  }\n\n  & > button,\n  & a {\n    box-shadow: none;\n  }\n\n  ", "\n  ", "\n"], ["\n  background-color: ", ";\n  border-radius: 16px;\n  display: inline-flex;\n  border: 1px solid ", ";\n\n  & > button + button,\n  & > a + a {\n    margin-left: 2px; // To avoid focus shadow overlap\n  }\n\n  & > button,\n  & a {\n    box-shadow: none;\n  }\n\n  ",
     "\n  ", "\n"])), getBackgroundColor, getBorderColor, function (_a) {
     var disabled = _a.disabled, theme = _a.theme, variant = _a.variant;
     if (disabled) {
-        return "\n        opacity: 0.5;\n\n        & > button:disabled {\n          background-color: transparent;\n          color: " + (variant === variants$5.PRIMARY ? theme.colors.primary : theme.colors.textSubtle) + ";\n        }\n    ";
+        return "\n        opacity: 0.5;\n        & > button:disabled {\n          background-color: transparent;\n          color: " + (variant === variants$5.BBTCOLOR ? theme.colors.text : theme.colors.text) + ";\n        }\n    ";
     }
     return "";
 }, styledSystem.space);
 var ButtonMenu$1 = function (_a) {
-    var _b = _a.activeIndex, activeIndex = _b === void 0 ? 0 : _b, _c = _a.scale, scale = _c === void 0 ? scales$8.MD : _c, _d = _a.variant, variant = _d === void 0 ? variants$5.PRIMARY : _d, onItemClick = _a.onItemClick, disabled = _a.disabled, children = _a.children, props = __rest(_a, ["activeIndex", "scale", "variant", "onItemClick", "disabled", "children"]);
+    var _b = _a.activeIndex, activeIndex = _b === void 0 ? 0 : _b, _c = _a.scale, scale = _c === void 0 ? scales$8.MD : _c, _d = _a.variant, variant = _d === void 0 ? variants$5.BBTCOLOR : _d, onItemClick = _a.onItemClick, disabled = _a.disabled, children = _a.children, props = __rest(_a, ["activeIndex", "scale", "variant", "onItemClick", "disabled", "children"]);
     return (React__default['default'].createElement(StyledButtonMenu, __assign({ disabled: disabled, variant: variant }, props), React.Children.map(children, function (child, index) {
         return React.cloneElement(child, {
             isActive: activeIndex === index,
@@ -1363,10 +1435,10 @@ var templateObject_1$Q;
 
 var InactiveButton = styled__default['default'](Button)(templateObject_1$P || (templateObject_1$P = __makeTemplateObject(["\n  background-color: transparent;\n  color: ", ";\n  &:hover:not(:disabled):not(:active) {\n    background-color: transparent;\n  }\n"], ["\n  background-color: transparent;\n  color: ", ";\n  &:hover:not(:disabled):not(:active) {\n    background-color: transparent;\n  }\n"])), function (_a) {
     var theme = _a.theme, variant = _a.variant;
-    return (variant === variants$5.PRIMARY ? theme.colors.primary : theme.colors.textSubtle);
+    return (variant === variants$5.BBTCOLOR ? theme.colors.bbtColor : theme.colors.text);
 });
 var ButtonMenuItem = function (_a) {
-    var _b = _a.isActive, isActive = _b === void 0 ? false : _b, _c = _a.variant, variant = _c === void 0 ? variants$5.PRIMARY : _c, as = _a.as, props = __rest(_a, ["isActive", "variant", "as"]);
+    var _b = _a.isActive, isActive = _b === void 0 ? false : _b, _c = _a.variant, variant = _c === void 0 ? variants$5.BBTCOLOR : _c, as = _a.as, props = __rest(_a, ["isActive", "variant", "as"]);
     if (!isActive) {
         return React__default['default'].createElement(InactiveButton, __assign({ forwardedAs: as, variant: variant }, props));
     }
@@ -1792,14 +1864,17 @@ var GridLayout = styled__default['default'](GridLayout$1)(templateObject_1$z || 
 });
 var templateObject_1$z;
 
-var StyledLink$1 = styled__default['default'](Text)(templateObject_1$y || (templateObject_1$y = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  width: fit-content;\n  &:hover {\n    text-decoration: underline;\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  width: fit-content;\n  &:hover {\n    text-decoration: underline;\n  }\n"])));
+var StyledLink$1 = styled__default['default'](Text)(templateObject_1$y || (templateObject_1$y = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  width: fit-content;\n  &:hover {\n    text-decoration: none;\n    color: ", ";\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  width: fit-content;\n  &:hover {\n    text-decoration: none;\n    color: ", ";\n  }\n"])), function (_a) {
+    var theme = _a.theme;
+    return theme.colors.background;
+});
 var Link = function (_a) {
     var external = _a.external, props = __rest(_a, ["external"]);
     var internalProps = external ? getExternalLinkProps() : {};
     return React__default['default'].createElement(StyledLink$1, __assign({ as: "a", bold: true }, internalProps, props));
 };
 Link.defaultProps = {
-    color: "primary",
+    color: "text",
 };
 var templateObject_1$y;
 
@@ -1807,7 +1882,7 @@ var LinkExternal = function (_a) {
     var children = _a.children, props = __rest(_a, ["children"]);
     return (React__default['default'].createElement(Link, __assign({ external: true }, props),
         children,
-        React__default['default'].createElement(Icon$10, { color: "primary", ml: "4px" })));
+        React__default['default'].createElement(Icon$10, { color: "bbtColor", ml: "4px" })));
 };
 
 var variants$2 = {
@@ -2806,6 +2881,7 @@ var StyledToggle = styled__default['default'].div(templateObject_3$4 || (templat
 }, getScale("toggleHeight"), getScale("toggleWidth"));
 var templateObject_1$i, templateObject_2$9, templateObject_3$4;
 
+<<<<<<< HEAD
 var scales = {
     SM: "sm",
     MD: "md",
@@ -3098,6 +3174,306 @@ var darkColors = __assign(__assign(__assign({}, baseColors), additionalColors), 
         gold: "linear-gradient(180deg, #FFD800 0%, #FDAB32 100%)",
         bitkubGradient: "linear-gradient(180deg, rgba(2, 215, 103, 0.24) 0%, rgba(2, 215, 103, 0) 100%);",
     } });
+
+var light$7 = {
+    background: lightColors.backgroundAlt,
+};
+var dark$7 = {
+    background: darkColors.backgroundAlt,
+};
+=======
+var scales = {
+    SM: "sm",
+    MD: "md",
+};
+
+var Toggle = function (_a) {
+    var checked = _a.checked, _b = _a.scale, scale = _b === void 0 ? scales.MD : _b, props = __rest(_a, ["checked", "scale"]);
+    var isChecked = !!checked;
+    return (React__default['default'].createElement(StyledToggle, { checked: isChecked, scale: scale },
+        React__default['default'].createElement(Input, __assign({ checked: checked, scale: scale }, props, { type: "checkbox" })),
+        React__default['default'].createElement(Handle, { scale: scale })));
+};
+Toggle.defaultProps = {
+    scale: scales.MD,
+};
+
+var breakpointMap = {
+    xs: 370,
+    sm: 576,
+    md: 852,
+    lg: 968,
+    xl: 1080,
+};
+var breakpoints = Object.values(breakpointMap).map(function (breakpoint) { return breakpoint + "px"; });
+var mediaQueries$1 = {
+    xs: "@media screen and (min-width: " + breakpointMap.xs + "px)",
+    sm: "@media screen and (min-width: " + breakpointMap.sm + "px)",
+    md: "@media screen and (min-width: " + breakpointMap.md + "px)",
+    lg: "@media screen and (min-width: " + breakpointMap.lg + "px)",
+    xl: "@media screen and (min-width: " + breakpointMap.xl + "px)",
+    nav: "@media screen and (min-width: " + breakpointMap.lg + "px)",
+};
+var shadows = {
+    level1: "0px 2px 12px -8px rgba(25, 19, 38, 0.1), 0px 1px 1px rgba(25, 19, 38, 0.05)",
+    active: "0px 0px 0px 1px #0098A1, 0px 0px 4px 8px rgba(31, 199, 212, 0.4)",
+    success: "0px 0px 0px 1px #31D0AA, 0px 0px 0px 4px rgba(49, 208, 170, 0.2)",
+    warning: "0px 0px 0px 1px #ED4B9E, 0px 0px 0px 4px rgba(237, 75, 158, 0.2)",
+    focus: "0px 0px 0px 1px #7645D9, 0px 0px 0px 4px rgba(118, 69, 217, 0.6)",
+    inset: "inset 0px 2px 2px -1px rgba(74, 74, 104, 0.1)",
+};
+var spacing = [0, 4, 8, 16, 24, 32, 48, 64];
+var radii = {
+    small: "4px",
+    default: "16px",
+    card: "24px",
+    circle: "50%",
+};
+var zIndices = {
+    dropdown: 10,
+    modal: 100,
+};
+var base = {
+    siteWidth: 1200,
+    breakpoints: breakpoints,
+    mediaQueries: mediaQueries$1,
+    spacing: spacing,
+    shadows: shadows,
+    radii: radii,
+    zIndices: zIndices,
+};
+
+/**
+ * Can't use the media queries from "base.mediaQueries" because of how matchMedia works
+ * In order for the listener to trigger we need have have the media query with a range, e.g.
+ * (min-width: 370px) and (max-width: 576px)
+ * @see https://developer.mozilla.org/en-US/docs/Web/API/MediaQueryList
+ */
+var mediaQueries = (function () {
+    var prevMinWidth = 0;
+    return Object.keys(breakpointMap).reduce(function (accum, size, index) {
+        var _a, _b;
+        // Largest size is just a min-width of second highest max-width
+        if (index === Object.keys(breakpointMap).length - 1) {
+            return __assign(__assign({}, accum), (_a = {}, _a[size] = "(min-width: " + prevMinWidth + "px)", _a));
+        }
+        var minWidth = prevMinWidth;
+        var breakpoint = breakpointMap[size];
+        // Min width for next iteration
+        prevMinWidth = breakpoint + 1;
+        return __assign(__assign({}, accum), (_b = {}, _b[size] = "(min-width: " + minWidth + "px) and (max-width: " + breakpoint + "px)", _b));
+    }, {});
+})();
+var getKey = function (size) { return "is" + size.charAt(0).toUpperCase() + size.slice(1); };
+var useMatchBreakpoints = function () {
+    var _a = React.useState(function () {
+        return Object.keys(mediaQueries).reduce(function (accum, size) {
+            var _a;
+            var key = getKey(size);
+            var mql = window.matchMedia(mediaQueries[size]);
+            return __assign(__assign({}, accum), (_a = {}, _a[key] = mql.matches, _a));
+        }, {});
+    }), state = _a[0], setState = _a[1];
+    React.useEffect(function () {
+        // Create listeners for each media query returning a function to unsubscribe
+        var handlers = Object.keys(mediaQueries).map(function (size) {
+            var mql = window.matchMedia(mediaQueries[size]);
+            var handler = function (matchMediaQuery) {
+                var key = getKey(size);
+                setState(function (prevState) {
+                    var _a;
+                    return (__assign(__assign({}, prevState), (_a = {}, _a[key] = matchMediaQuery.matches, _a)));
+                });
+            };
+            // Safari < 14 fix
+            if (mql.addEventListener) {
+                mql.addEventListener("change", handler);
+            }
+            return function () {
+                // Safari < 14 fix
+                if (mql.removeEventListener) {
+                    mql.removeEventListener("change", handler);
+                }
+            };
+        });
+        return function () {
+            handlers.forEach(function (unsubscribe) {
+                unsubscribe();
+            });
+        };
+    }, [setState]);
+    return state;
+};
+
+var defaultParticleOptions = {
+    size: 30,
+    distance: 500,
+};
+var createParticle = function (x, y, imgSrc, options) {
+    if (options === void 0) { options = {}; }
+    var _a = __assign(__assign({}, defaultParticleOptions), options), size = _a.size, distance = _a.distance;
+    var particle = document.createElement("particle");
+    document.body.appendChild(particle);
+    var width = Math.floor(Math.random() * size + 8);
+    var height = width;
+    var destinationX = (Math.random() - 0.5) * distance;
+    var destinationY = (Math.random() - 0.5) * distance;
+    var rotation = Math.random() * 520;
+    var delay = Math.random() * 200;
+    particle.style.backgroundRepeat = "no-repeat";
+    particle.style.backgroundSize = "contain";
+    particle.style.backgroundImage = "url(" + imgSrc + ")";
+    particle.style.left = "0";
+    particle.style.top = "0";
+    particle.style.opacity = "0";
+    particle.style.pointerEvents = "none";
+    particle.style.position = "fixed";
+    particle.style.width = width + "px";
+    particle.style.height = height + "px";
+    var animation = particle.animate([
+        {
+            transform: "translate(-50%, -50%) translate(" + x + "px, " + y + "px) rotate(0deg)",
+            opacity: 1,
+        },
+        {
+            transform: "translate(-50%, -50%) translate(" + (x + destinationX) + "px, " + (y + destinationY) + "px) rotate(" + rotation + "deg)",
+            opacity: 0,
+        },
+    ], {
+        duration: Math.random() * 1000 + 5000,
+        easing: "cubic-bezier(0, .9, .57, 1)",
+        delay: delay,
+    });
+    animation.onfinish = function () {
+        particle.remove();
+    };
+};
+var defaultOptions = {
+    numberOfParticles: 30,
+    debounceDuration: 200,
+    particleOptions: {},
+};
+/**
+ * @see https://css-tricks.com/playing-with-particles-using-the-web-animations-api/
+ */
+var useParticleBurst = function (options) {
+    var _a = __assign(__assign({}, defaultOptions), options), selector = _a.selector, numberOfParticles = _a.numberOfParticles, debounceDuration = _a.debounceDuration, imgSrc = _a.imgSrc, disableWhen = _a.disableWhen, particleOptions = _a.particleOptions;
+    var makeListener = React.useCallback(function () {
+        return debounce__default['default'](function (event) {
+            var isDisabled = disableWhen && disableWhen();
+            if (!isDisabled) {
+                var node = event.currentTarget;
+                if (event.clientX === 0 && event.clientY === 0) {
+                    var _a = node.getBoundingClientRect(), left = _a.left, width = _a.width, top_1 = _a.top, height = _a.height;
+                    var x = left + width / 2;
+                    var y = top_1 + height / 2;
+                    for (var i = 0; i < numberOfParticles; i += 1) {
+                        createParticle(x, y, imgSrc, particleOptions);
+                    }
+                }
+                else {
+                    for (var i = 0; i < numberOfParticles; i += 1) {
+                        createParticle(event.clientX, event.clientY + window.scrollY, imgSrc, particleOptions);
+                    }
+                }
+            }
+        }, debounceDuration, { leading: true });
+    }, [debounceDuration, numberOfParticles, imgSrc, disableWhen, particleOptions]);
+    var listener = makeListener();
+    var initialize = React.useCallback(function () {
+        if (selector) {
+            document.querySelectorAll(selector).forEach(function (element) {
+                element.addEventListener("click", listener);
+            });
+        }
+        else {
+            document.addEventListener("click", listener);
+        }
+    }, [selector, listener]);
+    var teardown = React.useCallback(function () {
+        if (selector) {
+            document.querySelectorAll(selector).forEach(function (element) {
+                element.removeEventListener("click", listener);
+            });
+        }
+        else {
+            document.removeEventListener("click", listener);
+        }
+    }, [selector, listener]);
+    React.useEffect(function () {
+        initialize();
+        return function () { return teardown(); };
+    }, [initialize, teardown]);
+    return { initialize: initialize, teardown: teardown };
+};
+
+var useKonamiCheatCode = function (matchedCodeHandler) {
+    React.useEffect(function () {
+        var pattern = [
+            "ArrowUp",
+            "ArrowUp",
+            "ArrowDown",
+            "ArrowDown",
+            "ArrowLeft",
+            "ArrowRight",
+            "ArrowLeft",
+            "ArrowRight",
+        ];
+        var currentIndex = 0;
+        var onKeyUpHandler = function (event) {
+            var key = event.key;
+            // is key in correct order otherwise reset
+            if (key !== pattern[currentIndex]) {
+                currentIndex = 0;
+                return;
+            }
+            currentIndex += 1;
+            if (pattern.length === currentIndex) {
+                currentIndex = 0;
+                matchedCodeHandler();
+            }
+        };
+        document.addEventListener("keyup", onKeyUpHandler);
+        return function () { return document.removeEventListener("keyup", onKeyUpHandler); };
+    }, [matchedCodeHandler]);
+};
+
+var baseColors = {
+    failure: "#ED4B9E",
+    primary: "#1FC7D4",
+    primaryBright: "#53DEE9",
+    primaryDark: "#0098A1",
+    secondary: "#7645D9",
+    success: "#31D0AA",
+    warning: "#FFB237",
+    bbtColor: "#02D767", //PRIMARY COLORS/Bitkub Green
+};
+var additionalColors = {
+    binance: "#F0B90B",
+    overlay: "#452a7a",
+    bitkub: "#02D767", //PRIMARY COLORS/Bitkub Green
+};
+var lightColors = __assign(__assign(__assign({}, baseColors), additionalColors), { background: "#FAF9FA", backgroundDisabled: "#E9EAEB", backgroundAlt: "#FFFFFF", cardBorder: "#E7E3EB", contrast: "#191326", dropdown: "#F6F6F6", dropdownDeep: "#EEEEEE", invertedContrast: "#FFFFFF", input: "#FFFFFF", inputSecondary: "#d7caec", tertiary: "#EFF4F5", text: "#141414", textDisabled: "#BDC2C4", textSubtle: "#000000", disabled: "#E9EAEB", gradients: {
+        bubblegum: "linear-gradient(139.73deg, #E5FDFF 0%, #F3EFFF 100%)",
+        inverseBubblegum: "linear-gradient(139.73deg, #F3EFFF 0%, #E5FDFF 100%)",
+        cardHeader: "linear-gradient(111.68deg, #F2ECF2 0%, #E8F2F6 100%)",
+        blue: "linear-gradient(180deg, #A7E8F1 0%, #94E1F2 100%)",
+        violet: "linear-gradient(180deg, #E2C9FB 0%, #CDB8FA 100%)",
+        violetAlt: "linear-gradient(180deg, #CBD7EF 0%, #9A9FD0 100%)",
+        gold: "linear-gradient(180deg, #FFD800 0%, #FDAB32 100%)",
+        bitkubGradient: "linear-gradient(180deg, rgba(2, 215, 103, 0.24) 0%, rgba(2, 215, 103, 0) 100%);",
+    } });
+var darkColors = __assign(__assign(__assign({}, baseColors), additionalColors), { secondary: "#9A6AFF", background: "#08060B", backgroundDisabled: "#3c3742", backgroundAlt: "#27262c", cardBorder: "#383241", contrast: "#FFFFFF", dropdown: "#1E1D20", dropdownDeep: "#100C18", invertedContrast: "#191326", input: "#000000", inputSecondary: "#262130", primaryDark: "#0098A1", tertiary: "#353547", text: "#FFFFFF", textDisabled: "#666171", textSubtle: "#FFFFFF", disabled: "#524B63", gradients: {
+        bubblegum: "linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)",
+        inverseBubblegum: "linear-gradient(139.73deg, #3D2A54 0%, #313D5C 100%)",
+        cardHeader: "linear-gradient(166.77deg, #3B4155 0%, #3A3045 100%)",
+        blue: "linear-gradient(180deg, #00707F 0%, #19778C 100%)",
+        violet: "linear-gradient(180deg, #6C4999 0%, #6D4DB2 100%)",
+        violetAlt: "linear-gradient(180deg, #434575 0%, #66578D 100%)",
+        gold: "linear-gradient(180deg, #FFD800 0%, #FDAB32 100%)",
+        bitkubGradient: "linear-gradient(180deg, rgba(2, 215, 103, 0.24) 0%, rgba(2, 215, 103, 0) 100%);",
+    } });
+>>>>>>> 2b5698b074b5cd4e466c7f1a34c688d33bed073f
 
 var light$7 = {
     background: lightColors.backgroundAlt,
@@ -4322,7 +4698,7 @@ var AccountModal = function (_a) {
     return (React__default['default'].createElement(Modal, { title: "Your wallet", onDismiss: onDismiss },
         React__default['default'].createElement(Text, { fontSize: "20px", bold: true, style: { whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis", marginBottom: "8px" } }, account),
         React__default['default'].createElement(Flex, { mb: "32px" },
-            React__default['default'].createElement(LinkExternal, { small: true, href: "https://bscscan.com/address/" + account, mr: "16px" }, "View on BscScan"),
+            React__default['default'].createElement(LinkExternal, { small: true, href: "https://testnet.bkcscan.com/address/" + account, mr: "16px" }, "View on BKCScan"),
             React__default['default'].createElement(CopyToClipboard, { toCopy: account }, "Copy Address")),
         React__default['default'].createElement(Flex, { justifyContent: "center" },
             React__default['default'].createElement(Button, { scale: "sm", variant: "secondary", onClick: function () {

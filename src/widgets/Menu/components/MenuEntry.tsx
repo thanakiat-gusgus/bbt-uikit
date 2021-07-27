@@ -21,7 +21,7 @@ const rainbowAnimation = keyframes`
 `;
 
 const LinkLabel = styled.div<{ isPushed: boolean }>`
-  color: ${({ isPushed, theme }) => (isPushed ? theme.colors.textSubtle : "transparent")};
+  color: ${({ isPushed, theme }) => (isPushed ? theme.colors.textBitkub : "transparent")};
   transition: color 0.4s;
   flex-grow: 1;
 `;
@@ -67,7 +67,7 @@ MenuEntry.defaultProps = {
   isActive: false,
 };
 
-const LinkStatus = styled(Text)<{ color: keyof Colors }>`
+const LinkStatus = styled(Text) <{ color: keyof Colors }>`
   border-radius: ${({ theme }) => theme.radii.default};
   padding: 0 8px;
   border: 2px solid;
