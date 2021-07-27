@@ -23,7 +23,7 @@ const AccountModal: React.FC<Props> = ({ account, logout, onDismiss = () => null
       {account}
     </Text>
     <Flex mb="32px">
-      <LinkExternal small href={`https://testnet.bkcscan.com/address/${account}`} mr="16px"> 
+      <LinkExternal small href={`https://testnet.bkcscan.com/address/${account}`} mr="16px">
         View on BKCScan
       </LinkExternal>
       <CopyToClipboard toCopy={account}>Copy Address</CopyToClipboard>
@@ -31,7 +31,7 @@ const AccountModal: React.FC<Props> = ({ account, logout, onDismiss = () => null
     <Flex justifyContent="center">
       <Button
         scale="sm"
-        variant="secondary"
+        variant="bbtSecond"
         onClick={() => {
           logout();
           window.localStorage.removeItem(connectorLocalStorageKey);
