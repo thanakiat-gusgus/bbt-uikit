@@ -4629,6 +4629,7 @@ exports.IconButton = IconButton;
 exports.Image = Image;
 exports.InfoIcon = Icon$1M;
 exports.Input = Input$1;
+exports.KubIcon = Icon$1M;
 exports.LanguageIcon = Icon$1f;
 exports.LaurelLeftIcon = Icon$1e;
 exports.LaurelRightIcon = Icon$1d;
