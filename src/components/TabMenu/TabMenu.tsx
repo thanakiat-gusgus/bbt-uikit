@@ -36,8 +36,8 @@ const ButtonMenu: React.FC<TabMenuProps> = ({ activeIndex = 0, onItemClick, chil
           return cloneElement(child, {
             isActive,
             onClick: onItemClick ? () => onItemClick(index) : undefined,
-            color: isActive ? "backgroundAlt" : "textSubtle",
-            backgroundColor: isActive ? "textSubtle" : "input",
+            color: isActive ? "backgroundAlt" : "textBitkub",
+            backgroundColor: isActive ? "textBitkub" : "input",
           });
         })}
       </Inner>

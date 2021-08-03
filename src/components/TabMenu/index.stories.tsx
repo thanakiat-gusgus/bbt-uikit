@@ -56,7 +56,7 @@ export const Tabs: React.FC = () => {
     <>
       <Row>
         <Tab>Default</Tab>
-        <Tab color="primary" backgroundColor="secondary">
+        <Tab color="textSubtle" backgroundColor="bbtColor">
           Custom colors
         </Tab>
       </Row>

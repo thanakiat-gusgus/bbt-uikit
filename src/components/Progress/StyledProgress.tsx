@@ -11,7 +11,7 @@ export const Bar = styled.div<BarProps>`
   position: absolute;
   top: 0;
   left: 0;
-  background-color: ${(props) => (props.primary ? props.theme.colors.secondary : `${props.theme.colors.secondary}80`)};
+  background-color: ${(props) => (props.primary ? props.theme.colors.bbtColor : `${props.theme.colors.bbtColor}80`)};
   height: 100%;
   transition: width 200ms ease;
 `;
@@ -37,12 +37,12 @@ const StyledProgress = styled.div<StyledProgressProps>`
   }
 
   ${StyledSystemVariant({
-    variants: styleVariants,
-  })}
+  variants: styleVariants,
+})}
   ${StyledSystemVariant({
-    prop: "scale",
-    variants: styleScales,
-  })}
+  prop: "scale",
+  variants: styleScales,
+})}
   ${space}
 `;
 
