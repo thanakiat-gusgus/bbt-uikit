@@ -39,7 +39,7 @@ const PanelFooter: React.FC<Props> = ({
   pushNav,
   toggleTheme,
   isDark,
-  cakePriceUsd,
+  bbdtPriceUsd,
   currentLang,
   langs,
   setLang,
@@ -57,7 +57,7 @@ const PanelFooter: React.FC<Props> = ({
   return (
     <Container>
       <SocialEntry>
-        <BBDTPrice cakePriceUsd={cakePriceUsd} />
+        <BBDTPrice bbdtPriceUsd={bbdtPriceUsd} />
         <SocialLinks />
       </SocialEntry>
       <SettingsEntry>
