@@ -53,7 +53,7 @@ export const Icons: React.FC = () => {
           >
             <Flex alignItems="center" justifyContent="center" style={{ flex: 1 }} height="100%">
               <Icon width="48px" />
-              <Icon width="24px" color="secondary" ml="4px" />
+              <Icon width="24px" color="bitkub" ml="4px" />
             </Flex>
             <Box py="4px">
               <Text color="textSubtle" fontSize="14px">
