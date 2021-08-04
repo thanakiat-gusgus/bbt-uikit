@@ -17,6 +17,7 @@ export declare type CardTheme = {
         blue: string;
         bubblegum: string;
         violet: string;
+        bitkub: string;
     };
     dropShadow: string;
 };

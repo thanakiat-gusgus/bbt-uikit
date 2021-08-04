@@ -70,7 +70,7 @@ const Menu: React.FC<NavProps> = ({
   langs,
   setLang,
   currentLang,
-  cakePriceUsd,
+  bbdtPriceUsd,
   links,
   profile,
   children,
@@ -125,7 +125,7 @@ const Menu: React.FC<NavProps> = ({
         {!!login && !!logout && (
           <Flex>
             <UserBlock account={account} login={login} logout={logout} />
-            {profile && <Avatar profile={profile} />}
+            {/* {profile && <Avatar profile={profile} />} */}
           </Flex>
         )}
       </StyledNav>
@@ -139,7 +139,7 @@ const Menu: React.FC<NavProps> = ({
           langs={langs}
           setLang={setLang}
           currentLang={currentLang}
-          cakePriceUsd={cakePriceUsd}
+          bbdtPriceUsd={bbdtPriceUsd}
           pushNav={setIsPushed}
           links={links}
         />

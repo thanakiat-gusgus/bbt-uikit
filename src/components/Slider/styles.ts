@@ -1,9 +1,9 @@
 import { InputHTMLAttributes } from "react";
 import styled from "styled-components";
 import Text from "../Text/Text";
-import bunnyHeadMain from "./svg/bunnyhead-main.svg";
-import bunnyHeadMax from "./svg/bunnyhead-max.svg";
-import bunnyButt from "./svg/bunnybutt.svg";
+import kubMain from "./svg/kub-main.svg";
+import kubMax from "./svg/kub-max.svg";
+// import bunnyButt from "./svg/bunnybutt.svg";
 
 interface SliderLabelProps {
   progress: string;
@@ -23,14 +23,14 @@ const getCursorStyle = ({ disabled = false }: DisabledProp) => {
 
 const getBaseThumbStyles = ({ isMax, disabled }: StyledInputProps) => `
   -webkit-appearance: none;
-  background-image: url(${isMax ? bunnyHeadMax : bunnyHeadMain});
+  background-image: url(${isMax ? kubMax : kubMain});
   background-color: transparent;
   border: 0;
   cursor: ${getCursorStyle};
   width: 24px;
   height: 32px;
   filter: ${disabled ? "grayscale(100%)" : "none"};
-  transform: translate(-2px, -2px);
+  transform: translate(-5px, -2px);
   transition: 200ms transform;
 
   &:hover {
@@ -54,15 +54,7 @@ export const SliderLabel = styled(Text)<SliderLabelProps>`
   min-width: 24px; // Slider thumb size
 `;
 
-export const BunnyButt = styled.div<DisabledProp>`
-  background: url(${bunnyButt}) no-repeat;
-  height: 32px;
-  filter: ${({ disabled }) => (disabled ? "grayscale(100%)" : "none")};
-  position: absolute;
-  width: 15px;
-`;
-
-export const BunnySlider = styled.div`
+export const KubSlider = styled.div`
   position: absolute;
   left: 14px;
   width: calc(100% - 14px);
@@ -91,11 +83,11 @@ export const BarBackground = styled.div<DisabledProp>`
   height: 2px;
   position: absolute;
   top: 18px;
-  width: 100%;
+  width: 98%;
 `;
 
 export const BarProgress = styled.div<DisabledProp>`
-  background-color: ${({ theme }) => theme.colors.primary};
+  background-color: ${({ theme }) => theme.colors.bitkub};
   filter: ${({ disabled }) => (disabled ? "grayscale(100%)" : "none")};
   height: 10px;
   position: absolute;
