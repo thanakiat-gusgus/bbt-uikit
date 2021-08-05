@@ -29,7 +29,7 @@ const Connector = styled.div<StatusProps>`
   background-color: ${({ theme, status }) => theme.colors[status === "past" ? "success" : "textDisabled"]};
 `;
 
-const ChildrenWrapper = styled(Box)<{ isVisible: boolean }>`
+const ChildrenWrapper = styled(Box) <{ isVisible: boolean }>`
   ${({ theme }) => theme.mediaQueries.md} {
     visibility: ${({ isVisible }) => (isVisible ? "visible" : "hidden")};
   }
@@ -58,7 +58,7 @@ const Wrapper = styled.div`
 
 export const StepNumber = styled.div<StatusProps>`
   box-shadow: 0px 1px 4px rgba(25, 19, 38, 0.15);
-  background-color: ${({ theme, status }) => theme.colors[status === "current" ? "secondary" : "invertedContrast"]};
+  background-color: ${({ theme, status }) => theme.colors[status === "current" ? "bbtColor" : "invertedContrast"]};
   border: 2px solid ${({ theme, status }) => (status === "past" ? theme.colors.success : "transparent")};
   border-radius: ${({ theme }) => theme.radii.circle};
   color: ${getStepNumberFontColor};
