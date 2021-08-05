@@ -10,7 +10,7 @@ const Icons = IconModule as unknown as { [key: string]: React.FC<SvgProps> };
 
 const SocialLinks: React.FC = () => (
   <Flex>
-    {socials.map((social, index) => {
+    {/* {socials.map((social, index) => {
       const Icon = Icons[social.icon];
       const iconProps = { width: "24px", color: "textSubtle", style: { cursor: "pointer" } };
       const mr = index < socials.length - 1 ? "24px" : 0;
@@ -30,7 +30,7 @@ const SocialLinks: React.FC = () => (
           <Icon {...iconProps} />
         </Link>
       );
-    })}
+    })} */}
   </Flex>
 );
 

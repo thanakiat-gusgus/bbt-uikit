@@ -48,6 +48,12 @@ export const Default: React.FC = () => {
       <Text fontSize="24px">Custom fontsize</Text>
       <Text color="red">Custom color</Text>
       <Text color="primary">Custom color from theme</Text>
+      <Text color="bitkub">
+        Text bitkub
+      </Text>
+      <Text color="bbtColor">
+        Text bbtColor
+      </Text>
       <Text color="secondary" textTransform="uppercase">
         with text transform
       </Text>

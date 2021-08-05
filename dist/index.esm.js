@@ -67,8 +67,8 @@ var getThemeValue = function (path, fallback) {
     };
 };
 
-var rotate$1 = keyframes(templateObject_1$10 || (templateObject_1$10 = __makeTemplateObject(["\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n"], ["\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n"])));
-var spinStyle = css(templateObject_2$p || (templateObject_2$p = __makeTemplateObject(["\n  animation: ", " 2s linear infinite;\n"], ["\n  animation: ", " 2s linear infinite;\n"])), rotate$1);
+var rotate$1 = keyframes(templateObject_1$$ || (templateObject_1$$ = __makeTemplateObject(["\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n"], ["\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n"])));
+var spinStyle = css(templateObject_2$o || (templateObject_2$o = __makeTemplateObject(["\n  animation: ", " 2s linear infinite;\n"], ["\n  animation: ", " 2s linear infinite;\n"])), rotate$1);
 var Svg = styled.svg(templateObject_3$b || (templateObject_3$b = __makeTemplateObject(["\n  align-self: center; // Safari fix\n  fill: ", ";\n  flex-shrink: 0;\n  ", "\n  ", "\n"], ["\n  align-self: center; // Safari fix\n  fill: ", ";\n  flex-shrink: 0;\n  ", "\n  ", "\n"])), function (_a) {
     var theme = _a.theme, color = _a.color;
     return getThemeValue("colors." + color, color)(theme);
@@ -82,40 +82,24 @@ Svg.defaultProps = {
     xmlns: "http://www.w3.org/2000/svg",
     spin: false,
 };
-var templateObject_1$10, templateObject_2$p, templateObject_3$b;
+var templateObject_1$$, templateObject_2$o, templateObject_3$b;
 
-<<<<<<< HEAD
-var Icon$1P = function (props) {
-=======
 var Icon$1Q = function (props) {
->>>>>>> a5e1ba8739b83f2319426d389050df68312b0874
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM15.88 8.29L10 14.17L8.12 12.29C7.73 11.9 7.1 11.9 6.71 12.29C6.32 12.68 6.32 13.31 6.71 13.7L9.3 16.29C9.69 16.68 10.32 16.68 10.71 16.29L17.3 9.7C17.69 9.31 17.69 8.68 17.3 8.29C16.91 7.9 16.27 7.9 15.88 8.29Z" })));
 };
 
-<<<<<<< HEAD
-var Icon$1O = function (props) {
-=======
 var Icon$1P = function (props) {
->>>>>>> a5e1ba8739b83f2319426d389050df68312b0874
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M12 7C12.55 7 13 7.45 13 8V12C13 12.55 12.55 13 12 13C11.45 13 11 12.55 11 12V8C11 7.45 11.45 7 12 7ZM11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20ZM13 17H11V15H13V17Z" })));
 };
 
-<<<<<<< HEAD
-var Icon$1N = function (props) {
-=======
 var Icon$1O = function (props) {
->>>>>>> a5e1ba8739b83f2319426d389050df68312b0874
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22ZM12 4C16.42 4 20 7.58 20 12C20 13.85 19.37 15.55 18.31 16.9L7.1 5.69C8.45 4.63 10.15 4 12 4ZM5.69 7.1L16.9 18.31C15.55 19.37 13.85 20 12 20C7.58 20 4 16.42 4 12C4 10.15 4.63 8.45 5.69 7.1Z" })));
 };
 
-<<<<<<< HEAD
-var Icon$1M = function (props) {
-=======
 var Icon$1N = function (props) {
->>>>>>> a5e1ba8739b83f2319426d389050df68312b0874
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M11 7H13V9H11V7ZM12 17C12.55 17 13 16.55 13 16V12C13 11.45 12.55 11 12 11C11.45 11 11 11.45 11 12V16C11 16.55 11.45 17 12 17ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z" })));
 };
@@ -128,7 +112,7 @@ var getFontSize = function (_a) {
     var fontSize = _a.fontSize, small = _a.small;
     return small ? "14px" : fontSize || "16px";
 };
-var Text = styled.div(templateObject_1$$ || (templateObject_1$$ = __makeTemplateObject(["\n  color: ", ";\n  font-size: ", ";\n  font-weight: ", ";\n  line-height: 1.5;\n  ", "\n  ", "\n\n  ", "\n  ", "\n  ", "\n"], ["\n  color: ", ";\n  font-size: ", ";\n  font-weight: ", ";\n  line-height: 1.5;\n  ", "\n  ",
+var Text = styled.div(templateObject_1$_ || (templateObject_1$_ = __makeTemplateObject(["\n  color: ", ";\n  font-size: ", ";\n  font-weight: ", ";\n  line-height: 1.5;\n  ", "\n  ", "\n\n  ", "\n  ", "\n  ", "\n"], ["\n  color: ", ";\n  font-size: ", ";\n  font-weight: ", ";\n  line-height: 1.5;\n  ", "\n  ",
     "\n\n  ", "\n  ", "\n  ", "\n"])), getColor, getFontSize, function (_a) {
     var bold = _a.bold;
     return (bold ? 600 : 400);
@@ -145,13 +129,13 @@ Text.defaultProps = {
     small: false,
     ellipsis: false,
 };
-var templateObject_1$$;
+var templateObject_1$_;
 
-var TooltipText = styled(Text)(templateObject_1$_ || (templateObject_1$_ = __makeTemplateObject(["\n  text-decoration: ", ";\n  text-underline-offset: 0.1em;\n"], ["\n  text-decoration: ", ";\n  text-underline-offset: 0.1em;\n"])), function (_a) {
+var TooltipText = styled(Text)(templateObject_1$Z || (templateObject_1$Z = __makeTemplateObject(["\n  text-decoration: ", ";\n  text-underline-offset: 0.1em;\n"], ["\n  text-decoration: ", ";\n  text-underline-offset: 0.1em;\n"])), function (_a) {
     var theme = _a.theme;
     return "underline dotted " + theme.colors.textSubtle;
 });
-var templateObject_1$_;
+var templateObject_1$Z;
 
 var getExternalLinkProps = function () { return ({
     target: "_blank",
@@ -272,7 +256,7 @@ var getOpacity = function (_a) {
     var _b = _a.$isLoading, $isLoading = _b === void 0 ? false : _b;
     return $isLoading ? ".5" : "1";
 };
-var StyledButton = styled.button(templateObject_1$Z || (templateObject_1$Z = __makeTemplateObject(["\n  align-items: center;\n  border: 0;\n  border-radius: 16px;\n  box-shadow: 0px -1px 0px 0px rgba(14, 14, 44, 0.4) inset;\n  cursor: pointer;\n  display: inline-flex;\n  font-family: inherit;\n  font-size: 16px;\n  font-weight: 600;\n  justify-content: center;\n  letter-spacing: 0.03em;\n  line-height: 1;\n  opacity: ", ";\n  outline: 0;\n  transition: background-color 0.2s, opacity 0.2s;\n\n  &:hover:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled):not(:active) {\n    opacity: 0.65;\n  }\n\n  &:active:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled) {\n    opacity: 0.85;\n    transform: translateY(1px);\n    box-shadow: none;\n  }\n\n  ", "\n  ", "\n  ", "\n  ", "\n  ", "\n"], ["\n  align-items: center;\n  border: 0;\n  border-radius: 16px;\n  box-shadow: 0px -1px 0px 0px rgba(14, 14, 44, 0.4) inset;\n  cursor: pointer;\n  display: inline-flex;\n  font-family: inherit;\n  font-size: 16px;\n  font-weight: 600;\n  justify-content: center;\n  letter-spacing: 0.03em;\n  line-height: 1;\n  opacity: ", ";\n  outline: 0;\n  transition: background-color 0.2s, opacity 0.2s;\n\n  &:hover:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled):not(:active) {\n    opacity: 0.65;\n  }\n\n  &:active:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled) {\n    opacity: 0.85;\n    transform: translateY(1px);\n    box-shadow: none;\n  }\n\n  ", "\n  ",
+var StyledButton = styled.button(templateObject_1$Y || (templateObject_1$Y = __makeTemplateObject(["\n  align-items: center;\n  border: 0;\n  border-radius: 16px;\n  box-shadow: 0px -1px 0px 0px rgba(14, 14, 44, 0.4) inset;\n  cursor: pointer;\n  display: inline-flex;\n  font-family: inherit;\n  font-size: 16px;\n  font-weight: 600;\n  justify-content: center;\n  letter-spacing: 0.03em;\n  line-height: 1;\n  opacity: ", ";\n  outline: 0;\n  transition: background-color 0.2s, opacity 0.2s;\n\n  &:hover:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled):not(:active) {\n    opacity: 0.65;\n  }\n\n  &:active:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled) {\n    opacity: 0.85;\n    transform: translateY(1px);\n    box-shadow: none;\n  }\n\n  ", "\n  ", "\n  ", "\n  ", "\n  ", "\n"], ["\n  align-items: center;\n  border: 0;\n  border-radius: 16px;\n  box-shadow: 0px -1px 0px 0px rgba(14, 14, 44, 0.4) inset;\n  cursor: pointer;\n  display: inline-flex;\n  font-family: inherit;\n  font-size: 16px;\n  font-weight: 600;\n  justify-content: center;\n  letter-spacing: 0.03em;\n  line-height: 1;\n  opacity: ", ";\n  outline: 0;\n  transition: background-color 0.2s, opacity 0.2s;\n\n  &:hover:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled):not(:active) {\n    opacity: 0.65;\n  }\n\n  &:active:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled) {\n    opacity: 0.85;\n    transform: translateY(1px);\n    box-shadow: none;\n  }\n\n  ", "\n  ",
     "\n  ",
     "\n  ", "\n  ", "\n"])), getOpacity, getDisabledStyles, variant$1({
     prop: "scale",
@@ -280,7 +264,7 @@ var StyledButton = styled.button(templateObject_1$Z || (templateObject_1$Z = __m
 }), variant$1({
     variants: styleVariants$2,
 }), layout, space);
-var templateObject_1$Z;
+var templateObject_1$Y;
 
 var Button = function (props) {
     var startIcon = props.startIcon, endIcon = props.endIcon, external = props.external, className = props.className, isLoading = props.isLoading, disabled = props.disabled, children = props.children, rest = __rest(props, ["startIcon", "endIcon", "external", "className", "isLoading", "disabled", "children"]);
@@ -313,119 +297,71 @@ Button.defaultProps = {
     disabled: false,
 };
 
-var IconButton = styled(Button)(templateObject_1$Y || (templateObject_1$Y = __makeTemplateObject(["\n  padding: 0;\n  width: ", ";\n"], ["\n  padding: 0;\n  width: ", ";\n"])), function (_a) {
+var IconButton = styled(Button)(templateObject_1$X || (templateObject_1$X = __makeTemplateObject(["\n  padding: 0;\n  width: ", ";\n"], ["\n  padding: 0;\n  width: ", ";\n"])), function (_a) {
     var scale = _a.scale;
     return (scale === "sm" ? "32px" : "48px");
 });
-var templateObject_1$Y;
+var templateObject_1$X;
 
-<<<<<<< HEAD
-var Icon$1L = function (props) {
-=======
 var Icon$1M = function (props) {
->>>>>>> a5e1ba8739b83f2319426d389050df68312b0874
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M18 13H13V18C13 18.55 12.55 19 12 19C11.45 19 11 18.55 11 18V13H6C5.45 13 5 12.55 5 12C5 11.45 5.45 11 6 11H11V6C11 5.45 11.45 5 12 5C12.55 5 13 5.45 13 6V11H18C18.55 11 19 11.45 19 12C19 12.55 18.55 13 18 13Z" })));
 };
 
-<<<<<<< HEAD
-var Icon$1K = function (props) {
-=======
 var Icon$1L = function (props) {
->>>>>>> a5e1ba8739b83f2319426d389050df68312b0874
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M19 11H7.82998L12.71 6.12C13.1 5.73 13.1 5.09 12.71 4.7C12.32 4.31 11.69 4.31 11.3 4.7L4.70998 11.29C4.31998 11.68 4.31998 12.31 4.70998 12.7L11.3 19.29C11.69 19.68 12.32 19.68 12.71 19.29C13.1 18.9 13.1 18.27 12.71 17.88L7.82998 13H19C19.55 13 20 12.55 20 12C20 11.45 19.55 11 19 11Z" })));
 };
 
-<<<<<<< HEAD
-var Icon$1J = function (props) {
-=======
 var Icon$1K = function (props) {
->>>>>>> a5e1ba8739b83f2319426d389050df68312b0874
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M11 5V16.17L6.11997 11.29C5.72997 10.9 5.08997 10.9 4.69997 11.29C4.30997 11.68 4.30997 12.31 4.69997 12.7L11.29 19.29C11.68 19.68 12.31 19.68 12.7 19.29L19.29 12.7C19.68 12.31 19.68 11.68 19.29 11.29C18.9 10.9 18.27 10.9 17.88 11.29L13 16.17V5C13 4.45 12.55 4 12 4C11.45 4 11 4.45 11 5Z" })));
 };
 
-<<<<<<< HEAD
-var Icon$1I = function (props) {
-=======
 var Icon$1J = function (props) {
->>>>>>> a5e1ba8739b83f2319426d389050df68312b0874
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M8.71005 11.71L11.3001 14.3C11.6901 14.69 12.3201 14.69 12.7101 14.3L15.3001 11.71C15.9301 11.08 15.4801 10 14.5901 10H9.41005C8.52005 10 8.08005 11.08 8.71005 11.71Z" })));
 };
 
-<<<<<<< HEAD
-var Icon$1H = function (props) {
-=======
 var Icon$1I = function (props) {
->>>>>>> a5e1ba8739b83f2319426d389050df68312b0874
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M8.71005 12.29L11.3001 9.69997C11.6901 9.30997 12.3201 9.30997 12.7101 9.69997L15.3001 12.29C15.9301 12.92 15.4801 14 14.5901 14H9.41005C8.52005 14 8.08005 12.92 8.71005 12.29Z" })));
 };
 
-<<<<<<< HEAD
-var Icon$1G = function (props) {
-=======
 var Icon$1H = function (props) {
->>>>>>> a5e1ba8739b83f2319426d389050df68312b0874
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M21 11.1835L9.83 11.1835L14.71 6.30347C15.1 5.91347 15.1 5.27347 14.71 4.88347C14.32 4.49347 13.69 4.49347 13.3 4.88347L6.71 11.4735C6.32 11.8635 6.32 12.4935 6.71 12.8835L13.29 19.4835C13.68 19.8735 14.31 19.8735 14.7 19.4835C15.09 19.0935 15.09 18.4635 14.7 18.0735L9.83 13.1835L21 13.1835C21.55 13.1835 22 12.7335 22 12.1835C22 11.6335 21.55 11.1835 21 11.1835Z" }),
         React.createElement("path", { d: "M4 19.1835C3.44771 19.1835 3 18.7358 3 18.1835L3 6.18347C3 5.63119 3.44772 5.18347 4 5.18347C4.55229 5.18347 5 5.63119 5 6.18347L5 18.1835C5 18.7358 4.55228 19.1835 4 19.1835Z" })));
 };
 
-<<<<<<< HEAD
-var Icon$1F = function (props) {
-=======
 var Icon$1G = function (props) {
->>>>>>> a5e1ba8739b83f2319426d389050df68312b0874
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M5 13H16.17L11.29 17.88C10.9 18.27 10.9 18.91 11.29 19.3C11.68 19.69 12.31 19.69 12.7 19.3L19.29 12.71C19.68 12.32 19.68 11.69 19.29 11.3L12.71 4.7C12.32 4.31 11.69 4.31 11.3 4.7C10.91 5.09 10.91 5.72 11.3 6.11L16.17 11H5C4.45 11 4 11.45 4 12C4 12.55 4.45 13 5 13Z" })));
 };
 
-<<<<<<< HEAD
-var Icon$1E = function (props) {
-=======
 var Icon$1F = function (props) {
->>>>>>> a5e1ba8739b83f2319426d389050df68312b0874
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M3 13.1835H14.17L9.29 18.0635C8.9 18.4535 8.9 19.0935 9.29 19.4835C9.68 19.8735 10.31 19.8735 10.7 19.4835L17.29 12.8935C17.68 12.5035 17.68 11.8735 17.29 11.4835L10.71 4.88347C10.32 4.49347 9.69 4.49347 9.3 4.88347C8.91 5.27347 8.91 5.90347 9.3 6.29347L14.17 11.1835H3C2.45 11.1835 2 11.6335 2 12.1835C2 12.7335 2.45 13.1835 3 13.1835Z" }),
         React.createElement("path", { d: "M20 5.18347C20.5523 5.18347 21 5.63119 21 6.18347V18.1835C21 18.7358 20.5523 19.1835 20 19.1835C19.4477 19.1835 19 18.7358 19 18.1835V6.18347C19 5.63119 19.4477 5.18347 20 5.18347Z" })));
 };
 
-<<<<<<< HEAD
-var Icon$1D = function (props) {
-=======
 var Icon$1E = function (props) {
->>>>>>> a5e1ba8739b83f2319426d389050df68312b0874
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M13 19V7.83001L17.88 12.71C18.27 13.1 18.91 13.1 19.3 12.71C19.69 12.32 19.69 11.69 19.3 11.3L12.71 4.71001C12.32 4.32001 11.69 4.32001 11.3 4.71001L4.69997 11.29C4.30997 11.68 4.30997 12.31 4.69997 12.7C5.08997 13.09 5.71997 13.09 6.10997 12.7L11 7.83001V19C11 19.55 11.45 20 12 20C12.55 20 13 19.55 13 19Z" })));
 };
 
-<<<<<<< HEAD
-var Icon$1C = function (props) {
-=======
 var Icon$1D = function (props) {
->>>>>>> a5e1ba8739b83f2319426d389050df68312b0874
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M12 6V7.79C12 8.24 12.54 8.46 12.85 8.14L15.64 5.35C15.84 5.15 15.84 4.84 15.64 4.64L12.85 1.85C12.54 1.54 12 1.76 12 2.21V4C7.58 4 4 7.58 4 12C4 13.04 4.2 14.04 4.57 14.95C4.84 15.62 5.7 15.8 6.21 15.29C6.48 15.02 6.59 14.61 6.44 14.25C6.15 13.56 6 12.79 6 12C6 8.69 8.69 6 12 6ZM17.79 8.71C17.52 8.98 17.41 9.4 17.56 9.75C17.84 10.45 18 11.21 18 12C18 15.31 15.31 18 12 18V16.21C12 15.76 11.46 15.54 11.15 15.86L8.36 18.65C8.16 18.85 8.16 19.16 8.36 19.36L11.15 22.15C11.46 22.46 12 22.24 12 21.8V20C16.42 20 20 16.42 20 12C20 10.96 19.8 9.96 19.43 9.05C19.16 8.38 18.3 8.2 17.79 8.71Z" })));
 };
 
-<<<<<<< HEAD
-var Icon$1B = function (props) {
-=======
 var Icon$1C = function (props) {
->>>>>>> a5e1ba8739b83f2319426d389050df68312b0874
     return (React.createElement(Svg, __assign({ viewBox: "0 0 16 16" }, props),
         React.createElement("circle", { cx: "8", cy: "8", r: "8", fill: "#F0B90B" }),
         React.createElement("path", { d: "M5.01656 8.00006L3.79256 9.23256L2.56006 8.00006L3.79256 6.76756L5.01656 8.00006ZM8.00006 5.01656L10.1081 7.12456L11.3406 5.89206L9.23256 3.79256L8.00006 2.56006L6.76756 3.79256L4.66806 5.89206L5.90056 7.12456L8.00006 5.01656ZM12.2076 6.76756L10.9836 8.00006L12.2161 9.23256L13.4401 8.00006L12.2076 6.76756ZM8.00006 10.9836L5.89206 8.87556L4.66806 10.1081L6.77606 12.2161L8.00006 13.4401L9.23256 12.2076L11.3406 10.0996L10.1081 8.87556L8.00006 10.9836ZM8.00006 9.23256L9.23256 8.00006L8.00006 6.76756L6.76756 8.00006L8.00006 9.23256Z", fill: "#FFFDFA" })));
 };
 
-<<<<<<< HEAD
-var Icon$1A = function (props) {
-=======
 var Icon$1B = function (props) {
->>>>>>> a5e1ba8739b83f2319426d389050df68312b0874
     return (React.createElement(Svg, __assign({ viewBox: "0 0 64 64" }, props),
         React.createElement("path", { d: "M58.6666 34.1665C58.6666 48.8523 46.7275 59.6665 31.9999 59.6665C17.2723 59.6665 5.33325 48.8523 5.33325 34.1665C5.33325 19.4808 17.2723 8.6665 31.9999 8.6665C46.7275 8.6665 58.6666 19.4808 58.6666 34.1665Z", fill: "#EB8C00" }),
         React.createElement("path", { d: "M58.6666 29.8335C58.6666 44.5192 46.7275 55.3335 31.9999 55.3335C17.2723 55.3335 5.33325 44.5192 5.33325 29.8335C5.33325 15.1477 17.2723 4.3335 31.9999 4.3335C46.7275 4.3335 58.6666 15.1477 58.6666 29.8335Z", fill: "#FFD800" }),
@@ -435,11 +371,7 @@ var Icon$1B = function (props) {
         React.createElement("path", { d: "M23.4077 30.5L19.8827 34.0117L16.3333 30.5L19.8827 26.9883L23.4077 30.5ZM31.9999 21.9992L38.0708 28.0055L41.6202 24.4938L35.5494 18.5117L31.9999 15L28.4504 18.5117L22.4041 24.4938L25.9536 28.0055L31.9999 21.9992ZM44.1171 26.9883L40.5921 30.5L44.1416 34.0117L47.6666 30.5L44.1171 26.9883ZM31.9999 39.0008L25.9291 32.9945L22.4041 36.5063L28.4749 42.5125L31.9999 46L35.5494 42.4883L41.6202 36.482L38.0708 32.9945L31.9999 39.0008ZM31.9999 34.0117L35.5494 30.5L31.9999 26.9883L28.4504 30.5L31.9999 34.0117Z", fill: "#191326" })));
 };
 
-<<<<<<< HEAD
-var Icon$1z = function (props) {
-=======
 var Icon$1A = function (props) {
->>>>>>> a5e1ba8739b83f2319426d389050df68312b0874
     var id = uniqueId("svg");
     return (React.createElement(Svg, __assign({ viewBox: "0 0 64 64" }, props),
         React.createElement("g", { clipPath: "url(#" + id + ")" },
@@ -461,11 +393,7 @@ var Icon$1A = function (props) {
                 React.createElement("rect", { width: "64", height: "64", fill: "white" })))));
 };
 
-<<<<<<< HEAD
-var Icon$1y = function (props) {
-=======
 var Icon$1z = function (props) {
->>>>>>> a5e1ba8739b83f2319426d389050df68312b0874
     var theme = useTheme();
     var primaryColor = theme.isDark ? "#3C3742" : "#e9eaeb";
     var secondaryColor = theme.isDark ? "#666171" : "#bdc2c4";
@@ -485,29 +413,17 @@ var Icon$1z = function (props) {
         React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M71.9838 37.09L69.7348 37.0231C69.7449 36.6834 69.75 36.3423 69.75 36C69.75 35.6577 69.7449 35.3166 69.7348 34.9769L71.9838 34.91C71.9946 35.272 72 35.6354 72 36C72 36.3646 71.9946 36.728 71.9838 37.09ZM71.8544 32.7398L69.6134 32.941C69.5523 32.2603 69.471 31.5857 69.3702 30.9176L71.5949 30.5818C71.7025 31.2945 71.7892 32.014 71.8544 32.7398ZM71.2052 28.4414L69.0048 28.9115C68.8622 28.2441 68.6999 27.5841 68.5185 26.932L70.6861 26.3289C70.8798 27.0248 71.053 27.7292 71.2052 28.4414ZM70.0397 24.2525L67.9128 24.9864C67.6906 24.3424 67.4494 23.7072 67.1899 23.0815L69.2683 22.2196C69.5452 22.8874 69.8026 23.5652 70.0397 24.2525ZM68.3746 20.237L66.3524 21.2235C66.0538 20.6114 65.7373 20.0097 65.4034 19.419L67.3622 18.3119C67.7183 18.942 68.0561 19.584 68.3746 20.237ZM66.2353 16.4517L64.347 17.6751C63.977 17.104 63.5901 16.5448 63.1872 15.998L64.9984 14.6631C65.4281 15.2462 65.8407 15.8426 66.2353 16.4517ZM63.656 12.952L61.9283 14.3934C61.4925 13.8711 61.0413 13.3621 60.5752 12.8671L62.2132 11.3246C62.7102 11.8523 63.1914 12.3951 63.656 12.952ZM60.6754 9.78678L59.1329 11.4248C58.6379 10.9587 58.1289 10.5074 57.6066 10.0717L59.048 8.34397C59.6049 8.80865 60.1477 9.28984 60.6754 9.78678ZM57.3369 7.00159L56.002 8.8128C55.4552 8.40985 54.896 8.02303 54.3249 7.65302L55.5482 5.76468C56.1574 6.15933 56.7538 6.57187 57.3369 7.00159ZM53.6881 4.63782L52.581 6.5966C51.9903 6.26271 51.3886 5.94615 50.7765 5.64759L51.7629 3.62536C52.416 3.94392 53.058 4.28165 53.6881 4.63782ZM49.7804 2.7317L48.9185 4.81008C48.2928 4.55061 47.6576 4.30943 47.0136 4.08723L47.7475 1.96028C48.4348 2.19743 49.1126 2.4548 49.7804 2.7317ZM45.6711 1.31385L45.068 3.48152C44.4159 3.3001 43.7559 3.13777 43.0885 2.99517L43.5586 0.794831C44.2708 0.947003 44.9752 1.12024 45.6711 1.31385ZM41.4182 0.405049L41.0824 2.62985C40.4143 2.529 39.7397 2.44772 39.059 2.38662L39.2602 0.14563C39.986 0.210778 40.7055 0.297466 41.4182 0.405049ZM37.09 0.0161859C36.728 0.0054207 36.3646 0 36 0C35.6354 0 35.272 0.00542073 34.91 0.016186L34.9769 2.26519C35.3166 2.25509 35.6577 2.25 36 2.25C36.3423 2.25 36.6834 2.25509 37.0231 2.26519L37.09 0.0161859ZM32.7398 0.145631L32.941 2.38662C32.2603 2.44772 31.5857 2.529 30.9176 2.62985L30.5818 0.405049C31.2945 0.297467 32.014 0.210779 32.7398 0.145631ZM28.4414 0.794832L28.9115 2.99517C28.2441 3.13777 27.5841 3.3001 26.932 3.48152L26.3289 1.31386C27.0248 1.12024 27.7292 0.947004 28.4414 0.794832ZM24.2525 1.96028L24.9864 4.08723C24.3424 4.30944 23.7072 4.55061 23.0815 4.81008L22.2196 2.7317C22.8874 2.45481 23.5652 2.19743 24.2525 1.96028ZM20.237 3.62536L21.2235 5.64759C20.6114 5.94616 20.0097 6.26272 19.419 6.5966L18.3119 4.63783C18.942 4.28165 19.584 3.94392 20.237 3.62536ZM16.4517 5.76469L17.6751 7.65302C17.104 8.02303 16.5448 8.40985 15.998 8.81281L14.6631 7.00159C15.2462 6.57188 15.8426 6.15933 16.4517 5.76469ZM12.952 8.34398L14.3934 10.0717C13.8711 10.5075 13.3621 10.9587 12.8671 11.4248L11.3246 9.78679C11.8523 9.28984 12.3951 8.80865 12.952 8.34398ZM9.78678 11.3246L11.4248 12.8671C10.9587 13.3621 10.5074 13.8711 10.0717 14.3934L8.34397 12.952C8.80865 12.3951 9.28984 11.8523 9.78678 11.3246ZM7.00159 14.6631L8.8128 15.998C8.40985 16.5448 8.02303 17.104 7.65302 17.6751L5.76468 16.4518C6.15933 15.8426 6.57187 15.2462 7.00159 14.6631ZM4.63782 18.3119L6.5966 19.419C6.26271 20.0097 5.94615 20.6114 5.64759 21.2235L3.62536 20.2371C3.94392 19.584 4.28165 18.942 4.63782 18.3119ZM2.7317 22.2196L4.81008 23.0815C4.55061 23.7072 4.30943 24.3424 4.08723 24.9864L1.96028 24.2525C2.19743 23.5652 2.4548 22.8874 2.7317 22.2196ZM1.31385 26.3289L3.48152 26.932C3.3001 27.5841 3.13777 28.2441 2.99517 28.9115L0.794831 28.4414C0.947003 27.7292 1.12024 27.0248 1.31385 26.3289ZM0.405049 30.5818L2.62985 30.9176C2.529 31.5857 2.44772 32.2603 2.38662 32.941L0.14563 32.7398C0.210778 32.014 0.297466 31.2945 0.405049 30.5818ZM0.0161859 34.91C0.0054207 35.272 0 35.6354 0 36C0 36.3646 0.00542073 36.728 0.016186 37.09L2.26519 37.0231C2.25509 36.6834 2.25 36.3423 2.25 36C2.25 35.6577 2.25509 35.3166 2.26519 34.9769L0.0161859 34.91ZM0.145631 39.2602L2.38662 39.059C2.44772 39.7397 2.529 40.4143 2.62985 41.0824L0.40505 41.4182C0.297467 40.7055 0.210779 39.986 0.145631 39.2602ZM0.794833 43.5586L2.99517 43.0885C3.13777 43.7559 3.3001 44.4159 3.48152 45.068L1.31386 45.6711C1.12024 44.9752 0.947004 44.2708 0.794833 43.5586ZM1.96028 47.7475L4.08723 47.0136C4.30944 47.6576 4.55061 48.2928 4.81008 48.9185L2.7317 49.7804C2.45481 49.1126 2.19743 48.4348 1.96028 47.7475ZM3.62536 51.763L5.64759 50.7765C5.94616 51.3886 6.26272 51.9903 6.5966 52.581L4.63783 53.6881C4.28165 53.058 3.94392 52.416 3.62536 51.763ZM5.76469 55.5482L7.65302 54.3249C8.02303 54.896 8.40985 55.4552 8.81281 56.002L7.00159 57.3369C6.57188 56.7538 6.15933 56.1574 5.76469 55.5482ZM8.34398 59.048L10.0717 57.6066C10.5075 58.1289 10.9587 58.6379 11.4248 59.1329L9.78679 60.6754C9.28984 60.1477 8.80865 59.6049 8.34398 59.048ZM11.3246 62.2132L12.8671 60.5752C13.3621 61.0413 13.8711 61.4925 14.3934 61.9283L12.952 63.656C12.3951 63.1914 11.8523 62.7102 11.3246 62.2132ZM14.6631 64.9984L15.998 63.1872C16.5448 63.5901 17.104 63.977 17.6751 64.347L16.4518 66.2353C15.8426 65.8407 15.2462 65.4281 14.6631 64.9984ZM18.3119 67.3622L19.419 65.4034C20.0097 65.7373 20.6114 66.0538 21.2235 66.3524L20.2371 68.3746C19.584 68.0561 18.942 67.7184 18.3119 67.3622ZM22.2196 69.2683L23.0815 67.1899C23.7072 67.4494 24.3424 67.6906 24.9864 67.9128L24.2525 70.0397C23.5652 69.8026 22.8874 69.5452 22.2196 69.2683ZM26.3289 70.6861L26.932 68.5185C27.5841 68.6999 28.2441 68.8622 28.9115 69.0048L28.4414 71.2052C27.7292 71.053 27.0248 70.8798 26.3289 70.6861ZM30.5818 71.595L30.9176 69.3702C31.5857 69.471 32.2603 69.5523 32.941 69.6134L32.7398 71.8544C32.014 71.7892 31.2945 71.7025 30.5818 71.595ZM34.91 71.9838L34.9769 69.7348C35.3166 69.7449 35.6577 69.75 36 69.75C36.3423 69.75 36.6834 69.7449 37.0231 69.7348L37.09 71.9838C36.728 71.9946 36.3646 72 36 72C35.6354 72 35.272 71.9946 34.91 71.9838ZM39.2602 71.8544L39.059 69.6134C39.7397 69.5523 40.4143 69.471 41.0824 69.3702L41.4182 71.5949C40.7055 71.7025 39.986 71.7892 39.2602 71.8544ZM43.5586 71.2052L43.0885 69.0048C43.7559 68.8622 44.4159 68.6999 45.068 68.5185L45.6711 70.6861C44.9752 70.8798 44.2708 71.053 43.5586 71.2052ZM47.7475 70.0397L47.0136 67.9128C47.6576 67.6906 48.2928 67.4494 48.9185 67.1899L49.7804 69.2683C49.1126 69.5452 48.4348 69.8026 47.7475 70.0397ZM51.7629 68.3746L50.7765 66.3524C51.3886 66.0538 51.9903 65.7373 52.581 65.4034L53.6881 67.3622C53.058 67.7183 52.416 68.0561 51.7629 68.3746ZM55.5482 66.2353L54.3249 64.347C54.896 63.977 55.4552 63.5901 56.002 63.1872L57.3369 64.9984C56.7538 65.4281 56.1574 65.8407 55.5482 66.2353ZM59.048 63.656L57.6066 61.9283C58.1289 61.4925 58.6379 61.0413 59.1329 60.5752L60.6754 62.2132C60.1477 62.7102 59.6049 63.1914 59.048 63.656ZM62.2132 60.6754L60.5752 59.1329C61.0413 58.6379 61.4925 58.1289 61.9283 57.6066L63.656 59.048C63.1914 59.6049 62.7102 60.1477 62.2132 60.6754ZM64.9984 57.3369L63.1872 56.002C63.5901 55.4552 63.977 54.896 64.347 54.3249L66.2353 55.5482C65.8407 56.1574 65.4281 56.7538 64.9984 57.3369ZM67.3622 53.6881L65.4034 52.581C65.7373 51.9903 66.0538 51.3886 66.3524 50.7765L68.3746 51.7629C68.0561 52.416 67.7184 53.058 67.3622 53.6881ZM69.2683 49.7804L67.1899 48.9185C67.4494 48.2928 67.6906 47.6576 67.9128 47.0136L70.0397 47.7475C69.8026 48.4348 69.5452 49.1126 69.2683 49.7804ZM70.6861 45.6711L68.5185 45.068C68.6999 44.4159 68.8622 43.7559 69.0048 43.0885L71.2052 43.5586C71.053 44.2708 70.8798 44.9752 70.6861 45.6711ZM71.595 41.4182L69.3702 41.0824C69.471 40.4143 69.5523 39.7397 69.6134 39.059L71.8544 39.2602C71.7892 39.986 71.7025 40.7055 71.595 41.4182Z", fill: secondaryColor })));
 };
 
-<<<<<<< HEAD
-var Icon$1x = function (props) {
-=======
 var Icon$1y = function (props) {
->>>>>>> a5e1ba8739b83f2319426d389050df68312b0874
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M12.0967 17.8521L7.87565 20.2891C6.91907 20.8414 5.69589 20.5136 5.1436 19.557L0.999729 12.3796C0.447444 11.4231 0.775193 10.1999 1.73178 9.64759L6.31754 7C6.53486 6.87453 6.76593 6.79448 6.99977 6.75691V6C6.99977 4.89543 7.8952 4 8.99977 4H14.9998C16.1043 4 16.9998 4.89543 16.9998 6V6.73545C17.299 6.75379 17.5986 6.83993 17.8759 7L22.4616 9.64759C23.4182 10.1999 23.746 11.4231 23.1937 12.3796L19.0498 19.557C18.4975 20.5136 17.2743 20.8414 16.3178 20.2891L12.0967 17.8521ZM8.99977 6L14.9998 6L14.9998 7.98154L11.2363 14.5H8.99977L8.99977 6ZM6.99977 14.5L6.99977 8.91551L2.73178 11.3796L6.87565 18.557L10.4386 16.5H8.99977C7.8952 16.5 6.99977 15.6046 6.99977 14.5ZM16.8759 8.73205L21.4616 11.3796L17.3178 18.557L12.732 15.9094L16.8759 8.73205Z" })));
 };
 
-<<<<<<< HEAD
-var Icon$1w = function (props) {
-=======
 var Icon$1x = function (props) {
->>>>>>> a5e1ba8739b83f2319426d389050df68312b0874
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M4.5 12H7.5C8.05 12 8.5 11.55 8.5 11V7C8.5 6.45 8.05 6 7.5 6H4.5C3.95 6 3.5 6.45 3.5 7V11C3.5 11.55 3.95 12 4.5 12ZM4.5 19H7.5C8.05 19 8.5 18.55 8.5 18V14C8.5 13.45 8.05 13 7.5 13H4.5C3.95 13 3.5 13.45 3.5 14V18C3.5 18.55 3.95 19 4.5 19ZM10.5 19H13.5C14.05 19 14.5 18.55 14.5 18V14C14.5 13.45 14.05 13 13.5 13H10.5C9.95 13 9.5 13.45 9.5 14V18C9.5 18.55 9.95 19 10.5 19ZM16.5 19H19.5C20.05 19 20.5 18.55 20.5 18V14C20.5 13.45 20.05 13 19.5 13H16.5C15.95 13 15.5 13.45 15.5 14V18C15.5 18.55 15.95 19 16.5 19ZM10.5 12H13.5C14.05 12 14.5 11.55 14.5 11V7C14.5 6.45 14.05 6 13.5 6H10.5C9.95 6 9.5 6.45 9.5 7V11C9.5 11.55 9.95 12 10.5 12ZM15.5 7V11C15.5 11.55 15.95 12 16.5 12H19.5C20.05 12 20.5 11.55 20.5 11V7C20.5 6.45 20.05 6 19.5 6H16.5C15.95 6 15.5 6.45 15.5 7Z" })));
 };
 
-<<<<<<< HEAD
-var Icon$1v = function (props) {
-=======
 var Icon$1w = function (props) {
->>>>>>> a5e1ba8739b83f2319426d389050df68312b0874
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM19 19H5V5H19V19Z" }),
         React.createElement("path", { d: "M11.25 7.72H6.25V9.22H11.25V7.72Z" }),
@@ -517,120 +433,68 @@ var Icon$1w = function (props) {
         React.createElement("path", { d: "M14.09 10.95L15.5 9.54L16.91 10.95L17.97 9.89L16.56 8.47L17.97 7.06L16.91 6L15.5 7.41L14.09 6L13.03 7.06L14.44 8.47L13.03 9.89L14.09 10.95Z" })));
 };
 
-<<<<<<< HEAD
-var Icon$1u = function (props) {
-=======
 var Icon$1v = function (props) {
->>>>>>> a5e1ba8739b83f2319426d389050df68312b0874
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z" })));
 };
 
-<<<<<<< HEAD
-var Icon$1t = function (props) {
-=======
 var Icon$1u = function (props) {
->>>>>>> a5e1ba8739b83f2319426d389050df68312b0874
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M5 7C5 6.44772 4.55228 6 4 6C3.44772 6 3 6.44772 3 7V18C3 19.1046 3.89543 20 5 20H20C20.5523 20 21 19.5523 21 19C21 18.4477 20.5523 18 20 18H5V7Z" }),
         React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M19 17H7C6.44772 17 6 16.5523 6 16V12C6 11.4477 6.44772 11 7 11H10V10C10 9.44772 10.4477 9 11 9H14V7C14 6.44772 14.4477 6 15 6H19C19.5523 6 20 6.44772 20 7V16C20 16.5523 19.5523 17 19 17ZM16 8H18V15H16V8ZM12 15H14V11H12V15ZM10 13H8V15H10V13Z" })));
 };
 
-<<<<<<< HEAD
-var Icon$1s = function (props) {
-=======
 var Icon$1t = function (props) {
->>>>>>> a5e1ba8739b83f2319426d389050df68312b0874
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M9.00012 16.2L5.50012 12.7C5.11012 12.31 4.49012 12.31 4.10012 12.7C3.71012 13.09 3.71012 13.71 4.10012 14.1L8.29012 18.29C8.68012 18.68 9.31012 18.68 9.70012 18.29L20.3001 7.70001C20.6901 7.31001 20.6901 6.69001 20.3001 6.30001C19.9101 5.91001 19.2901 5.91001 18.9001 6.30001L9.00012 16.2Z" })));
 };
 
-<<<<<<< HEAD
-var Icon$1r = function (props) {
-=======
 var Icon$1s = function (props) {
->>>>>>> a5e1ba8739b83f2319426d389050df68312b0874
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M12 2.75711C6.48 2.75711 2 7.23711 2 12.7571C2 18.2771 6.48 22.7571 12 22.7571C17.52 22.7571 22 18.2771 22 12.7571C22 7.23711 17.52 2.75711 12 2.75711ZM9.29 17.0471L5.7 13.4571C5.31 13.0671 5.31 12.4371 5.7 12.0471C6.09 11.6571 6.72 11.6571 7.11 12.0471L10 14.9271L16.88 8.04711C17.27 7.65711 17.9 7.65711 18.29 8.04711C18.68 8.43711 18.68 9.06711 18.29 9.45711L10.7 17.0471C10.32 17.4371 9.68 17.4371 9.29 17.0471Z" })));
 };
 
-<<<<<<< HEAD
-var Icon$1q = function (props) {
-=======
 var Icon$1r = function (props) {
->>>>>>> a5e1ba8739b83f2319426d389050df68312b0874
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M8.11997 9.29006L12 13.1701L15.88 9.29006C16.27 8.90006 16.9 8.90006 17.29 9.29006C17.68 9.68006 17.68 10.3101 17.29 10.7001L12.7 15.2901C12.31 15.6801 11.68 15.6801 11.29 15.2901L6.69997 10.7001C6.30997 10.3101 6.30997 9.68006 6.69997 9.29006C7.08997 8.91006 7.72997 8.90006 8.11997 9.29006Z" })));
 };
 
-<<<<<<< HEAD
-var Icon$1p = function (props) {
-=======
 var Icon$1q = function (props) {
->>>>>>> a5e1ba8739b83f2319426d389050df68312b0874
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M14.71 15.88L10.83 12L14.71 8.12001C15.1 7.73001 15.1 7.10001 14.71 6.71001C14.32 6.32001 13.69 6.32001 13.3 6.71001L8.70998 11.3C8.31998 11.69 8.31998 12.32 8.70998 12.71L13.3 17.3C13.69 17.69 14.32 17.69 14.71 17.3C15.09 16.91 15.1 16.27 14.71 15.88Z" })));
 };
 
-<<<<<<< HEAD
-var Icon$1o = function (props) {
-=======
 var Icon$1p = function (props) {
->>>>>>> a5e1ba8739b83f2319426d389050df68312b0874
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M9.29006 15.88L13.1701 12L9.29006 8.12001C8.90006 7.73001 8.90006 7.10001 9.29006 6.71001C9.68006 6.32001 10.3101 6.32001 10.7001 6.71001L15.2901 11.3C15.6801 11.69 15.6801 12.32 15.2901 12.71L10.7001 17.3C10.3101 17.69 9.68006 17.69 9.29006 17.3C8.91006 16.91 8.90006 16.27 9.29006 15.88Z" })));
 };
 
-<<<<<<< HEAD
-var Icon$1n = function (props) {
-=======
 var Icon$1o = function (props) {
->>>>>>> a5e1ba8739b83f2319426d389050df68312b0874
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M8.11997 14.7101L12 10.8301L15.88 14.7101C16.27 15.1001 16.9 15.1001 17.29 14.7101C17.68 14.3201 17.68 13.6901 17.29 13.3001L12.7 8.7101C12.31 8.3201 11.68 8.3201 11.29 8.7101L6.69997 13.3001C6.30997 13.6901 6.30997 14.3201 6.69997 14.7101C7.08997 15.0901 7.72997 15.1001 8.11997 14.7101Z" })));
 };
 
-<<<<<<< HEAD
-var Icon$1m = function (props) {
-=======
 var Icon$1n = function (props) {
->>>>>>> a5e1ba8739b83f2319426d389050df68312b0874
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M18.3 5.70997C17.91 5.31997 17.28 5.31997 16.89 5.70997L12 10.59L7.10997 5.69997C6.71997 5.30997 6.08997 5.30997 5.69997 5.69997C5.30997 6.08997 5.30997 6.71997 5.69997 7.10997L10.59 12L5.69997 16.89C5.30997 17.28 5.30997 17.91 5.69997 18.3C6.08997 18.69 6.71997 18.69 7.10997 18.3L12 13.41L16.89 18.3C17.28 18.69 17.91 18.69 18.3 18.3C18.69 17.91 18.69 17.28 18.3 16.89L13.41 12L18.3 7.10997C18.68 6.72997 18.68 6.08997 18.3 5.70997Z" })));
 };
 
-<<<<<<< HEAD
-var Icon$1l = function (props) {
-=======
 var Icon$1m = function (props) {
->>>>>>> a5e1ba8739b83f2319426d389050df68312b0874
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M19.43 12.98C19.47 12.66 19.5 12.34 19.5 12C19.5 11.66 19.47 11.34 19.43 11.02L21.54 9.37C21.73 9.22 21.78 8.95 21.66 8.73L19.66 5.27C19.54 5.05 19.27 4.97 19.05 5.05L16.56 6.05C16.04 5.65 15.48 5.32 14.87 5.07L14.49 2.42C14.46 2.18 14.25 2 14 2H9.99996C9.74996 2 9.53996 2.18 9.50996 2.42L9.12996 5.07C8.51996 5.32 7.95996 5.66 7.43996 6.05L4.94996 5.05C4.71996 4.96 4.45996 5.05 4.33996 5.27L2.33996 8.73C2.20996 8.95 2.26996 9.22 2.45996 9.37L4.56996 11.02C4.52996 11.34 4.49996 11.67 4.49996 12C4.49996 12.33 4.52996 12.66 4.56996 12.98L2.45996 14.63C2.26996 14.78 2.21996 15.05 2.33996 15.27L4.33996 18.73C4.45996 18.95 4.72996 19.03 4.94996 18.95L7.43996 17.95C7.95996 18.35 8.51996 18.68 9.12996 18.93L9.50996 21.58C9.53996 21.82 9.74996 22 9.99996 22H14C14.25 22 14.46 21.82 14.49 21.58L14.87 18.93C15.48 18.68 16.04 18.34 16.56 17.95L19.05 18.95C19.28 19.04 19.54 18.95 19.66 18.73L21.66 15.27C21.78 15.05 21.73 14.78 21.54 14.63L19.43 12.98ZM12 15.5C10.07 15.5 8.49996 13.93 8.49996 12C8.49996 10.07 10.07 8.5 12 8.5C13.93 8.5 15.5 10.07 15.5 12C15.5 13.93 13.93 15.5 12 15.5Z" })));
 };
 
-<<<<<<< HEAD
-var Icon$1k = function (props) {
-=======
 var Icon$1l = function (props) {
->>>>>>> a5e1ba8739b83f2319426d389050df68312b0874
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M12 12.75C13.63 12.75 15.07 13.14 16.24 13.65C17.32 14.13 18 15.21 18 16.38V17C18 17.55 17.55 18 17 18H7C6.45 18 6 17.55 6 17V16.39C6 15.21 6.68 14.13 7.76 13.66C8.93 13.14 10.37 12.75 12 12.75ZM4 13C5.1 13 6 12.1 6 11C6 9.9 5.1 9 4 9C2.9 9 2 9.9 2 11C2 12.1 2.9 13 4 13ZM5.13 14.1C4.76 14.04 4.39 14 4 14C3.01 14 2.07 14.21 1.22 14.58C0.48 14.9 0 15.62 0 16.43V17C0 17.55 0.45 18 1 18H4.5V16.39C4.5 15.56 4.73 14.78 5.13 14.1ZM20 13C21.1 13 22 12.1 22 11C22 9.9 21.1 9 20 9C18.9 9 18 9.9 18 11C18 12.1 18.9 13 20 13ZM24 16.43C24 15.62 23.52 14.9 22.78 14.58C21.93 14.21 20.99 14 20 14C19.61 14 19.24 14.04 18.87 14.1C19.27 14.78 19.5 15.56 19.5 16.39V18H23C23.55 18 24 17.55 24 17V16.43ZM12 6C13.66 6 15 7.34 15 9C15 10.66 13.66 12 12 12C10.34 12 9 10.66 9 9C9 7.34 10.34 6 12 6Z" })));
 };
 
-<<<<<<< HEAD
-var Icon$1j = function (props) {
-=======
 var Icon$1k = function (props) {
->>>>>>> a5e1ba8739b83f2319426d389050df68312b0874
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M15 1H4C2.9 1 2 1.9 2 3V16C2 16.55 2.45 17 3 17C3.55 17 4 16.55 4 16V4C4 3.45 4.45 3 5 3H15C15.55 3 16 2.55 16 2C16 1.45 15.55 1 15 1ZM19 5H8C6.9 5 6 5.9 6 7V21C6 22.1 6.9 23 8 23H19C20.1 23 21 22.1 21 21V7C21 5.9 20.1 5 19 5ZM18 21H9C8.45 21 8 20.55 8 20V8C8 7.45 8.45 7 9 7H18C18.55 7 19 7.45 19 8V20C19 20.55 18.55 21 18 21Z" })));
 };
 
-<<<<<<< HEAD
-var Icon$1i = function (props) {
-=======
 var Icon$1j = function (props) {
->>>>>>> a5e1ba8739b83f2319426d389050df68312b0874
     return (React.createElement(Svg, __assign({ viewBox: "0 0 25 25" }, props),
         React.createElement("path", { d: "M15.6772 2.8668C15.9878 1.97095 15.2658 1.05469 14.2495 1.05469C13.4213 1.05469 12.75 1.67612 12.75 2.4427L12.75 5.07933C12.75 5.61801 13.2217 6.05469 13.8037 6.05469C14.2615 6.05469 14.667 5.78094 14.8069 5.37734L15.6772 2.8668Z", fill: "#FFC700" }),
         React.createElement("path", { d: "M9.32279 2.8668C9.01225 1.97095 9.73416 1.05469 10.7505 1.05469C11.5787 1.05469 12.25 1.67612 12.25 2.4427L12.25 5.07934C12.25 5.61801 11.7783 6.05469 11.1963 6.05469C10.7385 6.05469 10.333 5.78094 10.1931 5.37734L9.32279 2.8668Z", fill: "#FFC700" }),
@@ -694,26 +558,16 @@ var Icon$1j = function (props) {
         React.createElement("path", { d: "M5.90905 18.2896V16.9247H7.27393C7.27393 17.0159 7.23912 17.1072 7.16951 17.1768L6.16114 18.1851C6.09153 18.2547 6.00029 18.2896 5.90905 18.2896Z", fill: "#9F0400" })));
 };
 
-<<<<<<< HEAD
-var Icon$1h = function (props) {
-=======
 var Icon$1i = function (props) {
->>>>>>> a5e1ba8739b83f2319426d389050df68312b0874
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM11 16H13V18H11V16ZM12.61 6.04C10.55 5.74 8.73 7.01 8.18 8.83C8 9.41 8.44 10 9.05 10H9.25C9.66 10 9.99 9.71 10.13 9.33C10.45 8.44 11.4 7.83 12.43 8.05C13.38 8.25 14.08 9.18 14 10.15C13.9 11.49 12.38 11.78 11.55 13.03C11.55 13.04 11.54 13.04 11.54 13.05C11.53 13.07 11.52 13.08 11.51 13.1C11.42 13.25 11.33 13.42 11.26 13.6C11.25 13.63 11.23 13.65 11.22 13.68C11.21 13.7 11.21 13.72 11.2 13.75C11.08 14.09 11 14.5 11 15H13C13 14.58 13.11 14.23 13.28 13.93C13.3 13.9 13.31 13.87 13.33 13.84C13.41 13.7 13.51 13.57 13.61 13.45C13.62 13.44 13.63 13.42 13.64 13.41C13.74 13.29 13.85 13.18 13.97 13.07C14.93 12.16 16.23 11.42 15.96 9.51C15.72 7.77 14.35 6.3 12.61 6.04Z" })));
 };
 
-<<<<<<< HEAD
-var Icon$1g = function (props) {
-=======
 var Icon$1h = function (props) {
->>>>>>> a5e1ba8739b83f2319426d389050df68312b0874
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M13 3C8.03 3 4 7.03 4 12H2.20711C1.76165 12 1.53857 12.5386 1.85355 12.8536L4.54604 15.546C4.73751 15.7375 5.04662 15.7418 5.24329 15.5556L8.08805 12.8631C8.4164 12.5524 8.19646 12 7.74435 12H6C6 8.13 9.13 5 13 5C16.87 5 20 8.13 20 12C20 15.87 16.87 19 13 19C11.4314 19 9.98175 18.4782 8.81739 17.601C8.37411 17.267 7.74104 17.259 7.3486 17.6514C6.95725 18.0428 6.95413 18.6823 7.38598 19.0284C8.92448 20.2615 10.8708 21 13 21C17.97 21 22 16.97 22 12C22 7.03 17.97 3 13 3ZM12 8V13L16.28 15.54L17 14.33L13.5 12.25V8H12Z" })));
 };
 
-<<<<<<< HEAD
-=======
 var Icon$1g = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 80 80" }, props),
         React.createElement("circle", { cx: "40", cy: "40", r: "40", fill: "#02D767" }),
@@ -723,7 +577,6 @@ var Icon$1g = function (props) {
         React.createElement("path", { d: "M48.1259 37.4985L48.0863 37.5371C46.6173 38.9699 46.6124 41.2979 48.0752 42.7367L48.1146 42.7755C49.5774 44.2144 51.9541 44.2192 53.4231 42.7864L53.4627 42.7478C54.9316 41.315 54.9366 38.987 53.4738 37.5481L53.4344 37.5094C51.9715 36.0705 49.5949 36.0656 48.1259 37.4985Z", fill: "white" })));
 };
 
->>>>>>> a5e1ba8739b83f2319426d389050df68312b0874
 var Icon$1f = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM18.92 8H15.97C15.65 6.75 15.19 5.55 14.59 4.44C16.43 5.07 17.96 6.35 18.92 8ZM12 4.04C12.83 5.24 13.48 6.57 13.91 8H10.09C10.52 6.57 11.17 5.24 12 4.04ZM4.26 14C4.1 13.36 4 12.69 4 12C4 11.31 4.1 10.64 4.26 10H7.64C7.56 10.66 7.5 11.32 7.5 12C7.5 12.68 7.56 13.34 7.64 14H4.26ZM5.08 16H8.03C8.35 17.25 8.81 18.45 9.41 19.56C7.57 18.93 6.04 17.66 5.08 16ZM8.03 8H5.08C6.04 6.34 7.57 5.07 9.41 4.44C8.81 5.55 8.35 6.75 8.03 8ZM12 19.96C11.17 18.76 10.52 17.43 10.09 16H13.91C13.48 17.43 12.83 18.76 12 19.96ZM14.34 14H9.66C9.57 13.34 9.5 12.68 9.5 12C9.5 11.32 9.57 10.65 9.66 10H14.34C14.43 10.65 14.5 11.32 14.5 12C14.5 12.68 14.43 13.34 14.34 14ZM14.59 19.56C15.19 18.45 15.65 17.25 15.97 16H18.92C17.96 17.65 16.43 18.93 14.59 19.56ZM16.36 14C16.44 13.34 16.5 12.68 16.5 12C16.5 11.32 16.44 10.66 16.36 10H19.74C19.9 10.64 20 11.31 20 12C20 12.69 19.9 13.36 19.74 14H16.36Z" })));
@@ -1291,32 +1144,24 @@ var ExpandableButton = function (_a) {
     var onClick = _a.onClick, expanded = _a.expanded, children = _a.children;
     return (React.createElement(IconButton, { "aria-label": "Hide or show expandable content", onClick: onClick },
         children,
-<<<<<<< HEAD
-        expanded ? React.createElement(Icon$1n, { color: "invertedContrast" }) : React.createElement(Icon$1q, { color: "invertedContrast" })));
-=======
         expanded ? React.createElement(Icon$1o, { color: "invertedContrast" }) : React.createElement(Icon$1r, { color: "invertedContrast" })));
->>>>>>> a5e1ba8739b83f2319426d389050df68312b0874
 };
 ExpandableButton.defaultProps = {
     expanded: false,
 };
 var ExpandableLabel = function (_a) {
     var onClick = _a.onClick, expanded = _a.expanded, children = _a.children;
-<<<<<<< HEAD
-    return (React.createElement(Button, { variant: "text", "aria-label": "Hide or show expandable content", onClick: onClick, endIcon: expanded ? React.createElement(Icon$1n, { color: "primary" }) : React.createElement(Icon$1q, { color: "primary" }) }, children));
-=======
     return (React.createElement(Button, { variant: "text", "aria-label": "Hide or show expandable content", onClick: onClick, endIcon: expanded ? React.createElement(Icon$1o, { color: "primary" }) : React.createElement(Icon$1r, { color: "primary" }) }, children));
->>>>>>> a5e1ba8739b83f2319426d389050df68312b0874
 };
 ExpandableLabel.defaultProps = {
     expanded: false,
 };
 
-var Box = styled.div(templateObject_1$X || (templateObject_1$X = __makeTemplateObject(["\n  ", "\n  ", "\n  ", "\n  ", "\n  ", "\n"], ["\n  ", "\n  ", "\n  ", "\n  ", "\n  ", "\n"])), background, border, layout, position, space);
-var templateObject_1$X;
-
-var Flex = styled(Box)(templateObject_1$W || (templateObject_1$W = __makeTemplateObject(["\n  display: flex;\n  ", "\n"], ["\n  display: flex;\n  ", "\n"])), flexbox);
+var Box = styled.div(templateObject_1$W || (templateObject_1$W = __makeTemplateObject(["\n  ", "\n  ", "\n  ", "\n  ", "\n  ", "\n"], ["\n  ", "\n  ", "\n  ", "\n  ", "\n  ", "\n"])), background, border, layout, position, space);
 var templateObject_1$W;
+
+var Flex = styled(Box)(templateObject_1$V || (templateObject_1$V = __makeTemplateObject(["\n  display: flex;\n  ", "\n"], ["\n  display: flex;\n  ", "\n"])), flexbox);
+var templateObject_1$V;
 
 var variants$4 = {
     INFO: "info",
@@ -1343,16 +1188,6 @@ var getIcon = function (variant) {
     if (variant === void 0) { variant = variants$4.INFO; }
     switch (variant) {
         case variants$4.DANGER:
-<<<<<<< HEAD
-            return Icon$1N;
-        case variants$4.WARNING:
-            return Icon$1O;
-        case variants$4.SUCCESS:
-            return Icon$1P;
-        case variants$4.INFO:
-        default:
-            return Icon$1M;
-=======
             return Icon$1O;
         case variants$4.WARNING:
             return Icon$1P;
@@ -1361,15 +1196,14 @@ var getIcon = function (variant) {
         case variants$4.INFO:
         default:
             return Icon$1N;
->>>>>>> a5e1ba8739b83f2319426d389050df68312b0874
     }
 };
-var IconLabel = styled.div(templateObject_1$V || (templateObject_1$V = __makeTemplateObject(["\n  background-color: ", ";\n  border-radius: 16px 0 0 16px;\n  color: ", ";\n  padding: 12px;\n"], ["\n  background-color: ", ";\n  border-radius: 16px 0 0 16px;\n  color: ", ";\n  padding: 12px;\n"])), getThemeColor, function (_a) {
+var IconLabel = styled.div(templateObject_1$U || (templateObject_1$U = __makeTemplateObject(["\n  background-color: ", ";\n  border-radius: 16px 0 0 16px;\n  color: ", ";\n  padding: 12px;\n"], ["\n  background-color: ", ";\n  border-radius: 16px 0 0 16px;\n  color: ", ";\n  padding: 12px;\n"])), getThemeColor, function (_a) {
     var theme = _a.theme;
     return theme.alert.background;
 });
 var withHandlerSpacing = 32 + 12 + 8; // button size + inner spacing + handler position
-var Details = styled.div(templateObject_2$o || (templateObject_2$o = __makeTemplateObject(["\n  flex: 1;\n  padding-bottom: 12px;\n  padding-left: 12px;\n  padding-right: ", ";\n  padding-top: 12px;\n"], ["\n  flex: 1;\n  padding-bottom: 12px;\n  padding-left: 12px;\n  padding-right: ", ";\n  padding-top: 12px;\n"])), function (_a) {
+var Details = styled.div(templateObject_2$n || (templateObject_2$n = __makeTemplateObject(["\n  flex: 1;\n  padding-bottom: 12px;\n  padding-left: 12px;\n  padding-right: ", ";\n  padding-top: 12px;\n"], ["\n  flex: 1;\n  padding-bottom: 12px;\n  padding-left: 12px;\n  padding-right: ", ";\n  padding-top: 12px;\n"])), function (_a) {
     var hasHandler = _a.hasHandler;
     return (hasHandler ? withHandlerSpacing + "px" : "12px");
 });
@@ -1389,13 +1223,9 @@ var Alert = function (_a) {
             typeof children === "string" ? React.createElement(Text, { as: "p" }, children) : children),
         onClick && (React.createElement(CloseHandler, null,
             React.createElement(IconButton, { scale: "sm", variant: "text", onClick: onClick },
-<<<<<<< HEAD
-                React.createElement(Icon$1m, { width: "24px", color: "currentColor" }))))));
-=======
                 React.createElement(Icon$1n, { width: "24px", color: "currentColor" }))))));
->>>>>>> a5e1ba8739b83f2319426d389050df68312b0874
 };
-var templateObject_1$V, templateObject_2$o, templateObject_3$a, templateObject_4$7;
+var templateObject_1$U, templateObject_2$n, templateObject_3$a, templateObject_4$7;
 
 var scales$7 = {
     SM: "sm",
@@ -1428,7 +1258,7 @@ var getHeight = function (_a) {
             return "40px";
     }
 };
-var Input$1 = styled.input(templateObject_1$U || (templateObject_1$U = __makeTemplateObject(["\n  background-color: ", ";\n  border: 0;\n  border-radius: 16px;\n  box-shadow: ", ";\n  color: ", ";\n  display: block;\n  font-size: 16px;\n  height: ", ";\n  outline: 0;\n  padding: 0 16px;\n  width: 100%;\n  border: 1px solid ", ";\n\n  &::placeholder {\n    color: ", ";\n  }\n\n  &:disabled {\n    background-color: ", ";\n    box-shadow: none;\n    color: ", ";\n    cursor: not-allowed;\n  }\n\n  &:focus:not(:disabled) {\n    box-shadow: ", ";\n  }\n"], ["\n  background-color: ", ";\n  border: 0;\n  border-radius: 16px;\n  box-shadow: ", ";\n  color: ", ";\n  display: block;\n  font-size: 16px;\n  height: ", ";\n  outline: 0;\n  padding: 0 16px;\n  width: 100%;\n  border: 1px solid ", ";\n\n  &::placeholder {\n    color: ", ";\n  }\n\n  &:disabled {\n    background-color: ", ";\n    box-shadow: none;\n    color: ", ";\n    cursor: not-allowed;\n  }\n\n  &:focus:not(:disabled) {\n    box-shadow: ", ";\n  }\n"])), function (_a) {
+var Input$1 = styled.input(templateObject_1$T || (templateObject_1$T = __makeTemplateObject(["\n  background-color: ", ";\n  border: 0;\n  border-radius: 16px;\n  box-shadow: ", ";\n  color: ", ";\n  display: block;\n  font-size: 16px;\n  height: ", ";\n  outline: 0;\n  padding: 0 16px;\n  width: 100%;\n  border: 1px solid ", ";\n\n  &::placeholder {\n    color: ", ";\n  }\n\n  &:disabled {\n    background-color: ", ";\n    box-shadow: none;\n    color: ", ";\n    cursor: not-allowed;\n  }\n\n  &:focus:not(:disabled) {\n    box-shadow: ", ";\n  }\n"], ["\n  background-color: ", ";\n  border: 0;\n  border-radius: 16px;\n  box-shadow: ", ";\n  color: ", ";\n  display: block;\n  font-size: 16px;\n  height: ", ";\n  outline: 0;\n  padding: 0 16px;\n  width: 100%;\n  border: 1px solid ", ";\n\n  &::placeholder {\n    color: ", ";\n  }\n\n  &:disabled {\n    background-color: ", ";\n    box-shadow: none;\n    color: ", ";\n    cursor: not-allowed;\n  }\n\n  &:focus:not(:disabled) {\n    box-shadow: ", ";\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.colors.input;
 }, getBoxShadow$1, function (_a) {
@@ -1455,9 +1285,9 @@ Input$1.defaultProps = {
     isSuccess: false,
     isWarning: false,
 };
-var templateObject_1$U;
+var templateObject_1$T;
 
-var StyledBalanceInput = styled(Box)(templateObject_1$T || (templateObject_1$T = __makeTemplateObject(["\n  background-color: ", ";\n  border: 1px solid ", ";\n  border-radius: 16px;\n  box-shadow: ", ";\n  padding: 8px 16px;\n"], ["\n  background-color: ", ";\n  border: 1px solid ", ";\n  border-radius: 16px;\n  box-shadow: ", ";\n  padding: 8px 16px;\n"])), function (_a) {
+var StyledBalanceInput = styled(Box)(templateObject_1$S || (templateObject_1$S = __makeTemplateObject(["\n  background-color: ", ";\n  border: 1px solid ", ";\n  border-radius: 16px;\n  box-shadow: ", ";\n  padding: 8px 16px;\n"], ["\n  background-color: ", ";\n  border: 1px solid ", ";\n  border-radius: 16px;\n  box-shadow: ", ";\n  padding: 8px 16px;\n"])), function (_a) {
     var theme = _a.theme;
     return theme.colors.input;
 }, function (_a) {
@@ -1467,11 +1297,11 @@ var StyledBalanceInput = styled(Box)(templateObject_1$T || (templateObject_1$T =
     var theme = _a.theme, isWarning = _a.isWarning;
     return theme.shadows[isWarning ? "warning" : "inset"];
 });
-var StyledInput$1 = styled(Input$1)(templateObject_2$n || (templateObject_2$n = __makeTemplateObject(["\n  background: transparent;\n  border-radius: 0;\n  box-shadow: none;\n  padding-left: 0;\n  padding-right: 0;\n  text-align: right;\n  border: none;\n\n  ::placeholder {\n    color: ", ";\n  }\n\n  &:focus:not(:disabled) {\n    box-shadow: none;\n  }\n"], ["\n  background: transparent;\n  border-radius: 0;\n  box-shadow: none;\n  padding-left: 0;\n  padding-right: 0;\n  text-align: right;\n  border: none;\n\n  ::placeholder {\n    color: ", ";\n  }\n\n  &:focus:not(:disabled) {\n    box-shadow: none;\n  }\n"])), function (_a) {
+var StyledInput$1 = styled(Input$1)(templateObject_2$m || (templateObject_2$m = __makeTemplateObject(["\n  background: transparent;\n  border-radius: 0;\n  box-shadow: none;\n  padding-left: 0;\n  padding-right: 0;\n  text-align: right;\n  border: none;\n\n  ::placeholder {\n    color: ", ";\n  }\n\n  &:focus:not(:disabled) {\n    box-shadow: none;\n  }\n"], ["\n  background: transparent;\n  border-radius: 0;\n  box-shadow: none;\n  padding-left: 0;\n  padding-right: 0;\n  text-align: right;\n  border: none;\n\n  ::placeholder {\n    color: ", ";\n  }\n\n  &:focus:not(:disabled) {\n    box-shadow: none;\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.colors.textSubtle;
 });
-var templateObject_1$T, templateObject_2$n;
+var templateObject_1$S, templateObject_2$m;
 
 var BalanceInput = function (_a) {
     var value = _a.value, _b = _a.placeholder, placeholder = _b === void 0 ? "0.0" : _b, onUserInput = _a.onUserInput, currencyValue = _a.currencyValue, inputProps = _a.inputProps, innerRef = _a.innerRef, _c = _a.isWarning, isWarning = _c === void 0 ? false : _c, _d = _a.decimals, decimals = _d === void 0 ? 18 : _d, props = __rest(_a, ["value", "placeholder", "onUserInput", "currencyValue", "inputProps", "innerRef", "isWarning", "decimals"]);
@@ -1485,10 +1315,10 @@ var BalanceInput = function (_a) {
         currencyValue && (React.createElement(Text, { fontSize: "12px", textAlign: "right", color: "textSubtle" }, currencyValue))));
 };
 
-var Grid = styled(Box)(templateObject_1$S || (templateObject_1$S = __makeTemplateObject(["\n  display: grid;\n  ", "\n  ", "\n"], ["\n  display: grid;\n  ", "\n  ", "\n"])), flexbox, grid);
-var templateObject_1$S;
+var Grid = styled(Box)(templateObject_1$R || (templateObject_1$R = __makeTemplateObject(["\n  display: grid;\n  ", "\n  ", "\n"], ["\n  display: grid;\n  ", "\n  ", "\n"])), flexbox, grid);
+var templateObject_1$R;
 
-var Separator = styled.div(templateObject_1$R || (templateObject_1$R = __makeTemplateObject(["\n  align-items: center;\n  color: ", ";\n  display: flex;\n  justify-content: center;\n  padding-left: 4px;\n  padding-right: 4px;\n\n  ", " {\n    padding-left: 8px;\n    padding-right: 8px;\n  }\n\n  ", " {\n    padding-left: 16px;\n    padding-right: 16px;\n  }\n"], ["\n  align-items: center;\n  color: ", ";\n  display: flex;\n  justify-content: center;\n  padding-left: 4px;\n  padding-right: 4px;\n\n  ", " {\n    padding-left: 8px;\n    padding-right: 8px;\n  }\n\n  ", " {\n    padding-left: 16px;\n    padding-right: 16px;\n  }\n"])), function (_a) {
+var Separator = styled.div(templateObject_1$Q || (templateObject_1$Q = __makeTemplateObject(["\n  align-items: center;\n  color: ", ";\n  display: flex;\n  justify-content: center;\n  padding-left: 4px;\n  padding-right: 4px;\n\n  ", " {\n    padding-left: 8px;\n    padding-right: 8px;\n  }\n\n  ", " {\n    padding-left: 16px;\n    padding-right: 16px;\n  }\n"], ["\n  align-items: center;\n  color: ", ";\n  display: flex;\n  justify-content: center;\n  padding-left: 4px;\n  padding-right: 4px;\n\n  ", " {\n    padding-left: 8px;\n    padding-right: 8px;\n  }\n\n  ", " {\n    padding-left: 16px;\n    padding-right: 16px;\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.colors.textDisabled;
 }, function (_a) {
@@ -1498,7 +1328,7 @@ var Separator = styled.div(templateObject_1$R || (templateObject_1$R = __makeTem
     var theme = _a.theme;
     return theme.mediaQueries.md;
 });
-var StyledBreadcrumbs = styled.ul(templateObject_2$m || (templateObject_2$m = __makeTemplateObject(["\n  align-items: center;\n  display: flex;\n  flex-wrap: wrap;\n  list-style-type: none;\n\n  ", "\n"], ["\n  align-items: center;\n  display: flex;\n  flex-wrap: wrap;\n  list-style-type: none;\n\n  ", "\n"])), space);
+var StyledBreadcrumbs = styled.ul(templateObject_2$l || (templateObject_2$l = __makeTemplateObject(["\n  align-items: center;\n  display: flex;\n  flex-wrap: wrap;\n  list-style-type: none;\n\n  ", "\n"], ["\n  align-items: center;\n  display: flex;\n  flex-wrap: wrap;\n  list-style-type: none;\n\n  ", "\n"])), space);
 var insertSeparators = function (items, separator) {
     return items.reduce(function (accum, item, index) {
         if (index === 0) {
@@ -1510,18 +1340,14 @@ var insertSeparators = function (items, separator) {
         ]);
     }, []);
 };
-<<<<<<< HEAD
-var DefaultSeparator = React.createElement(Icon$1o, { color: "currentColor", width: "24px" });
-=======
 var DefaultSeparator = React.createElement(Icon$1p, { color: "currentColor", width: "24px" });
->>>>>>> a5e1ba8739b83f2319426d389050df68312b0874
 var Breadcrumbs = function (_a) {
     var _b = _a.separator, separator = _b === void 0 ? DefaultSeparator : _b, children = _a.children;
     var validItems = Children.toArray(children).filter(function (child) { return isValidElement(child); });
     var items = insertSeparators(validItems, separator);
     return (React.createElement(StyledBreadcrumbs, null, items.map(function (item, index) { return (React.createElement("li", { key: "child-" + index }, item)); })));
 };
-var templateObject_1$R, templateObject_2$m;
+var templateObject_1$Q, templateObject_2$l;
 
 var getBackgroundColor = function (_a) {
     var theme = _a.theme, variant = _a.variant;
@@ -1531,7 +1357,7 @@ var getBorderColor = function (_a) {
     var theme = _a.theme, variant = _a.variant;
     return theme.colors[variant === variants$5.BBTCOLOR ? "bitkub" : "disabled"];
 };
-var StyledButtonMenu = styled.div(templateObject_1$Q || (templateObject_1$Q = __makeTemplateObject(["\n  background-color: ", ";\n  border-radius: 16px;\n  display: inline-flex;\n  border: 1px solid ", ";\n\n  & > button + button,\n  & > a + a {\n    margin-left: 2px; // To avoid focus shadow overlap\n  }\n\n  & > button,\n  & a {\n    box-shadow: none;\n  }\n\n  ", "\n  ", "\n"], ["\n  background-color: ", ";\n  border-radius: 16px;\n  display: inline-flex;\n  border: 1px solid ", ";\n\n  & > button + button,\n  & > a + a {\n    margin-left: 2px; // To avoid focus shadow overlap\n  }\n\n  & > button,\n  & a {\n    box-shadow: none;\n  }\n\n  ",
+var StyledButtonMenu = styled.div(templateObject_1$P || (templateObject_1$P = __makeTemplateObject(["\n  background-color: ", ";\n  border-radius: 16px;\n  display: inline-flex;\n  border: 1px solid ", ";\n\n  & > button + button,\n  & > a + a {\n    margin-left: 2px; // To avoid focus shadow overlap\n  }\n\n  & > button,\n  & a {\n    box-shadow: none;\n  }\n\n  ", "\n  ", "\n"], ["\n  background-color: ", ";\n  border-radius: 16px;\n  display: inline-flex;\n  border: 1px solid ", ";\n\n  & > button + button,\n  & > a + a {\n    margin-left: 2px; // To avoid focus shadow overlap\n  }\n\n  & > button,\n  & a {\n    box-shadow: none;\n  }\n\n  ",
     "\n  ", "\n"])), getBackgroundColor, getBorderColor, function (_a) {
     var disabled = _a.disabled, theme = _a.theme, variant = _a.variant;
     if (disabled) {
@@ -1551,9 +1377,9 @@ var ButtonMenu$1 = function (_a) {
         });
     })));
 };
-var templateObject_1$Q;
+var templateObject_1$P;
 
-var InactiveButton = styled(Button)(templateObject_1$P || (templateObject_1$P = __makeTemplateObject(["\n  background-color: transparent;\n  color: ", ";\n  &:hover:not(:disabled):not(:active) {\n    background-color: transparent;\n  }\n"], ["\n  background-color: transparent;\n  color: ", ";\n  &:hover:not(:disabled):not(:active) {\n    background-color: transparent;\n  }\n"])), function (_a) {
+var InactiveButton = styled(Button)(templateObject_1$O || (templateObject_1$O = __makeTemplateObject(["\n  background-color: transparent;\n  color: ", ";\n  &:hover:not(:disabled):not(:active) {\n    background-color: transparent;\n  }\n"], ["\n  background-color: transparent;\n  color: ", ";\n  &:hover:not(:disabled):not(:active) {\n    background-color: transparent;\n  }\n"])), function (_a) {
     var theme = _a.theme, variant = _a.variant;
     return (variant === variants$5.BBTCOLOR ? theme.colors.bbtColor : theme.colors.text);
 });
@@ -1564,7 +1390,7 @@ var ButtonMenuItem = function (_a) {
     }
     return React.createElement(Button, __assign({ as: as, variant: variant }, props));
 };
-var templateObject_1$P;
+var templateObject_1$O;
 
 /**
  * Priority: Warning --> Success --> Active
@@ -1582,7 +1408,7 @@ var getBoxShadow = function (_a) {
     }
     return theme.card.boxShadow;
 };
-var StyledCard = styled.div(templateObject_1$O || (templateObject_1$O = __makeTemplateObject(["\n  background-color: ", ";\n  border: ", ";\n  border-radius: ", ";\n  box-shadow: ", ";\n  color: ", ";\n  overflow: hidden;\n  position: relative;\n\n  ", "\n"], ["\n  background-color: ", ";\n  border: ", ";\n  border-radius: ", ";\n  box-shadow: ", ";\n  color: ", ";\n  overflow: hidden;\n  position: relative;\n\n  ", "\n"])), function (_a) {
+var StyledCard = styled.div(templateObject_1$N || (templateObject_1$N = __makeTemplateObject(["\n  background-color: ", ";\n  border: ", ";\n  border-radius: ", ";\n  box-shadow: ", ";\n  color: ", ";\n  overflow: hidden;\n  position: relative;\n\n  ", "\n"], ["\n  background-color: ", ";\n  border: ", ";\n  border-radius: ", ";\n  box-shadow: ", ";\n  color: ", ";\n  overflow: hidden;\n  position: relative;\n\n  ", "\n"])), function (_a) {
     var theme = _a.theme;
     return theme.card.background;
 }, function (_a) {
@@ -1601,7 +1427,7 @@ StyledCard.defaultProps = {
     isWarning: false,
     isDisabled: false,
 };
-var templateObject_1$O;
+var templateObject_1$N;
 
 var Card = function (_a) {
     var ribbon = _a.ribbon, children = _a.children, props = __rest(_a, ["ribbon", "children"]);
@@ -1610,31 +1436,31 @@ var Card = function (_a) {
         children));
 };
 
-var CardBody = styled.div(templateObject_1$N || (templateObject_1$N = __makeTemplateObject(["\n  ", "\n"], ["\n  ", "\n"])), space);
+var CardBody = styled.div(templateObject_1$M || (templateObject_1$M = __makeTemplateObject(["\n  ", "\n"], ["\n  ", "\n"])), space);
 CardBody.defaultProps = {
     p: "24px",
 };
-var templateObject_1$N;
+var templateObject_1$M;
 
-var CardHeader = styled.div(templateObject_1$M || (templateObject_1$M = __makeTemplateObject(["\n  background: ", ";\n  ", "\n"], ["\n  background: ", ";\n  ", "\n"])), function (_a) {
+var CardHeader = styled.div(templateObject_1$L || (templateObject_1$L = __makeTemplateObject(["\n  background: ", ";\n  ", "\n"], ["\n  background: ", ";\n  ", "\n"])), function (_a) {
     var theme = _a.theme, _b = _a.variant, variant = _b === void 0 ? "default" : _b;
     return theme.card.cardHeaderBackground[variant];
 }, space);
 CardHeader.defaultProps = {
     p: "24px",
 };
-var templateObject_1$M;
+var templateObject_1$L;
 
-var CardFooter = styled.div(templateObject_1$L || (templateObject_1$L = __makeTemplateObject(["\n  border-top: 1px solid ", ";\n  ", "\n"], ["\n  border-top: 1px solid ", ";\n  ", "\n"])), function (_a) {
+var CardFooter = styled.div(templateObject_1$K || (templateObject_1$K = __makeTemplateObject(["\n  border-top: 1px solid ", ";\n  ", "\n"], ["\n  border-top: 1px solid ", ";\n  ", "\n"])), function (_a) {
     var theme = _a.theme;
     return theme.colors.cardBorder;
 }, space);
 CardFooter.defaultProps = {
     p: "24px",
 };
-var templateObject_1$L;
+var templateObject_1$K;
 
-var StyledCardRibbon = styled.div(templateObject_1$K || (templateObject_1$K = __makeTemplateObject(["\n  z-index: 1;\n  background-color: ", ";\n  color: white;\n  margin: 0;\n  padding: 0;\n  padding: 8px 0;\n  position: absolute;\n  right: ", ";\n  top: 0;\n  text-align: center;\n  transform: translateX(30%) translateY(0%) rotate(45deg);\n  transform: ", ";\n  transform-origin: top left;\n  width: 96px;\n\n  &:before,\n  &:after {\n    background-color: ", ";\n    content: \"\";\n    height: 100%;\n    margin: 0 -1px; /* Removes tiny gap */\n    position: absolute;\n    top: 0;\n    width: 100%;\n  }\n\n  &:before {\n    right: 100%;\n  }\n\n  &:after {\n    left: 100%;\n  }\n\n  & > div {\n    overflow: hidden;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n    width: 96px;\n  }\n"], ["\n  z-index: 1;\n  background-color: ", ";\n  color: white;\n  margin: 0;\n  padding: 0;\n  padding: 8px 0;\n  position: absolute;\n  right: ", ";\n  top: 0;\n  text-align: center;\n  transform: translateX(30%) translateY(0%) rotate(45deg);\n  transform: ",
+var StyledCardRibbon = styled.div(templateObject_1$J || (templateObject_1$J = __makeTemplateObject(["\n  z-index: 1;\n  background-color: ", ";\n  color: white;\n  margin: 0;\n  padding: 0;\n  padding: 8px 0;\n  position: absolute;\n  right: ", ";\n  top: 0;\n  text-align: center;\n  transform: translateX(30%) translateY(0%) rotate(45deg);\n  transform: ", ";\n  transform-origin: top left;\n  width: 96px;\n\n  &:before,\n  &:after {\n    background-color: ", ";\n    content: \"\";\n    height: 100%;\n    margin: 0 -1px; /* Removes tiny gap */\n    position: absolute;\n    top: 0;\n    width: 100%;\n  }\n\n  &:before {\n    right: 100%;\n  }\n\n  &:after {\n    left: 100%;\n  }\n\n  & > div {\n    overflow: hidden;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n    width: 96px;\n  }\n"], ["\n  z-index: 1;\n  background-color: ", ";\n  color: white;\n  margin: 0;\n  padding: 0;\n  padding: 8px 0;\n  position: absolute;\n  right: ", ";\n  top: 0;\n  text-align: center;\n  transform: translateX(30%) translateY(0%) rotate(45deg);\n  transform: ",
     ";\n  transform-origin: top left;\n  width: 96px;\n\n  &:before,\n  &:after {\n    background-color: ", ";\n    content: \"\";\n    height: 100%;\n    margin: 0 -1px; /* Removes tiny gap */\n    position: absolute;\n    top: 0;\n    width: 100%;\n  }\n\n  &:before {\n    right: 100%;\n  }\n\n  &:after {\n    left: 100%;\n  }\n\n  & > div {\n    overflow: hidden;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n    width: 96px;\n  }\n"])), function (_a) {
     var _b = _a.variantColor, variantColor = _b === void 0 ? "secondary" : _b, theme = _a.theme;
     return theme.colors[variantColor];
@@ -1658,7 +1484,7 @@ var CardRibbon = function (_a) {
 CardRibbon.defaultProps = {
     ribbonPosition: "right",
 };
-var templateObject_1$K;
+var templateObject_1$J;
 
 var scales$6 = {
     SM: "sm",
@@ -1675,7 +1501,7 @@ var getScale$3 = function (_a) {
             return "32px";
     }
 };
-var Checkbox = styled.input.attrs({ type: "checkbox" })(templateObject_1$J || (templateObject_1$J = __makeTemplateObject(["\n  appearance: none;\n  overflow: hidden;\n  cursor: pointer;\n  position: relative;\n  display: inline-block;\n  height: ", ";\n  width: ", ";\n  vertical-align: middle;\n  transition: background-color 0.2s ease-in-out;\n  border: 0;\n  border-radius: 8px;\n  background-color: ", ";\n  box-shadow: ", ";\n\n  &:after {\n    content: \"\";\n    position: absolute;\n    border-bottom: 2px solid;\n    border-left: 2px solid;\n    border-color: transparent;\n    top: 30%;\n    left: 0;\n    right: 0;\n    width: 50%;\n    height: 25%;\n    margin: auto;\n    transform: rotate(-50deg);\n    transition: border-color 0.2s ease-in-out;\n  }\n\n  &:hover:not(:disabled):not(:checked) {\n    box-shadow: ", ";\n  }\n\n  &:focus {\n    outline: none;\n    box-shadow: ", ";\n  }\n\n  &:checked {\n    background-color: ", ";\n    &:after {\n      border-color: white;\n    }\n  }\n\n  &:disabled {\n    cursor: default;\n    opacity: 0.6;\n  }\n"], ["\n  appearance: none;\n  overflow: hidden;\n  cursor: pointer;\n  position: relative;\n  display: inline-block;\n  height: ", ";\n  width: ", ";\n  vertical-align: middle;\n  transition: background-color 0.2s ease-in-out;\n  border: 0;\n  border-radius: 8px;\n  background-color: ", ";\n  box-shadow: ", ";\n\n  &:after {\n    content: \"\";\n    position: absolute;\n    border-bottom: 2px solid;\n    border-left: 2px solid;\n    border-color: transparent;\n    top: 30%;\n    left: 0;\n    right: 0;\n    width: 50%;\n    height: 25%;\n    margin: auto;\n    transform: rotate(-50deg);\n    transition: border-color 0.2s ease-in-out;\n  }\n\n  &:hover:not(:disabled):not(:checked) {\n    box-shadow: ", ";\n  }\n\n  &:focus {\n    outline: none;\n    box-shadow: ", ";\n  }\n\n  &:checked {\n    background-color: ", ";\n    &:after {\n      border-color: white;\n    }\n  }\n\n  &:disabled {\n    cursor: default;\n    opacity: 0.6;\n  }\n"])), getScale$3, getScale$3, function (_a) {
+var Checkbox = styled.input.attrs({ type: "checkbox" })(templateObject_1$I || (templateObject_1$I = __makeTemplateObject(["\n  appearance: none;\n  overflow: hidden;\n  cursor: pointer;\n  position: relative;\n  display: inline-block;\n  height: ", ";\n  width: ", ";\n  vertical-align: middle;\n  transition: background-color 0.2s ease-in-out;\n  border: 0;\n  border-radius: 8px;\n  background-color: ", ";\n  box-shadow: ", ";\n\n  &:after {\n    content: \"\";\n    position: absolute;\n    border-bottom: 2px solid;\n    border-left: 2px solid;\n    border-color: transparent;\n    top: 30%;\n    left: 0;\n    right: 0;\n    width: 50%;\n    height: 25%;\n    margin: auto;\n    transform: rotate(-50deg);\n    transition: border-color 0.2s ease-in-out;\n  }\n\n  &:hover:not(:disabled):not(:checked) {\n    box-shadow: ", ";\n  }\n\n  &:focus {\n    outline: none;\n    box-shadow: ", ";\n  }\n\n  &:checked {\n    background-color: ", ";\n    &:after {\n      border-color: white;\n    }\n  }\n\n  &:disabled {\n    cursor: default;\n    opacity: 0.6;\n  }\n"], ["\n  appearance: none;\n  overflow: hidden;\n  cursor: pointer;\n  position: relative;\n  display: inline-block;\n  height: ", ";\n  width: ", ";\n  vertical-align: middle;\n  transition: background-color 0.2s ease-in-out;\n  border: 0;\n  border-radius: 8px;\n  background-color: ", ";\n  box-shadow: ", ";\n\n  &:after {\n    content: \"\";\n    position: absolute;\n    border-bottom: 2px solid;\n    border-left: 2px solid;\n    border-color: transparent;\n    top: 30%;\n    left: 0;\n    right: 0;\n    width: 50%;\n    height: 25%;\n    margin: auto;\n    transform: rotate(-50deg);\n    transition: border-color 0.2s ease-in-out;\n  }\n\n  &:hover:not(:disabled):not(:checked) {\n    box-shadow: ", ";\n  }\n\n  &:focus {\n    outline: none;\n    box-shadow: ", ";\n  }\n\n  &:checked {\n    background-color: ", ";\n    &:after {\n      border-color: white;\n    }\n  }\n\n  &:disabled {\n    cursor: default;\n    opacity: 0.6;\n  }\n"])), getScale$3, getScale$3, function (_a) {
     var theme = _a.theme;
     return theme.colors.input;
 }, function (_a) {
@@ -1694,7 +1520,7 @@ var Checkbox = styled.input.attrs({ type: "checkbox" })(templateObject_1$J || (t
 Checkbox.defaultProps = {
     scale: scales$6.MD,
 };
-var templateObject_1$J;
+var templateObject_1$I;
 
 var getLeft = function (_a) {
     var position = _a.position;
@@ -1710,7 +1536,7 @@ var getBottom = function (_a) {
     }
     return "auto";
 };
-var DropdownContent = styled.div(templateObject_1$I || (templateObject_1$I = __makeTemplateObject(["\n  width: max-content;\n  display: none;\n  flex-direction: column;\n  position: absolute;\n  transform: translate(-50%, 0);\n  left: ", ";\n  bottom: ", ";\n  background-color: ", ";\n  box-shadow: ", ";\n  padding: 16px;\n  max-height: 400px;\n  overflow-y: auto;\n  z-index: ", ";\n  border-radius: ", ";\n"], ["\n  width: max-content;\n  display: none;\n  flex-direction: column;\n  position: absolute;\n  transform: translate(-50%, 0);\n  left: ", ";\n  bottom: ", ";\n  background-color: ", ";\n  box-shadow: ", ";\n  padding: 16px;\n  max-height: 400px;\n  overflow-y: auto;\n  z-index: ", ";\n  border-radius: ", ";\n"])), getLeft, getBottom, function (_a) {
+var DropdownContent = styled.div(templateObject_1$H || (templateObject_1$H = __makeTemplateObject(["\n  width: max-content;\n  display: none;\n  flex-direction: column;\n  position: absolute;\n  transform: translate(-50%, 0);\n  left: ", ";\n  bottom: ", ";\n  background-color: ", ";\n  box-shadow: ", ";\n  padding: 16px;\n  max-height: 400px;\n  overflow-y: auto;\n  z-index: ", ";\n  border-radius: ", ";\n"], ["\n  width: max-content;\n  display: none;\n  flex-direction: column;\n  position: absolute;\n  transform: translate(-50%, 0);\n  left: ", ";\n  bottom: ", ";\n  background-color: ", ";\n  box-shadow: ", ";\n  padding: 16px;\n  max-height: 400px;\n  overflow-y: auto;\n  z-index: ", ";\n  border-radius: ", ";\n"])), getLeft, getBottom, function (_a) {
     var theme = _a.theme;
     return theme.nav.background;
 }, function (_a) {
@@ -1723,7 +1549,7 @@ var DropdownContent = styled.div(templateObject_1$I || (templateObject_1$I = __m
     var theme = _a.theme;
     return theme.radii.small;
 });
-var Container$4 = styled.div(templateObject_2$l || (templateObject_2$l = __makeTemplateObject(["\n  position: relative;\n  &:hover ", ", &:focus-within ", " {\n    display: flex;\n  }\n"], ["\n  position: relative;\n  &:hover ", ", &:focus-within ", " {\n    display: flex;\n  }\n"])), DropdownContent, DropdownContent);
+var Container$4 = styled.div(templateObject_2$k || (templateObject_2$k = __makeTemplateObject(["\n  position: relative;\n  &:hover ", ", &:focus-within ", " {\n    display: flex;\n  }\n"], ["\n  position: relative;\n  &:hover ", ", &:focus-within ", " {\n    display: flex;\n  }\n"])), DropdownContent, DropdownContent);
 var Dropdown = function (_a) {
     var target = _a.target, _b = _a.position, position = _b === void 0 ? "bottom" : _b, children = _a.children;
     return (React.createElement(Container$4, null,
@@ -1733,10 +1559,10 @@ var Dropdown = function (_a) {
 Dropdown.defaultProps = {
     position: "bottom",
 };
-var templateObject_1$I, templateObject_2$l;
+var templateObject_1$H, templateObject_2$k;
 
-var bunnyFall = keyframes(templateObject_1$H || (templateObject_1$H = __makeTemplateObject(["\n  0% {\n    opacity: 1;\n    transform: translate(0, -100%) rotateZ(0deg);\n  }\n\n  75% {\n    opacity: 1;\n    transform: translate(100px, 75vh) rotateZ(270deg);\n  }\n\n  100% {\n    opacity: 0;\n    transform: translate(150px, 100vh) rotateZ(360deg);\n  }\n"], ["\n  0% {\n    opacity: 1;\n    transform: translate(0, -100%) rotateZ(0deg);\n  }\n\n  75% {\n    opacity: 1;\n    transform: translate(100px, 75vh) rotateZ(270deg);\n  }\n\n  100% {\n    opacity: 0;\n    transform: translate(150px, 100vh) rotateZ(360deg);\n  }\n"])));
-var Bunny = styled.div(templateObject_2$k || (templateObject_2$k = __makeTemplateObject(["\n  display: inline-flex;\n  position: fixed;\n  top: 0;\n  left: ", ";\n  transform: translate3d(0, -100%, 0);\n  user-select: none;\n  pointer-events: none;\n  z-index: 99999;\n\n  animation-name: ", ";\n  animation-duration: ", ";\n  animation-timing-function: linear;\n  animation-iteration-count: ", ";\n  animation-play-state: running;\n\n  &:nth-child(5n + 5) {\n    animation-delay: ", ";\n  }\n\n  &:nth-child(3n + 2) {\n    animation-delay: ", ";\n  }\n\n  &:nth-child(2n + 5) {\n    animation-delay: ", ";\n  }\n\n  &:nth-child(3n + 10) {\n    animation-delay: ", ";\n  }\n\n  &:nth-child(7n + 2) {\n    animation-delay: ", ";\n  }\n\n  &:nth-child(4n + 5) {\n    animation-delay: ", ";\n  }\n\n  &:nth-child(3n + 7) {\n    animation-delay: ", ";\n  }\n"], ["\n  display: inline-flex;\n  position: fixed;\n  top: 0;\n  left: ", ";\n  transform: translate3d(0, -100%, 0);\n  user-select: none;\n  pointer-events: none;\n  z-index: 99999;\n\n  animation-name: ", ";\n  animation-duration: ", ";\n  animation-timing-function: linear;\n  animation-iteration-count: ", ";\n  animation-play-state: running;\n\n  &:nth-child(5n + 5) {\n    animation-delay: ", ";\n  }\n\n  &:nth-child(3n + 2) {\n    animation-delay: ", ";\n  }\n\n  &:nth-child(2n + 5) {\n    animation-delay: ", ";\n  }\n\n  &:nth-child(3n + 10) {\n    animation-delay: ", ";\n  }\n\n  &:nth-child(7n + 2) {\n    animation-delay: ", ";\n  }\n\n  &:nth-child(4n + 5) {\n    animation-delay: ", ";\n  }\n\n  &:nth-child(3n + 7) {\n    animation-delay: ", ";\n  }\n"])), function (_a) {
+var bunnyFall = keyframes(templateObject_1$G || (templateObject_1$G = __makeTemplateObject(["\n  0% {\n    opacity: 1;\n    transform: translate(0, -100%) rotateZ(0deg);\n  }\n\n  75% {\n    opacity: 1;\n    transform: translate(100px, 75vh) rotateZ(270deg);\n  }\n\n  100% {\n    opacity: 0;\n    transform: translate(150px, 100vh) rotateZ(360deg);\n  }\n"], ["\n  0% {\n    opacity: 1;\n    transform: translate(0, -100%) rotateZ(0deg);\n  }\n\n  75% {\n    opacity: 1;\n    transform: translate(100px, 75vh) rotateZ(270deg);\n  }\n\n  100% {\n    opacity: 0;\n    transform: translate(150px, 100vh) rotateZ(360deg);\n  }\n"])));
+var Bunny = styled.div(templateObject_2$j || (templateObject_2$j = __makeTemplateObject(["\n  display: inline-flex;\n  position: fixed;\n  top: 0;\n  left: ", ";\n  transform: translate3d(0, -100%, 0);\n  user-select: none;\n  pointer-events: none;\n  z-index: 99999;\n\n  animation-name: ", ";\n  animation-duration: ", ";\n  animation-timing-function: linear;\n  animation-iteration-count: ", ";\n  animation-play-state: running;\n\n  &:nth-child(5n + 5) {\n    animation-delay: ", ";\n  }\n\n  &:nth-child(3n + 2) {\n    animation-delay: ", ";\n  }\n\n  &:nth-child(2n + 5) {\n    animation-delay: ", ";\n  }\n\n  &:nth-child(3n + 10) {\n    animation-delay: ", ";\n  }\n\n  &:nth-child(7n + 2) {\n    animation-delay: ", ";\n  }\n\n  &:nth-child(4n + 5) {\n    animation-delay: ", ";\n  }\n\n  &:nth-child(3n + 7) {\n    animation-delay: ", ";\n  }\n"], ["\n  display: inline-flex;\n  position: fixed;\n  top: 0;\n  left: ", ";\n  transform: translate3d(0, -100%, 0);\n  user-select: none;\n  pointer-events: none;\n  z-index: 99999;\n\n  animation-name: ", ";\n  animation-duration: ", ";\n  animation-timing-function: linear;\n  animation-iteration-count: ", ";\n  animation-play-state: running;\n\n  &:nth-child(5n + 5) {\n    animation-delay: ", ";\n  }\n\n  &:nth-child(3n + 2) {\n    animation-delay: ", ";\n  }\n\n  &:nth-child(2n + 5) {\n    animation-delay: ", ";\n  }\n\n  &:nth-child(3n + 10) {\n    animation-delay: ", ";\n  }\n\n  &:nth-child(7n + 2) {\n    animation-delay: ", ";\n  }\n\n  &:nth-child(4n + 5) {\n    animation-delay: ", ";\n  }\n\n  &:nth-child(3n + 7) {\n    animation-delay: ", ";\n  }\n"])), function (_a) {
     var position = _a.position;
     return position + "vw";
 }, bunnyFall, function (_a) {
@@ -1773,7 +1599,7 @@ var FallingBunnies = function (_a) {
         React.createElement(Icon$1b, { width: size, height: size }))); });
     return React.createElement("div", null, bunnies);
 };
-var templateObject_1$H, templateObject_2$k;
+var templateObject_1$G, templateObject_2$j;
 
 var tags = {
     H1: "h1",
@@ -1809,7 +1635,7 @@ var style = (_a$4 = {},
         fontSizeLg: "64px",
     },
     _a$4);
-var Heading = styled(Text).attrs({ bold: true })(templateObject_1$G || (templateObject_1$G = __makeTemplateObject(["\n  font-size: ", ";\n  font-weight: 600;\n  line-height: 1.1;\n\n  ", " {\n    font-size: ", ";\n  }\n"], ["\n  font-size: ", ";\n  font-weight: 600;\n  line-height: 1.1;\n\n  ", " {\n    font-size: ", ";\n  }\n"])), function (_a) {
+var Heading = styled(Text).attrs({ bold: true })(templateObject_1$F || (templateObject_1$F = __makeTemplateObject(["\n  font-size: ", ";\n  font-weight: 600;\n  line-height: 1.1;\n\n  ", " {\n    font-size: ", ";\n  }\n"], ["\n  font-size: ", ";\n  font-weight: 600;\n  line-height: 1.1;\n\n  ", " {\n    font-size: ", ";\n  }\n"])), function (_a) {
     var scale = _a.scale;
     return style[scale || scales$5.MD].fontSize;
 }, function (_a) {
@@ -1822,7 +1648,7 @@ var Heading = styled(Text).attrs({ bold: true })(templateObject_1$G || (template
 Heading.defaultProps = {
     as: tags.H2,
 };
-var templateObject_1$G;
+var templateObject_1$F;
 
 var observerOptions = {
     root: null,
@@ -1830,7 +1656,7 @@ var observerOptions = {
     threshold: 0,
 };
 
-var StyledWrapper = styled.div(templateObject_1$F || (templateObject_1$F = __makeTemplateObject(["\n  max-height: ", "px;\n  max-width: ", "px;\n  position: relative;\n  width: 100%;\n\n  &:after {\n    content: \"\";\n    display: block;\n    padding-top: ", "%;\n  }\n\n  ", "\n"], ["\n  max-height: ", "px;\n  max-width: ", "px;\n  position: relative;\n  width: 100%;\n\n  &:after {\n    content: \"\";\n    display: block;\n    padding-top: ", "%;\n  }\n\n  ", "\n"])), function (_a) {
+var StyledWrapper = styled.div(templateObject_1$E || (templateObject_1$E = __makeTemplateObject(["\n  max-height: ", "px;\n  max-width: ", "px;\n  position: relative;\n  width: 100%;\n\n  &:after {\n    content: \"\";\n    display: block;\n    padding-top: ", "%;\n  }\n\n  ", "\n"], ["\n  max-height: ", "px;\n  max-width: ", "px;\n  position: relative;\n  width: 100%;\n\n  &:after {\n    content: \"\";\n    display: block;\n    padding-top: ", "%;\n  }\n\n  ", "\n"])), function (_a) {
     var $height = _a.$height;
     return $height;
 }, function (_a) {
@@ -1844,9 +1670,9 @@ var Wrapper$3 = forwardRef(function (_a, ref) {
     var width = _a.width, height = _a.height, props = __rest(_a, ["width", "height"]);
     return React.createElement(StyledWrapper, __assign({ ref: ref, "$width": width, "$height": height }, props));
 });
-var templateObject_1$F;
+var templateObject_1$E;
 
-var StyledBackgroundImage = styled(Wrapper$3)(templateObject_1$E || (templateObject_1$E = __makeTemplateObject(["\n  background-repeat: no-repeat;\n  background-size: contain;\n"], ["\n  background-repeat: no-repeat;\n  background-size: contain;\n"])));
+var StyledBackgroundImage = styled(Wrapper$3)(templateObject_1$D || (templateObject_1$D = __makeTemplateObject(["\n  background-repeat: no-repeat;\n  background-size: contain;\n"], ["\n  background-repeat: no-repeat;\n  background-size: contain;\n"])));
 var BackgroundImage = function (_a) {
     var src = _a.src, width = _a.width, height = _a.height, props = __rest(_a, ["src", "width", "height"]);
     var ref = useRef(null);
@@ -1873,10 +1699,10 @@ var BackgroundImage = function (_a) {
     }, [src]);
     return React.createElement(StyledBackgroundImage, __assign({ ref: ref, width: width, height: height }, props));
 };
-var templateObject_1$E;
+var templateObject_1$D;
 
-var StyledImage = styled.img(templateObject_1$D || (templateObject_1$D = __makeTemplateObject(["\n  height: 100%;\n  left: 0;\n  position: absolute;\n  top: 0;\n  width: 100%;\n"], ["\n  height: 100%;\n  left: 0;\n  position: absolute;\n  top: 0;\n  width: 100%;\n"])));
-var Placeholder = styled.div(templateObject_2$j || (templateObject_2$j = __makeTemplateObject(["\n  height: 100%;\n  left: 0;\n  position: absolute;\n  top: 0;\n  width: 100%;\n"], ["\n  height: 100%;\n  left: 0;\n  position: absolute;\n  top: 0;\n  width: 100%;\n"])));
+var StyledImage = styled.img(templateObject_1$C || (templateObject_1$C = __makeTemplateObject(["\n  height: 100%;\n  left: 0;\n  position: absolute;\n  top: 0;\n  width: 100%;\n"], ["\n  height: 100%;\n  left: 0;\n  position: absolute;\n  top: 0;\n  width: 100%;\n"])));
+var Placeholder = styled.div(templateObject_2$i || (templateObject_2$i = __makeTemplateObject(["\n  height: 100%;\n  left: 0;\n  position: absolute;\n  top: 0;\n  width: 100%;\n"], ["\n  height: 100%;\n  left: 0;\n  position: absolute;\n  top: 0;\n  width: 100%;\n"])));
 var Image = function (_a) {
     var src = _a.src, alt = _a.alt, width = _a.width, height = _a.height, props = __rest(_a, ["src", "alt", "width", "height"]);
     var imgRef = useRef(null);
@@ -1903,10 +1729,10 @@ var Image = function (_a) {
     }, [src]);
     return (React.createElement(Wrapper$3, __assign({ ref: imgRef, height: height, width: width }, props), isLoaded ? React.createElement(StyledImage, { src: src, alt: alt }) : React.createElement(Placeholder, null)));
 };
-var templateObject_1$D, templateObject_2$j;
+var templateObject_1$C, templateObject_2$i;
 
-var TokenImage = styled(Image)(templateObject_1$C || (templateObject_1$C = __makeTemplateObject(["\n  &:before {\n    border-radius: 50%;\n    border: 1px solid rgba(0, 0, 0, 0.25);\n    content: \"\";\n    height: 100%;\n    left: 0;\n    position: absolute;\n    top: 0;\n    width: 100%;\n    z-index: 7;\n  }\n"], ["\n  &:before {\n    border-radius: 50%;\n    border: 1px solid rgba(0, 0, 0, 0.25);\n    content: \"\";\n    height: 100%;\n    left: 0;\n    position: absolute;\n    top: 0;\n    width: 100%;\n    z-index: 7;\n  }\n"])));
-var templateObject_1$C;
+var TokenImage = styled(Image)(templateObject_1$B || (templateObject_1$B = __makeTemplateObject(["\n  &:before {\n    border-radius: 50%;\n    border: 1px solid rgba(0, 0, 0, 0.25);\n    content: \"\";\n    height: 100%;\n    left: 0;\n    position: absolute;\n    top: 0;\n    width: 100%;\n    z-index: 7;\n  }\n"], ["\n  &:before {\n    border-radius: 50%;\n    border: 1px solid rgba(0, 0, 0, 0.25);\n    content: \"\";\n    height: 100%;\n    left: 0;\n    position: absolute;\n    top: 0;\n    width: 100%;\n    z-index: 7;\n  }\n"])));
+var templateObject_1$B;
 
 var variants$3 = {
     DEFAULT: "default",
@@ -1914,7 +1740,7 @@ var variants$3 = {
 };
 
 var _a$3, _b$2;
-var StyledPrimaryImage = styled(TokenImage)(templateObject_1$B || (templateObject_1$B = __makeTemplateObject(["\n  position: absolute;\n  width: ", "; // 92, 82 are arbitrary numbers to fit the variant\n\n  ", "\n"], ["\n  position: absolute;\n  width: ",
+var StyledPrimaryImage = styled(TokenImage)(templateObject_1$A || (templateObject_1$A = __makeTemplateObject(["\n  position: absolute;\n  width: ", "; // 92, 82 are arbitrary numbers to fit the variant\n\n  ", "\n"], ["\n  position: absolute;\n  width: ",
     "; // 92, 82 are arbitrary numbers to fit the variant\n\n  ",
     "\n"])), function (_a) {
     var variant = _a.variant;
@@ -1937,7 +1763,7 @@ var StyledPrimaryImage = styled(TokenImage)(templateObject_1$B || (templateObjec
         },
         _a$3),
 }));
-var StyledSecondaryImage = styled(TokenImage)(templateObject_2$i || (templateObject_2$i = __makeTemplateObject(["\n  position: absolute;\n  width: 50%;\n\n  ", "\n"], ["\n  position: absolute;\n  width: 50%;\n\n  ",
+var StyledSecondaryImage = styled(TokenImage)(templateObject_2$h || (templateObject_2$h = __makeTemplateObject(["\n  position: absolute;\n  width: 50%;\n\n  ", "\n"], ["\n  position: absolute;\n  width: 50%;\n\n  ",
     "\n"])), variant$1({
     variants: (_b$2 = {},
         _b$2[variants$3.DEFAULT] = {
@@ -1956,7 +1782,7 @@ var StyledSecondaryImage = styled(TokenImage)(templateObject_2$i || (templateObj
         },
         _b$2),
 }));
-var templateObject_1$B, templateObject_2$i;
+var templateObject_1$A, templateObject_2$h;
 
 var TokenPairImage = function (_a) {
     var primarySrc = _a.primarySrc, secondarySrc = _a.secondarySrc, width = _a.width, height = _a.height, _b = _a.variant, variant = _b === void 0 ? variants$3.DEFAULT : _b, _c = _a.primaryImageProps, primaryImageProps = _c === void 0 ? {} : _c, _d = _a.secondaryImageProps, secondaryImageProps = _d === void 0 ? {} : _d, props = __rest(_a, ["primarySrc", "secondarySrc", "width", "height", "variant", "primaryImageProps", "secondaryImageProps"]);
@@ -1966,7 +1792,7 @@ var TokenPairImage = function (_a) {
         React.createElement(StyledSecondaryImage, __assign({ variant: variant, src: secondarySrc, width: secondaryImageSize, height: secondaryImageSize }, secondaryImageProps))));
 };
 
-var GridLayout$1 = styled(Grid)(templateObject_1$A || (templateObject_1$A = __makeTemplateObject(["\n  grid-template-columns: repeat(6, 1fr);\n  grid-gap: 16px;\n  ", " {\n    grid-template-columns: repeat(8, 1fr);\n    grid-gap: 24px;\n  }\n  ", " {\n    grid-template-columns: repeat(12, 1fr);\n    grid-gap: 24px;\n  }\n  ", " {\n    grid-template-columns: repeat(12, 1fr);\n    grid-gap: 32px;\n  }\n"], ["\n  grid-template-columns: repeat(6, 1fr);\n  grid-gap: 16px;\n  ", " {\n    grid-template-columns: repeat(8, 1fr);\n    grid-gap: 24px;\n  }\n  ", " {\n    grid-template-columns: repeat(12, 1fr);\n    grid-gap: 24px;\n  }\n  ", " {\n    grid-template-columns: repeat(12, 1fr);\n    grid-gap: 32px;\n  }\n"])), function (_a) {
+var GridLayout$1 = styled(Grid)(templateObject_1$z || (templateObject_1$z = __makeTemplateObject(["\n  grid-template-columns: repeat(6, 1fr);\n  grid-gap: 16px;\n  ", " {\n    grid-template-columns: repeat(8, 1fr);\n    grid-gap: 24px;\n  }\n  ", " {\n    grid-template-columns: repeat(12, 1fr);\n    grid-gap: 24px;\n  }\n  ", " {\n    grid-template-columns: repeat(12, 1fr);\n    grid-gap: 32px;\n  }\n"], ["\n  grid-template-columns: repeat(6, 1fr);\n  grid-gap: 16px;\n  ", " {\n    grid-template-columns: repeat(8, 1fr);\n    grid-gap: 24px;\n  }\n  ", " {\n    grid-template-columns: repeat(12, 1fr);\n    grid-gap: 24px;\n  }\n  ", " {\n    grid-template-columns: repeat(12, 1fr);\n    grid-gap: 32px;\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.mediaQueries.sm;
 }, function (_a) {
@@ -1976,15 +1802,15 @@ var GridLayout$1 = styled(Grid)(templateObject_1$A || (templateObject_1$A = __ma
     var theme = _a.theme;
     return theme.mediaQueries.lg;
 });
-var templateObject_1$A;
+var templateObject_1$z;
 
-var GridLayout = styled(GridLayout$1)(templateObject_1$z || (templateObject_1$z = __makeTemplateObject(["\n  & > div {\n    grid-column: span 6;\n    ", " {\n      grid-column: span 4;\n    }\n  }\n"], ["\n  & > div {\n    grid-column: span 6;\n    ", " {\n      grid-column: span 4;\n    }\n  }\n"])), function (_a) {
+var GridLayout = styled(GridLayout$1)(templateObject_1$y || (templateObject_1$y = __makeTemplateObject(["\n  & > div {\n    grid-column: span 6;\n    ", " {\n      grid-column: span 4;\n    }\n  }\n"], ["\n  & > div {\n    grid-column: span 6;\n    ", " {\n      grid-column: span 4;\n    }\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.mediaQueries.sm;
 });
-var templateObject_1$z;
+var templateObject_1$y;
 
-var StyledLink$1 = styled(Text)(templateObject_1$y || (templateObject_1$y = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  width: fit-content;\n  &:hover {\n    text-decoration: none;\n    color: ", ";\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  width: fit-content;\n  &:hover {\n    text-decoration: none;\n    color: ", ";\n  }\n"])), function (_a) {
+var StyledLink$1 = styled(Text)(templateObject_1$x || (templateObject_1$x = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  width: fit-content;\n  &:hover {\n    text-decoration: none;\n    color: ", ";\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  width: fit-content;\n  &:hover {\n    text-decoration: none;\n    color: ", ";\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.colors.bbtColor;
 });
@@ -1996,7 +1822,7 @@ var Link = function (_a) {
 Link.defaultProps = {
     color: "text",
 };
-var templateObject_1$y;
+var templateObject_1$x;
 
 var LinkExternal = function (_a) {
     var children = _a.children, props = __rest(_a, ["children"]);
@@ -2016,30 +1842,26 @@ var variants$2 = {
     },
 };
 
-var Icons$3 = {
+var Icons$2 = {
     warning: Icon$w,
-<<<<<<< HEAD
-    danger: Icon$1O,
-=======
     danger: Icon$1P,
->>>>>>> a5e1ba8739b83f2319426d389050df68312b0874
 };
-var MessageContainer = styled.div(templateObject_1$x || (templateObject_1$x = __makeTemplateObject(["\n  display: flex;\n  background-color: gray;\n  padding: 16px;\n  border-radius: 16px;\n  border: solid 1px;\n\n  ", "\n  ", "\n"], ["\n  display: flex;\n  background-color: gray;\n  padding: 16px;\n  border-radius: 16px;\n  border: solid 1px;\n\n  ", "\n  ",
+var MessageContainer = styled.div(templateObject_1$w || (templateObject_1$w = __makeTemplateObject(["\n  display: flex;\n  background-color: gray;\n  padding: 16px;\n  border-radius: 16px;\n  border: solid 1px;\n\n  ", "\n  ", "\n"], ["\n  display: flex;\n  background-color: gray;\n  padding: 16px;\n  border-radius: 16px;\n  border: solid 1px;\n\n  ", "\n  ",
     "\n"])), space, variant$1({
     variants: variants$2,
 }));
 var Message = function (_a) {
     var children = _a.children, variant = _a.variant, props = __rest(_a, ["children", "variant"]);
-    var Icon = Icons$3[variant];
+    var Icon = Icons$2[variant];
     return (React.createElement(MessageContainer, __assign({ variant: variant }, props),
         React.createElement(Box, null,
             React.createElement(Icon, { color: variants$2[variant].borderColor, width: "24px", mr: "12px" })),
         children));
 };
-var templateObject_1$x;
+var templateObject_1$w;
 
-var NotificationDotRoot = styled.span(templateObject_1$w || (templateObject_1$w = __makeTemplateObject(["\n  display: inline-flex;\n  position: relative;\n"], ["\n  display: inline-flex;\n  position: relative;\n"])));
-var Dot = styled.span(templateObject_2$h || (templateObject_2$h = __makeTemplateObject(["\n  display: ", ";\n  position: absolute;\n  top: 0;\n  right: 0;\n  width: 10px;\n  height: 10px;\n  pointer-events: none;\n  border: 2px solid ", ";\n  border-radius: 50%;\n  background-color: ", ";\n"], ["\n  display: ", ";\n  position: absolute;\n  top: 0;\n  right: 0;\n  width: 10px;\n  height: 10px;\n  pointer-events: none;\n  border: 2px solid ", ";\n  border-radius: 50%;\n  background-color: ", ";\n"])), function (_a) {
+var NotificationDotRoot = styled.span(templateObject_1$v || (templateObject_1$v = __makeTemplateObject(["\n  display: inline-flex;\n  position: relative;\n"], ["\n  display: inline-flex;\n  position: relative;\n"])));
+var Dot = styled.span(templateObject_2$g || (templateObject_2$g = __makeTemplateObject(["\n  display: ", ";\n  position: absolute;\n  top: 0;\n  right: 0;\n  width: 10px;\n  height: 10px;\n  pointer-events: none;\n  border: 2px solid ", ";\n  border-radius: 50%;\n  background-color: ", ";\n"], ["\n  display: ", ";\n  position: absolute;\n  top: 0;\n  right: 0;\n  width: 10px;\n  height: 10px;\n  pointer-events: none;\n  border: 2px solid ", ";\n  border-radius: 50%;\n  background-color: ", ";\n"])), function (_a) {
     var show = _a.show;
     return (show ? "inline-flex" : "none");
 }, function (_a) {
@@ -2055,9 +1877,9 @@ var NotificationDot = function (_a) {
         Children.map(children, function (child) { return cloneElement(child, props); }),
         React.createElement(Dot, { show: show })));
 };
-var templateObject_1$w, templateObject_2$h;
+var templateObject_1$v, templateObject_2$g;
 
-var Overlay = styled.div.attrs({ role: "presentation" })(templateObject_1$v || (templateObject_1$v = __makeTemplateObject(["\n  position: fixed;\n  top: 0px;\n  left: 0px;\n  width: 100%;\n  height: 100%;\n  background-color: ", ";\n  transition: opacity 0.4s;\n  opacity: ", ";\n  z-index: ", ";\n  pointer-events: ", ";\n"], ["\n  position: fixed;\n  top: 0px;\n  left: 0px;\n  width: 100%;\n  height: 100%;\n  background-color: ", ";\n  transition: opacity 0.4s;\n  opacity: ", ";\n  z-index: ", ";\n  pointer-events: ", ";\n"])), function (_a) {
+var Overlay = styled.div.attrs({ role: "presentation" })(templateObject_1$u || (templateObject_1$u = __makeTemplateObject(["\n  position: fixed;\n  top: 0px;\n  left: 0px;\n  width: 100%;\n  height: 100%;\n  background-color: ", ";\n  transition: opacity 0.4s;\n  opacity: ", ";\n  z-index: ", ";\n  pointer-events: ", ";\n"], ["\n  position: fixed;\n  top: 0px;\n  left: 0px;\n  width: 100%;\n  height: 100%;\n  background-color: ", ";\n  transition: opacity 0.4s;\n  opacity: ", ";\n  z-index: ", ";\n  pointer-events: ", ";\n"])), function (_a) {
     var theme = _a.theme;
     return theme.colors.overlay;
 }, function (_a) {
@@ -2074,7 +1896,7 @@ Overlay.defaultProps = {
     show: false,
     zIndex: 10,
 };
-var templateObject_1$v;
+var templateObject_1$u;
 
 var scales$4 = {
     SM: "sm",
@@ -2127,14 +1949,14 @@ var getScale$2 = function (property) {
         return scaleKeyValues$1[scale][property];
     };
 };
-var PancakeStack = styled.div(templateObject_1$u || (templateObject_1$u = __makeTemplateObject(["\n  position: relative;\n  display: inline-block;\n\n  &:label:before {\n    content: none;\n  }\n\n  .pancakes {\n    transition: 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);\n  }\n\n  .pancake {\n    background: #e27c31;\n    border-radius: 50%;\n    width: ", ";\n    height: ", ";\n    position: absolute;\n    transition: 0.4s ease;\n    top: 2px;\n    left: 4px;\n    box-shadow: 0 ", " 0 ", " #fbbe7c;\n  }\n\n  .pancake:nth-child(1) {\n    background: ", ";\n    box-shadow: 0 ", " 0 ", "\n      ", ";\n  }\n\n  .pancake:nth-child(2) {\n    left: 0;\n    top: ", ";\n    transform: scale(0);\n    transition: 0.2s ease 0.2s;\n  }\n\n  .pancake:nth-child(3) {\n    top: ", ";\n    transform: scale(0);\n    transition: 0.2s ease 0.2s;\n  }\n\n  .pancake:nth-child(3):before,\n  .pancake:nth-child(3):after {\n    content: \"\";\n    position: absolute;\n    background: #ef8927;\n    border-radius: 20px;\n    width: 50%;\n    height: 20%;\n  }\n\n  .pancake:nth-child(3):before {\n    top: ", ";\n    left: ", ";\n  }\n\n  .pancake:nth-child(3):after {\n    top: ", ";\n    right: ", ";\n  }\n\n  .butter {\n    width: ", ";\n    height: ", ";\n    background: #fbdb60;\n    top: ", ";\n    left: ", ";\n    position: absolute;\n    border-radius: ", ";\n    box-shadow: 0 ", " 0 ", " #d67823;\n    transform: scale(0);\n    transition: 0.2s ease;\n  }\n"], ["\n  position: relative;\n  display: inline-block;\n\n  &:label:before {\n    content: none;\n  }\n\n  .pancakes {\n    transition: 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);\n  }\n\n  .pancake {\n    background: #e27c31;\n    border-radius: 50%;\n    width: ", ";\n    height: ", ";\n    position: absolute;\n    transition: 0.4s ease;\n    top: 2px;\n    left: 4px;\n    box-shadow: 0 ", " 0 ", " #fbbe7c;\n  }\n\n  .pancake:nth-child(1) {\n    background: ", ";\n    box-shadow: 0 ", " 0 ", "\n      ", ";\n  }\n\n  .pancake:nth-child(2) {\n    left: 0;\n    top: ", ";\n    transform: scale(0);\n    transition: 0.2s ease 0.2s;\n  }\n\n  .pancake:nth-child(3) {\n    top: ", ";\n    transform: scale(0);\n    transition: 0.2s ease 0.2s;\n  }\n\n  .pancake:nth-child(3):before,\n  .pancake:nth-child(3):after {\n    content: \"\";\n    position: absolute;\n    background: #ef8927;\n    border-radius: 20px;\n    width: 50%;\n    height: 20%;\n  }\n\n  .pancake:nth-child(3):before {\n    top: ", ";\n    left: ", ";\n  }\n\n  .pancake:nth-child(3):after {\n    top: ", ";\n    right: ", ";\n  }\n\n  .butter {\n    width: ", ";\n    height: ", ";\n    background: #fbdb60;\n    top: ", ";\n    left: ", ";\n    position: absolute;\n    border-radius: ", ";\n    box-shadow: 0 ", " 0 ", " #d67823;\n    transform: scale(0);\n    transition: 0.2s ease;\n  }\n"])), getScale$2("pancakeSize"), getScale$2("pancakeSize"), getScale$2("pancakeThickness"), getScale$2("pancakeThickness"), function (_a) {
+var PancakeStack = styled.div(templateObject_1$t || (templateObject_1$t = __makeTemplateObject(["\n  position: relative;\n  display: inline-block;\n\n  &:label:before {\n    content: none;\n  }\n\n  .pancakes {\n    transition: 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);\n  }\n\n  .pancake {\n    background: #e27c31;\n    border-radius: 50%;\n    width: ", ";\n    height: ", ";\n    position: absolute;\n    transition: 0.4s ease;\n    top: 2px;\n    left: 4px;\n    box-shadow: 0 ", " 0 ", " #fbbe7c;\n  }\n\n  .pancake:nth-child(1) {\n    background: ", ";\n    box-shadow: 0 ", " 0 ", "\n      ", ";\n  }\n\n  .pancake:nth-child(2) {\n    left: 0;\n    top: ", ";\n    transform: scale(0);\n    transition: 0.2s ease 0.2s;\n  }\n\n  .pancake:nth-child(3) {\n    top: ", ";\n    transform: scale(0);\n    transition: 0.2s ease 0.2s;\n  }\n\n  .pancake:nth-child(3):before,\n  .pancake:nth-child(3):after {\n    content: \"\";\n    position: absolute;\n    background: #ef8927;\n    border-radius: 20px;\n    width: 50%;\n    height: 20%;\n  }\n\n  .pancake:nth-child(3):before {\n    top: ", ";\n    left: ", ";\n  }\n\n  .pancake:nth-child(3):after {\n    top: ", ";\n    right: ", ";\n  }\n\n  .butter {\n    width: ", ";\n    height: ", ";\n    background: #fbdb60;\n    top: ", ";\n    left: ", ";\n    position: absolute;\n    border-radius: ", ";\n    box-shadow: 0 ", " 0 ", " #d67823;\n    transform: scale(0);\n    transition: 0.2s ease;\n  }\n"], ["\n  position: relative;\n  display: inline-block;\n\n  &:label:before {\n    content: none;\n  }\n\n  .pancakes {\n    transition: 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);\n  }\n\n  .pancake {\n    background: #e27c31;\n    border-radius: 50%;\n    width: ", ";\n    height: ", ";\n    position: absolute;\n    transition: 0.4s ease;\n    top: 2px;\n    left: 4px;\n    box-shadow: 0 ", " 0 ", " #fbbe7c;\n  }\n\n  .pancake:nth-child(1) {\n    background: ", ";\n    box-shadow: 0 ", " 0 ", "\n      ", ";\n  }\n\n  .pancake:nth-child(2) {\n    left: 0;\n    top: ", ";\n    transform: scale(0);\n    transition: 0.2s ease 0.2s;\n  }\n\n  .pancake:nth-child(3) {\n    top: ", ";\n    transform: scale(0);\n    transition: 0.2s ease 0.2s;\n  }\n\n  .pancake:nth-child(3):before,\n  .pancake:nth-child(3):after {\n    content: \"\";\n    position: absolute;\n    background: #ef8927;\n    border-radius: 20px;\n    width: 50%;\n    height: 20%;\n  }\n\n  .pancake:nth-child(3):before {\n    top: ", ";\n    left: ", ";\n  }\n\n  .pancake:nth-child(3):after {\n    top: ", ";\n    right: ", ";\n  }\n\n  .butter {\n    width: ", ";\n    height: ", ";\n    background: #fbdb60;\n    top: ", ";\n    left: ", ";\n    position: absolute;\n    border-radius: ", ";\n    box-shadow: 0 ", " 0 ", " #d67823;\n    transform: scale(0);\n    transition: 0.2s ease;\n  }\n"])), getScale$2("pancakeSize"), getScale$2("pancakeSize"), getScale$2("pancakeThickness"), getScale$2("pancakeThickness"), function (_a) {
     var theme = _a.theme;
     return theme.pancakeToggle.handleBackground;
 }, getScale$2("pancakeThickness"), getScale$2("pancakeThickness"), function (_a) {
     var theme = _a.theme;
     return theme.pancakeToggle.handleShadow;
 }, getScale$2("pancakeTwoOffset"), getScale$2("pancakeThreeOffset"), getScale$2("butterSmearOneTop"), getScale$2("butterSmearOneLeft"), getScale$2("butterSmearTwoTop"), getScale$2("butterSmearTwoRight"), getScale$2("butterWidth"), getScale$2("butterHeight"), getScale$2("butterTop"), getScale$2("butterLeft"), getScale$2("butterRadius"), getScale$2("butterThickness"), getScale$2("butterThickness"));
-var PancakeInput = styled.input(templateObject_2$g || (templateObject_2$g = __makeTemplateObject(["\n  height: 40px;\n  left: 0;\n  opacity: 0;\n  position: absolute;\n  top: 0;\n  width: 40px;\n\n  &:focus + label {\n    box-shadow: ", ";\n  }\n\n  &:checked + label .pancakes {\n    transform: translateX(", ");\n  }\n\n  &:checked + label .pancake:nth-child(1) {\n    background: #e27c31;\n    box-shadow: 0 ", " 0 ", " #fbbe7c;\n    transition-delay: 0.2s;\n  }\n\n  &:checked + label .pancake:nth-child(2) {\n    transform: scale(1);\n    transition-delay: 0.2s;\n  }\n\n  &:checked + label .pancake:nth-child(3) {\n    transform: scale(1);\n    transition-delay: 0.4s;\n  }\n\n  &:checked + label .butter {\n    transform: scale(1);\n    transition-delay: 0.6s;\n  }\n"], ["\n  height: 40px;\n  left: 0;\n  opacity: 0;\n  position: absolute;\n  top: 0;\n  width: 40px;\n\n  &:focus + label {\n    box-shadow: ", ";\n  }\n\n  &:checked + label .pancakes {\n    transform: translateX(", ");\n  }\n\n  &:checked + label .pancake:nth-child(1) {\n    background: #e27c31;\n    box-shadow: 0 ", " 0 ", " #fbbe7c;\n    transition-delay: 0.2s;\n  }\n\n  &:checked + label .pancake:nth-child(2) {\n    transform: scale(1);\n    transition-delay: 0.2s;\n  }\n\n  &:checked + label .pancake:nth-child(3) {\n    transform: scale(1);\n    transition-delay: 0.4s;\n  }\n\n  &:checked + label .butter {\n    transform: scale(1);\n    transition-delay: 0.6s;\n  }\n"])), function (_a) {
+var PancakeInput = styled.input(templateObject_2$f || (templateObject_2$f = __makeTemplateObject(["\n  height: 40px;\n  left: 0;\n  opacity: 0;\n  position: absolute;\n  top: 0;\n  width: 40px;\n\n  &:focus + label {\n    box-shadow: ", ";\n  }\n\n  &:checked + label .pancakes {\n    transform: translateX(", ");\n  }\n\n  &:checked + label .pancake:nth-child(1) {\n    background: #e27c31;\n    box-shadow: 0 ", " 0 ", " #fbbe7c;\n    transition-delay: 0.2s;\n  }\n\n  &:checked + label .pancake:nth-child(2) {\n    transform: scale(1);\n    transition-delay: 0.2s;\n  }\n\n  &:checked + label .pancake:nth-child(3) {\n    transform: scale(1);\n    transition-delay: 0.4s;\n  }\n\n  &:checked + label .butter {\n    transform: scale(1);\n    transition-delay: 0.6s;\n  }\n"], ["\n  height: 40px;\n  left: 0;\n  opacity: 0;\n  position: absolute;\n  top: 0;\n  width: 40px;\n\n  &:focus + label {\n    box-shadow: ", ";\n  }\n\n  &:checked + label .pancakes {\n    transform: translateX(", ");\n  }\n\n  &:checked + label .pancake:nth-child(1) {\n    background: #e27c31;\n    box-shadow: 0 ", " 0 ", " #fbbe7c;\n    transition-delay: 0.2s;\n  }\n\n  &:checked + label .pancake:nth-child(2) {\n    transform: scale(1);\n    transition-delay: 0.2s;\n  }\n\n  &:checked + label .pancake:nth-child(3) {\n    transform: scale(1);\n    transition-delay: 0.4s;\n  }\n\n  &:checked + label .butter {\n    transform: scale(1);\n    transition-delay: 0.6s;\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.shadows.focus;
 }, getScale$2("travelDistance"), getScale$2("pancakeThickness"), getScale$2("pancakeThickness"));
@@ -2145,7 +1967,7 @@ var PancakeLabel = styled.label(templateObject_3$9 || (templateObject_3$9 = __ma
     var theme = _a.theme;
     return theme.shadows.inset;
 });
-var templateObject_1$u, templateObject_2$g, templateObject_3$9;
+var templateObject_1$t, templateObject_2$f, templateObject_3$9;
 
 var PancakeToggle = function (_a) {
     var checked = _a.checked, _b = _a.scale, scale = _b === void 0 ? scales$4.MD : _b, props = __rest(_a, ["checked", "scale"]);
@@ -2189,11 +2011,11 @@ var styleScales = (_b$1 = {},
     },
     _b$1);
 
-var Bar = styled.div(templateObject_1$t || (templateObject_1$t = __makeTemplateObject(["\n  position: absolute;\n  top: 0;\n  left: 0;\n  background-color: ", ";\n  height: 100%;\n  transition: width 200ms ease;\n"], ["\n  position: absolute;\n  top: 0;\n  left: 0;\n  background-color: ", ";\n  height: 100%;\n  transition: width 200ms ease;\n"])), function (props) { return (props.primary ? props.theme.colors.secondary : props.theme.colors.secondary + "80"); });
+var Bar = styled.div(templateObject_1$s || (templateObject_1$s = __makeTemplateObject(["\n  position: absolute;\n  top: 0;\n  left: 0;\n  background-color: ", ";\n  height: 100%;\n  transition: width 200ms ease;\n"], ["\n  position: absolute;\n  top: 0;\n  left: 0;\n  background-color: ", ";\n  height: 100%;\n  transition: width 200ms ease;\n"])), function (props) { return (props.primary ? props.theme.colors.bbtColor : props.theme.colors.bbtColor + "80"); });
 Bar.defaultProps = {
     primary: false,
 };
-var StyledProgress = styled.div(templateObject_2$f || (templateObject_2$f = __makeTemplateObject(["\n  position: relative;\n  background-color: ", ";\n  box-shadow: ", ";\n  overflow: hidden;\n\n  ", " {\n    border-top-left-radius: ", ";\n    border-bottom-left-radius: ", ";\n  }\n\n  ", "\n  ", "\n  ", "\n"], ["\n  position: relative;\n  background-color: ", ";\n  box-shadow: ", ";\n  overflow: hidden;\n\n  ", " {\n    border-top-left-radius: ", ";\n    border-bottom-left-radius: ", ";\n  }\n\n  ",
+var StyledProgress = styled.div(templateObject_2$e || (templateObject_2$e = __makeTemplateObject(["\n  position: relative;\n  background-color: ", ";\n  box-shadow: ", ";\n  overflow: hidden;\n\n  ", " {\n    border-top-left-radius: ", ";\n    border-bottom-left-radius: ", ";\n  }\n\n  ", "\n  ", "\n  ", "\n"], ["\n  position: relative;\n  background-color: ", ";\n  box-shadow: ", ";\n  overflow: hidden;\n\n  ", " {\n    border-top-left-radius: ", ";\n    border-bottom-left-radius: ", ";\n  }\n\n  ",
     "\n  ",
     "\n  ", "\n"])), function (_a) {
     var theme = _a.theme;
@@ -2213,10 +2035,10 @@ var StyledProgress = styled.div(templateObject_2$f || (templateObject_2$f = __ma
     prop: "scale",
     variants: styleScales,
 }), space);
-var templateObject_1$t, templateObject_2$f;
+var templateObject_1$s, templateObject_2$e;
 
-var ProgressBunnyWrapper = styled.div(templateObject_1$s || (templateObject_1$s = __makeTemplateObject(["\n  display: flex;\n  z-index: 2;\n  top: -65%;\n  position: absolute;\n  transform: translate(-50%, -50%);\n  transition: left 200ms ease-out;\n"], ["\n  display: flex;\n  z-index: 2;\n  top: -65%;\n  position: absolute;\n  transform: translate(-50%, -50%);\n  transition: left 200ms ease-out;\n"])));
-var templateObject_1$s;
+var ProgressBunnyWrapper = styled.div(templateObject_1$r || (templateObject_1$r = __makeTemplateObject(["\n  display: flex;\n  z-index: 2;\n  top: -65%;\n  position: absolute;\n  transform: translate(-50%, -50%);\n  transition: left 200ms ease-out;\n"], ["\n  display: flex;\n  z-index: 2;\n  top: -65%;\n  position: absolute;\n  transform: translate(-50%, -50%);\n  transition: left 200ms ease-out;\n"])));
+var templateObject_1$r;
 
 var stepGuard = function (step) {
     if (step < 0) {
@@ -2261,7 +2083,7 @@ var getCheckedScale = function (_a) {
             return "20px";
     }
 };
-var Radio = styled.input.attrs({ type: "radio" })(templateObject_1$r || (templateObject_1$r = __makeTemplateObject(["\n  appearance: none;\n  overflow: hidden;\n  cursor: pointer;\n  position: relative;\n  display: inline-block;\n  height: ", ";\n  width: ", ";\n  vertical-align: middle;\n  transition: background-color 0.2s ease-in-out;\n  border: 0;\n  border-radius: 50%;\n  background-color: ", ";\n  box-shadow: ", ";\n\n  &:after {\n    border-radius: 50%;\n    content: \"\";\n    height: ", ";\n    left: 6px;\n    position: absolute;\n    top: 6px;\n    width: ", ";\n  }\n\n  &:hover:not(:disabled):not(:checked) {\n    box-shadow: ", ";\n  }\n\n  &:focus {\n    outline: none;\n    box-shadow: ", ";\n  }\n\n  &:checked {\n    background-color: ", ";\n    &:after {\n      background-color: ", ";\n    }\n  }\n\n  &:disabled {\n    cursor: default;\n    opacity: 0.6;\n  }\n  ", "\n"], ["\n  appearance: none;\n  overflow: hidden;\n  cursor: pointer;\n  position: relative;\n  display: inline-block;\n  height: ", ";\n  width: ", ";\n  vertical-align: middle;\n  transition: background-color 0.2s ease-in-out;\n  border: 0;\n  border-radius: 50%;\n  background-color: ", ";\n  box-shadow: ", ";\n\n  &:after {\n    border-radius: 50%;\n    content: \"\";\n    height: ", ";\n    left: 6px;\n    position: absolute;\n    top: 6px;\n    width: ", ";\n  }\n\n  &:hover:not(:disabled):not(:checked) {\n    box-shadow: ", ";\n  }\n\n  &:focus {\n    outline: none;\n    box-shadow: ", ";\n  }\n\n  &:checked {\n    background-color: ", ";\n    &:after {\n      background-color: ", ";\n    }\n  }\n\n  &:disabled {\n    cursor: default;\n    opacity: 0.6;\n  }\n  ", "\n"])), getScale$1, getScale$1, function (_a) {
+var Radio = styled.input.attrs({ type: "radio" })(templateObject_1$q || (templateObject_1$q = __makeTemplateObject(["\n  appearance: none;\n  overflow: hidden;\n  cursor: pointer;\n  position: relative;\n  display: inline-block;\n  height: ", ";\n  width: ", ";\n  vertical-align: middle;\n  transition: background-color 0.2s ease-in-out;\n  border: 0;\n  border-radius: 50%;\n  background-color: ", ";\n  box-shadow: ", ";\n\n  &:after {\n    border-radius: 50%;\n    content: \"\";\n    height: ", ";\n    left: 6px;\n    position: absolute;\n    top: 6px;\n    width: ", ";\n  }\n\n  &:hover:not(:disabled):not(:checked) {\n    box-shadow: ", ";\n  }\n\n  &:focus {\n    outline: none;\n    box-shadow: ", ";\n  }\n\n  &:checked {\n    background-color: ", ";\n    &:after {\n      background-color: ", ";\n    }\n  }\n\n  &:disabled {\n    cursor: default;\n    opacity: 0.6;\n  }\n  ", "\n"], ["\n  appearance: none;\n  overflow: hidden;\n  cursor: pointer;\n  position: relative;\n  display: inline-block;\n  height: ", ";\n  width: ", ";\n  vertical-align: middle;\n  transition: background-color 0.2s ease-in-out;\n  border: 0;\n  border-radius: 50%;\n  background-color: ", ";\n  box-shadow: ", ";\n\n  &:after {\n    border-radius: 50%;\n    content: \"\";\n    height: ", ";\n    left: 6px;\n    position: absolute;\n    top: 6px;\n    width: ", ";\n  }\n\n  &:hover:not(:disabled):not(:checked) {\n    box-shadow: ", ";\n  }\n\n  &:focus {\n    outline: none;\n    box-shadow: ", ";\n  }\n\n  &:checked {\n    background-color: ", ";\n    &:after {\n      background-color: ", ";\n    }\n  }\n\n  &:disabled {\n    cursor: default;\n    opacity: 0.6;\n  }\n  ", "\n"])), getScale$1, getScale$1, function (_a) {
     var theme = _a.theme;
     return theme.colors.input;
 }, function (_a) {
@@ -2284,13 +2106,11 @@ Radio.defaultProps = {
     scale: scales$2.MD,
     m: 0,
 };
-var templateObject_1$r;
+var templateObject_1$q;
 
-var bunnyHeadMain = "data:image/svg+xml,%3Csvg%20width%3D%2224%22%20height%3D%2232%22%20viewBox%3D%220%200%2028%2032%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Crect%20x%3D%221%22%20y%3D%2219%22%20width%3D%2217%22%20height%3D%2211%22%20fill%3D%22%231FC7D4%22%2F%3E%3Cpath%20d%3D%22M9.507%2024.706C8.14635%2026.0666%209.73795%2028.2313%2011.7555%2030.2489C13.7731%2032.2665%2015.9378%2033.8581%2017.2984%2032.4974C18.6591%2031.1368%2017.9685%2028.0711%2015.9509%2026.0535C13.9333%2024.0359%2010.8676%2023.3453%209.507%2024.706Z%22%20fill%3D%22%231FC7D4%22%2F%3E%3Cpath%20d%3D%22M15.507%2022.706C14.1463%2024.0666%2015.7379%2026.2313%2017.7555%2028.2489C19.7731%2030.2665%2021.9378%2031.8581%2023.2984%2030.4974C24.6591%2029.1368%2023.9685%2026.0711%2021.9509%2024.0535C19.9333%2022.0359%2016.8676%2021.3453%2015.507%2022.706Z%22%20fill%3D%22%231FC7D4%22%2F%3E%3Cg%20filter%3D%22url%28%23filter0_d%29%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M14.146%206.75159C14.2105%207.10896%2014.2703%207.48131%2014.3281%207.86164C14.2189%207.85865%2014.1095%207.85714%2014%207.85714C13.3803%207.85714%2012.7648%207.90539%2012.159%207.99779C11.879%207.41458%2011.5547%206.82246%2011.1872%206.23145C8.69897%202.22947%206.53826%201.98679%204.67882%202.98366C2.81938%203.98052%202.85628%206.67644%205.26696%209.40538C5.58076%209.76061%205.90097%2010.1398%206.2247%2010.5286C3.69013%2012.4659%202%2015.2644%202%2018.2695C2%2023.8292%207.78518%2025%2014%2025C20.2148%2025%2026%2023.8292%2026%2018.2695C26%2014.8658%2023.8318%2011.7272%2020.7243%209.80476C20.9022%208.86044%2021%207.83019%2021%206.75159C21%202.19612%2019.2549%201%2017.1022%201C14.9495%201%2013.5261%203.31847%2014.146%206.75159Z%22%20fill%3D%22url%28%23paint0_linear_bunnyhead_main%29%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate%282%29%22%3E%3Cpath%20d%3D%22M12.7284%2016.4446C12.796%2017.3149%2012.4446%2019.0556%2010.498%2019.0556%22%20stroke%3D%22%23452A7A%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M12.7457%2016.4446C12.6781%2017.3149%2013.0296%2019.0556%2014.9761%2019.0556%22%20stroke%3D%22%23452A7A%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M9%2014.5C9%2015.6046%208.55228%2016%208%2016C7.44772%2016%207%2015.6046%207%2014.5C7%2013.3954%207.44772%2013%208%2013C8.55228%2013%209%2013.3954%209%2014.5Z%22%20fill%3D%22%23452A7A%22%2F%3E%3Cpath%20d%3D%22M18%2014.5C18%2015.6046%2017.5523%2016%2017%2016C16.4477%2016%2016%2015.6046%2016%2014.5C16%2013.3954%2016.4477%2013%2017%2013C17.5523%2013%2018%2013.3954%2018%2014.5Z%22%20fill%3D%22%23452A7A%22%2F%3E%3C%2Fg%3E%3Cdefs%3E%3Cfilter%20id%3D%22filter0_d%22%3E%3CfeFlood%20flood-opacity%3D%220%22%20result%3D%22BackgroundImageFix%22%2F%3E%3CfeColorMatrix%20in%3D%22SourceAlpha%22%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%20127%200%22%2F%3E%3CfeOffset%20dy%3D%221%22%2F%3E%3CfeGaussianBlur%20stdDeviation%3D%221%22%2F%3E%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200.5%200%22%2F%3E%3CfeBlend%20mode%3D%22normal%22%20in2%3D%22BackgroundImageFix%22%20result%3D%22effect1_dropShadow%22%2F%3E%3CfeBlend%20mode%3D%22normal%22%20in%3D%22SourceGraphic%22%20in2%3D%22effect1_dropShadow%22%20result%3D%22shape%22%2F%3E%3C%2Ffilter%3E%3ClinearGradient%20id%3D%22paint0_linear_bunnyhead_main%22%20x1%3D%2214%22%20y1%3D%221%22%20x2%3D%2214%22%20y2%3D%2225%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%3Cstop%20stop-color%3D%22%2353DEE9%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%231FC7D4%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3C%2Fsvg%3E";
+var kubMain = "data:image/svg+xml,%3Csvg%20width%3D%2230%22%20height%3D%2230%22%20viewBox%3D%220%200%20120%2040%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ccircle%20cx%3D%2240%22%20cy%3D%2240%22%20r%3D%2240%22%20fill%3D%22%2302D767%22%2F%3E%3Cpath%20d%3D%22M26.7317%2037.4562L26.6921%2037.4948C25.2232%2038.9276%2025.2182%2041.2556%2026.681%2042.6944L26.7204%2042.7332C28.1833%2044.1721%2030.5599%2044.1769%2032.0289%2042.7441L32.0685%2042.7055C33.5374%2041.2727%2033.5424%2038.9447%2032.0796%2037.5058L32.0402%2037.4671C30.5774%2036.0282%2028.2007%2036.0233%2026.7317%2037.4562Z%22%20fill%3D%22white%22%2F%3E%3Cpath%20d%3D%22M29.1411%2022L25.2395%2025.8543L25.2655%2025.8777L14.8567%2036.155V36.1387L11%2039.9439L11.0141%2039.9579L11%2039.9743L14.8143%2043.7725L29.0162%2058C29.0162%2058%2032.3735%2053.6058%2029.0727%2050.3171L18.6781%2039.9533L29.0798%2029.6689L34.3313%2034.9092C38.8076%2039.3759%2042%2034.8111%2042%2034.8111L29.1411%2022Z%22%20fill%3D%22white%22%2F%3E%3Cpath%20d%3D%22M68.9503%2040.0423L69%2039.9953L50.9573%2022C50.9573%2022%2047.6428%2026.3002%2050.7821%2029.4295L61.4358%2040.0564L51.007%2050.373L46.1276%2045.511C42.6332%2042.0243%2038%2045.1818%2038%2045.1818L50.8579%2058L54.7713%2054.1277L68.9763%2040.0752L68.9503%2040.0423Z%22%20fill%3D%22white%22%2F%3E%3Cpath%20d%3D%22M48.1259%2037.4985L48.0863%2037.5371C46.6173%2038.9699%2046.6124%2041.2979%2048.0752%2042.7367L48.1146%2042.7755C49.5774%2044.2144%2051.9541%2044.2192%2053.4231%2042.7864L53.4627%2042.7478C54.9316%2041.315%2054.9366%2038.987%2053.4738%2037.5481L53.4344%2037.5094C51.9715%2036.0705%2049.5949%2036.0656%2048.1259%2037.4985Z%22%20fill%3D%22white%22%2F%3E%3C%2Fsvg%3E";
 
-var bunnyHeadMax = "data:image/svg+xml,%3Csvg%20width%3D%2224%22%20height%3D%2232%22%20viewBox%3D%220%200%2028%2032%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Crect%20x%3D%221%22%20y%3D%2219%22%20width%3D%2217%22%20height%3D%2211%22%20fill%3D%22%231FC7D4%22%2F%3E%3Cpath%20d%3D%22M9.507%2024.706C8.14635%2026.0666%209.73795%2028.2313%2011.7555%2030.2489C13.7731%2032.2665%2015.9378%2033.8581%2017.2984%2032.4974C18.6591%2031.1368%2017.9685%2028.0711%2015.9509%2026.0535C13.9333%2024.0359%2010.8676%2023.3453%209.507%2024.706Z%22%20fill%3D%22%231FC7D4%22%2F%3E%3Cpath%20d%3D%22M15.507%2022.706C14.1463%2024.0666%2015.7379%2026.2313%2017.7555%2028.2489C19.7731%2030.2665%2021.9378%2031.8581%2023.2984%2030.4974C24.6591%2029.1368%2023.9685%2026.0711%2021.9509%2024.0535C19.9333%2022.0359%2016.8676%2021.3453%2015.507%2022.706Z%22%20fill%3D%22%231FC7D4%22%2F%3E%3Cg%20filter%3D%22url%28%23filter0_d%29%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M14.146%206.75159C14.2105%207.10896%2014.2703%207.48131%2014.3281%207.86164C14.2189%207.85865%2014.1095%207.85714%2014%207.85714C13.3803%207.85714%2012.7648%207.90539%2012.159%207.99779C11.879%207.41458%2011.5547%206.82246%2011.1872%206.23145C8.69897%202.22947%206.53826%201.98679%204.67882%202.98366C2.81938%203.98052%202.85628%206.67644%205.26696%209.40538C5.58076%209.76061%205.90097%2010.1398%206.2247%2010.5286C3.69013%2012.4659%202%2015.2644%202%2018.2695C2%2023.8292%207.78518%2025%2014%2025C20.2148%2025%2026%2023.8292%2026%2018.2695C26%2014.8658%2023.8318%2011.7272%2020.7243%209.80476C20.9022%208.86044%2021%207.83019%2021%206.75159C21%202.19612%2019.2549%201%2017.1022%201C14.9495%201%2013.5261%203.31847%2014.146%206.75159Z%22%20fill%3D%22url%28%23paint0_linear_bunnyhead_max%29%22%2F%3E%3C%2Fg%3E%3Cpath%20d%3D%22M11.5047%2016.0634C10.9435%2014.4456%208.79685%2014.4456%208.08131%2016.0635%22%20stroke%3D%22%23452A7A%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M20.8894%2016.0634C20.3283%2014.4456%2018.1816%2014.4456%2017.4661%2016.0635%22%20stroke%3D%22%23452A7A%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M14.7284%2017.4446C14.796%2018.3149%2014.4446%2020.0556%2012.498%2020.0556%22%20stroke%3D%22%23452A7A%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M14.7457%2017.4446C14.6781%2018.3149%2015.0296%2020.0556%2016.9761%2020.0556%22%20stroke%3D%22%23452A7A%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M13.4505%2020.0787C13.4505%2021.5097%2015.955%2021.5097%2015.955%2020.0787%22%20stroke%3D%22%23452A7A%22%20stroke-linecap%3D%22round%22%2F%3E%3Cdefs%3E%3Cfilter%20id%3D%22filter0_d%22%20x%3D%220%22%20y%3D%220%22%20width%3D%2228%22%20height%3D%2228%22%20filterUnits%3D%22userSpaceOnUse%22%20color-interpolation-filters%3D%22sRGB%22%3E%3CfeFlood%20flood-opacity%3D%220%22%20result%3D%22BackgroundImageFix%22%2F%3E%3CfeColorMatrix%20in%3D%22SourceAlpha%22%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%20127%200%22%2F%3E%3CfeOffset%20dy%3D%221%22%2F%3E%3CfeGaussianBlur%20stdDeviation%3D%221%22%2F%3E%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200.5%200%22%2F%3E%3CfeBlend%20mode%3D%22normal%22%20in2%3D%22BackgroundImageFix%22%20result%3D%22effect1_dropShadow%22%2F%3E%3CfeBlend%20mode%3D%22normal%22%20in%3D%22SourceGraphic%22%20in2%3D%22effect1_dropShadow%22%20result%3D%22shape%22%2F%3E%3C%2Ffilter%3E%3ClinearGradient%20id%3D%22paint0_linear_bunnyhead_max%22%20x1%3D%2214%22%20y1%3D%221%22%20x2%3D%2214%22%20y2%3D%2225%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%3Cstop%20stop-color%3D%22%2353DEE9%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%231FC7D4%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3C%2Fsvg%3E";
-
-var bunnyButt = "data:image/svg+xml,%3Csvg%20width%3D%2215%22%20height%3D%2232%22%20viewBox%3D%220%200%2015%2032%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M9.58803%2020.8649C7.72935%2021.3629%208.02539%2024.0334%208.76388%2026.7895C9.50238%2029.5456%2010.5812%2032.0062%2012.4399%2031.5082C14.2986%2031.0102%2015.2334%2028.0099%2014.4949%2025.2538C13.7564%2022.4978%2011.4467%2020.3669%209.58803%2020.8649Z%22%20fill%3D%22%230098A1%22%2F%3E%3Cpath%20d%3D%22M1%2024.4516C1%2020.8885%203.88849%2018%207.45161%2018H15V28H4.54839C2.58867%2028%201%2026.4113%201%2024.4516Z%22%20fill%3D%22%231FC7D4%22%2F%3E%3Cpath%20d%3D%22M6.11115%2017.2246C6.79693%2018.4124%205.77784%2019.3343%204.52793%2020.0559C3.27802%2020.7776%201.97011%2021.1992%201.28433%2020.0114C0.598546%2018.8236%201.1635%2017.1151%202.41341%2016.3935C3.66332%2015.6718%205.42537%2016.0368%206.11115%2017.2246Z%22%20fill%3D%22%2353DEE9%22%2F%3E%3Cpath%20d%3D%22M1.64665%2023.6601C0.285995%2025.0207%201.87759%2027.1854%203.89519%2029.203C5.91279%2031.2206%208.07743%2032.8122%209.43808%2031.4515C10.7987%2030.0909%2010.1082%2027.0252%208.09058%2025.0076C6.07298%2022.99%203.0073%2022.2994%201.64665%2023.6601Z%22%20fill%3D%22%231FC7D4%22%2F%3E%3C%2Fsvg%3E";
+var kubMax = "data:image/svg+xml,%3Csvg%20width%3D%2230%22%20height%3D%2230%22%20viewBox%3D%220%200%20120%2040%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ccircle%20cx%3D%2240%22%20cy%3D%2240%22%20r%3D%2240%22%20fill%3D%22%2302D767%22%2F%3E%3Cpath%20d%3D%22M26.7317%2037.4562L26.6921%2037.4948C25.2232%2038.9276%2025.2182%2041.2556%2026.681%2042.6944L26.7204%2042.7332C28.1833%2044.1721%2030.5599%2044.1769%2032.0289%2042.7441L32.0685%2042.7055C33.5374%2041.2727%2033.5424%2038.9447%2032.0796%2037.5058L32.0402%2037.4671C30.5774%2036.0282%2028.2007%2036.0233%2026.7317%2037.4562Z%22%20fill%3D%22white%22%2F%3E%3Cpath%20d%3D%22M29.1411%2022L25.2395%2025.8543L25.2655%2025.8777L14.8567%2036.155V36.1387L11%2039.9439L11.0141%2039.9579L11%2039.9743L14.8143%2043.7725L29.0162%2058C29.0162%2058%2032.3735%2053.6058%2029.0727%2050.3171L18.6781%2039.9533L29.0798%2029.6689L34.3313%2034.9092C38.8076%2039.3759%2042%2034.8111%2042%2034.8111L29.1411%2022Z%22%20fill%3D%22white%22%2F%3E%3Cpath%20d%3D%22M68.9503%2040.0423L69%2039.9953L50.9573%2022C50.9573%2022%2047.6428%2026.3002%2050.7821%2029.4295L61.4358%2040.0564L51.007%2050.373L46.1276%2045.511C42.6332%2042.0243%2038%2045.1818%2038%2045.1818L50.8579%2058L54.7713%2054.1277L68.9763%2040.0752L68.9503%2040.0423Z%22%20fill%3D%22white%22%2F%3E%3Cpath%20d%3D%22M48.1259%2037.4985L48.0863%2037.5371C46.6173%2038.9699%2046.6124%2041.2979%2048.0752%2042.7367L48.1146%2042.7755C49.5774%2044.2144%2051.9541%2044.2192%2053.4231%2042.7864L53.4627%2042.7478C54.9316%2041.315%2054.9366%2038.987%2053.4738%2037.5481L53.4344%2037.5094C51.9715%2036.0705%2049.5949%2036.0656%2048.1259%2037.4985Z%22%20fill%3D%22white%22%2F%3E%3C%2Fsvg%3E";
 
 var getCursorStyle = function (_a) {
     var _b = _a.disabled, disabled = _b === void 0 ? false : _b;
@@ -2298,31 +2118,27 @@ var getCursorStyle = function (_a) {
 };
 var getBaseThumbStyles = function (_a) {
     var isMax = _a.isMax, disabled = _a.disabled;
-    return "\n  -webkit-appearance: none;\n  background-image: url(" + (isMax ? bunnyHeadMax : bunnyHeadMain) + ");\n  background-color: transparent;\n  border: 0;\n  cursor: " + getCursorStyle + ";\n  width: 24px;\n  height: 32px;\n  filter: " + (disabled ? "grayscale(100%)" : "none") + ";\n  transform: translate(-2px, -2px);\n  transition: 200ms transform;\n\n  &:hover {\n    transform: " + (disabled ? "scale(1) translate(-2px, -2px)" : "scale(1.1) translate(-3px, -3px)") + ";\n  }\n";
+    return "\n  -webkit-appearance: none;\n  background-image: url(" + (isMax ? kubMax : kubMain) + ");\n  background-color: transparent;\n  border: 0;\n  cursor: " + getCursorStyle + ";\n  width: 24px;\n  height: 32px;\n  filter: " + (disabled ? "grayscale(100%)" : "none") + ";\n  transform: translate(-5px, -2px);\n  transition: 200ms transform;\n\n  &:hover {\n    transform: " + (disabled ? "scale(1) translate(-2px, -2px)" : "scale(1.1) translate(-3px, -3px)") + ";\n  }\n";
 };
-var SliderLabelContainer = styled.div(templateObject_1$q || (templateObject_1$q = __makeTemplateObject(["\n  bottom: 0;\n  position: absolute;\n  left: 14px;\n  width: calc(100% - 30px);\n"], ["\n  bottom: 0;\n  position: absolute;\n  left: 14px;\n  width: calc(100% - 30px);\n"])));
-var SliderLabel = styled(Text)(templateObject_2$e || (templateObject_2$e = __makeTemplateObject(["\n  bottom: 0;\n  font-size: 12px;\n  left: ", ";\n  position: absolute;\n  text-align: center;\n  min-width: 24px; // Slider thumb size\n"], ["\n  bottom: 0;\n  font-size: 12px;\n  left: ", ";\n  position: absolute;\n  text-align: center;\n  min-width: 24px; // Slider thumb size\n"])), function (_a) {
+var SliderLabelContainer = styled.div(templateObject_1$p || (templateObject_1$p = __makeTemplateObject(["\n  bottom: 0;\n  position: absolute;\n  left: 14px;\n  width: calc(100% - 30px);\n"], ["\n  bottom: 0;\n  position: absolute;\n  left: 14px;\n  width: calc(100% - 30px);\n"])));
+var SliderLabel = styled(Text)(templateObject_2$d || (templateObject_2$d = __makeTemplateObject(["\n  bottom: 0;\n  font-size: 12px;\n  left: ", ";\n  position: absolute;\n  text-align: center;\n  min-width: 24px; // Slider thumb size\n"], ["\n  bottom: 0;\n  font-size: 12px;\n  left: ", ";\n  position: absolute;\n  text-align: center;\n  min-width: 24px; // Slider thumb size\n"])), function (_a) {
     var progress = _a.progress;
     return progress;
 });
-var BunnyButt = styled.div(templateObject_3$8 || (templateObject_3$8 = __makeTemplateObject(["\n  background: url(", ") no-repeat;\n  height: 32px;\n  filter: ", ";\n  position: absolute;\n  width: 15px;\n"], ["\n  background: url(", ") no-repeat;\n  height: 32px;\n  filter: ", ";\n  position: absolute;\n  width: 15px;\n"])), bunnyButt, function (_a) {
-    var disabled = _a.disabled;
-    return (disabled ? "grayscale(100%)" : "none");
-});
-var BunnySlider = styled.div(templateObject_4$6 || (templateObject_4$6 = __makeTemplateObject(["\n  position: absolute;\n  left: 14px;\n  width: calc(100% - 14px);\n"], ["\n  position: absolute;\n  left: 14px;\n  width: calc(100% - 14px);\n"])));
-var StyledInput = styled.input(templateObject_5$4 || (templateObject_5$4 = __makeTemplateObject(["\n  cursor: ", ";\n  height: 32px;\n  position: relative;\n\n  ::-webkit-slider-thumb {\n    ", "\n  }\n\n  ::-moz-range-thumb {\n    ", "\n  }\n\n  ::-ms-thumb {\n    ", "\n  }\n"], ["\n  cursor: ", ";\n  height: 32px;\n  position: relative;\n\n  ::-webkit-slider-thumb {\n    ", "\n  }\n\n  ::-moz-range-thumb {\n    ", "\n  }\n\n  ::-ms-thumb {\n    ", "\n  }\n"])), getCursorStyle, getBaseThumbStyles, getBaseThumbStyles, getBaseThumbStyles);
-var BarBackground = styled.div(templateObject_6$2 || (templateObject_6$2 = __makeTemplateObject(["\n  background-color: ", ";\n  height: 2px;\n  position: absolute;\n  top: 18px;\n  width: 100%;\n"], ["\n  background-color: ", ";\n  height: 2px;\n  position: absolute;\n  top: 18px;\n  width: 100%;\n"])), function (_a) {
+var KubSlider = styled.div(templateObject_3$8 || (templateObject_3$8 = __makeTemplateObject(["\n  position: absolute;\n  left: 14px;\n  width: calc(100% - 14px);\n"], ["\n  position: absolute;\n  left: 14px;\n  width: calc(100% - 14px);\n"])));
+var StyledInput = styled.input(templateObject_4$6 || (templateObject_4$6 = __makeTemplateObject(["\n  cursor: ", ";\n  height: 32px;\n  position: relative;\n\n  ::-webkit-slider-thumb {\n    ", "\n  }\n\n  ::-moz-range-thumb {\n    ", "\n  }\n\n  ::-ms-thumb {\n    ", "\n  }\n"], ["\n  cursor: ", ";\n  height: 32px;\n  position: relative;\n\n  ::-webkit-slider-thumb {\n    ", "\n  }\n\n  ::-moz-range-thumb {\n    ", "\n  }\n\n  ::-ms-thumb {\n    ", "\n  }\n"])), getCursorStyle, getBaseThumbStyles, getBaseThumbStyles, getBaseThumbStyles);
+var BarBackground = styled.div(templateObject_5$4 || (templateObject_5$4 = __makeTemplateObject(["\n  background-color: ", ";\n  height: 2px;\n  position: absolute;\n  top: 18px;\n  width: 98%;\n"], ["\n  background-color: ", ";\n  height: 2px;\n  position: absolute;\n  top: 18px;\n  width: 98%;\n"])), function (_a) {
     var theme = _a.theme, disabled = _a.disabled;
     return theme.colors[disabled ? "textDisabled" : "inputSecondary"];
 });
-var BarProgress = styled.div(templateObject_7$1 || (templateObject_7$1 = __makeTemplateObject(["\n  background-color: ", ";\n  filter: ", ";\n  height: 10px;\n  position: absolute;\n  top: 18px;\n"], ["\n  background-color: ", ";\n  filter: ", ";\n  height: 10px;\n  position: absolute;\n  top: 18px;\n"])), function (_a) {
+var BarProgress = styled.div(templateObject_6$2 || (templateObject_6$2 = __makeTemplateObject(["\n  background-color: ", ";\n  filter: ", ";\n  height: 10px;\n  position: absolute;\n  top: 18px;\n"], ["\n  background-color: ", ";\n  filter: ", ";\n  height: 10px;\n  position: absolute;\n  top: 18px;\n"])), function (_a) {
     var theme = _a.theme;
-    return theme.colors.primary;
+    return theme.colors.bitkub;
 }, function (_a) {
     var disabled = _a.disabled;
     return (disabled ? "grayscale(100%)" : "none");
 });
-var templateObject_1$q, templateObject_2$e, templateObject_3$8, templateObject_4$6, templateObject_5$4, templateObject_6$2, templateObject_7$1;
+var templateObject_1$p, templateObject_2$d, templateObject_3$8, templateObject_4$6, templateObject_5$4, templateObject_6$2;
 
 var Slider = function (_a) {
     var name = _a.name, min = _a.min, max = _a.max, value = _a.value, onValueChanged = _a.onValueChanged, valueLabel = _a.valueLabel, _b = _a.step, step = _b === void 0 ? "any" : _b, _c = _a.disabled, disabled = _c === void 0 ? false : _c, props = __rest(_a, ["name", "min", "max", "value", "onValueChanged", "valueLabel", "step", "disabled"]);
@@ -2348,8 +2164,7 @@ var Slider = function (_a) {
     var labelProgress = isMax ? "calc(100% - 12px)" : progressPercentage + "%";
     var displayValueLabel = isMax ? "MAX" : valueLabel;
     return (React.createElement(Box, __assign({ position: "relative", height: "48px" }, props),
-        React.createElement(BunnyButt, { disabled: disabled }),
-        React.createElement(BunnySlider, null,
+        React.createElement(KubSlider, null,
             React.createElement(BarBackground, { disabled: disabled }),
             React.createElement(BarProgress, { style: { width: progressWidth }, disabled: disabled }),
             React.createElement(StyledInput, { name: name, type: "range", min: min, max: max, value: value, step: step, onChange: handleChange, isMax: isMax, disabled: disabled })),
@@ -2366,8 +2181,8 @@ var variant = {
     CIRCLE: "circle",
 };
 
-var waves = keyframes(templateObject_1$p || (templateObject_1$p = __makeTemplateObject(["\n   from {\n        left: -150px;\n    }\n    to   {\n        left: 100%;\n    }\n"], ["\n   from {\n        left: -150px;\n    }\n    to   {\n        left: 100%;\n    }\n"])));
-var pulse = keyframes(templateObject_2$d || (templateObject_2$d = __makeTemplateObject(["\n  0% {\n    opacity: 1;\n  }\n  50% {\n    opacity: 0.4;\n  }\n  100% {\n    opacity: 1;\n  }\n"], ["\n  0% {\n    opacity: 1;\n  }\n  50% {\n    opacity: 0.4;\n  }\n  100% {\n    opacity: 1;\n  }\n"])));
+var waves = keyframes(templateObject_1$o || (templateObject_1$o = __makeTemplateObject(["\n   from {\n        left: -150px;\n    }\n    to   {\n        left: 100%;\n    }\n"], ["\n   from {\n        left: -150px;\n    }\n    to   {\n        left: 100%;\n    }\n"])));
+var pulse = keyframes(templateObject_2$c || (templateObject_2$c = __makeTemplateObject(["\n  0% {\n    opacity: 1;\n  }\n  50% {\n    opacity: 0.4;\n  }\n  100% {\n    opacity: 1;\n  }\n"], ["\n  0% {\n    opacity: 1;\n  }\n  50% {\n    opacity: 0.4;\n  }\n  100% {\n    opacity: 1;\n  }\n"])));
 var Root = styled.div(templateObject_3$7 || (templateObject_3$7 = __makeTemplateObject(["\n  min-height: 20px;\n  display: block;\n  background-color: ", ";\n  border-radius: ", ";\n\n  ", "\n  ", "\n"], ["\n  min-height: 20px;\n  display: block;\n  background-color: ", ";\n  border-radius: ", ";\n\n  ", "\n  ", "\n"])), function (_a) {
     var theme = _a.theme;
     return theme.colors.backgroundDisabled;
@@ -2384,7 +2199,7 @@ var Skeleton = function (_a) {
     }
     return React.createElement(Pulse, __assign({ variant: variant$1 }, props));
 };
-var templateObject_1$p, templateObject_2$d, templateObject_3$7, templateObject_4$5, templateObject_5$3;
+var templateObject_1$o, templateObject_2$c, templateObject_3$7, templateObject_4$5, templateObject_5$3;
 
 var Icon$s = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 256 256" }, props),
@@ -2418,8 +2233,8 @@ var Icon$q = function (props) {
             React.createElement("path", { d: "M309.048 133.091L308.722 133.415C296.568 145.494 296.526 165.119 308.63 177.249L308.955 177.574C321.058 189.704 340.722 189.745 352.876 177.666L353.203 177.342C365.357 165.263 365.398 145.638 353.295 133.508L352.97 133.183C340.866 121.053 321.202 121.012 309.048 133.091Z", fill: "#02D767" }))));
 };
 
-var rotate = keyframes(templateObject_1$o || (templateObject_1$o = __makeTemplateObject(["\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n"], ["\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n"])));
-var float = keyframes(templateObject_2$c || (templateObject_2$c = __makeTemplateObject(["\n\t0% {\n\t\ttransform: translatey(0px);\n\t}\n\t50% {\n\t\ttransform: translatey(10px);\n\t}\n\t100% {\n\t\ttransform: translatey(0px);\n\t}\n"], ["\n\t0% {\n\t\ttransform: translatey(0px);\n\t}\n\t50% {\n\t\ttransform: translatey(10px);\n\t}\n\t100% {\n\t\ttransform: translatey(0px);\n\t}\n"])));
+var rotate = keyframes(templateObject_1$n || (templateObject_1$n = __makeTemplateObject(["\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n"], ["\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n"])));
+var float = keyframes(templateObject_2$b || (templateObject_2$b = __makeTemplateObject(["\n\t0% {\n\t\ttransform: translatey(0px);\n\t}\n\t50% {\n\t\ttransform: translatey(10px);\n\t}\n\t100% {\n\t\ttransform: translatey(0px);\n\t}\n"], ["\n\t0% {\n\t\ttransform: translatey(0px);\n\t}\n\t50% {\n\t\ttransform: translatey(10px);\n\t}\n\t100% {\n\t\ttransform: translatey(0px);\n\t}\n"])));
 var Container$3 = styled.div(templateObject_3$6 || (templateObject_3$6 = __makeTemplateObject(["\n  position: relative;\n"], ["\n  position: relative;\n"])));
 styled(Icon$r)(templateObject_4$4 || (templateObject_4$4 = __makeTemplateObject(["\n  position: absolute;\n  top: 0;\n  left: 0;\n  animation: ", " 2s linear infinite;\n  transform: translate3d(0, 0, 0);\n"], ["\n  position: absolute;\n  top: 0;\n  left: 0;\n  animation: ", " 2s linear infinite;\n  transform: translate3d(0, 0, 0);\n"])), rotate);
 styled(Icon$s)(templateObject_5$2 || (templateObject_5$2 = __makeTemplateObject(["\n  animation: ", " 6s ease-in-out infinite;\n  transform: translate3d(0, 0, 0);\n"], ["\n  animation: ", " 6s ease-in-out infinite;\n  transform: translate3d(0, 0, 0);\n"])), float);
@@ -2430,9 +2245,9 @@ var Spinner = function (_a) {
     return (React.createElement(Container$3, null,
         React.createElement(FloatingBitkubIcon, { width: size + "px" })));
 };
-var templateObject_1$o, templateObject_2$c, templateObject_3$6, templateObject_4$4, templateObject_5$2, templateObject_6$1;
+var templateObject_1$n, templateObject_2$b, templateObject_3$6, templateObject_4$4, templateObject_5$2, templateObject_6$1;
 
-var StepperWrapper = styled.div(templateObject_1$n || (templateObject_1$n = __makeTemplateObject(["\n  display: flex;\n  flex-direction: column;\n  width: fit-content;\n"], ["\n  display: flex;\n  flex-direction: column;\n  width: fit-content;\n"])));
+var StepperWrapper = styled.div(templateObject_1$m || (templateObject_1$m = __makeTemplateObject(["\n  display: flex;\n  flex-direction: column;\n  width: fit-content;\n"], ["\n  display: flex;\n  flex-direction: column;\n  width: fit-content;\n"])));
 var Stepper = function (_a) {
     var children = _a.children;
     var numberOfSteps = React.Children.count(children);
@@ -2443,7 +2258,7 @@ var Stepper = function (_a) {
         return child;
     })));
 };
-var templateObject_1$n;
+var templateObject_1$m;
 
 var getStepNumberFontColor = function (_a) {
     var theme = _a.theme, status = _a.status;
@@ -2455,11 +2270,11 @@ var getStepNumberFontColor = function (_a) {
     }
     return theme.colors.textDisabled;
 };
-var StyledStep = styled(Flex)(templateObject_1$m || (templateObject_1$m = __makeTemplateObject(["\n  ", " {\n    justify-content: center;\n  }\n"], ["\n  ", " {\n    justify-content: center;\n  }\n"])), function (_a) {
+var StyledStep = styled(Flex)(templateObject_1$l || (templateObject_1$l = __makeTemplateObject(["\n  ", " {\n    justify-content: center;\n  }\n"], ["\n  ", " {\n    justify-content: center;\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.mediaQueries.md;
 });
-var Connector = styled.div(templateObject_2$b || (templateObject_2$b = __makeTemplateObject(["\n  position: absolute;\n  width: 4px;\n  height: 110%;\n  top: 50%;\n  left: calc(50% - 2px);\n  background-color: ", ";\n"], ["\n  position: absolute;\n  width: 4px;\n  height: 110%;\n  top: 50%;\n  left: calc(50% - 2px);\n  background-color: ", ";\n"])), function (_a) {
+var Connector = styled.div(templateObject_2$a || (templateObject_2$a = __makeTemplateObject(["\n  position: absolute;\n  width: 4px;\n  height: 110%;\n  top: 50%;\n  left: calc(50% - 2px);\n  background-color: ", ";\n"], ["\n  position: absolute;\n  width: 4px;\n  height: 110%;\n  top: 50%;\n  left: calc(50% - 2px);\n  background-color: ", ";\n"])), function (_a) {
     var theme = _a.theme, status = _a.status;
     return theme.colors[status === "past" ? "success" : "textDisabled"];
 });
@@ -2506,7 +2321,7 @@ var Step = function (_a) {
             index < numberOfSteps - 1 && React.createElement(Connector, { status: status })),
         React.createElement(ChildrenRightWrapper, { isVisible: isIndexPair }, children)));
 };
-var templateObject_1$m, templateObject_2$b, templateObject_3$5, templateObject_4$3, templateObject_5$1, templateObject_6, templateObject_7;
+var templateObject_1$l, templateObject_2$a, templateObject_3$5, templateObject_4$3, templateObject_5$1, templateObject_6, templateObject_7;
 
 var byTextAscending = function (getTextProperty) {
     return function (objectA, objectB) {
@@ -2836,11 +2651,11 @@ var useTable = function (columns, data, options) {
     };
 };
 
-var Wrapper$1 = styled(Flex)(templateObject_1$l || (templateObject_1$l = __makeTemplateObject(["\n  border-bottom: 2px solid ", ";\n  overflow-x: scroll;\n\n  ::-webkit-scrollbar {\n    display: none;\n  }\n  -ms-overflow-style: none; /* IE and Edge */\n  scrollbar-width: none; /* Firefox */\n"], ["\n  border-bottom: 2px solid ", ";\n  overflow-x: scroll;\n\n  ::-webkit-scrollbar {\n    display: none;\n  }\n  -ms-overflow-style: none; /* IE and Edge */\n  scrollbar-width: none; /* Firefox */\n"])), function (_a) {
+var Wrapper$1 = styled(Flex)(templateObject_1$k || (templateObject_1$k = __makeTemplateObject(["\n  border-bottom: 2px solid ", ";\n  overflow-x: scroll;\n\n  ::-webkit-scrollbar {\n    display: none;\n  }\n  -ms-overflow-style: none; /* IE and Edge */\n  scrollbar-width: none; /* Firefox */\n"], ["\n  border-bottom: 2px solid ", ";\n  overflow-x: scroll;\n\n  ::-webkit-scrollbar {\n    display: none;\n  }\n  -ms-overflow-style: none; /* IE and Edge */\n  scrollbar-width: none; /* Firefox */\n"])), function (_a) {
     var theme = _a.theme;
     return theme.colors.textSubtle;
 });
-var Inner$1 = styled(Flex)(templateObject_2$a || (templateObject_2$a = __makeTemplateObject(["\n  justify-content: space-between;\n  flex-grow: 1;\n\n  & > button + button {\n    margin-left: 4px;\n  }\n\n  ", " {\n    flex-grow: 0;\n  }\n"], ["\n  justify-content: space-between;\n  flex-grow: 1;\n\n  & > button + button {\n    margin-left: 4px;\n  }\n\n  ", " {\n    flex-grow: 0;\n  }\n"])), function (_a) {
+var Inner$1 = styled(Flex)(templateObject_2$9 || (templateObject_2$9 = __makeTemplateObject(["\n  justify-content: space-between;\n  flex-grow: 1;\n\n  & > button + button {\n    margin-left: 4px;\n  }\n\n  ", " {\n    flex-grow: 0;\n  }\n"], ["\n  justify-content: space-between;\n  flex-grow: 1;\n\n  & > button + button {\n    margin-left: 4px;\n  }\n\n  ", " {\n    flex-grow: 0;\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.mediaQueries.md;
 });
@@ -2852,12 +2667,12 @@ var ButtonMenu = function (_a) {
             return cloneElement(child, {
                 isActive: isActive,
                 onClick: onItemClick ? function () { return onItemClick(index); } : undefined,
-                color: isActive ? "backgroundAlt" : "textSubtle",
-                backgroundColor: isActive ? "textSubtle" : "input",
+                color: isActive ? "backgroundAlt" : "textBitkub",
+                backgroundColor: isActive ? "textBitkub" : "input",
             });
         }))));
 };
-var templateObject_1$l, templateObject_2$a;
+var templateObject_1$k, templateObject_2$9;
 
 var getBorderRadius = function (_a) {
     var scale = _a.scale;
@@ -2867,14 +2682,14 @@ var getPadding = function (_a) {
     var scale = _a.scale;
     return (scale === "md" ? "8px" : "16px");
 };
-var Tab = styled.button(templateObject_1$k || (templateObject_1$k = __makeTemplateObject(["\n  display: inline-flex;\n  justify-content: center;\n  cursor: pointer;\n  border: 0;\n  outline: 0;\n  flex-grow: 1;\n  padding: ", ";\n  border-radius: ", ";\n  font-size: 16px;\n  font-weight: 600;\n\n  ", " {\n    flex-grow: 0;\n  }\n\n  ", "\n"], ["\n  display: inline-flex;\n  justify-content: center;\n  cursor: pointer;\n  border: 0;\n  outline: 0;\n  flex-grow: 1;\n  padding: ", ";\n  border-radius: ", ";\n  font-size: 16px;\n  font-weight: 600;\n\n  ", " {\n    flex-grow: 0;\n  }\n\n  ", "\n"])), getPadding, getBorderRadius, function (_a) {
+var Tab = styled.button(templateObject_1$j || (templateObject_1$j = __makeTemplateObject(["\n  display: inline-flex;\n  justify-content: center;\n  cursor: pointer;\n  border: 0;\n  outline: 0;\n  flex-grow: 1;\n  padding: ", ";\n  border-radius: ", ";\n  font-size: 16px;\n  font-weight: 600;\n\n  ", " {\n    flex-grow: 0;\n  }\n\n  ", "\n"], ["\n  display: inline-flex;\n  justify-content: center;\n  cursor: pointer;\n  border: 0;\n  outline: 0;\n  flex-grow: 1;\n  padding: ", ";\n  border-radius: ", ";\n  font-size: 16px;\n  font-weight: 600;\n\n  ", " {\n    flex-grow: 0;\n  }\n\n  ", "\n"])), getPadding, getBorderRadius, function (_a) {
     var theme = _a.theme;
     return theme.mediaQueries.md;
 }, color);
 Tab.defaultProps = {
     scale: "md",
 };
-var templateObject_1$k;
+var templateObject_1$j;
 
 var variants = {
     PRIMARY: "primary",
@@ -2940,7 +2755,7 @@ var getOutlineStyles = function (_a) {
     }
     return "";
 };
-var StyledTag = styled.div(templateObject_1$j || (templateObject_1$j = __makeTemplateObject(["\n  align-items: center;\n  border-radius: 16px;\n  color: #ffffff;\n  display: inline-flex;\n  font-weight: 400;\n  white-space: nowrap;\n\n  & > svg {\n    fill: currentColor;\n  }\n\n  ", "\n  ", "\n  ", "\n\n  ", "\n"], ["\n  align-items: center;\n  border-radius: 16px;\n  color: #ffffff;\n  display: inline-flex;\n  font-weight: 400;\n  white-space: nowrap;\n\n  & > svg {\n    fill: currentColor;\n  }\n\n  ",
+var StyledTag = styled.div(templateObject_1$i || (templateObject_1$i = __makeTemplateObject(["\n  align-items: center;\n  border-radius: 16px;\n  color: #ffffff;\n  display: inline-flex;\n  font-weight: 400;\n  white-space: nowrap;\n\n  & > svg {\n    fill: currentColor;\n  }\n\n  ", "\n  ", "\n  ", "\n\n  ", "\n"], ["\n  align-items: center;\n  border-radius: 16px;\n  color: #ffffff;\n  display: inline-flex;\n  font-weight: 400;\n  white-space: nowrap;\n\n  & > svg {\n    fill: currentColor;\n  }\n\n  ",
     "\n  ",
     "\n  ", "\n\n  ", "\n"])), variant$1({
     prop: "scale",
@@ -2948,7 +2763,7 @@ var StyledTag = styled.div(templateObject_1$j || (templateObject_1$j = __makeTem
 }), variant$1({
     variants: styleVariants,
 }), space, getOutlineStyles);
-var templateObject_1$j;
+var templateObject_1$i;
 
 var Tag = function (_a) {
     var startIcon = _a.startIcon, endIcon = _a.endIcon, children = _a.children, props = __rest(_a, ["startIcon", "endIcon", "children"]);
@@ -2995,11 +2810,11 @@ var getScale = function (property) {
         return scaleKeyValues[scale][property];
     };
 };
-var Handle = styled.div(templateObject_1$i || (templateObject_1$i = __makeTemplateObject(["\n  background-color: ", ";\n  border-radius: 50%;\n  cursor: pointer;\n  height: ", ";\n  left: ", ";\n  position: absolute;\n  top: ", ";\n  transition: left 200ms ease-in;\n  width: ", ";\n  z-index: 1;\n"], ["\n  background-color: ", ";\n  border-radius: 50%;\n  cursor: pointer;\n  height: ", ";\n  left: ", ";\n  position: absolute;\n  top: ", ";\n  transition: left 200ms ease-in;\n  width: ", ";\n  z-index: 1;\n"])), function (_a) {
+var Handle = styled.div(templateObject_1$h || (templateObject_1$h = __makeTemplateObject(["\n  background-color: ", ";\n  border-radius: 50%;\n  cursor: pointer;\n  height: ", ";\n  left: ", ";\n  position: absolute;\n  top: ", ";\n  transition: left 200ms ease-in;\n  width: ", ";\n  z-index: 1;\n"], ["\n  background-color: ", ";\n  border-radius: 50%;\n  cursor: pointer;\n  height: ", ";\n  left: ", ";\n  position: absolute;\n  top: ", ";\n  transition: left 200ms ease-in;\n  width: ", ";\n  z-index: 1;\n"])), function (_a) {
     var theme = _a.theme;
     return theme.toggle.handleBackground;
 }, getScale("handleHeight"), getScale("handleLeft"), getScale("handleTop"), getScale("handleWidth"));
-var Input = styled.input(templateObject_2$9 || (templateObject_2$9 = __makeTemplateObject(["\n  cursor: pointer;\n  opacity: 0;\n  height: 100%;\n  position: absolute;\n  width: 100%;\n  z-index: 3;\n\n  &:checked + ", " {\n    left: ", ";\n  }\n\n  &:focus + ", " {\n    box-shadow: ", ";\n  }\n\n  &:hover + ", ":not(:disabled):not(:checked) {\n    box-shadow: ", ";\n  }\n"], ["\n  cursor: pointer;\n  opacity: 0;\n  height: 100%;\n  position: absolute;\n  width: 100%;\n  z-index: 3;\n\n  &:checked + ", " {\n    left: ", ";\n  }\n\n  &:focus + ", " {\n    box-shadow: ", ";\n  }\n\n  &:hover + ", ":not(:disabled):not(:checked) {\n    box-shadow: ", ";\n  }\n"])), Handle, getScale("checkedLeft"), Handle, function (_a) {
+var Input = styled.input(templateObject_2$8 || (templateObject_2$8 = __makeTemplateObject(["\n  cursor: pointer;\n  opacity: 0;\n  height: 100%;\n  position: absolute;\n  width: 100%;\n  z-index: 3;\n\n  &:checked + ", " {\n    left: ", ";\n  }\n\n  &:focus + ", " {\n    box-shadow: ", ";\n  }\n\n  &:hover + ", ":not(:disabled):not(:checked) {\n    box-shadow: ", ";\n  }\n"], ["\n  cursor: pointer;\n  opacity: 0;\n  height: 100%;\n  position: absolute;\n  width: 100%;\n  z-index: 3;\n\n  &:checked + ", " {\n    left: ", ";\n  }\n\n  &:focus + ", " {\n    box-shadow: ", ";\n  }\n\n  &:hover + ", ":not(:disabled):not(:checked) {\n    box-shadow: ", ";\n  }\n"])), Handle, getScale("checkedLeft"), Handle, function (_a) {
     var theme = _a.theme;
     return theme.shadows.bbtColor;
 }, Handle, function (_a) {
@@ -3013,7 +2828,7 @@ var StyledToggle = styled.div(templateObject_3$4 || (templateObject_3$4 = __make
     var theme = _a.theme;
     return theme.shadows.inset;
 }, getScale("toggleHeight"), getScale("toggleWidth"));
-var templateObject_1$i, templateObject_2$9, templateObject_3$4;
+var templateObject_1$h, templateObject_2$8, templateObject_3$4;
 
 var scales = {
     SM: "sm",
@@ -3327,6 +3142,7 @@ var light$6 = {
         blue: lightColors.gradients.blue,
         bubblegum: lightColors.gradients.bubblegum,
         violet: lightColors.gradients.violet,
+        bitkub: lightColors.gradients.bitkubGradient,
     },
     dropShadow: "drop-shadow(0px 1px 4px rgba(25, 19, 38, 0.15))",
 };
@@ -3341,6 +3157,7 @@ var dark$6 = {
         blue: darkColors.gradients.blue,
         bubblegum: lightColors.gradients.bubblegum,
         violet: darkColors.gradients.violet,
+        bitkub: darkColors.gradients.bitkubGradient,
     },
     dropShadow: "drop-shadow(0px 1px 4px rgba(25, 19, 38, 0.15))",
 };
@@ -3397,11 +3214,11 @@ var darkTheme = __assign(__assign({}, base), { isDark: true, alert: dark$7, colo
 
 var lightTheme = __assign(__assign({}, base), { isDark: false, alert: light$7, colors: lightColors, card: light$6, toggle: light$3, nav: light$2, modal: light$1, pancakeToggle: light$5, radio: light$4, tooltip: light });
 
-var Arrow = styled.div(templateObject_1$h || (templateObject_1$h = __makeTemplateObject(["\n  &,\n  &::before {\n    position: absolute;\n    width: 10px;\n    height: 10px;\n    border-radius: 2px;\n    z-index: -1;\n  }\n\n  &::before {\n    content: \"\";\n    transform: rotate(45deg);\n    background: ", ";\n  }\n"], ["\n  &,\n  &::before {\n    position: absolute;\n    width: 10px;\n    height: 10px;\n    border-radius: 2px;\n    z-index: -1;\n  }\n\n  &::before {\n    content: \"\";\n    transform: rotate(45deg);\n    background: ", ";\n  }\n"])), function (_a) {
+var Arrow = styled.div(templateObject_1$g || (templateObject_1$g = __makeTemplateObject(["\n  &,\n  &::before {\n    position: absolute;\n    width: 10px;\n    height: 10px;\n    border-radius: 2px;\n    z-index: -1;\n  }\n\n  &::before {\n    content: \"\";\n    transform: rotate(45deg);\n    background: ", ";\n  }\n"], ["\n  &,\n  &::before {\n    position: absolute;\n    width: 10px;\n    height: 10px;\n    border-radius: 2px;\n    z-index: -1;\n  }\n\n  &::before {\n    content: \"\";\n    transform: rotate(45deg);\n    background: ", ";\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.tooltip.background;
 });
-var StyledTooltip = styled.div(templateObject_2$8 || (templateObject_2$8 = __makeTemplateObject(["\n  padding: 16px;\n  font-size: 16px;\n  line-height: 130%;\n  border-radius: 16px;\n  max-width: 320px;\n  z-index: 101;\n  background: ", ";\n  color: ", ";\n  box-shadow: ", ";\n\n  &[data-popper-placement^=\"top\"] > ", " {\n    bottom: -4px;\n  }\n\n  &[data-popper-placement^=\"bottom\"] > ", " {\n    top: -4px;\n  }\n\n  &[data-popper-placement^=\"left\"] > ", " {\n    right: -4px;\n  }\n\n  &[data-popper-placement^=\"right\"] > ", " {\n    left: -4px;\n  }\n"], ["\n  padding: 16px;\n  font-size: 16px;\n  line-height: 130%;\n  border-radius: 16px;\n  max-width: 320px;\n  z-index: 101;\n  background: ", ";\n  color: ", ";\n  box-shadow: ", ";\n\n  &[data-popper-placement^=\"top\"] > ", " {\n    bottom: -4px;\n  }\n\n  &[data-popper-placement^=\"bottom\"] > ", " {\n    top: -4px;\n  }\n\n  &[data-popper-placement^=\"left\"] > ", " {\n    right: -4px;\n  }\n\n  &[data-popper-placement^=\"right\"] > ", " {\n    left: -4px;\n  }\n"])), function (_a) {
+var StyledTooltip = styled.div(templateObject_2$7 || (templateObject_2$7 = __makeTemplateObject(["\n  padding: 16px;\n  font-size: 16px;\n  line-height: 130%;\n  border-radius: 16px;\n  max-width: 320px;\n  z-index: 101;\n  background: ", ";\n  color: ", ";\n  box-shadow: ", ";\n\n  &[data-popper-placement^=\"top\"] > ", " {\n    bottom: -4px;\n  }\n\n  &[data-popper-placement^=\"bottom\"] > ", " {\n    top: -4px;\n  }\n\n  &[data-popper-placement^=\"left\"] > ", " {\n    right: -4px;\n  }\n\n  &[data-popper-placement^=\"right\"] > ", " {\n    left: -4px;\n  }\n"], ["\n  padding: 16px;\n  font-size: 16px;\n  line-height: 130%;\n  border-radius: 16px;\n  max-width: 320px;\n  z-index: 101;\n  background: ", ";\n  color: ", ";\n  box-shadow: ", ";\n\n  &[data-popper-placement^=\"top\"] > ", " {\n    bottom: -4px;\n  }\n\n  &[data-popper-placement^=\"bottom\"] > ", " {\n    top: -4px;\n  }\n\n  &[data-popper-placement^=\"left\"] > ", " {\n    right: -4px;\n  }\n\n  &[data-popper-placement^=\"right\"] > ", " {\n    left: -4px;\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.tooltip.background;
 }, function (_a) {
@@ -3411,7 +3228,7 @@ var StyledTooltip = styled.div(templateObject_2$8 || (templateObject_2$8 = __mak
     var theme = _a.theme;
     return theme.tooltip.boxShadow;
 }, Arrow, Arrow, Arrow, Arrow);
-var templateObject_1$h, templateObject_2$8;
+var templateObject_1$g, templateObject_2$7;
 
 function isTouchDevice() {
     return "ontouchstart" in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
@@ -3573,32 +3390,24 @@ var useTooltip = function (content, options) {
     };
 };
 
-var ModalHeader = styled.div(templateObject_1$g || (templateObject_1$g = __makeTemplateObject(["\n  align-items: center;\n  background: ", ";\n  border-bottom: 1px solid ", ";\n  display: flex;\n  padding: 12px 24px;\n"], ["\n  align-items: center;\n  background: ", ";\n  border-bottom: 1px solid ", ";\n  display: flex;\n  padding: 12px 24px;\n"])), function (_a) {
+var ModalHeader = styled.div(templateObject_1$f || (templateObject_1$f = __makeTemplateObject(["\n  align-items: center;\n  background: ", ";\n  border-bottom: 1px solid ", ";\n  display: flex;\n  padding: 12px 24px;\n"], ["\n  align-items: center;\n  background: ", ";\n  border-bottom: 1px solid ", ";\n  display: flex;\n  padding: 12px 24px;\n"])), function (_a) {
     var background = _a.background;
     return background || "transparent";
 }, function (_a) {
     var theme = _a.theme;
     return theme.colors.cardBorder;
 });
-var ModalTitle = styled(Flex)(templateObject_2$7 || (templateObject_2$7 = __makeTemplateObject(["\n  align-items: center;\n  flex: 1;\n"], ["\n  align-items: center;\n  flex: 1;\n"])));
+var ModalTitle = styled(Flex)(templateObject_2$6 || (templateObject_2$6 = __makeTemplateObject(["\n  align-items: center;\n  flex: 1;\n"], ["\n  align-items: center;\n  flex: 1;\n"])));
 var ModalBody = styled(Flex)(templateObject_3$3 || (templateObject_3$3 = __makeTemplateObject(["\n  flex-direction: column;\n  max-height: 90vh;\n  overflow-y: auto;\n"], ["\n  flex-direction: column;\n  max-height: 90vh;\n  overflow-y: auto;\n"])));
 var ModalCloseButton = function (_a) {
     var onDismiss = _a.onDismiss;
     return (React.createElement(IconButton, { variant: "bbtText", onClick: onDismiss, "aria-label": "Close the dialog" },
-<<<<<<< HEAD
-        React.createElement(Icon$1m, { color: "bbtColor" })));
-=======
         React.createElement(Icon$1n, { color: "bbtColor" })));
->>>>>>> a5e1ba8739b83f2319426d389050df68312b0874
 };
 var ModalBackButton = function (_a) {
     var onBack = _a.onBack;
     return (React.createElement(IconButton, { variant: "bbtText", onClick: onBack, "area-label": "go back", mr: "8px" },
-<<<<<<< HEAD
-        React.createElement(Icon$1K, { color: "bbtColor" })));
-=======
         React.createElement(Icon$1L, { color: "bbtColor" })));
->>>>>>> a5e1ba8739b83f2319426d389050df68312b0874
 };
 var ModalContainer = styled(Box)(templateObject_4$2 || (templateObject_4$2 = __makeTemplateObject(["\n  overflow: hidden;\n  background: ", ";\n  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);\n  border: 1px solid ", ";\n  border-radius: 32px;\n  width: 100%;\n  max-height: 100vh;\n  z-index: ", ";\n\n  ", " {\n    width: auto;\n    min-width: ", ";\n    max-width: 100%;\n  }\n"], ["\n  overflow: hidden;\n  background: ", ";\n  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);\n  border: 1px solid ", ";\n  border-radius: 32px;\n  width: 100%;\n  max-height: 100vh;\n  z-index: ", ";\n\n  ", " {\n    width: auto;\n    min-width: ", ";\n    max-width: 100%;\n  }\n"])), function (_a) {
     var theme = _a.theme;
@@ -3616,7 +3425,7 @@ var ModalContainer = styled(Box)(templateObject_4$2 || (templateObject_4$2 = __m
     var minWidth = _a.minWidth;
     return minWidth;
 });
-var templateObject_1$g, templateObject_2$7, templateObject_3$3, templateObject_4$2;
+var templateObject_1$f, templateObject_2$6, templateObject_3$3, templateObject_4$2;
 
 var Modal = function (_a) {
     var title = _a.title, onDismiss = _a.onDismiss, onBack = _a.onBack, children = _a.children, _b = _a.hideCloseButton, hideCloseButton = _b === void 0 ? false : _b, _c = _a.bodyPadding, bodyPadding = _c === void 0 ? "24px" : _c, _d = _a.headerBackground, headerBackground = _d === void 0 ? "transparent" : _d, _e = _a.minWidth, minWidth = _e === void 0 ? "320px" : _e, props = __rest(_a, ["title", "onDismiss", "onBack", "children", "hideCloseButton", "bodyPadding", "headerBackground", "minWidth"]);
@@ -3630,7 +3439,7 @@ var Modal = function (_a) {
         React.createElement(ModalBody, { p: bodyPadding }, children)));
 };
 
-var ModalWrapper = styled.div(templateObject_1$f || (templateObject_1$f = __makeTemplateObject(["\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  position: fixed;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  z-index: ", ";\n"], ["\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  position: fixed;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  z-index: ", ";\n"])), function (_a) {
+var ModalWrapper = styled.div(templateObject_1$e || (templateObject_1$e = __makeTemplateObject(["\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  position: fixed;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  z-index: ", ";\n"], ["\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  position: fixed;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  z-index: ", ";\n"])), function (_a) {
     var theme = _a.theme;
     return theme.zIndices.modal - 1;
 });
@@ -3681,7 +3490,7 @@ var ModalProvider = function (_a) {
                 }))),
         children));
 };
-var templateObject_1$f;
+var templateObject_1$e;
 
 var useModal = function (modal, closeOnOverlayClick, updateOnPropsChange, modalId) {
     if (closeOnOverlayClick === void 0) { closeOnOverlayClick = true; }
@@ -3758,14 +3567,12 @@ var Icon$j = function (props) {
 var Logo$2 = function (_a) {
     _a.isDark; var props = __rest(_a, ["isDark"]);
     return (React.createElement(Svg, __assign({ viewBox: "0 0 160 34" }, props),
-        React.createElement("path", { d: "M56.2822 22.7399V1.58096C56.2837 1.48237 56.3087 1.38546 56.3552 1.29844C56.4016 1.21143 56.4682 1.13667 56.5492 1.08045C56.7477 0.936718 56.9886 0.863801 57.2335 0.873618C57.4823 0.865647 57.727 0.938228 57.9311 1.08045C58.0154 1.13457 58.0854 1.20849 58.1348 1.29568C58.1843 1.38286 58.2117 1.48078 58.2148 1.58096V11.5623C58.6012 10.8561 59.1743 10.2695 59.8715 9.86672C60.5688 9.46396 61.3633 9.26048 62.1684 9.27844C62.8749 9.27005 63.5752 9.41126 64.2233 9.69277C64.8713 9.9742 65.4524 10.3896 65.9284 10.9117C66.4348 11.43 66.8335 12.0435 67.1013 12.7167C67.3692 13.3898 67.5008 14.1094 67.4887 14.8339V18.0737C67.4947 19.5436 66.9237 20.9573 65.8983 22.0108C64.838 23.1509 63.6142 23.7203 62.2268 23.7192C61.3577 23.7256 60.504 23.4912 59.7601 23.0419C59.0767 22.6639 58.5186 22.0945 58.1547 21.4036V22.7282C58.1525 22.8326 58.1275 22.9352 58.0814 23.0289C58.0353 23.1226 57.9691 23.2051 57.8877 23.2704C57.7082 23.4308 57.4742 23.5167 57.2335 23.5107C56.9895 23.5156 56.7521 23.4314 56.5659 23.2737C56.4813 23.2121 56.4117 23.132 56.3625 23.0395C56.3134 22.947 56.2859 22.8445 56.2822 22.7399ZM58.2148 18.9812C58.2148 19.5129 58.5864 20.1335 59.3296 20.8431C59.6617 21.1793 60.0572 21.4463 60.4932 21.6287C60.9291 21.8111 61.397 21.9053 61.8697 21.9058C62.861 21.9058 63.7232 21.5121 64.4564 20.7246C65.159 20.0135 65.554 19.0548 65.5562 18.0553V14.8522C65.5562 13.8857 65.1896 13.0188 64.4564 12.2514C64.1266 11.8855 63.723 11.5937 63.2724 11.395C62.8216 11.1963 62.3338 11.0953 61.8413 11.0986C60.8955 11.0965 59.9873 11.4683 59.3146 12.1329C58.5803 12.8235 58.2137 13.73 58.2148 14.8522V18.9812Z", fill: "white" }),
-        React.createElement("path", { d: "M71.2632 4.92418C71.1404 4.81384 71.0424 4.67875 70.9757 4.5278C70.9089 4.37676 70.8749 4.21339 70.876 4.04835C70.8744 3.88515 70.9082 3.72354 70.975 3.57469C71.0418 3.42575 71.1402 3.29309 71.2632 3.18586C71.5218 2.94773 71.863 2.81968 72.2145 2.82883C72.3816 2.82547 72.5478 2.85526 72.7034 2.91651C72.859 2.97785 73.0008 3.06939 73.1207 3.18586C73.2396 3.29561 73.3342 3.42902 73.3983 3.57762C73.4624 3.72622 73.4946 3.88657 73.4928 4.04835C73.4939 4.21197 73.4613 4.37416 73.3974 4.52478C73.3334 4.67539 73.2392 4.81132 73.1207 4.92418C73.0032 5.04492 72.8621 5.14033 72.7062 5.20426C72.5503 5.26829 72.3829 5.29958 72.2145 5.29623C72.0391 5.30076 71.8646 5.27022 71.7012 5.20628C71.5378 5.14242 71.3889 5.04652 71.2632 4.92418ZM71.2632 22.7382V10.1693C71.2647 10.0707 71.2897 9.97385 71.3362 9.88675C71.3826 9.79974 71.4491 9.72506 71.5302 9.66884C71.728 9.52377 71.9694 9.45018 72.2145 9.46025C72.4629 9.4506 72.7078 9.52201 72.9121 9.66381C72.9967 9.71759 73.0669 9.79143 73.1164 9.8787C73.1658 9.96596 73.1931 10.0641 73.1958 10.1643V22.7332C73.1912 22.8396 73.1619 22.9434 73.11 23.0364C73.0581 23.1294 72.9851 23.2089 72.897 23.2687C72.7044 23.4253 72.4627 23.5091 72.2145 23.5056C71.9705 23.5106 71.7332 23.4263 71.5469 23.2687C71.4626 23.2074 71.3934 23.1279 71.3442 23.036C71.2951 22.9441 71.2674 22.8423 71.2632 22.7382Z", fill: "white" }),
-        React.createElement("path", { d: "M77.4746 19.1498V3.50787C77.478 3.40626 77.5073 3.30716 77.5585 3.21973C77.6105 3.1323 77.6835 3.0593 77.7716 3.00736C77.9604 2.87302 78.187 2.80078 78.4186 2.80053C78.6627 2.79633 78.9019 2.86866 79.1033 3.00736C79.1905 3.05921 79.2635 3.13213 79.3156 3.21965C79.3676 3.30708 79.3969 3.40626 79.4003 3.50787V9.45536H83.2383C83.3339 9.45452 83.4279 9.47617 83.5126 9.51854C83.5982 9.56083 83.6721 9.62267 83.7291 9.69894C83.8533 9.86466 83.9213 10.0664 83.9213 10.2736C83.9213 10.4809 83.8533 10.6826 83.7291 10.8484C83.6721 10.9244 83.5982 10.986 83.5126 11.028C83.4279 11.0701 83.3339 11.0914 83.2383 11.0903H79.4003V19.0981C79.4003 20.0623 79.6034 20.7358 80.0095 21.1183C80.4156 21.5009 81.1364 21.6923 82.1718 21.6923H83.0067C83.125 21.6888 83.2433 21.7102 83.3532 21.755C83.464 21.7998 83.563 21.867 83.646 21.9525C83.7274 22.0354 83.7929 22.1339 83.8365 22.2423C83.8793 22.3505 83.9011 22.4664 83.8995 22.5831C83.9011 22.8229 83.8105 23.0543 83.646 23.2288C83.5655 23.3179 83.4665 23.3887 83.3566 23.4362C83.2458 23.4837 83.1267 23.5069 83.0067 23.504H82.1718C79.0403 23.5084 77.4746 22.0571 77.4746 19.1498Z", fill: "white" }),
-        React.createElement("path", { d: "M86.958 22.7383V1.55097C86.9597 1.45238 86.9849 1.35563 87.031 1.26862C87.0772 1.18169 87.1443 1.10693 87.2248 1.05046C87.422 0.904458 87.6637 0.829779 87.9087 0.83859C88.1587 0.830367 88.4037 0.903619 88.6085 1.04719C88.6924 1.10131 88.762 1.17515 88.8115 1.26241C88.861 1.34959 88.8879 1.44759 88.8904 1.54761V16.0201L96.1434 9.57543C96.2752 9.4807 96.4279 9.41945 96.589 9.39696C96.839 9.40233 97.0782 9.50318 97.256 9.67889C97.3517 9.75625 97.4289 9.8535 97.4834 9.96384C97.5371 10.0742 97.5665 10.195 97.5682 10.3179C97.5749 10.416 97.5606 10.5145 97.5246 10.6062C97.4885 10.698 97.4331 10.7807 97.3618 10.8484L92.9927 14.6854L98.1346 22.2044C98.2403 22.376 98.2781 22.5813 98.2403 22.7795C98.2017 22.9778 98.0901 23.1543 97.9273 23.2738C97.8367 23.3749 97.7268 23.4565 97.6043 23.5138C97.4818 23.5712 97.3483 23.603 97.2133 23.6075C97.0916 23.6045 96.9733 23.5701 96.8684 23.5075C96.7643 23.4449 96.6788 23.3563 96.6192 23.2504L91.6258 15.91L88.8904 18.3156V22.7433C88.8871 22.848 88.8594 22.9505 88.8107 23.0433C88.762 23.1361 88.6924 23.2165 88.6085 23.2788C88.4113 23.4398 88.1629 23.524 87.9087 23.5157C87.6654 23.5207 87.4279 23.4365 87.2416 23.2788C87.156 23.2164 87.0856 23.1353 87.0369 23.0416C86.9874 22.9479 86.9605 22.8441 86.958 22.7383Z", fill: "white" }),
-        React.createElement("path", { d: "M100.956 18.132V10.1993C100.963 10.1 100.992 10.0035 101.041 9.91691C101.09 9.83032 101.158 9.7558 101.24 9.69883C101.435 9.53706 101.684 9.45222 101.937 9.4602C102.177 9.46095 102.408 9.54536 102.591 9.69883C102.676 9.75362 102.747 9.82738 102.799 9.91422C102.851 10.001 102.881 10.0986 102.888 10.1993V18.1136C102.889 18.604 102.987 19.0894 103.175 19.5421C103.364 19.9947 103.64 20.4056 103.988 20.7512C104.32 21.1154 104.724 21.4064 105.174 21.6056C105.625 21.8047 106.111 21.9075 106.604 21.9075C107.096 21.9075 107.584 21.8047 108.035 21.6056C108.485 21.4064 108.889 21.1154 109.22 20.7512C109.568 20.4056 109.844 19.9947 110.033 19.5421C110.222 19.0894 110.319 18.604 110.32 18.1136V10.1676C110.324 10.0658 110.352 9.96658 110.404 9.87907C110.456 9.79155 110.529 9.71863 110.617 9.66711C110.818 9.52774 111.057 9.45483 111.301 9.4586C111.54 9.45374 111.775 9.5269 111.969 9.66711C112.053 9.72132 112.123 9.79524 112.172 9.88242C112.221 9.96969 112.248 10.0675 112.251 10.1676V18.1303C112.251 19.6163 111.69 20.9192 110.57 22.0391C110.053 22.5702 109.436 22.9924 108.753 23.2807C108.07 23.5689 107.336 23.7174 106.596 23.7174C105.854 23.7174 105.12 23.5689 104.437 23.2807C103.754 22.9924 103.137 22.5702 102.62 22.0391C101.512 20.9181 100.957 19.6157 100.956 18.132Z", fill: "white" }),
-        React.createElement("path", { d: "M116.442 22.7399V1.58097C116.444 1.48238 116.469 1.38546 116.515 1.29845C116.562 1.21144 116.629 1.13668 116.71 1.08046C116.908 0.936976 117.149 0.864142 117.394 0.873624C117.643 0.86624 117.888 0.938738 118.093 1.08046C118.177 1.13491 118.246 1.20892 118.296 1.29602C118.345 1.3832 118.372 1.48095 118.375 1.58097V11.5623C118.762 10.8561 119.335 10.2695 120.032 9.86672C120.729 9.46396 121.524 9.26049 122.329 9.27844C123.035 9.27005 123.736 9.41127 124.383 9.69278C125.032 9.97421 125.613 10.3896 126.088 10.9117C126.595 11.43 126.994 12.0435 127.261 12.7167C127.529 13.3899 127.661 14.1094 127.649 14.8339V18.0737C127.655 19.5436 127.084 20.9573 126.059 22.0109C124.998 23.1509 123.774 23.7203 122.387 23.7192C121.518 23.7256 120.665 23.4912 119.92 23.0419C119.237 22.664 118.679 22.0945 118.315 21.4036V22.7282C118.313 22.8326 118.288 22.9353 118.242 23.029C118.196 23.1226 118.13 23.2051 118.048 23.2704C117.869 23.4308 117.635 23.5167 117.394 23.5107C117.15 23.5156 116.912 23.4314 116.726 23.2737C116.641 23.2121 116.572 23.132 116.523 23.0395C116.473 22.947 116.447 22.8445 116.442 22.7399ZM118.375 18.9812C118.375 19.5129 118.746 20.1335 119.49 20.8431C119.822 21.1792 120.218 21.4462 120.655 21.6286C121.091 21.811 121.559 21.9053 122.031 21.9058C123.021 21.9058 123.883 21.5121 124.617 20.7246C125.319 20.0135 125.714 19.0548 125.717 18.0553V14.8522C125.717 13.8857 125.35 13.0188 124.617 12.2514C124.287 11.8855 123.883 11.5937 123.433 11.395C122.982 11.1963 122.494 11.0953 122.001 11.0986C121.056 11.0934 120.146 11.4622 119.471 12.1246C118.737 12.8153 118.371 13.7217 118.371 14.8439L118.375 18.9812Z", fill: "white" }),
-        React.createElement("path", { d: "M88.1972 33.021C87.9094 33.021 87.6417 32.9669 87.3942 32.8588C87.1526 32.7508 86.9596 32.5758 86.8153 32.3339C86.6718 32.092 86.5996 31.7704 86.5996 31.369V28.9759C86.5996 28.5796 86.6718 28.2606 86.8153 28.0187C86.9646 27.7768 87.1601 27.6018 87.4026 27.4938C87.6493 27.3857 87.9195 27.3317 88.2132 27.3317C88.5521 27.3317 88.8408 27.3908 89.0774 27.5092C89.314 27.6276 89.4944 27.7845 89.6178 27.9801C89.7462 28.1757 89.8108 28.3892 89.8108 28.6208C89.8108 28.7443 89.7873 28.8266 89.7411 28.8678C89.7 28.909 89.6388 28.9296 89.5557 28.9296C89.4634 28.9296 89.3963 28.9116 89.3551 28.8756C89.3191 28.8344 89.3015 28.788 89.3015 28.7366C89.2964 28.6543 89.278 28.5591 89.2469 28.451C89.2217 28.3429 89.1697 28.24 89.0925 28.1422C89.0212 28.0445 88.913 27.9647 88.7686 27.9029C88.6293 27.836 88.4473 27.8025 88.2207 27.8025C87.8599 27.8025 87.5847 27.8978 87.3942 28.0882C87.2037 28.2786 87.1089 28.5745 87.1089 28.9759V31.369C87.1089 31.7755 87.2037 32.0741 87.3942 32.2644C87.5897 32.4548 87.8733 32.5501 88.2434 32.5501C88.475 32.5501 88.6579 32.5192 88.7921 32.4574C88.9255 32.3906 89.0262 32.3108 89.0925 32.2181C89.1647 32.1204 89.2142 32.0174 89.2394 31.9093C89.2654 31.7962 89.2855 31.6932 89.3015 31.6006C89.3065 31.5337 89.33 31.4848 89.3711 31.4539C89.4122 31.4179 89.4709 31.3999 89.5481 31.3999C89.6354 31.3999 89.7 31.423 89.7411 31.4693C89.7873 31.5105 89.8108 31.5928 89.8108 31.7164C89.8108 31.9479 89.7462 32.1641 89.6178 32.3648C89.4894 32.5604 89.304 32.7199 89.0623 32.8434C88.8248 32.9618 88.537 33.021 88.1972 33.021ZM96.3673 32.9746C96.3011 32.9746 96.2415 32.9592 96.1903 32.9283C96.1383 32.8923 96.1131 32.8408 96.1131 32.7739V27.5169C96.1131 27.4552 96.1383 27.4088 96.1903 27.378C96.2415 27.3471 96.3011 27.3317 96.3673 27.3317C96.4294 27.3317 96.4857 27.3471 96.5377 27.378C96.5939 27.4088 96.6224 27.4552 96.6224 27.5169V29.8251H98.8535V27.5169C98.8535 27.4552 98.8787 27.4088 98.9307 27.378C98.9819 27.3471 99.0415 27.3317 99.1078 27.3317C99.1699 27.3317 99.2261 27.3471 99.2781 27.378C99.3343 27.4088 99.3629 27.4552 99.3629 27.5169V32.7739C99.3629 32.8408 99.3343 32.8923 99.2781 32.9283C99.2261 32.9592 99.1699 32.9746 99.1078 32.9746C99.0415 32.9746 98.9819 32.9592 98.9307 32.9283C98.8787 32.8923 98.8535 32.8408 98.8535 32.7739V30.2651H96.6224V32.7739C96.6224 32.8408 96.5939 32.8923 96.5377 32.9283C96.4857 32.9592 96.4294 32.9746 96.3673 32.9746ZM105.803 32.9746C105.762 32.9746 105.718 32.9669 105.672 32.9515C105.625 32.9309 105.586 32.9052 105.556 32.8743C105.525 32.8383 105.509 32.7997 105.509 32.7585C105.509 32.7379 105.512 32.7199 105.518 32.7045L107.13 27.4629C107.151 27.4011 107.19 27.3574 107.246 27.3317C107.303 27.3008 107.364 27.2853 107.431 27.2853C107.504 27.2853 107.568 27.3008 107.624 27.3317C107.687 27.3625 107.725 27.4063 107.74 27.4629L109.346 32.7045C109.351 32.7199 109.354 32.7353 109.354 32.7508C109.354 32.792 109.339 32.8306 109.308 32.8666C109.277 32.8974 109.238 32.9232 109.192 32.9438C109.146 32.9643 109.096 32.9746 109.045 32.9746C109.004 32.9746 108.965 32.9643 108.929 32.9438C108.893 32.9232 108.87 32.8897 108.86 32.8434L108.497 31.6546H106.367L106.011 32.8434C105.996 32.8897 105.97 32.9232 105.934 32.9438C105.898 32.9643 105.854 32.9746 105.803 32.9746ZM106.49 31.2146H108.365L107.431 28.1036L106.49 31.2146ZM115.754 32.9746C115.687 32.9746 115.628 32.9592 115.576 32.9283C115.525 32.8923 115.499 32.8408 115.499 32.7739V27.5169C115.499 27.4552 115.525 27.4088 115.576 27.378C115.628 27.3471 115.687 27.3317 115.754 27.3317C115.816 27.3317 115.873 27.3471 115.924 27.378C115.98 27.4088 116.009 27.4552 116.009 27.5169V32.7739C116.009 32.8408 115.98 32.8923 115.924 32.9283C115.873 32.9592 115.816 32.9746 115.754 32.9746ZM122.839 32.9746C122.772 32.9746 122.713 32.9592 122.662 32.9283C122.61 32.8923 122.584 32.8408 122.584 32.7739V27.5246C122.584 27.4526 122.61 27.4037 122.662 27.378C122.713 27.3471 122.772 27.3317 122.839 27.3317C122.901 27.3317 122.954 27.3497 123.001 27.3857C123.048 27.4166 123.091 27.4578 123.132 27.5092C123.173 27.5606 123.21 27.6199 123.241 27.6868L125.325 31.7936V27.5169C125.325 27.45 125.35 27.4037 125.402 27.378C125.453 27.3471 125.512 27.3317 125.579 27.3317C125.641 27.3317 125.697 27.3471 125.749 27.378C125.806 27.4037 125.834 27.45 125.834 27.5169V32.7739C125.834 32.8408 125.806 32.8923 125.749 32.9283C125.697 32.9592 125.641 32.9746 125.579 32.9746C125.507 32.9746 125.443 32.9438 125.386 32.882C125.33 32.8202 125.28 32.7534 125.239 32.6813L123.094 28.505V32.7739C123.094 32.8408 123.065 32.8923 123.009 32.9283C122.957 32.9592 122.901 32.9746 122.839 32.9746Z", fill: "white" }),
-        React.createElement("path", { d: "M87.3951 32.8588L87.3616 32.9354V32.9357L87.3951 32.8588ZM86.8162 32.3339L86.744 32.3769L86.8162 32.3339ZM86.8162 28.0187L86.7448 27.9746V27.9752L86.744 27.9757L86.8162 28.0187ZM87.4035 27.4937L87.37 27.4169L87.3691 27.4171L87.4035 27.4937ZM89.0783 27.5092L89.0406 27.5842L89.0783 27.5092ZM89.6187 27.9801L89.5474 28.0249L89.5482 28.0256V28.0262L89.6187 27.9801ZM89.742 28.8678L89.6867 28.8051L89.685 28.8067L89.6825 28.8085L89.742 28.8678ZM89.356 28.8755L89.2931 28.9308L89.2965 28.935L89.3007 28.9387L89.356 28.8755ZM89.3024 28.7366H89.3863V28.734V28.7314L89.3024 28.7366ZM89.2478 28.451L89.1664 28.4704L89.1673 28.4722V28.474L89.2478 28.451ZM89.0934 28.1422L89.0263 28.1919L89.0271 28.1931L89.028 28.1942L89.0934 28.1422ZM88.7695 27.9029L88.7335 27.9785L88.7351 27.9793L88.7368 27.98L88.7695 27.9029ZM87.3951 32.2644L87.3364 32.3237L87.3372 32.3245L87.3951 32.2644ZM88.793 32.4574L88.8283 32.5336L88.8291 32.533L88.83 32.5324L88.793 32.4574ZM89.0934 32.2181L89.0263 32.1684L89.0255 32.169L89.0934 32.2181ZM89.2403 31.9093L89.3217 31.9288L89.3225 31.928L89.2403 31.9093ZM89.3024 31.6005L89.3846 31.6143L89.3854 31.6107L89.3863 31.607L89.3024 31.6005ZM89.372 31.4539L89.4223 31.521L89.4249 31.5191L89.4265 31.5171L89.372 31.4539ZM89.742 31.4693L89.6791 31.525L89.6825 31.5287L89.6867 31.532L89.742 31.4693ZM89.6187 32.3648L89.6892 32.4109V32.4101L89.6187 32.3648ZM89.0632 32.8434L89.1001 32.9184L89.101 32.9182L89.0632 32.8434ZM88.1981 32.937C87.9212 32.937 87.6645 32.8851 87.4287 32.782L87.3616 32.9357C87.62 33.0487 87.8994 33.1048 88.1981 33.1048V32.937ZM87.4295 32.7822C87.2046 32.6816 87.0242 32.519 86.8883 32.2909L86.744 32.3769C86.8967 32.6326 87.1023 32.8199 87.3616 32.9354L87.4295 32.7822ZM86.8883 32.2909C86.7549 32.0665 86.6844 31.7613 86.6844 31.369H86.5166C86.5166 31.7794 86.5896 32.1176 86.744 32.3769L86.8883 32.2909ZM86.6844 31.369V28.9759H86.5166V31.369H86.6844ZM86.6844 28.9759C86.6844 28.5889 86.7549 28.2863 86.8883 28.0616L86.744 27.9757C86.5904 28.2348 86.5166 28.5704 86.5166 28.9759H86.6844ZM86.8883 28.0627C87.0293 27.8341 87.2122 27.671 87.4371 27.5704L87.3691 27.4171C87.1107 27.5326 86.9026 27.7195 86.7448 27.9746L86.8883 28.0627ZM87.4371 27.5706C87.672 27.4676 87.9313 27.4155 88.2141 27.4155V27.2477C87.9095 27.2477 87.6284 27.3038 87.37 27.4169L87.4371 27.5706ZM88.2141 27.4155C88.5438 27.4155 88.8182 27.4731 89.0406 27.5842L89.1161 27.4342C88.8643 27.3086 88.5631 27.2477 88.2141 27.2477V27.4155ZM89.0406 27.5842C89.2654 27.6968 89.4332 27.8441 89.5474 28.0249L89.69 27.9353C89.5566 27.725 89.3644 27.5584 89.1161 27.4342L89.0406 27.5842ZM89.5482 28.0262C89.6682 28.2082 89.7278 28.4058 89.7278 28.6208H89.8956C89.8956 28.3726 89.8259 28.143 89.6892 27.9339L89.5482 28.0262ZM89.7278 28.6208C89.7278 28.7414 89.7034 28.7899 89.6867 28.8051L89.7982 28.9305C89.8738 28.8634 89.8956 28.7473 89.8956 28.6208H89.7278ZM89.6825 28.8085C89.6632 28.8284 89.6262 28.8457 89.5566 28.8457V29.0135C89.6522 29.0135 89.7387 28.9896 89.8016 28.9272L89.6825 28.8085ZM89.5566 28.8457C89.4718 28.8457 89.4299 28.8285 89.4114 28.8124L89.3007 28.9387C89.3653 28.9947 89.4567 29.0135 89.5566 29.0135V28.8457ZM89.419 28.8203C89.3955 28.7934 89.3863 28.7664 89.3863 28.7366H89.2184C89.2184 28.8098 89.2444 28.8754 89.2931 28.9308L89.419 28.8203ZM89.3863 28.7314C89.3804 28.6413 89.3611 28.5398 89.3292 28.4279L89.1673 28.474C89.1975 28.5783 89.2134 28.6672 89.2184 28.7418L89.3863 28.7314ZM89.33 28.4315C89.3007 28.3103 89.2436 28.1964 89.1597 28.0902L89.028 28.1942C89.0985 28.2836 89.1438 28.3755 89.1664 28.4704L89.33 28.4315ZM89.1614 28.0924C89.0783 27.9796 88.9566 27.8917 88.8023 27.8258L88.7368 27.98C88.8711 28.0376 88.965 28.1092 89.0263 28.1919L89.1614 28.0924ZM88.8056 27.8273C88.6512 27.7529 88.4549 27.7186 88.2216 27.7186V27.8864C88.4406 27.8864 88.6093 27.919 88.7335 27.9785L88.8056 27.8273ZM88.2216 27.7186C87.8465 27.7186 87.547 27.8179 87.3364 28.0288L87.4547 28.1475C87.625 27.9776 87.8759 27.8864 88.2216 27.8864V27.7186ZM87.3364 28.0288C87.1241 28.2413 87.0259 28.5631 87.0259 28.9759H87.1937C87.1937 28.5859 87.286 28.3159 87.4547 28.1475L87.3364 28.0288ZM87.0259 28.9759V31.369H87.1937V28.9759H87.0259ZM87.0259 31.369C87.0259 31.7866 87.1233 32.1111 87.3364 32.3237L87.4547 32.2051C87.2869 32.0369 87.1937 31.7644 87.1937 31.369H87.0259ZM87.3372 32.3245C87.5529 32.535 87.86 32.634 88.2443 32.634V32.4661C87.8877 32.4661 87.6292 32.3747 87.4539 32.2043L87.3372 32.3245ZM88.2443 32.634C88.4817 32.634 88.6789 32.6025 88.8283 32.5336L88.7578 32.3812C88.6395 32.4358 88.47 32.4661 88.2443 32.4661V32.634ZM88.83 32.5324C88.9726 32.4613 89.085 32.3737 89.1614 32.2672L89.0255 32.169C88.9692 32.2478 88.8803 32.3197 88.7553 32.3824L88.83 32.5324ZM89.1614 32.2679C89.2394 32.1619 89.2931 32.0488 89.3217 31.9288L89.1589 31.8899C89.1362 31.986 89.0926 32.0787 89.0263 32.1684L89.1614 32.2679ZM89.3225 31.928C89.3485 31.8135 89.3695 31.7089 89.3846 31.6143L89.2193 31.5868C89.2042 31.6775 89.184 31.7788 89.1589 31.8907L89.3225 31.928ZM89.3863 31.607C89.3896 31.5564 89.4056 31.5333 89.4223 31.521L89.3217 31.3867C89.2554 31.4363 89.2252 31.5109 89.2184 31.5941L89.3863 31.607ZM89.4265 31.5171C89.4475 31.499 89.4844 31.4837 89.549 31.4837V31.3159C89.4601 31.3159 89.3779 31.3367 89.3166 31.3907L89.4265 31.5171ZM89.549 31.4837C89.6229 31.4837 89.6598 31.503 89.6791 31.525L89.805 31.4136C89.742 31.3429 89.6506 31.3159 89.549 31.3159V31.4837ZM89.6867 31.532C89.7034 31.5473 89.7278 31.5958 89.7278 31.7163H89.8956C89.8956 31.5899 89.8738 31.4738 89.7982 31.4066L89.6867 31.532ZM89.7278 31.7163C89.7278 31.9314 89.6682 32.1319 89.5482 32.3195L89.6892 32.4101C89.8268 32.1963 89.8956 31.9645 89.8956 31.7163H89.7278ZM89.5482 32.3186C89.4291 32.5003 89.2554 32.6507 89.0246 32.7686L89.101 32.9182C89.3535 32.7891 89.5507 32.6204 89.6892 32.4109L89.5482 32.3186ZM89.0255 32.7684C88.8031 32.8795 88.5287 32.937 88.1981 32.937V33.1048C88.5472 33.1048 88.8492 33.044 89.1001 32.9184L89.0255 32.7684ZM96.1912 32.9283L96.1425 32.997L96.1451 32.9987L96.1476 33.0002L96.1912 32.9283ZM96.5386 27.378L96.495 27.4499L96.4966 27.4508L96.4983 27.4516L96.5386 27.378ZM96.6233 29.8251H96.5394V29.909H96.6233V29.8251ZM98.8544 29.8251V29.909H98.9384V29.8251H98.8544ZM98.9316 27.378L98.888 27.306L98.9316 27.378ZM99.279 27.378L99.2354 27.4499L99.2371 27.4508L99.2387 27.4516L99.279 27.378ZM99.279 32.9283L99.3218 33.0002L99.3226 32.9997L99.3235 32.9991L99.279 32.9283ZM98.9316 32.9283L98.883 32.997L98.8855 32.9987L98.888 33.0002L98.9316 32.9283ZM98.8544 30.2651H98.9384V30.1812H98.8544V30.2651ZM96.6233 30.2651V30.1812H96.5394V30.2651H96.6233ZM96.5386 32.9283L96.5814 33.0002L96.5822 32.9997L96.583 32.9991L96.5386 32.9283ZM96.3682 32.8907C96.3154 32.8907 96.2709 32.8785 96.234 32.8564L96.1476 33.0002C96.2139 33.0398 96.2885 33.0585 96.3682 33.0585V32.8907ZM96.239 32.8596C96.2122 32.8404 96.1979 32.8155 96.1979 32.7739H96.0301C96.0301 32.8661 96.067 32.9442 96.1425 32.997L96.239 32.8596ZM96.1979 32.7739V27.5169H96.0301V32.7739H96.1979ZM96.1979 27.5169C96.1979 27.4836 96.2088 27.4651 96.234 27.4499L96.1476 27.306C96.0704 27.3526 96.0301 27.4267 96.0301 27.5169H96.1979ZM96.234 27.4499C96.2709 27.4277 96.3154 27.4155 96.3682 27.4155V27.2477C96.2885 27.2477 96.2139 27.2664 96.1476 27.306L96.234 27.4499ZM96.3682 27.4155C96.4152 27.4155 96.4572 27.4271 96.495 27.4499L96.5814 27.306C96.5168 27.267 96.4454 27.2477 96.3682 27.2477V27.4155ZM96.4983 27.4516C96.5159 27.4614 96.5252 27.4712 96.5302 27.4796C96.5352 27.4879 96.5394 27.4993 96.5394 27.5169H96.7072C96.7072 27.4728 96.6972 27.4301 96.6737 27.3921C96.6502 27.3542 96.6175 27.3254 96.5789 27.3043L96.4983 27.4516ZM96.5394 27.5169V29.8251H96.7072V27.5169H96.5394ZM96.6233 29.909H98.8544V29.7411H96.6233V29.909ZM98.9384 29.8251V27.5169H98.7705V29.8251H98.9384ZM98.9384 27.5169C98.9384 27.4836 98.9493 27.4651 98.9744 27.4499L98.888 27.306C98.8108 27.3526 98.7705 27.4267 98.7705 27.5169H98.9384ZM98.9744 27.4499C99.0113 27.4277 99.0558 27.4155 99.1087 27.4155V27.2477C99.029 27.2477 98.9543 27.2664 98.888 27.306L98.9744 27.4499ZM99.1087 27.4155C99.1557 27.4155 99.1976 27.4271 99.2354 27.4499L99.3218 27.306C99.2572 27.267 99.1859 27.2477 99.1087 27.2477V27.4155ZM99.2387 27.4516C99.2564 27.4614 99.2656 27.4712 99.2706 27.4796C99.2757 27.4879 99.2799 27.4993 99.2799 27.5169H99.4477C99.4477 27.4728 99.4376 27.4301 99.4141 27.3921C99.3906 27.3542 99.3579 27.3254 99.3193 27.3043L99.2387 27.4516ZM99.2799 27.5169V32.7739H99.4477V27.5169H99.2799ZM99.2799 32.7739C99.2799 32.812 99.2664 32.8368 99.2337 32.8575L99.3235 32.9991C99.4049 32.9477 99.4477 32.8696 99.4477 32.7739H99.2799ZM99.2354 32.8564C99.1976 32.8791 99.1557 32.8907 99.1087 32.8907V33.0585C99.1859 33.0585 99.2572 33.0392 99.3218 33.0002L99.2354 32.8564ZM99.1087 32.8907C99.0558 32.8907 99.0113 32.8785 98.9744 32.8564L98.888 33.0002C98.9543 33.0398 99.029 33.0585 99.1087 33.0585V32.8907ZM98.9795 32.8596C98.9526 32.8404 98.9384 32.8155 98.9384 32.7739H98.7705C98.7705 32.8661 98.8075 32.9442 98.883 32.997L98.9795 32.8596ZM98.9384 32.7739V30.2651H98.7705V32.7739H98.9384ZM98.8544 30.1812H96.6233V30.349H98.8544V30.1812ZM96.5394 30.2651V32.7739H96.7072V30.2651H96.5394ZM96.5394 32.7739C96.5394 32.812 96.526 32.8368 96.4933 32.8575L96.583 32.9991C96.6644 32.9477 96.7072 32.8696 96.7072 32.7739H96.5394ZM96.495 32.8564C96.4572 32.8791 96.4152 32.8907 96.3682 32.8907V33.0585C96.4454 33.0585 96.5168 33.0392 96.5814 33.0002L96.495 32.8564ZM105.673 32.9515L105.638 33.0282L105.642 33.0297L105.646 33.0311L105.673 32.9515ZM105.557 32.8743L105.493 32.9289L105.495 32.9313L105.497 32.9336L105.557 32.8743ZM105.518 32.7044L105.597 32.731L105.598 32.73V32.7291L105.518 32.7044ZM107.131 27.4629L107.052 27.4364L107.051 27.4373V27.4382L107.131 27.4629ZM107.247 27.3316L107.282 27.408L107.285 27.4067L107.287 27.4053L107.247 27.3316ZM107.625 27.3316L107.585 27.4053L107.587 27.406L107.588 27.4067L107.625 27.3316ZM107.741 27.4629L107.661 27.4849V27.4862L107.661 27.4875L107.741 27.4629ZM109.347 32.7044L109.267 32.729L109.267 32.73V32.731L109.347 32.7044ZM109.309 32.8665L109.368 32.9259L109.37 32.9236L109.372 32.9212L109.309 32.8665ZM109.193 32.9437L109.158 32.8671L109.193 32.9437ZM108.86 32.8434L108.943 32.8252L108.942 32.822L108.941 32.8189L108.86 32.8434ZM108.498 31.6546L108.578 31.6301L108.56 31.5707H108.498V31.6546ZM106.368 31.6546V31.5707H106.305L106.287 31.6306L106.368 31.6546ZM106.012 32.8434L106.092 32.8699L106.092 32.8686V32.8674L106.012 32.8434ZM106.491 31.2146L106.41 31.1902L106.378 31.2985H106.491V31.2146ZM108.366 31.2146V31.2985H108.48L108.447 31.1904L108.366 31.2146ZM107.432 28.1036L107.513 28.0794L107.433 27.8129L107.353 28.0793L107.432 28.1036ZM105.804 32.8907C105.773 32.8907 105.738 32.8849 105.699 32.8718L105.646 33.0311C105.7 33.0489 105.752 33.0585 105.804 33.0585V32.8907ZM105.706 32.8748C105.668 32.8577 105.638 32.8374 105.616 32.8149L105.497 32.9336C105.537 32.9729 105.584 33.0041 105.638 33.0282L105.706 32.8748ZM105.621 32.8196C105.601 32.7964 105.594 32.7766 105.594 32.7585H105.426C105.426 32.8227 105.451 32.8801 105.493 32.9289L105.621 32.8196ZM105.594 32.7585C105.594 32.7446 105.596 32.7359 105.597 32.731L105.439 32.6779C105.429 32.7039 105.426 32.7311 105.426 32.7585H105.594ZM105.598 32.7291L107.212 27.4875L107.051 27.4382L105.438 32.6798L105.598 32.7291ZM107.211 27.4894C107.224 27.4486 107.248 27.4236 107.282 27.408L107.213 27.2553C107.134 27.2911 107.079 27.3536 107.052 27.4364L107.211 27.4894ZM107.287 27.4053C107.332 27.3814 107.38 27.3692 107.432 27.3692V27.2014C107.352 27.2014 107.276 27.2201 107.207 27.258L107.287 27.4053ZM107.432 27.3692C107.492 27.3692 107.542 27.3819 107.585 27.4053L107.666 27.258C107.595 27.2196 107.517 27.2014 107.432 27.2014V27.3692ZM107.588 27.4067C107.633 27.429 107.652 27.4555 107.661 27.4849L107.823 27.4408C107.799 27.3571 107.742 27.2961 107.663 27.2566L107.588 27.4067ZM107.661 27.4875L109.267 32.729L109.427 32.6799L107.822 27.4383L107.661 27.4875ZM109.267 32.731C109.27 32.7383 109.271 32.7448 109.271 32.7508H109.439C109.439 32.7258 109.434 32.7014 109.427 32.6779L109.267 32.731ZM109.271 32.7508C109.271 32.7689 109.265 32.7887 109.245 32.8119L109.372 32.9212C109.414 32.8723 109.439 32.8149 109.439 32.7508H109.271ZM109.249 32.8072C109.226 32.8297 109.197 32.85 109.158 32.8671L109.226 33.0204C109.281 32.9964 109.329 32.9651 109.368 32.9259L109.249 32.8072ZM109.158 32.8671C109.123 32.8828 109.086 32.8907 109.046 32.8907V33.0585C109.109 33.0585 109.169 33.0459 109.226 33.0204L109.158 32.8671ZM109.046 32.8907C109.02 32.8907 108.996 32.8843 108.972 32.8709L108.888 33.0166C108.937 33.0444 108.99 33.0585 109.046 33.0585V32.8907ZM108.972 32.8709C108.959 32.8638 108.949 32.8521 108.943 32.8252L108.779 32.8616C108.793 32.9273 108.829 32.9825 108.888 33.0166L108.972 32.8709ZM108.941 32.8189L108.578 31.6301L108.417 31.6791L108.781 32.8679L108.941 32.8189ZM108.498 31.5707H106.368V31.7385H108.498V31.5707ZM106.287 31.6306L105.932 32.8194L106.092 32.8674L106.447 31.6786L106.287 31.6306ZM105.933 32.8169C105.922 32.8473 105.909 32.8624 105.893 32.8709L105.977 33.0166C106.034 32.984 106.071 32.9322 106.092 32.8699L105.933 32.8169ZM105.893 32.8709C105.873 32.8827 105.844 32.8907 105.804 32.8907V33.0585C105.867 33.0585 105.925 33.0459 105.977 33.0166L105.893 32.8709ZM106.491 31.2985H108.366V31.1307H106.491V31.2985ZM108.447 31.1904L107.513 28.0794L107.352 28.1278L108.287 31.2387L108.447 31.1904ZM107.353 28.0793L106.41 31.1902L106.571 31.2389L107.513 28.1279L107.353 28.0793ZM115.577 32.9283L115.529 32.997L115.532 32.9987L115.535 33.0002L115.577 32.9283ZM115.925 27.378L115.882 27.4499L115.883 27.4508L115.884 27.4516L115.925 27.378ZM115.925 32.9283L115.967 33.0002L115.969 32.9997L115.97 32.9991L115.925 32.9283ZM115.755 32.8907C115.702 32.8907 115.658 32.8785 115.62 32.8564L115.535 33.0002C115.6 33.0398 115.675 33.0585 115.755 33.0585V32.8907ZM115.625 32.8596C115.598 32.8404 115.584 32.8155 115.584 32.7739H115.416C115.416 32.8661 115.454 32.9442 115.529 32.997L115.625 32.8596ZM115.584 32.7739V27.5169H115.416V32.7739H115.584ZM115.584 27.5169C115.584 27.4836 115.595 27.4651 115.62 27.4499L115.535 27.306C115.456 27.3526 115.416 27.4267 115.416 27.5169H115.584ZM115.62 27.4499C115.658 27.4277 115.702 27.4155 115.755 27.4155V27.2477C115.675 27.2477 115.6 27.2664 115.535 27.306L115.62 27.4499ZM115.755 27.4155C115.802 27.4155 115.843 27.4271 115.882 27.4499L115.967 27.306C115.903 27.267 115.832 27.2477 115.755 27.2477V27.4155ZM115.884 27.4516C115.902 27.4614 115.911 27.4712 115.917 27.4796C115.922 27.4879 115.926 27.4993 115.926 27.5169H116.093C116.093 27.4728 116.083 27.4301 116.06 27.3921C116.037 27.3542 116.004 27.3254 115.965 27.3043L115.884 27.4516ZM115.926 27.5169V32.7739H116.093V27.5169H115.926ZM115.926 32.7739C115.926 32.812 115.912 32.8368 115.879 32.8575L115.97 32.9991C116.051 32.9477 116.093 32.8696 116.093 32.7739H115.926ZM115.882 32.8564C115.843 32.8791 115.802 32.8907 115.755 32.8907V33.0585C115.832 33.0585 115.903 33.0392 115.967 33.0002L115.882 32.8564ZM122.663 32.9283L122.614 32.997L122.616 32.9987L122.619 33.0002L122.663 32.9283ZM122.663 27.378L122.699 27.453L122.703 27.4515L122.705 27.4499L122.663 27.378ZM123.002 27.3857L122.95 27.4519L122.953 27.4538L122.955 27.4555L123.002 27.3857ZM123.133 27.5092L123.068 27.5616L123.133 27.5092ZM123.241 27.6867L123.165 27.7219L123.166 27.7233V27.7248L123.241 27.6867ZM125.326 31.7935L125.25 31.8315L125.41 31.7935H125.326ZM125.403 27.378L125.44 27.453L125.443 27.4515L125.446 27.4499L125.403 27.378ZM125.75 27.378L125.707 27.4499L125.711 27.4524L125.715 27.4543L125.75 27.378ZM125.75 32.9283L125.793 33.0002L125.794 32.9997L125.795 32.9991L125.75 32.9283ZM125.387 32.882L125.325 32.9387L125.387 32.882ZM125.24 32.6813L125.165 32.7196L125.166 32.7213L125.168 32.7229L125.24 32.6813ZM123.095 28.505L123.169 28.4667L123.011 28.505H123.095ZM123.01 32.9283L123.053 33.0002L123.054 32.9997L123.054 32.9991L123.01 32.9283ZM122.84 32.8907C122.786 32.8907 122.742 32.8785 122.705 32.8564L122.619 33.0002C122.685 33.0398 122.759 33.0585 122.84 33.0585V32.8907ZM122.71 32.8596C122.683 32.8404 122.669 32.8155 122.669 32.7739H122.501C122.501 32.8661 122.538 32.9442 122.614 32.997L122.71 32.8596ZM122.669 32.7739V27.5246H122.501V32.7739H122.669ZM122.669 27.5246C122.669 27.4748 122.684 27.4607 122.699 27.453L122.625 27.3029C122.537 27.3467 122.501 27.4304 122.501 27.5246H122.669ZM122.705 27.4499C122.742 27.4277 122.786 27.4155 122.84 27.4155V27.2477C122.759 27.2477 122.685 27.2664 122.619 27.306L122.705 27.4499ZM122.84 27.4155C122.884 27.4155 122.919 27.428 122.95 27.4519L123.054 27.3195C122.991 27.2713 122.919 27.2477 122.84 27.2477V27.4155ZM122.955 27.4555C122.993 27.4808 123.031 27.5157 123.068 27.5616L123.199 27.4567C123.153 27.3998 123.103 27.3523 123.048 27.3159L122.955 27.4555ZM123.068 27.5616C123.104 27.6072 123.137 27.6605 123.165 27.7219L123.317 27.6516C123.284 27.5793 123.244 27.5141 123.199 27.4567L123.068 27.5616ZM123.166 27.7248L125.25 31.8315L125.4 31.7555L123.316 27.6487L123.166 27.7248ZM125.41 31.7935V27.5169H125.242V31.7935H125.41ZM125.41 27.5169C125.41 27.494 125.414 27.4806 125.418 27.4728C125.422 27.4656 125.428 27.459 125.44 27.453L125.365 27.3029C125.326 27.3227 125.293 27.352 125.271 27.3912C125.25 27.4297 125.242 27.4729 125.242 27.5169H125.41ZM125.446 27.4499C125.483 27.4277 125.526 27.4155 125.58 27.4155V27.2477C125.499 27.2477 125.426 27.2664 125.359 27.306L125.446 27.4499ZM125.58 27.4155C125.627 27.4155 125.669 27.4271 125.707 27.4499L125.793 27.306C125.729 27.267 125.656 27.2477 125.58 27.2477V27.4155ZM125.715 27.4543C125.73 27.4613 125.738 27.4689 125.742 27.4757C125.746 27.483 125.751 27.4953 125.751 27.5169H125.919C125.919 27.4716 125.909 27.4273 125.885 27.3883C125.861 27.3488 125.826 27.3203 125.785 27.3016L125.715 27.4543ZM125.751 27.5169V32.7739H125.919V27.5169H125.751ZM125.751 32.7739C125.751 32.812 125.738 32.8368 125.705 32.8575L125.795 32.9991C125.875 32.9477 125.919 32.8696 125.919 32.7739H125.751ZM125.707 32.8564C125.669 32.8791 125.627 32.8907 125.58 32.8907V33.0585C125.656 33.0585 125.729 33.0392 125.793 33.0002L125.707 32.8564ZM125.58 32.8907C125.536 32.8907 125.493 32.8728 125.449 32.8253L125.325 32.9387C125.395 33.0146 125.481 33.0585 125.58 33.0585V32.8907ZM125.449 32.8253C125.396 32.7681 125.351 32.7062 125.313 32.6397L125.168 32.7229C125.212 32.8004 125.264 32.8723 125.325 32.9387L125.449 32.8253ZM125.315 32.6429L123.169 28.4667L123.02 28.5434L125.165 32.7196L125.315 32.6429ZM123.011 28.505V32.7739H123.179V28.505H123.011ZM123.011 32.7739C123.011 32.812 122.997 32.8368 122.965 32.8575L123.054 32.9991C123.135 32.9477 123.179 32.8696 123.179 32.7739H123.011ZM122.966 32.8564C122.929 32.8791 122.887 32.8907 122.84 32.8907V33.0585C122.916 33.0585 122.988 33.0392 123.053 33.0002L122.966 32.8564Z", fill: "white" }),
+        React.createElement("path", { d: "M56.2822 22.7399V1.58096C56.2837 1.48237 56.3087 1.38546 56.3552 1.29844C56.4016 1.21143 56.4682 1.13667 56.5492 1.08045C56.7477 0.936718 56.9886 0.863801 57.2335 0.873618C57.4823 0.865647 57.727 0.938228 57.9311 1.08045C58.0154 1.13457 58.0854 1.20849 58.1348 1.29568C58.1843 1.38286 58.2117 1.48078 58.2148 1.58096V11.5623C58.6012 10.8561 59.1743 10.2695 59.8715 9.86672C60.5688 9.46396 61.3633 9.26048 62.1684 9.27844C62.8749 9.27005 63.5752 9.41126 64.2233 9.69277C64.8713 9.9742 65.4524 10.3896 65.9284 10.9117C66.4348 11.43 66.8335 12.0435 67.1013 12.7167C67.3692 13.3898 67.5008 14.1094 67.4887 14.8339V18.0737C67.4947 19.5436 66.9237 20.9573 65.8983 22.0108C64.838 23.1509 63.6142 23.7203 62.2268 23.7192C61.3577 23.7256 60.504 23.4912 59.7601 23.0419C59.0767 22.6639 58.5186 22.0945 58.1547 21.4036V22.7282C58.1525 22.8326 58.1275 22.9352 58.0814 23.0289C58.0353 23.1226 57.9691 23.2051 57.8877 23.2704C57.7082 23.4308 57.4742 23.5167 57.2335 23.5107C56.9895 23.5156 56.7521 23.4314 56.5659 23.2737C56.4813 23.2121 56.4117 23.132 56.3625 23.0395C56.3134 22.947 56.2859 22.8445 56.2822 22.7399ZM58.2148 18.9812C58.2148 19.5129 58.5864 20.1335 59.3296 20.8431C59.6617 21.1793 60.0572 21.4463 60.4932 21.6287C60.9291 21.8111 61.397 21.9053 61.8697 21.9058C62.861 21.9058 63.7232 21.5121 64.4564 20.7246C65.159 20.0135 65.554 19.0548 65.5562 18.0553V14.8522C65.5562 13.8857 65.1896 13.0188 64.4564 12.2514C64.1266 11.8855 63.723 11.5937 63.2724 11.395C62.8216 11.1963 62.3338 11.0953 61.8413 11.0986C60.8955 11.0965 59.9873 11.4683 59.3146 12.1329C58.5803 12.8235 58.2137 13.73 58.2148 14.8522V18.9812Z", fill: "text" }),
+        React.createElement("path", { d: "M71.2632 4.92418C71.1404 4.81384 71.0424 4.67875 70.9757 4.5278C70.9089 4.37676 70.8749 4.21339 70.876 4.04835C70.8744 3.88515 70.9082 3.72354 70.975 3.57469C71.0418 3.42575 71.1402 3.29309 71.2632 3.18586C71.5218 2.94773 71.863 2.81968 72.2145 2.82883C72.3816 2.82547 72.5478 2.85526 72.7034 2.91651C72.859 2.97785 73.0008 3.06939 73.1207 3.18586C73.2396 3.29561 73.3342 3.42902 73.3983 3.57762C73.4624 3.72622 73.4946 3.88657 73.4928 4.04835C73.4939 4.21197 73.4613 4.37416 73.3974 4.52478C73.3334 4.67539 73.2392 4.81132 73.1207 4.92418C73.0032 5.04492 72.8621 5.14033 72.7062 5.20426C72.5503 5.26829 72.3829 5.29958 72.2145 5.29623C72.0391 5.30076 71.8646 5.27022 71.7012 5.20628C71.5378 5.14242 71.3889 5.04652 71.2632 4.92418ZM71.2632 22.7382V10.1693C71.2647 10.0707 71.2897 9.97385 71.3362 9.88675C71.3826 9.79974 71.4491 9.72506 71.5302 9.66884C71.728 9.52377 71.9694 9.45018 72.2145 9.46025C72.4629 9.4506 72.7078 9.52201 72.9121 9.66381C72.9967 9.71759 73.0669 9.79143 73.1164 9.8787C73.1658 9.96596 73.1931 10.0641 73.1958 10.1643V22.7332C73.1912 22.8396 73.1619 22.9434 73.11 23.0364C73.0581 23.1294 72.9851 23.2089 72.897 23.2687C72.7044 23.4253 72.4627 23.5091 72.2145 23.5056C71.9705 23.5106 71.7332 23.4263 71.5469 23.2687C71.4626 23.2074 71.3934 23.1279 71.3442 23.036C71.2951 22.9441 71.2674 22.8423 71.2632 22.7382Z", fill: "text" }),
+        React.createElement("path", { d: "M77.4746 19.1498V3.50787C77.478 3.40626 77.5073 3.30716 77.5585 3.21973C77.6105 3.1323 77.6835 3.0593 77.7716 3.00736C77.9604 2.87302 78.187 2.80078 78.4186 2.80053C78.6627 2.79633 78.9019 2.86866 79.1033 3.00736C79.1905 3.05921 79.2635 3.13213 79.3156 3.21965C79.3676 3.30708 79.3969 3.40626 79.4003 3.50787V9.45536H83.2383C83.3339 9.45452 83.4279 9.47617 83.5126 9.51854C83.5982 9.56083 83.6721 9.62267 83.7291 9.69894C83.8533 9.86466 83.9213 10.0664 83.9213 10.2736C83.9213 10.4809 83.8533 10.6826 83.7291 10.8484C83.6721 10.9244 83.5982 10.986 83.5126 11.028C83.4279 11.0701 83.3339 11.0914 83.2383 11.0903H79.4003V19.0981C79.4003 20.0623 79.6034 20.7358 80.0095 21.1183C80.4156 21.5009 81.1364 21.6923 82.1718 21.6923H83.0067C83.125 21.6888 83.2433 21.7102 83.3532 21.755C83.464 21.7998 83.563 21.867 83.646 21.9525C83.7274 22.0354 83.7929 22.1339 83.8365 22.2423C83.8793 22.3505 83.9011 22.4664 83.8995 22.5831C83.9011 22.8229 83.8105 23.0543 83.646 23.2288C83.5655 23.3179 83.4665 23.3887 83.3566 23.4362C83.2458 23.4837 83.1267 23.5069 83.0067 23.504H82.1718C79.0403 23.5084 77.4746 22.0571 77.4746 19.1498Z", fill: "text" }),
+        React.createElement("path", { d: "M86.958 22.7383V1.55097C86.9597 1.45238 86.9849 1.35563 87.031 1.26862C87.0772 1.18169 87.1443 1.10693 87.2248 1.05046C87.422 0.904458 87.6637 0.829779 87.9087 0.83859C88.1587 0.830367 88.4037 0.903619 88.6085 1.04719C88.6924 1.10131 88.762 1.17515 88.8115 1.26241C88.861 1.34959 88.8879 1.44759 88.8904 1.54761V16.0201L96.1434 9.57543C96.2752 9.4807 96.4279 9.41945 96.589 9.39696C96.839 9.40233 97.0782 9.50318 97.256 9.67889C97.3517 9.75625 97.4289 9.8535 97.4834 9.96384C97.5371 10.0742 97.5665 10.195 97.5682 10.3179C97.5749 10.416 97.5606 10.5145 97.5246 10.6062C97.4885 10.698 97.4331 10.7807 97.3618 10.8484L92.9927 14.6854L98.1346 22.2044C98.2403 22.376 98.2781 22.5813 98.2403 22.7795C98.2017 22.9778 98.0901 23.1543 97.9273 23.2738C97.8367 23.3749 97.7268 23.4565 97.6043 23.5138C97.4818 23.5712 97.3483 23.603 97.2133 23.6075C97.0916 23.6045 96.9733 23.5701 96.8684 23.5075C96.7643 23.4449 96.6788 23.3563 96.6192 23.2504L91.6258 15.91L88.8904 18.3156V22.7433C88.8871 22.848 88.8594 22.9505 88.8107 23.0433C88.762 23.1361 88.6924 23.2165 88.6085 23.2788C88.4113 23.4398 88.1629 23.524 87.9087 23.5157C87.6654 23.5207 87.4279 23.4365 87.2416 23.2788C87.156 23.2164 87.0856 23.1353 87.0369 23.0416C86.9874 22.9479 86.9605 22.8441 86.958 22.7383Z", fill: "text" }),
+        React.createElement("path", { d: "M100.956 18.132V10.1993C100.963 10.1 100.992 10.0035 101.041 9.91691C101.09 9.83032 101.158 9.7558 101.24 9.69883C101.435 9.53706 101.684 9.45222 101.937 9.4602C102.177 9.46095 102.408 9.54536 102.591 9.69883C102.676 9.75362 102.747 9.82738 102.799 9.91422C102.851 10.001 102.881 10.0986 102.888 10.1993V18.1136C102.889 18.604 102.987 19.0894 103.175 19.5421C103.364 19.9947 103.64 20.4056 103.988 20.7512C104.32 21.1154 104.724 21.4064 105.174 21.6056C105.625 21.8047 106.111 21.9075 106.604 21.9075C107.096 21.9075 107.584 21.8047 108.035 21.6056C108.485 21.4064 108.889 21.1154 109.22 20.7512C109.568 20.4056 109.844 19.9947 110.033 19.5421C110.222 19.0894 110.319 18.604 110.32 18.1136V10.1676C110.324 10.0658 110.352 9.96658 110.404 9.87907C110.456 9.79155 110.529 9.71863 110.617 9.66711C110.818 9.52774 111.057 9.45483 111.301 9.4586C111.54 9.45374 111.775 9.5269 111.969 9.66711C112.053 9.72132 112.123 9.79524 112.172 9.88242C112.221 9.96969 112.248 10.0675 112.251 10.1676V18.1303C112.251 19.6163 111.69 20.9192 110.57 22.0391C110.053 22.5702 109.436 22.9924 108.753 23.2807C108.07 23.5689 107.336 23.7174 106.596 23.7174C105.854 23.7174 105.12 23.5689 104.437 23.2807C103.754 22.9924 103.137 22.5702 102.62 22.0391C101.512 20.9181 100.957 19.6157 100.956 18.132Z", fill: "text" }),
+        React.createElement("path", { d: "M116.442 22.7399V1.58097C116.444 1.48238 116.469 1.38546 116.515 1.29845C116.562 1.21144 116.629 1.13668 116.71 1.08046C116.908 0.936976 117.149 0.864142 117.394 0.873624C117.643 0.86624 117.888 0.938738 118.093 1.08046C118.177 1.13491 118.246 1.20892 118.296 1.29602C118.345 1.3832 118.372 1.48095 118.375 1.58097V11.5623C118.762 10.8561 119.335 10.2695 120.032 9.86672C120.729 9.46396 121.524 9.26049 122.329 9.27844C123.035 9.27005 123.736 9.41127 124.383 9.69278C125.032 9.97421 125.613 10.3896 126.088 10.9117C126.595 11.43 126.994 12.0435 127.261 12.7167C127.529 13.3899 127.661 14.1094 127.649 14.8339V18.0737C127.655 19.5436 127.084 20.9573 126.059 22.0109C124.998 23.1509 123.774 23.7203 122.387 23.7192C121.518 23.7256 120.665 23.4912 119.92 23.0419C119.237 22.664 118.679 22.0945 118.315 21.4036V22.7282C118.313 22.8326 118.288 22.9353 118.242 23.029C118.196 23.1226 118.13 23.2051 118.048 23.2704C117.869 23.4308 117.635 23.5167 117.394 23.5107C117.15 23.5156 116.912 23.4314 116.726 23.2737C116.641 23.2121 116.572 23.132 116.523 23.0395C116.473 22.947 116.447 22.8445 116.442 22.7399ZM118.375 18.9812C118.375 19.5129 118.746 20.1335 119.49 20.8431C119.822 21.1792 120.218 21.4462 120.655 21.6286C121.091 21.811 121.559 21.9053 122.031 21.9058C123.021 21.9058 123.883 21.5121 124.617 20.7246C125.319 20.0135 125.714 19.0548 125.717 18.0553V14.8522C125.717 13.8857 125.35 13.0188 124.617 12.2514C124.287 11.8855 123.883 11.5937 123.433 11.395C122.982 11.1963 122.494 11.0953 122.001 11.0986C121.056 11.0934 120.146 11.4622 119.471 12.1246C118.737 12.8153 118.371 13.7217 118.371 14.8439L118.375 18.9812Z", fill: "text" }),
         React.createElement("path", { d: "M14.0062 14.2932L13.9721 14.3272C12.7045 15.5893 12.7002 17.6401 13.9625 18.9076L13.9965 18.9417C15.2587 20.2092 17.3095 20.2135 18.5771 18.9513L18.6113 18.9174C19.8788 17.6551 19.883 15.6044 18.6208 14.3369L18.5868 14.3027C17.3245 13.0352 15.2737 13.031 14.0062 14.2932Z", fill: "#02D767" }),
         React.createElement("path", { d: "M16.4475 0.502258L12.9781 3.95692L13.0012 3.97781L3.74509 13.1896V13.1749L0.31543 16.5855L0.328016 16.5981L0.31543 16.6128L3.70733 20.0172L16.3365 32.7693C16.3365 32.7693 19.322 28.8308 16.3868 25.8831L7.14328 16.5939L16.3931 7.37592L21.063 12.0729C25.0436 16.0764 27.8825 11.9849 27.8825 11.9849L16.4475 0.502258Z", fill: "#02D767" }),
         React.createElement("path", { d: "M50.6741 16.6632L50.7181 16.6213L34.7515 0.586243C34.7515 0.586243 31.8184 4.41799 34.5965 7.20642L44.0243 16.6758L34.7955 25.8687L30.4776 21.5362C27.3852 18.4293 23.2852 21.2429 23.2852 21.2429L34.6635 32.6648L38.1266 29.2143L50.6972 16.6926L50.6741 16.6632Z", fill: "#02D767" }),
@@ -3861,7 +3668,7 @@ var IconModule = /*#__PURE__*/Object.freeze({
     TwitterIcon: Icon$8
 });
 
-var MenuButton = styled(Button)(templateObject_1$e || (templateObject_1$e = __makeTemplateObject(["\n  color: ", ";\n  padding: 0 8px;\n  border-radius: 8px;\n"], ["\n  color: ", ";\n  padding: 0 8px;\n  border-radius: 8px;\n"])), function (_a) {
+var MenuButton = styled(Button)(templateObject_1$d || (templateObject_1$d = __makeTemplateObject(["\n  color: ", ";\n  padding: 0 8px;\n  border-radius: 8px;\n"], ["\n  color: ", ";\n  padding: 0 8px;\n  border-radius: 8px;\n"])), function (_a) {
     var theme = _a.theme;
     return theme.colors.text;
 });
@@ -3869,10 +3676,10 @@ MenuButton.defaultProps = {
     variant: "text",
     size: "sm",
 };
-var templateObject_1$e;
+var templateObject_1$d;
 
-var blink = keyframes(templateObject_1$d || (templateObject_1$d = __makeTemplateObject(["\n  0%,  100% { transform: scaleY(1); } \n  50% { transform:  scaleY(0.1); } \n"], ["\n  0%,  100% { transform: scaleY(1); } \n  50% { transform:  scaleY(0.1); } \n"])));
-var StyledLink = styled(Link$1)(templateObject_2$6 || (templateObject_2$6 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  .mobile-icon {\n    width: 32px;\n    ", " {\n      display: none;\n    }\n  }\n  .desktop-icon {\n    width: 160px;\n    display: none;\n    ", " {\n      display: block;\n    }\n  }\n  .right-eye {\n    animation-delay: 20ms;\n  }\n  &:hover {\n    .left-eye,\n    .right-eye {\n      transform-origin: center 60%;\n      animation-name: ", ";\n      animation-duration: 350ms;\n      animation-iteration-count: 1;\n    }\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  .mobile-icon {\n    width: 32px;\n    ", " {\n      display: none;\n    }\n  }\n  .desktop-icon {\n    width: 160px;\n    display: none;\n    ", " {\n      display: block;\n    }\n  }\n  .right-eye {\n    animation-delay: 20ms;\n  }\n  &:hover {\n    .left-eye,\n    .right-eye {\n      transform-origin: center 60%;\n      animation-name: ", ";\n      animation-duration: 350ms;\n      animation-iteration-count: 1;\n    }\n  }\n"])), function (_a) {
+var blink = keyframes(templateObject_1$c || (templateObject_1$c = __makeTemplateObject(["\n  0%,  100% { transform: scaleY(1); } \n  50% { transform:  scaleY(0.1); } \n"], ["\n  0%,  100% { transform: scaleY(1); } \n  50% { transform:  scaleY(0.1); } \n"])));
+var StyledLink = styled(Link$1)(templateObject_2$5 || (templateObject_2$5 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  .mobile-icon {\n    width: 32px;\n    ", " {\n      display: none;\n    }\n  }\n  .desktop-icon {\n    width: 160px;\n    display: none;\n    ", " {\n      display: block;\n    }\n  }\n  .right-eye {\n    animation-delay: 20ms;\n  }\n  &:hover {\n    .left-eye,\n    .right-eye {\n      transform-origin: center 60%;\n      animation-name: ", ";\n      animation-duration: 350ms;\n      animation-iteration-count: 1;\n    }\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  .mobile-icon {\n    width: 32px;\n    ", " {\n      display: none;\n    }\n  }\n  .desktop-icon {\n    width: 160px;\n    display: none;\n    ", " {\n      display: block;\n    }\n  }\n  .right-eye {\n    animation-delay: 20ms;\n  }\n  &:hover {\n    .left-eye,\n    .right-eye {\n      transform-origin: center 60%;\n      animation-name: ", ";\n      animation-duration: 350ms;\n      animation-iteration-count: 1;\n    }\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.mediaQueries.nav;
 }, function (_a) {
@@ -3890,7 +3697,7 @@ var Logo = function (_a) {
         isAbsoluteUrl ? (React.createElement(StyledLink, { as: "a", href: href, "aria-label": "Pancake home page" }, innerLogo)) : (React.createElement(StyledLink, { to: href, "aria-label": "Pancake home page" }, innerLogo))));
 };
 var Logo$1 = React.memo(Logo, function (prev, next) { return prev.isPushed === next.isPushed && prev.isDark === next.isDark; });
-var templateObject_1$d, templateObject_2$6;
+var templateObject_1$c, templateObject_2$5;
 
 var status = {
     LIVE: {
@@ -3918,11 +3725,11 @@ var links = [
         items: [
             {
                 label: "Exchange",
-                href: "https://exchange.pancakeswap.finance",
+                href: "#",
             },
             {
                 label: "Liquidity",
-                href: "https://exchange.pancakeswap.finance/#/pool",
+                href: "#",
             },
         ],
     },
@@ -3930,7 +3737,7 @@ var links = [
         label: "Farms",
         icon: "FarmIcon",
         href: "/farms",
-        status: status.LIVE,
+        // status: status.LIVE,
     },
     {
         label: "Pools",
@@ -3942,156 +3749,91 @@ var links = [
         icon: "TicketIcon",
         href: "/lottery",
     },
-    {
-        label: "NFT",
-        icon: "NftIcon",
-        href: "/nft",
-    },
-    {
-        label: "Team Battle",
-        icon: "TeamBattleIcon",
-        href: "/competition",
-        status: status.SOON,
-    },
-    {
-        label: "Profile & Teams",
-        icon: "GroupsIcon",
-        status: status.LIVE,
-        items: [
-            {
-                label: "Leaderboard",
-                href: "/teams",
-                status: status.NEW,
-            },
-            {
-                label: "YourProfile",
-                href: "/",
-            },
-        ],
-        calloutClass: "rainbow",
-    },
-    {
-        label: "Info",
-        icon: "InfoIcon",
-        items: [
-            {
-                label: "Overview",
-                href: "https://pancakeswap.info",
-            },
-            {
-                label: "Tokens",
-                href: "https://pancakeswap.info/tokens",
-            },
-            {
-                label: "Pairs",
-                href: "https://pancakeswap.info/pairs",
-            },
-            {
-                label: "Accounts",
-                href: "https://pancakeswap.info/accounts",
-            },
-        ],
-    },
-    {
-        label: "IFO",
-        icon: "IfoIcon",
-        items: [
-            {
-                label: "Next",
-                href: "/ifo",
-            },
-            {
-                label: "History",
-                href: "/ifo/history",
-            },
-        ],
-    },
+    // {
+    //   label: "NFT",
+    //   icon: "NftIcon",
+    //   href: "/nft",
+    // },
+    // {
+    //   label: "Team Battle",
+    //   icon: "TeamBattleIcon",
+    //   href: "/competition",
+    //   status: status.SOON,
+    // },
+    // {
+    //   label: "Profile & Teams",
+    //   icon: "GroupsIcon",
+    //   status: status.LIVE,
+    //   items: [
+    //     {
+    //       label: "Leaderboard",
+    //       href: "/teams",
+    //       status: status.NEW,
+    //     },
+    //     {
+    //       label: "YourProfile",
+    //       href: "/",
+    //     },
+    //   ],
+    //   calloutClass: "rainbow",
+    // },
+    // {
+    //   label: "Info",
+    //   icon: "InfoIcon",
+    //   items: [
+    //     {
+    //       label: "Overview",
+    //       href: "https://pancakeswap.info",
+    //     },
+    //     {
+    //       label: "Tokens",
+    //       href: "https://pancakeswap.info/tokens",
+    //     },
+    //     {
+    //       label: "Pairs",
+    //       href: "https://pancakeswap.info/pairs",
+    //     },
+    //     {
+    //       label: "Accounts",
+    //       href: "https://pancakeswap.info/accounts",
+    //     },
+    //   ],
+    // },
+    // {
+    //   label: "IFO",
+    //   icon: "IfoIcon",
+    //   items: [
+    //     {
+    //       label: "Next",
+    //       href: "/ifo",
+    //     },
+    //     {
+    //       label: "History",
+    //       href: "/ifo/history",
+    //     },
+    //   ],
+    // },
     {
         label: "More",
         icon: "MoreIcon",
         items: [
             {
                 label: "Voting",
-                href: "https://voting.pancakeswap.finance",
+                href: "#",
             },
             {
                 label: "Github",
-                href: "https://github.com/pancakeswap",
+                href: "#",
             },
             {
                 label: "Docs",
-                href: "https://docs.pancakeswap.finance",
+                href: "#",
             },
             {
                 label: "Blog",
-                href: "https://pancakeswap.medium.com",
+                href: "#",
             },
         ],
-    },
-];
-var socials = [
-    {
-        label: "Telegram",
-        icon: "TelegramIcon",
-        items: [
-            {
-                label: "English",
-                href: "https://t.me/pancakeswap",
-            },
-            {
-                label: "Bahasa Indonesia",
-                href: "https://t.me/PancakeSwapIndonesia",
-            },
-            {
-                label: "中文",
-                href: "https://t.me/PancakeSwap_CN",
-            },
-            {
-                label: "Tiếng Việt",
-                href: "https://t.me/PancakeSwapVN",
-            },
-            {
-                label: "Italiano",
-                href: "https://t.me/pancakeswap_ita",
-            },
-            {
-                label: "русский",
-                href: "https://t.me/pancakeswap_ru",
-            },
-            {
-                label: "Türkiye",
-                href: "https://t.me/pancakeswapturkiye",
-            },
-            {
-                label: "Português",
-                href: "https://t.me/PancakeSwapPortuguese",
-            },
-            {
-                label: "Español",
-                href: "https://t.me/PancakeswapEs",
-            },
-            {
-                label: "日本語",
-                href: "https://t.me/pancakeswapjp",
-            },
-            {
-                label: "Français",
-                href: "https://t.me/pancakeswapfr",
-            },
-            {
-                label: "Announcements",
-                href: "https://t.me/PancakeSwapAnn",
-            },
-            {
-                label: "Whale Alert",
-                href: "https://t.me/PancakeSwapWhales",
-            },
-        ],
-    },
-    {
-        label: "Twitter",
-        icon: "TwitterIcon",
-        href: "https://twitter.com/pancakeswap",
     },
 ];
 var MENU_HEIGHT = 64;
@@ -4099,8 +3841,8 @@ var MENU_ENTRY_HEIGHT = 48;
 var SIDEBAR_WIDTH_FULL = 240;
 var SIDEBAR_WIDTH_REDUCED = 56;
 
-var rainbowAnimation = keyframes(templateObject_1$c || (templateObject_1$c = __makeTemplateObject(["\n  0%,\n  100% {\n    background-position: 0 0;\n  }\n  50% {\n    background-position: 100% 0;\n  }\n"], ["\n  0%,\n  100% {\n    background-position: 0 0;\n  }\n  50% {\n    background-position: 100% 0;\n  }\n"])));
-var LinkLabel = styled.div(templateObject_2$5 || (templateObject_2$5 = __makeTemplateObject(["\n  color: ", ";\n  transition: color 0.4s;\n  flex-grow: 1;\n"], ["\n  color: ", ";\n  transition: color 0.4s;\n  flex-grow: 1;\n"])), function (_a) {
+var rainbowAnimation = keyframes(templateObject_1$b || (templateObject_1$b = __makeTemplateObject(["\n  0%,\n  100% {\n    background-position: 0 0;\n  }\n  50% {\n    background-position: 100% 0;\n  }\n"], ["\n  0%,\n  100% {\n    background-position: 0 0;\n  }\n  50% {\n    background-position: 100% 0;\n  }\n"])));
+var LinkLabel = styled.div(templateObject_2$4 || (templateObject_2$4 = __makeTemplateObject(["\n  color: ", ";\n  transition: color 0.4s;\n  flex-grow: 1;\n"], ["\n  color: ", ";\n  transition: color 0.4s;\n  flex-grow: 1;\n"])), function (_a) {
     var isPushed = _a.isPushed, theme = _a.theme;
     return (isPushed ? theme.colors.textSubtle : "transparent");
 });
@@ -4144,10 +3886,10 @@ var LinkStatus = styled(Text)(templateObject_4$1 || (templateObject_4$1 = __make
     return theme.colors[color];
 });
 var LinkLabelMemo = React.memo(LinkLabel, function (prev, next) { return prev.isPushed === next.isPushed; });
-var templateObject_1$c, templateObject_2$5, templateObject_3$2, templateObject_4$1;
+var templateObject_1$b, templateObject_2$4, templateObject_3$2, templateObject_4$1;
 
-var Container$2 = styled.div(templateObject_1$b || (templateObject_1$b = __makeTemplateObject(["\n  display: flex;\n  flex-direction: column;\n  // Safari fix\n  flex-shrink: 0;\n"], ["\n  display: flex;\n  flex-direction: column;\n  // Safari fix\n  flex-shrink: 0;\n"])));
-var AccordionContent = styled.div(templateObject_2$4 || (templateObject_2$4 = __makeTemplateObject(["\n  max-height: ", ";\n  transition: max-height 0.3s ease-out;\n  overflow: hidden;\n  border-color: ", ";\n  border-style: solid;\n  border-width: 1px 0;\n"], ["\n  max-height: ", ";\n  transition: max-height 0.3s ease-out;\n  overflow: hidden;\n  border-color: ", ";\n  border-style: solid;\n  border-width: 1px 0;\n"])), function (_a) {
+var Container$2 = styled.div(templateObject_1$a || (templateObject_1$a = __makeTemplateObject(["\n  display: flex;\n  flex-direction: column;\n  // Safari fix\n  flex-shrink: 0;\n"], ["\n  display: flex;\n  flex-direction: column;\n  // Safari fix\n  flex-shrink: 0;\n"])));
+var AccordionContent = styled.div(templateObject_2$3 || (templateObject_2$3 = __makeTemplateObject(["\n  max-height: ", ";\n  transition: max-height 0.3s ease-out;\n  overflow: hidden;\n  border-color: ", ";\n  border-style: solid;\n  border-width: 1px 0;\n"], ["\n  max-height: ", ";\n  transition: max-height 0.3s ease-out;\n  overflow: hidden;\n  border-color: ", ";\n  border-style: solid;\n  border-width: 1px 0;\n"])), function (_a) {
     var isOpen = _a.isOpen, maxHeight = _a.maxHeight;
     return (isOpen ? maxHeight + "px" : 0);
 }, function (_a) {
@@ -4171,14 +3913,10 @@ var Accordion = function (_a) {
             icon,
             React.createElement(LinkLabelMemo, { isPushed: isPushed }, label),
             status && (React.createElement(LinkStatus, { color: status.color, fontSize: "14px" }, status.text)),
-<<<<<<< HEAD
-            isOpen ? React.createElement(Icon$1H, null) : React.createElement(Icon$1I, null)),
-=======
             isOpen ? React.createElement(Icon$1I, null) : React.createElement(Icon$1J, null)),
->>>>>>> a5e1ba8739b83f2319426d389050df68312b0874
         React.createElement(AccordionContent, { isOpen: isOpen, isPushed: isPushed, maxHeight: React.Children.count(children) * MENU_ENTRY_HEIGHT }, children)));
 };
-var templateObject_1$b, templateObject_2$4;
+var templateObject_1$a, templateObject_2$3;
 
 var MenuLink = function (_a) {
     var href = _a.href, otherProps = __rest(_a, ["href"]);
@@ -4189,15 +3927,15 @@ var MenuLink = function (_a) {
     return React.createElement(Tag, __assign({ role: "button" }, props, otherProps));
 };
 
-var Icons$2 = IconModule;
-var Container$1 = styled.div(templateObject_1$a || (templateObject_1$a = __makeTemplateObject(["\n  display: flex;\n  flex-direction: column;\n  overflow-y: auto;\n  overflow-x: hidden;\n  height: 100%;\n"], ["\n  display: flex;\n  flex-direction: column;\n  overflow-y: auto;\n  overflow-x: hidden;\n  height: 100%;\n"])));
+var Icons$1 = IconModule;
+var Container$1 = styled.div(templateObject_1$9 || (templateObject_1$9 = __makeTemplateObject(["\n  display: flex;\n  flex-direction: column;\n  overflow-y: auto;\n  overflow-x: hidden;\n  height: 100%;\n"], ["\n  display: flex;\n  flex-direction: column;\n  overflow-y: auto;\n  overflow-x: hidden;\n  height: 100%;\n"])));
 var PanelBody = function (_a) {
     var isPushed = _a.isPushed, pushNav = _a.pushNav, isMobile = _a.isMobile, links = _a.links;
     var location = useLocation();
     // Close the menu when a user clicks a link on mobile
     var handleClick = isMobile ? function () { return pushNav(false); } : undefined;
     return (React.createElement(Container$1, null, links.map(function (entry) {
-        var Icon = Icons$2[entry.icon];
+        var Icon = Icons$1[entry.icon];
         var iconElement = React.createElement(Icon, { width: "24px", mr: "8px" });
         var calloutClass = entry.calloutClass ? entry.calloutClass : undefined;
         if (entry.items) {
@@ -4216,20 +3954,20 @@ var PanelBody = function (_a) {
                 entry.status && (React.createElement(LinkStatus, { color: entry.status.color, fontSize: "14px" }, entry.status.text)))));
     })));
 };
-var templateObject_1$a;
-
-var PriceLink = styled.a(templateObject_1$9 || (templateObject_1$9 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"])));
-var CakePrice = function (_a) {
-    var cakePriceUsd = _a.cakePriceUsd;
-    return cakePriceUsd ? (React.createElement(PriceLink, { href: "https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82", target: "_blank" },
-        React.createElement(Icon$_, { width: "24px", mr: "8px" }),
-        React.createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(3)))) : (React.createElement(Skeleton, { width: 80, height: 24 }));
-};
-var CakePrice$1 = React.memo(CakePrice);
 var templateObject_1$9;
 
-var Icons$1 = IconModule;
-var MoonIcon = Icons$1.MoonIcon, SunIcon = Icons$1.SunIcon;
+var PriceLink = styled.a(templateObject_1$8 || (templateObject_1$8 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"])));
+var CakePrice = function (_a) {
+    var bbdtPriceUsd = _a.bbdtPriceUsd;
+    return bbdtPriceUsd ? (React.createElement(PriceLink, { target: "_blank" },
+        React.createElement(Icon$1g, { width: "24px", mr: "8px" }),
+        React.createElement(Text, { color: "textSubtle", bold: true }, "$" + bbdtPriceUsd.toFixed(3)))) : (React.createElement(Skeleton, { width: 80, height: 24 }));
+};
+var BBDTPrice = React.memo(CakePrice);
+var templateObject_1$8;
+
+var Icons = IconModule;
+var MoonIcon = Icons.MoonIcon, SunIcon = Icons.SunIcon;
 var ThemeSwitcher = function (_a) {
     var isDark = _a.isDark, toggleTheme = _a.toggleTheme;
     return (React.createElement(Button, { variant: "text", onClick: function () { return toggleTheme(!isDark); } },
@@ -4240,19 +3978,6 @@ var ThemeSwitcher = function (_a) {
 };
 var ThemeSwitcher$1 = React.memo(ThemeSwitcher, function (prev, next) { return prev.isDark === next.isDark; });
 
-var Icons = IconModule;
-var SocialLinks = function () { return (React.createElement(Flex, null, socials.map(function (social, index) {
-    var Icon = Icons[social.icon];
-    var iconProps = { width: "24px", color: "textSubtle", style: { cursor: "pointer" } };
-    var mr = index < socials.length - 1 ? "24px" : 0;
-    if (social.items) {
-        return (React.createElement(Dropdown, { key: social.label, position: "top", target: React.createElement(Icon, __assign({}, iconProps, { mr: mr })) }, social.items.map(function (item) { return (React.createElement(Link, { external: true, key: item.label, href: item.href, "aria-label": item.label, color: "textSubtle" }, item.label)); })));
-    }
-    return (React.createElement(Link, { external: true, key: social.label, href: social.href, "aria-label": social.label, mr: mr },
-        React.createElement(Icon, __assign({}, iconProps))));
-}))); };
-var SocialLinks$1 = React.memo(SocialLinks, function () { return true; });
-
 var LangSelector = function (_a) {
     var currentLang = _a.currentLang, langs = _a.langs, setLang = _a.setLang;
     return (React.createElement(Dropdown, { position: "top-right", target: React.createElement(Button, { variant: "text", startIcon: React.createElement(Icon$1f, { color: "textSubtle", width: "24px" }) },
@@ -4262,34 +3987,29 @@ var LangSelector = function (_a) {
 };
 var LangSelector$1 = React.memo(LangSelector, function (prev, next) { return prev.currentLang === next.currentLang; });
 
-var Container = styled.div(templateObject_1$8 || (templateObject_1$8 = __makeTemplateObject(["\n  flex: none;\n  padding: 8px 4px;\n  background-color: ", ";\n  border-top: solid 2px rgba(133, 133, 133, 0.1);\n"], ["\n  flex: none;\n  padding: 8px 4px;\n  background-color: ", ";\n  border-top: solid 2px rgba(133, 133, 133, 0.1);\n"])), function (_a) {
+var Container = styled.div(templateObject_1$7 || (templateObject_1$7 = __makeTemplateObject(["\n  flex: none;\n  padding: 8px 4px;\n  background-color: ", ";\n  border-top: solid 2px rgba(133, 133, 133, 0.1);\n"], ["\n  flex: none;\n  padding: 8px 4px;\n  background-color: ", ";\n  border-top: solid 2px rgba(133, 133, 133, 0.1);\n"])), function (_a) {
     var theme = _a.theme;
     return theme.nav.background;
 });
-var SettingsEntry = styled.div(templateObject_2$3 || (templateObject_2$3 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 8px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 8px;\n"])), MENU_ENTRY_HEIGHT);
+var SettingsEntry = styled.div(templateObject_2$2 || (templateObject_2$2 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 8px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 8px;\n"])), MENU_ENTRY_HEIGHT);
 var SocialEntry = styled.div(templateObject_3$1 || (templateObject_3$1 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n"])), MENU_ENTRY_HEIGHT);
 var PanelFooter = function (_a) {
-    var isPushed = _a.isPushed, pushNav = _a.pushNav, toggleTheme = _a.toggleTheme, isDark = _a.isDark, cakePriceUsd = _a.cakePriceUsd, currentLang = _a.currentLang, langs = _a.langs, setLang = _a.setLang;
+    var isPushed = _a.isPushed, pushNav = _a.pushNav, toggleTheme = _a.toggleTheme, isDark = _a.isDark, bbdtPriceUsd = _a.bbdtPriceUsd, currentLang = _a.currentLang, langs = _a.langs, setLang = _a.setLang;
     if (!isPushed) {
         return (React.createElement(Container, null,
             React.createElement(IconButton, { variant: "text", onClick: function () { return pushNav(true); } },
-<<<<<<< HEAD
-                React.createElement(Icon$1l, null))));
-=======
                 React.createElement(Icon$1m, null))));
->>>>>>> a5e1ba8739b83f2319426d389050df68312b0874
     }
     return (React.createElement(Container, null,
         React.createElement(SocialEntry, null,
-            React.createElement(CakePrice$1, { cakePriceUsd: cakePriceUsd }),
-            React.createElement(SocialLinks$1, null)),
+            React.createElement(BBDTPrice, { bbdtPriceUsd: bbdtPriceUsd })),
         React.createElement(SettingsEntry, null,
             React.createElement(ThemeSwitcher$1, { isDark: isDark, toggleTheme: toggleTheme }),
             React.createElement(LangSelector$1, { currentLang: currentLang, langs: langs, setLang: setLang }))));
 };
-var templateObject_1$8, templateObject_2$3, templateObject_3$1;
+var templateObject_1$7, templateObject_2$2, templateObject_3$1;
 
-var StyledPanel = styled.div(templateObject_1$7 || (templateObject_1$7 = __makeTemplateObject(["\n  position: fixed;\n  padding-top: ", ";\n  top: 0;\n  left: 0;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  flex-shrink: 0;\n  background-color: ", ";\n  width: ", ";\n  height: 100%;\n  transition: padding-top 0.2s, width 0.2s cubic-bezier(0.4, 0, 0.2, 1);\n  border-right: ", ";\n  z-index: 11;\n  overflow: ", ";\n  transform: translate3d(0, 0, 0);\n  ", ";\n\n  ", " {\n    border-right: 2px solid rgba(133, 133, 133, 0.1);\n    width: ", ";\n  }\n"], ["\n  position: fixed;\n  padding-top: ", ";\n  top: 0;\n  left: 0;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  flex-shrink: 0;\n  background-color: ", ";\n  width: ", ";\n  height: 100%;\n  transition: padding-top 0.2s, width 0.2s cubic-bezier(0.4, 0, 0.2, 1);\n  border-right: ", ";\n  z-index: 11;\n  overflow: ", ";\n  transform: translate3d(0, 0, 0);\n  ", ";\n\n  ", " {\n    border-right: 2px solid rgba(133, 133, 133, 0.1);\n    width: ", ";\n  }\n"])), function (_a) {
+var StyledPanel = styled.div(templateObject_1$6 || (templateObject_1$6 = __makeTemplateObject(["\n  position: fixed;\n  padding-top: ", ";\n  top: 0;\n  left: 0;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  flex-shrink: 0;\n  background-color: ", ";\n  width: ", ";\n  height: 100%;\n  transition: padding-top 0.2s, width 0.2s cubic-bezier(0.4, 0, 0.2, 1);\n  border-right: ", ";\n  z-index: 11;\n  overflow: ", ";\n  transform: translate3d(0, 0, 0);\n  ", ";\n\n  ", " {\n    border-right: 2px solid rgba(133, 133, 133, 0.1);\n    width: ", ";\n  }\n"], ["\n  position: fixed;\n  padding-top: ", ";\n  top: 0;\n  left: 0;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  flex-shrink: 0;\n  background-color: ", ";\n  width: ", ";\n  height: 100%;\n  transition: padding-top 0.2s, width 0.2s cubic-bezier(0.4, 0, 0.2, 1);\n  border-right: ", ";\n  z-index: 11;\n  overflow: ", ";\n  transform: translate3d(0, 0, 0);\n  ", ";\n\n  ", " {\n    border-right: 2px solid rgba(133, 133, 133, 0.1);\n    width: ", ";\n  }\n"])), function (_a) {
     var showMenu = _a.showMenu;
     return (showMenu ? "80px" : 0);
 }, function (_a) {
@@ -4320,7 +4040,7 @@ var Panel = function (props) {
         React.createElement(PanelBody, __assign({}, props)),
         React.createElement(PanelFooter, __assign({}, props))));
 };
-var templateObject_1$7;
+var templateObject_1$6;
 
 var Icon$7 = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 96 96" }, props),
@@ -4486,26 +4206,18 @@ var WalletCard = function (_a) {
         React.createElement(Icon, { width: "32px" })));
 };
 
-var HelpLink = styled(Link)(templateObject_1$6 || (templateObject_1$6 = __makeTemplateObject(["\n  display: flex;\n  align-self: center;\n  align-items: center;\n  margin-top: 24px;\n"], ["\n  display: flex;\n  align-self: center;\n  align-items: center;\n  margin-top: 24px;\n"])));
+styled(Link)(templateObject_1$5 || (templateObject_1$5 = __makeTemplateObject(["\n  display: flex;\n  align-self: center;\n  align-items: center;\n  margin-top: 24px;\n"], ["\n  display: flex;\n  align-self: center;\n  align-items: center;\n  margin-top: 24px;\n"])));
 var ConnectModal = function (_a) {
     var login = _a.login, _b = _a.onDismiss, onDismiss = _b === void 0 ? function () { return null; } : _b;
-    return (React.createElement(Modal, { title: "Connect to a wallet", onDismiss: onDismiss },
-        connectors.map(function (entry, index) { return (React.createElement(WalletCard, { key: entry.title, login: login, walletConfig: entry, onDismiss: onDismiss, mb: index < connectors.length - 1 ? "8px" : "0" })); }),
-        React.createElement(HelpLink, { href: "https://docs.pancakeswap.finance/get-started/connection-guide", external: true },
-<<<<<<< HEAD
-            React.createElement(Icon$1h, { color: "bbtColor", mr: "6px" }),
-=======
-            React.createElement(Icon$1i, { color: "bbtColor", mr: "6px" }),
->>>>>>> a5e1ba8739b83f2319426d389050df68312b0874
-            "Learn how to connect")));
+    return (React.createElement(Modal, { title: "Connect to a wallet", onDismiss: onDismiss }, connectors.map(function (entry, index) { return (React.createElement(WalletCard, { key: entry.title, login: login, walletConfig: entry, onDismiss: onDismiss, mb: index < connectors.length - 1 ? "8px" : "0" })); })));
 };
-var templateObject_1$6;
+var templateObject_1$5;
 
-var StyleButton = styled(Text).attrs({ role: "button" })(templateObject_1$5 || (templateObject_1$5 = __makeTemplateObject(["\n  position: relative;\n  display: flex;\n  align-items: center;\n  color: ", ";\n"], ["\n  position: relative;\n  display: flex;\n  align-items: center;\n  color: ", ";\n"])), function (_a) {
+var StyleButton = styled(Text).attrs({ role: "button" })(templateObject_1$4 || (templateObject_1$4 = __makeTemplateObject(["\n  position: relative;\n  display: flex;\n  align-items: center;\n  color: ", ";\n"], ["\n  position: relative;\n  display: flex;\n  align-items: center;\n  color: ", ";\n"])), function (_a) {
     var theme = _a.theme;
     return theme.colors.bbtColor;
 });
-var Tooltip = styled.div(templateObject_2$2 || (templateObject_2$2 = __makeTemplateObject(["\n  display: ", ";\n  position: absolute;\n  bottom: -22px;\n  right: 0;\n  left: 0;\n  text-align: center;\n  background-color: ", ";\n  color: ", ";\n  border-radius: 16px;\n  opacity: 0.7;\n"], ["\n  display: ", ";\n  position: absolute;\n  bottom: -22px;\n  right: 0;\n  left: 0;\n  text-align: center;\n  background-color: ", ";\n  color: ", ";\n  border-radius: 16px;\n  opacity: 0.7;\n"])), function (_a) {
+var Tooltip = styled.div(templateObject_2$1 || (templateObject_2$1 = __makeTemplateObject(["\n  display: ", ";\n  position: absolute;\n  bottom: -22px;\n  right: 0;\n  left: 0;\n  text-align: center;\n  background-color: ", ";\n  color: ", ";\n  border-radius: 16px;\n  opacity: 0.7;\n"], ["\n  display: ", ";\n  position: absolute;\n  bottom: -22px;\n  right: 0;\n  left: 0;\n  text-align: center;\n  background-color: ", ";\n  color: ", ";\n  border-radius: 16px;\n  opacity: 0.7;\n"])), function (_a) {
     var isTooltipDisplayed = _a.isTooltipDisplayed;
     return (isTooltipDisplayed ? "block" : "none");
 }, function (_a) {
@@ -4542,14 +4254,10 @@ var CopyToClipboard = function (_a) {
             }
         } }, props),
         children,
-<<<<<<< HEAD
-        React.createElement(Icon$1j, { width: "20px", color: "bbtColor", ml: "4px" }),
-=======
         React.createElement(Icon$1k, { width: "20px", color: "bbtColor", ml: "4px" }),
->>>>>>> a5e1ba8739b83f2319426d389050df68312b0874
         React.createElement(Tooltip, { isTooltipDisplayed: isTooltipDisplayed }, "Copied")));
 };
-var templateObject_1$5, templateObject_2$2;
+var templateObject_1$4, templateObject_2$1;
 
 var AccountModal = function (_a) {
     var account = _a.account, logout = _a.logout, _b = _a.onDismiss, onDismiss = _b === void 0 ? function () { return null; } : _b;
@@ -4588,29 +4296,6 @@ var UserBlock$1 = React.memo(UserBlock, function (prevProps, nextProps) {
         prevProps.logout === nextProps.logout;
 });
 
-var StyledAvatar = styled.div(templateObject_1$4 || (templateObject_1$4 = __makeTemplateObject(["\n  margin-left: 8px;\n  position: relative;\n\n  img {\n    border-radius: 50%;\n  }\n"], ["\n  margin-left: 8px;\n  position: relative;\n\n  img {\n    border-radius: 50%;\n  }\n"])));
-var Pip = styled.div(templateObject_2$1 || (templateObject_2$1 = __makeTemplateObject(["\n  background-color: ", ";\n  border-radius: 50%;\n  pointer-events: none;\n  height: 8px;\n  position: absolute;\n  right: 0;\n  top: 0;\n  width: 8px;\n"], ["\n  background-color: ", ";\n  border-radius: 50%;\n  pointer-events: none;\n  height: 8px;\n  position: absolute;\n  right: 0;\n  top: 0;\n  width: 8px;\n"])), function (_a) {
-    var theme = _a.theme;
-    return theme.colors.failure;
-});
-var Avatar = function (_a) {
-    var profile = _a.profile;
-    var _b = profile.username, username = _b === void 0 ? "Bunny" : _b, image = profile.image, profileLink = profile.profileLink, noProfileLink = profile.noProfileLink, _c = profile.showPip, showPip = _c === void 0 ? false : _c;
-    var link = profile.username ? profileLink : noProfileLink;
-    var isExternal = link.startsWith("http");
-    var ariaLabel = "Link to profile";
-    var icon = image ? (React.createElement("img", { src: image, alt: "profile avatar", height: "32px", width: "32px" })) : (React.createElement(Icon$12, { width: "32px", height: "32px" }));
-    if (isExternal) {
-        return (React.createElement(StyledAvatar, { title: username },
-            React.createElement("a", { href: link, "aria-label": ariaLabel }, icon),
-            showPip && React.createElement(Pip, null)));
-    }
-    return (React.createElement(StyledAvatar, { title: username },
-        React.createElement(Link$1, { to: link, "aria-label": ariaLabel }, icon),
-        showPip && React.createElement(Pip, null)));
-};
-var templateObject_1$4, templateObject_2$1;
-
 var Wrapper = styled.div(templateObject_1$3 || (templateObject_1$3 = __makeTemplateObject(["\n  position: relative;\n  width: 100%;\n"], ["\n  position: relative;\n  width: 100%;\n"])));
 var StyledNav = styled.nav(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  position: fixed;\n  top: ", ";\n  left: 0;\n  transition: top 0.2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-left: 8px;\n  padding-right: 16px;\n  width: 100%;\n  height: ", "px;\n  background-color: ", ";\n  border-bottom: solid 2px rgba(133, 133, 133, 0.1);\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n"], ["\n  position: fixed;\n  top: ", ";\n  left: 0;\n  transition: top 0.2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-left: 8px;\n  padding-right: 16px;\n  width: 100%;\n  height: ", "px;\n  background-color: ", ";\n  border-bottom: solid 2px rgba(133, 133, 133, 0.1);\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n"])), function (_a) {
     var showMenu = _a.showMenu;
@@ -4639,7 +4324,7 @@ var MobileOnlyOverlay = styled(Overlay)(templateObject_5 || (templateObject_5 = 
 });
 var Menu = function (_a) {
     var _b;
-    var account = _a.account, login = _a.login, logout = _a.logout, isDark = _a.isDark, toggleTheme = _a.toggleTheme, langs = _a.langs, setLang = _a.setLang, currentLang = _a.currentLang, cakePriceUsd = _a.cakePriceUsd, links = _a.links, profile = _a.profile, children = _a.children;
+    var account = _a.account, login = _a.login, logout = _a.logout, isDark = _a.isDark, toggleTheme = _a.toggleTheme, langs = _a.langs, setLang = _a.setLang, currentLang = _a.currentLang, bbdtPriceUsd = _a.bbdtPriceUsd, links = _a.links; _a.profile; var children = _a.children;
     var isXl = useMatchBreakpoints().isXl;
     var isMobile = isXl === false;
     var _c = useState(!isMobile), isPushed = _c[0], setIsPushed = _c[1];
@@ -4679,10 +4364,9 @@ var Menu = function (_a) {
         React.createElement(StyledNav, { showMenu: showMenu },
             React.createElement(Logo$1, { isPushed: isPushed, togglePush: function () { return setIsPushed(function (prevState) { return !prevState; }); }, isDark: isDark, href: (_b = homeLink === null || homeLink === void 0 ? void 0 : homeLink.href) !== null && _b !== void 0 ? _b : "/" }),
             !!login && !!logout && (React.createElement(Flex, null,
-                React.createElement(UserBlock$1, { account: account, login: login, logout: logout }),
-                profile && React.createElement(Avatar, { profile: profile })))),
+                React.createElement(UserBlock$1, { account: account, login: login, logout: logout })))),
         React.createElement(BodyWrapper, null,
-            React.createElement(Panel, { isPushed: isPushed, isMobile: isMobile, showMenu: showMenu, isDark: isDark, toggleTheme: toggleTheme, langs: langs, setLang: setLang, currentLang: currentLang, cakePriceUsd: cakePriceUsd, pushNav: setIsPushed, links: links }),
+            React.createElement(Panel, { isPushed: isPushed, isMobile: isMobile, showMenu: showMenu, isDark: isDark, toggleTheme: toggleTheme, langs: langs, setLang: setLang, currentLang: currentLang, bbdtPriceUsd: bbdtPriceUsd, pushNav: setIsPushed, links: links }),
             React.createElement(Inner, { isPushed: isPushed, showMenu: showMenu }, children),
             React.createElement(MobileOnlyOverlay, { show: isPushed, onClick: function () { return setIsPushed(false); }, role: "presentation" }))));
 };
